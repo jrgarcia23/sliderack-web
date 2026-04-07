@@ -90,7 +90,7 @@ export default function ProductDetail({
 
           {/* Lightbox container */}
           <div
-            className="relative bg-white rounded-2xl shadow-2xl p-6 max-w-[520px] w-[90vw]"
+            className="relative bg-white rounded-2xl shadow-2xl p-6 max-w-[860px] w-[90vw]"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close button */}
