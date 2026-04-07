@@ -78,9 +78,12 @@ export default function CompaniaPage() {
                 </p>
               </div>
             </ScrollReveal>
-            {/* Timeline integrado */}
+          </div>
+
+          {/* Timeline centrado */}
+          <div className="mx-auto max-w-[600px] mt-16">
             <ScrollReveal>
-              <div className="relative mt-10">
+              <div className="relative">
                 <div className="absolute left-[22px] top-0 bottom-0 w-px bg-gray-200" />
                 <div className="flex flex-col gap-6">
                   {[
