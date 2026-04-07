@@ -9,11 +9,11 @@ const navLinks = [
   { label: "Contacto", href: "/contacto" },
 ];
 
-export default function Footer() {
+export default function Footer({ hideCta = false }: { hideCta?: boolean }) {
   return (
     <footer className="w-full">
       {/* CTA Bar */}
-      <div className="bg-[#A52430] px-6 py-5">
+      {!hideCta && <div className="bg-[#A52430] px-6 py-5">
         <div className="mx-auto max-w-[1200px] flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="font-[family-name:var(--font-heading)] text-[18px] md:text-[20px] font-bold uppercase text-white">
             ¿Necesitas asesoramiento técnico?
@@ -33,7 +33,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-      </div>
+      </div>}
 
       {/* Main Footer */}
       <div className="bg-[#201F20] px-6 py-10">

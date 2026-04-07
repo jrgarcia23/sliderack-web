@@ -242,7 +242,7 @@ export default function CompaniaPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer hideCta />
     </>
   );
 }
