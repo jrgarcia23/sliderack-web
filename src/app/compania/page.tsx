@@ -89,13 +89,13 @@ export default function CompaniaPage() {
                   Esnova Racks: ingenier&iacute;a espa&ntilde;ola desde 1969
                 </h2>
                 <p className="font-[family-name:var(--font-heebo)] text-[16px] leading-relaxed text-[#666] mb-4">
-                  Esnova Racks naci&oacute; en Gij&oacute;n (Asturias) con una misi&oacute;n clara: dise&ntilde;ar y fabricar sistemas de almacenaje que resuelvan problemas reales en entornos industriales.
+                  Esnova Racks naci&oacute; en Gij&oacute;n (Asturias) con una misi&oacute;n clara: dise&ntilde;ar y fabricar sistemas de almacenaje que resuelvan problemas reales en entornos industriales. Hoy contamos con una <strong className="text-[#201F20]">planta de producci&oacute;n de 46.600 m&sup2;</strong> y presencia en <strong className="text-[#201F20]">m&aacute;s de 45 pa&iacute;ses</strong>.
                 </p>
                 <p className="font-[family-name:var(--font-heebo)] text-[16px] leading-relaxed text-[#666] mb-4">
                   Tras m&aacute;s de cinco d&eacute;cadas de experiencia, hemos canalizado toda esa ingenier&iacute;a en <strong className="text-[#201F20]">Sliderack</strong>: un sistema de almacenaje deslizante que combina la robustez del acero con la precisi&oacute;n de un mecanismo que funciona con un solo dedo.
                 </p>
                 <p className="font-[family-name:var(--font-heebo)] text-[16px] leading-relaxed text-[#666]">
-                  Todo nuestro proceso &mdash; desde el dise&ntilde;o hasta el montaje final &mdash; se realiza en Espa&ntilde;a, con materiales europeos y bajo los est&aacute;ndares de calidad m&aacute;s exigentes del sector.
+                  Todo nuestro proceso &mdash; desde el dise&ntilde;o hasta el montaje final &mdash; se realiza en Espa&ntilde;a con fabricaci&oacute;n propia, tecnolog&iacute;a de &uacute;ltima generaci&oacute;n y bajo los est&aacute;ndares de calidad m&aacute;s exigentes del sector.
                 </p>
               </div>
             </ScrollReveal>
