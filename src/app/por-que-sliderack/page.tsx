@@ -261,24 +261,24 @@ export default function PorQueSliderack() {
         </section>
 
         {/* CTA */}
-        <section className="bg-[#201F20] px-6 py-20">
+        <section className="bg-[#A52430] px-6 py-20">
           <div className="mx-auto max-w-[700px] text-center">
             <h2 className="font-[family-name:var(--font-heading)] text-[28px] md:text-[36px] font-bold uppercase text-white mb-4">
               ¿Listo para optimizar tu espacio?
             </h2>
-            <p className="font-[family-name:var(--font-body)] text-[16px] text-white/60 mb-8">
+            <p className="font-[family-name:var(--font-body)] text-[16px] text-white/80 mb-8">
               Solicita información sin compromiso. Nuestro equipo te asesorará sobre la configuración perfecta.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link
                 href="/contacto"
-                className="rounded-lg bg-[#A52430] px-10 py-4 font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-white hover:bg-[#8a1e28] transition-colors"
+                className="rounded-lg border-2 border-white bg-white px-10 py-4 font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-[#A52430] hover:bg-transparent hover:text-white transition-colors"
               >
                 Solicitar información
               </Link>
               <Link
                 href="/sistemas"
-                className="rounded-lg border-2 border-white/20 px-10 py-4 font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-white hover:border-white/40 transition-colors"
+                className="rounded-lg border-2 border-white/40 px-10 py-4 font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-white hover:border-white transition-colors"
               >
                 Ver catálogo
               </Link>
@@ -286,7 +286,7 @@ export default function PorQueSliderack() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer hideCta />
     </>
   );
 }
