@@ -7,25 +7,25 @@ import ScrollReveal from "@/components/ScrollReveal";
 const products = [
   {
     name: "Sliderack 1825",
-    image: "/images/sliderack/products/sr-1825-370.png",
+    image: "/images/sliderack/products/sr-1825-370.webp",
     badge: "1 Nivel",
     dims: "1825 × 370 mm",
   },
   {
     name: "Sliderack 2700",
-    image: "/images/sliderack/products/sr-2700-370.png",
+    image: "/images/sliderack/products/sr-2700-370.webp",
     badge: "1 Nivel",
     dims: "2700 × 370 mm",
   },
   {
     name: "Sliderack 3600",
-    image: "/images/sliderack/products/sr-3600-370.png",
+    image: "/images/sliderack/products/sr-3600-370.webp",
     badge: "1 Nivel",
     dims: "3600 × 370 mm",
   },
   {
     name: "Sliderack 2 Niveles",
-    image: "/images/sliderack/products/sr-2n-2700-370.png",
+    image: "/images/sliderack/products/sr-2n-2700-370.webp",
     badge: "2 Niveles",
     dims: "2700 × 370 mm",
   },

@@ -43,19 +43,18 @@ const sistemasMenu = {
 };
 
 const accesoriosMenu = [
-  { name: "Puesto de Trabajo", desc: "Mesa de trabajo integrada con panel perforado", href: "/accesorios/puesto-trabajo", img: "/images/sliderack/products/acc-puesto-trabajo.png" },
-  { name: "Panel Perforado", desc: "Organización vertical de herramientas", href: "/accesorios/panel-perforado", img: "/images/sliderack/products/acc-panel-perforado.png" },
+  { name: "Puesto de Trabajo", desc: "Mesa de trabajo integrada con panel perforado", href: "/accesorios/puesto-trabajo", img: "/images/sliderack/products/acc-puesto-trabajo.webp" },
+  { name: "Panel Perforado", desc: "Organización vertical de herramientas", href: "/accesorios/panel-perforado", img: "/images/sliderack/products/acc-panel-perforado.webp" },
   { name: "Cerradura", desc: "Seguridad con llave para módulos", href: "/accesorios/cerradura", img: "/images/sliderack/photos/logo-cerradura.jpg" },
-  { name: "Kit Cajón", desc: "Cajones divisorios para piezas pequeñas", href: "/accesorios/kit-cajon", img: "/images/sliderack/products/acc-kit-cajon.png" },
-  { name: "Kit Balda", desc: "Baldas adicionales ajustables en altura", href: "/accesorios/kit-balda", img: "/images/sliderack/products/acc-kit-balda.png" },
-  { name: "Módulo Adicional", desc: "Amplía la capacidad de tu sistema", href: "/accesorios/modulo", img: "/images/sliderack/products/acc-sistema-riveto.png" },
-  { name: "Kit Perchero", desc: "Almacenaje de EPIs, uniformes y prendas", href: "/accesorios/kit-perchero", img: "/images/sliderack/products/acc-perchero.png" },
+  { name: "Kit Cajón", desc: "Cajones divisorios para piezas pequeñas", href: "/accesorios/kit-cajon", img: "/images/sliderack/products/acc-kit-cajon.webp" },
+  { name: "Kit Balda", desc: "Baldas adicionales ajustables en altura", href: "/accesorios/kit-balda", img: "/images/sliderack/products/acc-kit-balda.webp" },
+  { name: "Módulo Adicional", desc: "Amplía la capacidad de tu sistema", href: "/accesorios/modulo", img: "/images/sliderack/products/acc-sistema-riveto.webp" },
+  { name: "Kit Perchero", desc: "Almacenaje de EPIs, uniformes y prendas", href: "/accesorios/kit-perchero", img: "/images/sliderack/products/acc-perchero.webp" },
 ];
 
 const simpleLinks = [
   { label: "Por qué Sliderack", href: "/por-que-sliderack" },
   { label: "Compañía", href: "/compania" },
-  { label: "Recursos", href: "/recursos" },
   { label: "Contacto", href: "/contacto" },
 ];
 
@@ -88,7 +87,7 @@ export default function Header() {
         <div className="mx-auto flex max-w-[1200px] items-center justify-between px-4 h-[84px]">
           {/* Logo */}
           <Link href="/" className="relative shrink-0">
-            <Image src="/images/sliderack/logo.png" alt="Sliderack" width={220} height={52} className="h-auto w-[220px] object-contain" priority />
+            <Image src="/images/sliderack/logo.webp" alt="Sliderack" width={220} height={52} className="h-auto w-[220px] object-contain" priority />
           </Link>
 
           {/* Desktop nav */}

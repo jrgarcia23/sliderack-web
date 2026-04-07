@@ -6,7 +6,6 @@ const navLinks = [
   { label: "Accesorios", href: "/accesorios" },
   { label: "Por qué Sliderack", href: "/por-que-sliderack" },
   { label: "Compañía", href: "/compania" },
-  { label: "Recursos", href: "/recursos" },
   { label: "Contacto", href: "/contacto" },
 ];
 
@@ -46,7 +45,7 @@ export default function Footer() {
         {/* Column 1 - Logo & Description */}
         <div>
           <Image
-            src="/images/sliderack/logo.png"
+            src="/images/sliderack/logo.webp"
             alt="Sliderack"
             width={220}
             height={55}
@@ -141,25 +140,43 @@ export default function Footer() {
       </div>
 
       {/* ── Bottom Bar ── */}
-      <div className="mx-auto max-w-[1200px] px-4 mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p
-          className="font-[family-name:var(--font-heebo)] text-[14px]"
-          style={{ color: "rgba(255,255,255,0.5)" }}
-        >
-          &copy; 2026 Sliderack by Esnova Racks
-        </p>
-        <div className="flex items-center gap-2">
-          {socialLinks.map((social) => (
-            <a
-              key={social.label}
-              href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={social.label}
-              className="flex items-center justify-center size-8 rounded-full bg-[#A52430] text-white hover:opacity-80 transition-opacity"
+      <div className="mx-auto max-w-[1200px] px-4 mt-8 pt-6 border-t border-white/10">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-4">
+          <p
+            className="font-[family-name:var(--font-heebo)] text-[14px]"
+            style={{ color: "rgba(255,255,255,0.5)" }}
+          >
+            &copy; 2026 Sliderack by Esnova Racks
+          </p>
+          <div className="flex items-center gap-2">
+            {socialLinks.map((social) => (
+              <a
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.label}
+                className="flex items-center justify-center size-8 rounded-full bg-[#A52430] text-white hover:opacity-80 transition-opacity"
+              >
+                {social.icon}
+              </a>
+            ))}
+          </div>
+        </div>
+        <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+          {[
+            { label: "Aviso Legal", href: "/aviso-legal" },
+            { label: "Pol\u00edtica de Privacidad", href: "/politica-de-privacidad" },
+            { label: "Pol\u00edtica de Cookies", href: "/politica-de-cookies" },
+          ].map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="font-[family-name:var(--font-heebo)] text-[13px] hover:text-white transition-colors"
+              style={{ color: "rgba(255,255,255,0.4)" }}
             >
-              {social.icon}
-            </a>
+              {link.label}
+            </Link>
           ))}
         </div>
       </div>

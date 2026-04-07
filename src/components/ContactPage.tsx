@@ -25,6 +25,9 @@ export default function ContactPage() {
   const [pais, setPais] = useState("");
   const [mensaje, setMensaje] = useState("");
   const [privacidad, setPrivacidad] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [error, setError] = useState("");
 
   const addAccessory = () => setSelectedAccessories([...selectedAccessories, ""]);
   const removeAccessory = (index: number) => {
@@ -37,9 +40,34 @@ export default function ContactPage() {
     setSelectedAccessories(updated);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: connect to backend
+    setSending(true);
+    setError("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          nombre,
+          email,
+          telefono,
+          empresa,
+          pais,
+          mensaje,
+          modelo: selectedModel,
+          accesorios: selectedAccessories.filter(Boolean),
+        }),
+      });
+
+      if (!res.ok) throw new Error("Error al enviar");
+      setSent(true);
+    } catch {
+      setError("Ha ocurrido un error. Por favor, inténtalo de nuevo o llámanos directamente.");
+    } finally {
+      setSending(false);
+    }
   };
 
   const inputClass =
@@ -304,14 +332,31 @@ export default function ContactPage() {
                   </span>
                 </label>
 
-                {/* Submit */}
-                <button
-                  type="submit"
-                  className="bg-[#A52430] text-white py-4 rounded-lg hover:bg-[#8a1e28] transition-colors uppercase tracking-[2px] mt-2"
-                  style={{ fontFamily: "var(--font-rajdhani)", fontSize: 16, fontWeight: 700 }}
-                >
-                  Enviar solicitud
-                </button>
+                {error && (
+                  <p className="text-red-600 text-[14px]" style={{ fontFamily: "var(--font-heebo)" }}>
+                    {error}
+                  </p>
+                )}
+
+                {sent ? (
+                  <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center">
+                    <p className="text-green-800 font-semibold" style={{ fontFamily: "var(--font-rajdhani)", fontSize: 18 }}>
+                      Solicitud enviada correctamente
+                    </p>
+                    <p className="text-green-700 mt-2" style={{ fontFamily: "var(--font-heebo)", fontSize: 14 }}>
+                      Nuestro equipo te contactar&aacute; en 24-48h.
+                    </p>
+                  </div>
+                ) : (
+                  <button
+                    type="submit"
+                    disabled={sending}
+                    className="bg-[#A52430] text-white py-4 rounded-lg hover:bg-[#8a1e28] transition-colors uppercase tracking-[2px] mt-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                    style={{ fontFamily: "var(--font-rajdhani)", fontSize: 16, fontWeight: 700 }}
+                  >
+                    {sending ? "Enviando..." : "Enviar solicitud"}
+                  </button>
+                )}
               </form>
             </ScrollReveal>
 
@@ -320,7 +365,7 @@ export default function ContactPage() {
               <div className="lg:pt-8">
                 <div className="bg-[#f8f8f8] rounded-xl p-6 mb-6">
                   <Image
-                    src="/images/sliderack/logo.png"
+                    src="/images/sliderack/logo.webp"
                     alt="Sliderack"
                     width={160}
                     height={40}

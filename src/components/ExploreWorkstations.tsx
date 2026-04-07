@@ -6,17 +6,17 @@ import ScrollReveal from "@/components/ScrollReveal";
 const products = [
   {
     name: "Puesto de trabajo",
-    image: "/images/sliderack/products/acc-puesto-trabajo.png",
+    image: "/images/sliderack/products/acc-puesto-trabajo.webp",
     contain: false,
   },
   {
     name: "Panel perforado",
-    image: "/images/sliderack/products/acc-panel-perforado.png",
+    image: "/images/sliderack/products/acc-panel-perforado.webp",
     contain: false,
   },
   {
     name: "Kit cajón",
-    image: "/images/sliderack/products/acc-kit-cajon.png",
+    image: "/images/sliderack/products/acc-kit-cajon.webp",
     contain: true,
   },
   {
@@ -26,7 +26,7 @@ const products = [
   },
   {
     name: "Kit balda",
-    image: "/images/sliderack/products/acc-kit-balda.png",
+    image: "/images/sliderack/products/acc-kit-balda.webp",
     contain: true,
   },
 ];

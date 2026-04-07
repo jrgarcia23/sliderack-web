@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProductDetail from "@/components/ProductDetail";
+import { ProductSchema } from "@/components/SchemaOrg";
 import { products, getProductBySlug } from "@/data/products";
 import type { Metadata } from "next";
 
@@ -32,6 +33,13 @@ export default async function SistemaDetailPage({ params }: PageProps) {
 
   return (
     <>
+      <ProductSchema
+        name={product.name}
+        description={product.description}
+        image={product.image}
+        slug={product.slug}
+        category="sistemas"
+      />
       <Header />
       <ProductDetail
         product={product}
