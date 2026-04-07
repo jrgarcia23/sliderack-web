@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /api/
 
-Sitemap: https://sliderack.com/sitemap.xml
+Sitemap: https://sliderack.es/sitemap.xml

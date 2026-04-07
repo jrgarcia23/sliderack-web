@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { products } from "@/data/products";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://sliderack.com";
+  const base = "https://sliderack.es";
 
   const staticPages = [
     "",

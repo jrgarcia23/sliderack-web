@@ -3,8 +3,8 @@ export function OrganizationSchema() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Sliderack",
-    url: "https://sliderack.com",
-    logo: "https://sliderack.com/images/sliderack/logo.webp",
+    url: "https://sliderack.es",
+    logo: "https://sliderack.es/images/sliderack/logo.webp",
     description:
       "Sistema de almacenaje deslizante de alta precisi\u00f3n, dise\u00f1ado y fabricado en Espa\u00f1a por Esnova Racks.",
     parentOrganization: {
@@ -51,8 +51,8 @@ export function ProductSchema({
     "@type": "Product",
     name,
     description,
-    image: `https://sliderack.com${image}`,
-    url: `https://sliderack.com/${category}/${slug}`,
+    image: `https://sliderack.es${image}`,
+    url: `https://sliderack.es/${category}/${slug}`,
     brand: {
       "@type": "Brand",
       name: "Sliderack",
