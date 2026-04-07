@@ -159,7 +159,7 @@ export default function ProductDetail({
 
       {/* ── Product Section: Gallery + Info ── */}
       <section className="bg-white py-10 px-6">
-        <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[55%_1fr] gap-10 lg:gap-14">
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[55%_1fr] gap-10 lg:gap-14 items-start">
           {/* Left: Gallery — main image + thumbnails */}
           <div>
             {/* Main image — click to open lightbox */}
@@ -214,7 +214,7 @@ export default function ProductDetail({
 
           {/* Right: Product Info — compact */}
           <ScrollReveal direction="right">
-            <div>
+            <div className="flex flex-col h-full">
               <p
                 className="mb-2 text-[#A52430] uppercase tracking-[2px]"
                 style={{ fontFamily: "var(--font-rajdhani)", fontSize: 13, fontWeight: 600 }}
@@ -255,16 +255,9 @@ export default function ProductDetail({
                 ))}
               </ul>
 
-              {/* Finish badge */}
-              {product.finish && (
-                <p className="mb-6 text-[#999]" style={{ fontFamily: "var(--font-heebo)", fontSize: 13 }}>
-                  <span className="text-[#201F20]" style={{ fontFamily: "var(--font-rajdhani)", fontWeight: 600, textTransform: "uppercase" as const, fontSize: 12, letterSpacing: "1px" }}>Acabado: </span>
-                  {product.finish}
-                </p>
-              )}
-
+              <div className="flex-1" />
               {/* CTA buttons — side by side */}
-              <div className="grid grid-cols-2 gap-3 mb-5">
+              <div className="grid grid-cols-2 gap-3">
                 <Link
                   href={`/contacto?modelo=${product.slug}`}
                   className="bg-[#A52430] text-white text-center px-4 py-3.5 rounded-lg hover:bg-[#8a1e28] transition-colors uppercase tracking-[1px]"
