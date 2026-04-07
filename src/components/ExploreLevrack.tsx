@@ -7,24 +7,28 @@ import ScrollReveal from "@/components/ScrollReveal";
 const products = [
   {
     name: "Sliderack 1825",
+    slug: "sliderack-1825-370",
     image: "/images/sliderack/products/sr-1825-370.webp",
     badge: "1 Nivel",
     dims: "1825 × 370 mm",
   },
   {
     name: "Sliderack 2700",
+    slug: "sliderack-2700-370",
     image: "/images/sliderack/products/sr-2700-370.webp",
     badge: "1 Nivel",
     dims: "2700 × 370 mm",
   },
   {
     name: "Sliderack 3600",
+    slug: "sliderack-3600-370",
     image: "/images/sliderack/products/sr-3600-370.webp",
     badge: "1 Nivel",
     dims: "3600 × 370 mm",
   },
   {
     name: "Sliderack 2 Niveles",
+    slug: "sliderack-2n-2700-370",
     image: "/images/sliderack/products/sr-2n-2700-370.webp",
     badge: "2 Niveles",
     dims: "2700 × 370 mm",
@@ -56,7 +60,7 @@ export default function ExploreLevrack() {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {products.map((product, i) => (
             <ScrollReveal key={product.name} delay={i * 100}>
-              <div className="group cursor-pointer transition-all duration-300">
+              <Link href={`/sistemas/${product.slug}`} className="group block transition-all duration-300">
                 {/* Image container */}
                 <div className="relative aspect-square overflow-hidden rounded-xl bg-[#f5f5f5] transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
                   <Image
@@ -98,7 +102,7 @@ export default function ExploreLevrack() {
                     {product.dims}
                   </p>
                 </div>
-              </div>
+              </Link>
             </ScrollReveal>
           ))}
         </div>

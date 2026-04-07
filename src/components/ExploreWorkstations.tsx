@@ -1,31 +1,37 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const products = [
   {
     name: "Puesto de trabajo",
+    slug: "puesto-trabajo",
     image: "/images/sliderack/products/acc-puesto-trabajo.webp",
     contain: false,
   },
   {
     name: "Panel perforado",
+    slug: "panel-perforado",
     image: "/images/sliderack/products/acc-panel-perforado.webp",
     contain: false,
   },
   {
     name: "Kit cajón",
+    slug: "kit-cajon",
     image: "/images/sliderack/products/acc-kit-cajon.webp",
     contain: true,
   },
   {
     name: "Cerradura",
+    slug: "cerradura",
     image: "/images/sliderack/photos/logo-cerradura.jpg",
     contain: false,
   },
   {
     name: "Kit balda",
+    slug: "kit-balda",
     image: "/images/sliderack/products/acc-kit-balda.webp",
     contain: true,
   },
@@ -56,7 +62,7 @@ export default function ExploreWorkstations() {
         <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-5">
           {products.map((product, i) => (
             <ScrollReveal key={product.name} delay={i * 80} direction="up">
-              <div className="group cursor-pointer overflow-hidden rounded-xl bg-[#f5f5f5]">
+              <Link href={`/accesorios/${product.slug}`} className="group block overflow-hidden rounded-xl bg-[#f5f5f5]">
                 {/* Image */}
                 <div className="relative aspect-square overflow-hidden">
                   <Image
@@ -77,7 +83,7 @@ export default function ExploreWorkstations() {
                     {product.name}
                   </p>
                 </div>
-              </div>
+              </Link>
             </ScrollReveal>
           ))}
         </div>

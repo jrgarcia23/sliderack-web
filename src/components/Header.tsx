@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronDown, Menu, X, Search } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 
 const sistemasMenu = {
   columns: [
@@ -64,25 +64,7 @@ export default function Header() {
 
   return (
     <header className="w-full relative z-50">
-      {/* ── Row 1: TopBar ── */}
-      <div className="w-full bg-levrack-red">
-        <div className="mx-auto max-w-[1200px] flex items-center justify-between px-4 py-[11px]">
-          <div className="flex items-center gap-4 font-rajdhani text-[14px] font-bold text-white">
-            <Link href="tel:+34985308980" className="transition-opacity duration-300 hover:opacity-75">
-              985 30 89 80
-            </Link>
-            <span className="opacity-60">|</span>
-            <Link href="tel:+34985308980" className="transition-opacity duration-300 hover:opacity-75">
-              985 30 89 80
-            </Link>
-          </div>
-          <button className="text-white transition-opacity duration-300 hover:opacity-75" aria-label="Search">
-            <Search className="h-4 w-4" />
-          </button>
-        </div>
-      </div>
-
-      {/* ── Row 2: NavBar ── */}
+      {/* ── NavBar ── */}
       <div className="w-full bg-black">
         <div className="mx-auto flex max-w-[1200px] items-center justify-between px-4 h-[84px]">
           {/* Logo */}
