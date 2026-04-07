@@ -214,7 +214,7 @@ export default function ProductDetail({
 
           {/* Right: Product Info — compact */}
           <ScrollReveal direction="right">
-            <div className="flex flex-col h-full">
+            <div>
               <p
                 className="mb-2 text-[#A52430] uppercase tracking-[2px]"
                 style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 600 }}
@@ -255,7 +255,6 @@ export default function ProductDetail({
                 ))}
               </ul>
 
-              <div className="flex-1" />
               {/* CTA buttons — side by side */}
               <div className="grid grid-cols-2 gap-3">
                 <Link
