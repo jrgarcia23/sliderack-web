@@ -24,13 +24,13 @@ export const products: Product[] = [
     badge: "1 Nivel",
     shortDesc: "1825 × 370 mm",
     description:
-      "Sistema de almacenaje deslizante compacto, ideal para espacios reducidos. Estructura metálica robusta con guías de alta precisión para un movimiento suave y controlado.",
+      "Sistema deslizante compacto con 3 módulos y 9 baldas. Ideal para talleres pequeños, zonas de trabajo auxiliares o garajes donde el espacio es limitado pero se necesita acceso rápido a herramientas y piezas organizadas por categoría. Con solo 2090 mm de ancho, encaja en paredes donde una estantería convencional desperdiciaría espacio en pasillos.",
     features: [
-      "Estructura metálica de alta resistencia",
-      "Sistema deslizante con guías de precisión",
-      "Módulos móviles con cerradura opcional",
+      "3 armarios deslizantes con 9 baldas metálicas",
+      "Cada módulo soporta hasta 150 kg de carga",
+      "Guías de precisión: se desliza con un solo dedo",
+      "Cerradura opcional para módulos con material sensible",
       "Compatible con todos los accesorios Sliderack",
-      "Fabricado en España por Esnova Racks",
     ],
     specs: [
       { label: "Ancho de la estantería", value: "2090 mm" },
@@ -68,13 +68,13 @@ export const products: Product[] = [
     badge: "1 Nivel",
     shortDesc: "2700 × 370 mm",
     description:
-      "Sistema de almacenaje deslizante de tamaño medio. Equilibrio perfecto entre capacidad y espacio. Ideal para talleres y entornos industriales.",
+      "El modelo más equilibrado de la gama. 5 módulos deslizantes con 15 baldas ofrecen capacidad suficiente para organizar el utillaje completo de un taller mecánico de tamaño medio, manteniendo cada herramienta localizable y accesible sin mover otras estanterías. La configuración más elegida por talleres de automoción y servicios técnicos.",
     features: [
-      "Estructura metálica de alta resistencia",
-      "Sistema deslizante con guías de precisión",
-      "Módulos móviles con cerradura opcional",
-      "Compatible con todos los accesorios Sliderack",
-      "Fabricado en España por Esnova Racks",
+      "5 armarios deslizantes con 15 baldas metálicas",
+      "Cada módulo soporta hasta 150 kg de carga",
+      "El más vendido para talleres de automoción",
+      "Cerradura opcional para proteger herramientas de valor",
+      "Ampliable con módulos adicionales y accesorios",
     ],
     specs: [
       { label: "Ancho de la estantería", value: "2965 mm" },
@@ -112,13 +112,13 @@ export const products: Product[] = [
     badge: "1 Nivel",
     shortDesc: "3600 × 370 mm",
     description:
-      "El sistema deslizante de mayor capacidad en un solo nivel. Máximo aprovechamiento del espacio para instalaciones de gran volumen.",
+      "El sistema de mayor capacidad en un nivel con 7 módulos deslizantes y 21 baldas. Diseñado para talleres industriales, centros logísticos y parques de bomberos que necesitan almacenar un gran volumen de herramientas, recambios o equipamiento con acceso rápido a cada módulo. Ocupa menos de 4 metros de pared y elimina la necesidad de pasillos entre estanterías.",
     features: [
-      "Estructura metálica de alta resistencia",
-      "Sistema deslizante con guías de precisión",
-      "Módulos móviles con cerradura opcional",
-      "Compatible con todos los accesorios Sliderack",
-      "Fabricado en España por Esnova Racks",
+      "7 armarios deslizantes con 21 baldas metálicas",
+      "Máxima capacidad en un solo nivel de la gama",
+      "Ideal para parques de bomberos y almacenes industriales",
+      "Paneles perforados opcionales para herramientas",
+      "Estructura de acero con tratamiento anticorrosión",
     ],
     specs: [
       { label: "Ancho de la estantería", value: "3865 mm" },
@@ -157,13 +157,13 @@ export const products: Product[] = [
     badge: "1 Nivel · Prof. 470",
     shortDesc: "1825 × 470 mm",
     description:
-      "Sistema de almacenaje deslizante compacto con profundidad extendida de 470 mm. Mayor capacidad por módulo para materiales de gran tamaño, manteniendo la misma precisión de guías y robustez estructural.",
+      "Versión compacta con profundidad extendida de 470 mm. 2 módulos con 6 baldas de mayor fondo, pensadas para almacenar herramientas eléctricas, cajas de recambios voluminosas o equipos de diagnóstico que no caben en los módulos de 370 mm. Ideal para zonas de servicio técnico o puestos de trabajo especializados.",
     features: [
-      "Estructura metálica de alta resistencia",
-      "Sistema deslizante con guías de precisión",
-      "Módulos móviles con cerradura opcional",
-      "Compatible con todos los accesorios Sliderack",
-      "Fabricado en España por Esnova Racks",
+      "2 armarios deslizantes con 6 baldas de 470 mm de fondo",
+      "100 mm más de profundidad que la versión estándar",
+      "Perfecto para herramientas eléctricas y cajas voluminosas",
+      "Cerradura opcional para equipos de valor",
+      "Mismo sistema de guías de precisión que toda la gama",
     ],
     specs: [
       { label: "Ancho de la estantería", value: "2090 mm" },
@@ -201,13 +201,13 @@ export const products: Product[] = [
     badge: "1 Nivel · Prof. 470",
     shortDesc: "2700 × 470 mm",
     description:
-      "Versión de profundidad extendida para materiales de mayor tamaño. Mismo sistema de precisión con mayor capacidad de almacenaje por módulo.",
+      "4 módulos deslizantes con 12 baldas de profundidad extendida (470 mm). La opción preferida cuando se necesita almacenar materiales de gran tamaño como kits de reparación, repuestos de automoción o equipos de medición en un taller de tamaño medio. Combina la versatilidad del 2700 con la capacidad extra de los módulos profundos.",
     features: [
-      "Estructura metálica de alta resistencia",
-      "Sistema deslizante con guías de precisión",
-      "Módulos móviles con cerradura opcional",
-      "Compatible con todos los accesorios Sliderack",
-      "Fabricado en España por Esnova Racks",
+      "4 armarios deslizantes con 12 baldas de 470 mm",
+      "Capacidad de 150 kg por módulo con deslizamiento suave",
+      "Ideal para kits de reparación y repuestos voluminosos",
+      "Kit de cajones divisorios disponible para piezas pequeñas",
+      "Fabricado en España con certificación ISO 9001",
     ],
     specs: [
       { label: "Ancho de la estantería", value: "2965 mm" },
@@ -245,13 +245,13 @@ export const products: Product[] = [
     badge: "1 Nivel · Prof. 470",
     shortDesc: "3600 × 470 mm",
     description:
-      "El sistema deslizante de mayor capacidad en un solo nivel con profundidad extendida. Máximo almacenaje para instalaciones que requieren módulos de gran fondo.",
+      "Máxima capacidad en un nivel con módulos profundos: 6 armarios deslizantes y 18 baldas de 470 mm. Diseñado para almacenes industriales y centros de mantenimiento que gestionan grandes volúmenes de material pesado o voluminoso. La solución cuando necesitas el máximo almacenaje sin recurrir a un segundo nivel.",
     features: [
-      "Estructura metálica de alta resistencia",
-      "Sistema deslizante con guías de precisión",
-      "Módulos móviles con cerradura opcional",
-      "Compatible con todos los accesorios Sliderack",
-      "Fabricado en España por Esnova Racks",
+      "6 armarios deslizantes con 18 baldas de 470 mm",
+      "Máxima capacidad en un nivel de toda la gama",
+      "Para almacenes industriales y centros de mantenimiento",
+      "Paneles de malla metálica para ventilación del material",
+      "Estructura reforzada con acero laminado en frío",
     ],
     specs: [
       { label: "Ancho de la estantería", value: "3865 mm" },
@@ -290,13 +290,13 @@ export const products: Product[] = [
     badge: "2 Niveles",
     shortDesc: "1825 × 370 mm · 2 Niveles",
     description:
-      "Sistema de dos niveles para duplicar la capacidad de almacenaje. Nivel inferior deslizante con nivel superior fijo para cajas y materiales pesados.",
+      "Duplica la capacidad del modelo compacto con un segundo nivel de almacenaje fijo sobre los módulos deslizantes. El nivel inferior mantiene los 3 armarios deslizantes con 9 baldas accesibles con un dedo; el nivel superior añade almacenaje estático para cajas, material de uso menos frecuente o stock de reserva. Altura total de 3505 mm.",
     features: [
-      "Dos niveles de almacenaje",
-      "Nivel inferior deslizante, superior fijo",
-      "Estructura reforzada para cargas pesadas",
-      "Compatible con todos los accesorios Sliderack",
-      "Fabricado en España por Esnova Racks",
+      "3 armarios deslizantes (nivel inferior) + almacenaje fijo (superior)",
+      "Altura total 3505 mm — aprovecha el espacio vertical",
+      "Estructura reforzada para soportar doble carga",
+      "Ideal para talleres con techos altos y espacio en planta limitado",
+      "Compatible con escaleras y plataformas de acceso",
     ],
     specs: [
       { label: "Ancho de la estantería", value: "2090 mm" },
@@ -334,13 +334,13 @@ export const products: Product[] = [
     badge: "2 Niveles",
     shortDesc: "2700 × 370 mm · 2 Niveles",
     description:
-      "Máxima capacidad en dos niveles. Configuración ideal para almacenes, talleres industriales y entornos con alta densidad de materiales.",
+      "El modelo de dos niveles más versátil de la gama. 5 módulos deslizantes con 15 baldas en el nivel inferior, más almacenaje fijo en el superior. Perfecto para talleres industriales que necesitan organizar herramientas de uso diario abajo y stock de repuestos o materiales pesados arriba, maximizando cada metro cuadrado de pared disponible.",
     features: [
-      "Dos niveles de almacenaje",
-      "Nivel inferior deslizante, superior fijo",
-      "Estructura reforzada para cargas pesadas",
-      "Compatible con todos los accesorios Sliderack",
-      "Fabricado en España por Esnova Racks",
+      "5 armarios deslizantes + nivel superior fijo (30 baldas totales)",
+      "El modelo de 2 niveles más elegido por talleres industriales",
+      "6 paneles de malla para separación y ventilación",
+      "Módulos de ampliación disponibles para crecer en horizontal",
+      "Fabricado en España con certificaciones ISO 9001 y 14001",
     ],
     specs: [
       { label: "Ancho de la estantería", value: "2965 mm" },
@@ -378,13 +378,13 @@ export const products: Product[] = [
     badge: "2 Niveles",
     shortDesc: "3600 × 370 mm · 2 Niveles",
     description:
-      "El sistema más grande de la gama Sliderack. Dos niveles de almacenaje con la máxima capacidad para instalaciones de gran escala.",
+      "El sistema de mayor capacidad total de la gama Sliderack. 7 módulos deslizantes con 21 baldas en el nivel inferior y almacenaje fijo completo en el superior. Diseñado para parques de bomberos, centros logísticos y grandes instalaciones industriales donde se gestiona un alto volumen de equipamiento, EPIs o materiales de intervención que deben estar siempre localizables.",
     features: [
-      "Dos niveles de almacenaje",
-      "Nivel inferior deslizante, superior fijo",
-      "Estructura reforzada para cargas pesadas",
-      "Compatible con todos los accesorios Sliderack",
-      "Fabricado en España por Esnova Racks",
+      "7 armarios deslizantes + nivel superior (42 baldas totales)",
+      "El sistema de mayor capacidad de toda la gama Sliderack",
+      "8 paneles de malla metálica para organización visual",
+      "Ideal para parques de bomberos y centros logísticos",
+      "Estructura reforzada con acero de alta resistencia",
     ],
     specs: [
       { label: "Ancho de la estantería", value: "3865 mm" },
@@ -423,13 +423,13 @@ export const products: Product[] = [
     badge: "2 Niveles · Prof. 470",
     shortDesc: "1825 × 470 mm · 2 Niveles",
     description:
-      "Sistema de dos niveles con profundidad extendida de 470 mm. Duplica la capacidad de almacenaje con módulos de mayor fondo para materiales voluminosos.",
+      "El modelo más compacto de dos niveles con profundidad extendida. 2 armarios deslizantes de 470 mm en el nivel inferior para equipos voluminosos, más almacenaje fijo superior. La solución cuando necesitas almacenar material grande en un espacio reducido con acceso desde un solo punto de pared.",
     features: [
-      "Dos niveles de almacenaje",
-      "Nivel inferior deslizante, superior fijo",
-      "Estructura reforzada para cargas pesadas",
-      "Compatible con todos los accesorios Sliderack",
-      "Fabricado en España por Esnova Racks",
+      "2 armarios de 470 mm (inferior) + almacenaje fijo (superior)",
+      "Profundidad extra para equipos voluminosos y cajas grandes",
+      "Altura total 3505 mm — máximo aprovechamiento vertical",
+      "Cerradura con llave disponible para seguridad del material",
+      "Puesto de trabajo integrable en el lateral",
     ],
     specs: [
       { label: "Ancho de la estantería", value: "2090 mm" },
@@ -467,13 +467,13 @@ export const products: Product[] = [
     badge: "2 Niveles · Prof. 470",
     shortDesc: "2700 × 470 mm · 2 Niveles",
     description:
-      "Dos niveles de almacenaje con profundidad extendida de 470 mm. Configuración ideal para entornos industriales que necesitan máxima capacidad por módulo.",
+      "4 módulos profundos deslizantes con 12 baldas de 470 mm en el nivel inferior, más capacidad fija arriba. El sistema preferido por servicios de mantenimiento industrial que manejan repuestos de gran tamaño, herramientas pesadas y equipos de diagnóstico que necesitan fondo extra. Combina capacidad máxima con organización profesional.",
     features: [
-      "Dos niveles de almacenaje",
-      "Nivel inferior deslizante, superior fijo",
-      "Estructura reforzada para cargas pesadas",
-      "Compatible con todos los accesorios Sliderack",
-      "Fabricado en España por Esnova Racks",
+      "4 armarios de 470 mm + nivel superior fijo (24 baldas)",
+      "Profundidad extendida para repuestos y equipos voluminosos",
+      "Ideal para servicios de mantenimiento industrial",
+      "Baldas adicionales disponibles para personalizar alturas",
+      "Módulos de ampliación para crecer horizontalmente",
     ],
     specs: [
       { label: "Ancho de la estantería", value: "2965 mm" },
@@ -511,13 +511,13 @@ export const products: Product[] = [
     badge: "2 Niveles · Prof. 470",
     shortDesc: "3600 × 470 mm · 2 Niveles",
     description:
-      "El sistema más grande de la gama Sliderack con profundidad extendida. Dos niveles y módulos de 470 mm de fondo para la máxima capacidad de almacenaje.",
+      "La configuración de máxima capacidad absoluta de toda la gama. 6 armarios profundos deslizantes con 18 baldas de 470 mm más nivel superior completo. Pensado para grandes instalaciones industriales, bases logísticas o centros de distribución donde cada metro cuadrado debe almacenar el máximo volumen posible de material pesado y voluminoso con acceso organizado.",
     features: [
-      "Dos niveles de almacenaje",
-      "Nivel inferior deslizante, superior fijo",
-      "Estructura reforzada para cargas pesadas",
-      "Compatible con todos los accesorios Sliderack",
-      "Fabricado en España por Esnova Racks",
+      "6 armarios de 470 mm + nivel superior (36 baldas totales)",
+      "Configuración de máxima capacidad absoluta de la gama",
+      "8 paneles de malla para organización y ventilación",
+      "Para bases logísticas y centros de distribución",
+      "Estructura de acero reforzado con tratamiento anticorrosión",
     ],
     specs: [
       { label: "Ancho de la estantería", value: "3865 mm" },
