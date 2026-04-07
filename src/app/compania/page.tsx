@@ -54,17 +54,20 @@ export default function CompaniaPage() {
 
         {/* Ingeniería, fabricación y experiencia */}
         <section className="bg-white px-6 py-20">
-          <div className="mx-auto max-w-[1100px] grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+          <div className="mx-auto max-w-[1100px] grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] gap-14">
+            {/* Left: Foto vertical */}
             <ScrollReveal direction="left">
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+              <div className="relative rounded-2xl overflow-hidden h-full min-h-[500px]">
                 <Image
-                  src="/images/sliderack/photos/taller-completo.jpg"
-                  alt="Instalación de estanterías deslizantes Sliderack en un entorno industrial"
+                  src="/images/sliderack/photos/sistema-completo.jpg"
+                  alt="Vista completa del sistema de estanterías deslizantes Sliderack"
                   fill
                   className="object-cover"
                 />
               </div>
             </ScrollReveal>
+
+            {/* Right: Texto + Timeline */}
             <ScrollReveal direction="right">
               <div>
                 <h2 className="font-[family-name:var(--font-heading)] text-[28px] md:text-[36px] font-bold uppercase leading-[1.15] text-[#201F20] mb-6">
@@ -73,40 +76,36 @@ export default function CompaniaPage() {
                 <p className="font-[family-name:var(--font-body)] text-[16px] leading-relaxed text-[#666] mb-4">
                   Sliderack forma parte de Esnova Racks, empresa española con más de +50 años de experiencia en el diseño y fabricación de sistemas de almacenaje industrial.
                 </p>
-                <p className="font-[family-name:var(--font-body)] text-[16px] leading-relaxed text-[#666]">
+                <p className="font-[family-name:var(--font-body)] text-[16px] leading-relaxed text-[#666] mb-10">
                   A lo largo de su trayectoria, Esnova ha desarrollado soluciones para múltiples sectores, consolidando un modelo de trabajo basado en la calidad, la innovación y la eficiencia operativa.
                 </p>
-              </div>
-            </ScrollReveal>
-          </div>
 
-          {/* Timeline centrado */}
-          <div className="mx-auto max-w-[600px] mt-16">
-            <ScrollReveal>
-              <div className="relative">
-                <div className="absolute left-[22px] top-0 bottom-0 w-px bg-gray-200" />
-                <div className="flex flex-col gap-6">
-                  {[
-                    { year: "1969", text: "Fundación de Esnova en Gijón, Asturias" },
-                    { year: "1980s", text: "Expansión nacional en almacenaje industrial" },
-                    { year: "2000s", text: "Certificaciones ISO 9001, 14001 y 45001" },
-                    { year: "2010s", text: "Marcado CE (UNE EN 1090) y exportación europea" },
-                    { year: "2024", text: "Lanzamiento de Sliderack" },
-                  ].map((m) => (
-                    <div key={m.year} className="flex gap-5 items-start">
-                      <div className="relative z-10 w-[40px] h-[40px] rounded-full bg-white border-2 border-[#A52430] flex items-center justify-center shrink-0">
-                        <div className="w-2 h-2 rounded-full bg-[#A52430]" />
+                {/* Timeline */}
+                <div className="relative">
+                  <div className="absolute left-[18px] top-0 bottom-0 w-px bg-gray-200" />
+                  <div className="flex flex-col gap-5">
+                    {[
+                      { year: "1969", text: "Fundación de Esnova en Gijón, Asturias" },
+                      { year: "1980s", text: "Expansión nacional en almacenaje industrial" },
+                      { year: "2000s", text: "Certificaciones ISO 9001, 14001 y 45001" },
+                      { year: "2010s", text: "Marcado CE (UNE EN 1090) y exportación europea" },
+                      { year: "2024", text: "Lanzamiento de Sliderack" },
+                    ].map((m) => (
+                      <div key={m.year} className="flex gap-4 items-start">
+                        <div className="relative z-10 w-[36px] h-[36px] rounded-full bg-white border-2 border-[#A52430] flex items-center justify-center shrink-0">
+                          <div className="w-2 h-2 rounded-full bg-[#A52430]" />
+                        </div>
+                        <div className="pt-1">
+                          <span className="font-[family-name:var(--font-heading)] text-[15px] font-bold text-[#A52430]">
+                            {m.year}
+                          </span>
+                          <p className="font-[family-name:var(--font-body)] text-[13px] text-[#666] mt-0.5">
+                            {m.text}
+                          </p>
+                        </div>
                       </div>
-                      <div className="pt-1.5">
-                        <span className="font-[family-name:var(--font-heading)] text-[16px] font-bold text-[#A52430]">
-                          {m.year}
-                        </span>
-                        <p className="font-[family-name:var(--font-body)] text-[14px] text-[#666] mt-0.5">
-                          {m.text}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
               </div>
             </ScrollReveal>
