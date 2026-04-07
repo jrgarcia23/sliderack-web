@@ -135,8 +135,8 @@ export default function CompaniaPage() {
             <ScrollReveal direction="left">
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
-                  src="/images/sliderack/photos/garaje-bmw.jpg"
-                  alt="Sistema Sliderack instalado en un garaje premium con vehículo de alta gama"
+                  src="/images/sliderack/photos/sliderack-detalle.jpg"
+                  alt="Detalle del sistema de estanterías deslizantes Sliderack de Esnova Racks"
                   fill
                   className="object-cover"
                 />
