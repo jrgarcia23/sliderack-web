@@ -68,12 +68,30 @@ const reasons = [
 ];
 
 const sectors = [
-  { name: "Talleres mecánicos", desc: "Herramientas organizadas y accesibles" },
-  { name: "Garajes premium", desc: "Almacenaje elegante y funcional" },
-  { name: "Servicios de emergencia", desc: "Equipamiento siempre localizable" },
-  { name: "Industria", desc: "Componentes y recambios en orden" },
-  { name: "Centros logísticos", desc: "Optimización del espacio disponible" },
-  { name: "Laboratorios", desc: "Precisión en el almacenaje de materiales" },
+  {
+    name: "Talleres mecánicos y de automoción",
+    desc: "Llaves, vasos, herramientas eléctricas y recambios organizados por tipo y tamaño. Acceso inmediato a cada pieza sin mover otras estanterías. El sistema deslizante reduce los tiempos muertos y mejora la productividad del equipo.",
+  },
+  {
+    name: "Garajes premium y viviendas de alto standing",
+    desc: "Almacenaje que combina estética y funcionalidad en espacios donde el diseño importa. Acabado Negro Mate RAL-9005, movimiento silencioso y módulos que se integran como mobiliario de alta gama.",
+  },
+  {
+    name: "Servicios de emergencia y bomberos",
+    desc: "EPIs, equipos de intervención y material operativo siempre localizable y protegido con cerradura. En situaciones de emergencia, cada segundo cuenta: Sliderack garantiza acceso rápido y seguro al equipamiento crítico.",
+  },
+  {
+    name: "Industria y mantenimiento técnico",
+    desc: "Componentes, repuestos y utillaje de producción clasificados por línea o turno. El almacenaje compacto deslizante libera superficie en planta sin sacrificar capacidad de almacenamiento.",
+  },
+  {
+    name: "Centros logísticos y almacenes",
+    desc: "Maximiza la capacidad de almacenaje eliminando pasillos fijos entre estanterías. Ideal para espacios donde cada metro cuadrado tiene un coste elevado y la organización impacta directamente en la eficiencia operativa.",
+  },
+  {
+    name: "Laboratorios y centros de investigación",
+    desc: "Almacenaje de precisión para muestras, reactivos, instrumentación y documentación técnica. El sistema deslizante protege materiales sensibles y facilita el control de inventario en entornos con protocolos estrictos.",
+  },
 ];
 
 export default function PorQueSliderack() {
