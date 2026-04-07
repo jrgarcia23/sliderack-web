@@ -2,14 +2,33 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Blog",
-  description: "Art\u00edculos sobre almacenaje, organizaci\u00f3n de talleres y soluciones Sliderack.",
-  robots: { index: false, follow: false },
+  title: "Blog de Almacenaje y Organizaci\u00f3n Industrial",
+  description:
+    "Art\u00edculos sobre almacenaje industrial, organizaci\u00f3n de talleres, estanter\u00edas deslizantes y soluciones de almacenamiento profesional. Por Sliderack.",
+  robots: { index: true, follow: true },
+};
+
+const blogSchema = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  name: "Blog Sliderack",
+  description:
+    "Art\u00edculos sobre almacenaje industrial, organizaci\u00f3n de talleres y soluciones de almacenamiento profesional.",
+  url: "https://sliderack.es/blog",
+  publisher: {
+    "@type": "Organization",
+    name: "Sliderack",
+    url: "https://sliderack.es",
+  },
 };
 
 export default function BlogPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+      />
       <Header />
       <main className="bg-white px-6 py-20">
         <div className="mx-auto max-w-[900px] text-center">
