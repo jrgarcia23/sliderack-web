@@ -3,8 +3,8 @@ import Footer from "@/components/Footer";
 import CookiePreferencesPanel from "./CookiePreferencesPanel";
 
 export const metadata = {
-  title: "Pol\u00edtica de Cookies",
-  description: "Pol\u00edtica de cookies del sitio web Sliderack (Esnova Racks). Consulta qu\u00e9 cookies utilizamos y configura tus preferencias.",
+  title: "Política de Cookies",
+  description: "Política de cookies del sitio web Sliderack (Esnova Racks). Consulta qué cookies utilizamos y configura tus preferencias.",
 };
 
 export default function PoliticaCookies() {

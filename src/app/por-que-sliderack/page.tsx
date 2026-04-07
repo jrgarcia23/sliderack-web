@@ -5,9 +5,9 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata = {
-  title: "Por qu\u00e9 Elegir Sliderack",
+  title: "Por qué Elegir Sliderack",
   description:
-    "Descubre por qu\u00e9 Sliderack es el sistema de almacenaje deslizante elegido por talleres, garajes premium y servicios de emergencia en toda Europa.",
+    "Descubre por qué Sliderack es el sistema de almacenaje deslizante elegido por talleres, garajes premium y servicios de emergencia en toda Europa.",
 };
 
 const reasons = [
@@ -17,8 +17,8 @@ const reasons = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
       </svg>
     ),
-    title: "Fabricaci\u00f3n espa\u00f1ola certificada",
-    desc: "Dise\u00f1ado y fabricado en Espa\u00f1a por Esnova Racks, empresa con m\u00e1s de 50 a\u00f1os de experiencia. Certificaciones ISO 9001, ISO 14001, ISO 45001 y UNE EN 1090 (Marcado CE).",
+    title: "Fabricación española certificada",
+    desc: "Diseñado y fabricado en España por Esnova Racks, empresa con más de 50 años de experiencia. Certificaciones ISO 9001, ISO 14001, ISO 45001 y UNE EN 1090 (Marcado CE).",
   },
   {
     icon: (
@@ -26,8 +26,8 @@ const reasons = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
       </svg>
     ),
-    title: "Mecanismo deslizante de precisi\u00f3n",
-    desc: "Gu\u00edas de alta precisi\u00f3n que permiten deslizar m\u00f3dulos de hasta 150 kg con un solo dedo. Movimiento suave, silencioso y sin esfuerzo, incluso a plena carga.",
+    title: "Mecanismo deslizante de precisión",
+    desc: "Guías de alta precisión que permiten deslizar módulos de hasta 150 kg con un solo dedo. Movimiento suave, silencioso y sin esfuerzo, incluso a plena carga.",
   },
   {
     icon: (
@@ -45,7 +45,7 @@ const reasons = [
       </svg>
     ),
     title: "Aprovecha el 100% del espacio",
-    desc: "El sistema deslizante elimina los pasillos fijos entre estanter\u00edas. Accede a cualquier m\u00f3dulo deslizando lateralmente. Mismo almacenaje en la mitad de espacio.",
+    desc: "El sistema deslizante elimina los pasillos fijos entre estanterías. Accede a cualquier módulo deslizando lateralmente. Mismo almacenaje en la mitad de espacio.",
   },
   {
     icon: (
@@ -54,7 +54,7 @@ const reasons = [
       </svg>
     ),
     title: "Estructura de acero de alta resistencia",
-    desc: "Estructura met\u00e1lica con tratamiento anticorrosi\u00f3n, dise\u00f1ada para soportar cargas pesadas en entornos industriales exigentes. Durabilidad garantizada.",
+    desc: "Estructura metálica con tratamiento anticorrosión, diseñada para soportar cargas pesadas en entornos industriales exigentes. Durabilidad garantizada.",
   },
   {
     icon: (
@@ -62,18 +62,18 @@ const reasons = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
       </svg>
     ),
-    title: "Dise\u00f1o que cuida cada detalle",
-    desc: "Acabados premium, tiradores ergon\u00f3micos en rojo caracter\u00edstico, paneles perforados opcionales y cierre con llave. Un sistema que se integra en cualquier entorno.",
+    title: "Diseño que cuida cada detalle",
+    desc: "Acabados premium, tiradores ergonómicos en rojo característico, paneles perforados opcionales y cierre con llave. Un sistema que se integra en cualquier entorno.",
   },
 ];
 
 const sectors = [
-  { name: "Talleres mec\u00e1nicos", desc: "Herramientas organizadas y accesibles" },
+  { name: "Talleres mecánicos", desc: "Herramientas organizadas y accesibles" },
   { name: "Garajes premium", desc: "Almacenaje elegante y funcional" },
   { name: "Servicios de emergencia", desc: "Equipamiento siempre localizable" },
   { name: "Industria", desc: "Componentes y recambios en orden" },
-  { name: "Centros log\u00edsticos", desc: "Optimizaci\u00f3n del espacio disponible" },
-  { name: "Laboratorios", desc: "Precisi\u00f3n en el almacenaje de materiales" },
+  { name: "Centros logísticos", desc: "Optimización del espacio disponible" },
+  { name: "Laboratorios", desc: "Precisión en el almacenaje de materiales" },
 ];
 
 export default function PorQueSliderack() {

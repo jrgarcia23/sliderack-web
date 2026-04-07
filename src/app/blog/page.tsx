@@ -2,9 +2,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Blog de Almacenaje y Organizaci\u00f3n Industrial",
+  title: "Blog de Almacenaje y Organización Industrial",
   description:
-    "Art\u00edculos sobre almacenaje industrial, organizaci\u00f3n de talleres, estanter\u00edas deslizantes y soluciones de almacenamiento profesional. Por Sliderack.",
+    "Artículos sobre almacenaje industrial, organización de talleres, estanterías deslizantes y soluciones de almacenamiento profesional. Por Sliderack.",
   robots: { index: true, follow: true },
 };
 
@@ -13,7 +13,7 @@ const blogSchema = {
   "@type": "Blog",
   name: "Blog Sliderack",
   description:
-    "Art\u00edculos sobre almacenaje industrial, organizaci\u00f3n de talleres y soluciones de almacenamiento profesional.",
+    "Artículos sobre almacenaje industrial, organización de talleres y soluciones de almacenamiento profesional.",
   url: "https://sliderack.es/blog",
   publisher: {
     "@type": "Organization",

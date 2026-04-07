@@ -8,7 +8,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Sistemas de Almacenaje Deslizante",
   description:
-    "Descubre los sistemas de estanter\u00edas deslizantes Sliderack. Configura tu almacenaje seg\u00fan el espacio y las necesidades de tu proyecto.",
+    "Descubre los sistemas de estanterías deslizantes Sliderack. Configura tu almacenaje según el espacio y las necesidades de tu proyecto.",
 };
 
 export default function SistemasPage() {

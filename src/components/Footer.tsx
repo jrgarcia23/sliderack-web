@@ -4,8 +4,8 @@ import Link from "next/link";
 const navLinks = [
   { label: "Modelos", href: "/sistemas" },
   { label: "Accesorios", href: "/accesorios" },
-  { label: "Por qu\u00e9 Sliderack", href: "/por-que-sliderack" },
-  { label: "Compa\u00f1\u00eda", href: "/compania" },
+  { label: "Por qué Sliderack", href: "/por-que-sliderack" },
+  { label: "Compañía", href: "/compania" },
   { label: "Contacto", href: "/contacto" },
 ];
 
@@ -48,8 +48,8 @@ export default function Footer() {
             className="font-[family-name:var(--font-heebo)] text-[14px] leading-relaxed"
             style={{ color: "rgba(255,255,255,0.7)" }}
           >
-            Sliderack forma parte de Esnova Racks, empresa espa\u00f1ola con m\u00e1s de
-            50 a\u00f1os de experiencia en el dise\u00f1o y fabricaci\u00f3n de sistemas de
+            Sliderack forma parte de Esnova Racks, empresa española con más de
+            50 años de experiencia en el diseño y fabricación de sistemas de
             almacenaje industrial.
           </p>
         </div>
@@ -64,7 +64,7 @@ export default function Footer() {
             style={{ color: "rgba(255,255,255,0.7)" }}
           >
             <p>
-              Tel\u00e9fono Sliderack:{" "}
+              Teléfono Sliderack:{" "}
               <a
                 href="tel:+34985308980"
                 className="text-white hover:underline"
@@ -73,7 +73,7 @@ export default function Footer() {
               </a>
             </p>
             <p>
-              Tel\u00e9fono Esnova:{" "}
+              Teléfono Esnova:{" "}
               <a
                 href="tel:+34985308980"
                 className="text-white hover:underline"
@@ -84,10 +84,10 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Column 3 - Navegaci\u00f3n */}
+        {/* Column 3 - Navegación */}
         <div>
           <h3 className="font-[family-name:var(--font-rajdhani)] text-[20px] font-bold uppercase text-white mb-4">
-            Navegaci\u00f3n
+            Navegación
           </h3>
           <ul className="space-y-2">
             {navLinks.map((link) => (
@@ -132,8 +132,8 @@ export default function Footer() {
         <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
           {[
             { label: "Aviso Legal", href: "/aviso-legal" },
-            { label: "Pol\u00edtica de Privacidad", href: "/politica-de-privacidad" },
-            { label: "Pol\u00edtica de Cookies", href: "/politica-de-cookies" },
+            { label: "Política de Privacidad", href: "/politica-de-privacidad" },
+            { label: "Política de Cookies", href: "/politica-de-cookies" },
           ].map((link) => (
             <Link
               key={link.href}

@@ -6,7 +6,7 @@ export function OrganizationSchema() {
     url: "https://sliderack.es",
     logo: "https://sliderack.es/images/sliderack/logo.webp",
     description:
-      "Sistema de almacenaje deslizante de alta precisi\u00f3n, dise\u00f1ado y fabricado en Espa\u00f1a por Esnova Racks.",
+      "Sistema de almacenaje deslizante de alta precisión, diseñado y fabricado en España por Esnova Racks.",
     parentOrganization: {
       "@type": "Organization",
       name: "Esnova Racks",
@@ -15,7 +15,7 @@ export function OrganizationSchema() {
     address: {
       "@type": "PostalAddress",
       streetAddress: "C/ Ataulfo Friera Tarfe, 5",
-      addressLocality: "Gij\u00f3n",
+      addressLocality: "Gijón",
       addressRegion: "Asturias",
       postalCode: "33211",
       addressCountry: "ES",

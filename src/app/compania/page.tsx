@@ -5,27 +5,27 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata = {
-  title: "Sobre Esnova Racks \u2014 Fabricante Espa\u00f1ol",
+  title: "Sobre Esnova Racks — Fabricante Español",
   description:
-    "Sliderack es una marca de Esnova Racks, empresa espa\u00f1ola con m\u00e1s de 50 a\u00f1os dise\u00f1ando y fabricando sistemas de almacenaje industrial.",
+    "Sliderack es una marca de Esnova Racks, empresa española con más de 50 años diseñando y fabricando sistemas de almacenaje industrial.",
 };
 
 const milestones = [
-  { year: "1969", text: "Fundaci\u00f3n de Esnova en Gij\u00f3n, Asturias" },
-  { year: "1980s", text: "Expansi\u00f3n nacional en almacenaje industrial" },
+  { year: "1969", text: "Fundación de Esnova en Gijón, Asturias" },
+  { year: "1980s", text: "Expansión nacional en almacenaje industrial" },
   { year: "2000s", text: "Certificaciones ISO 9001, 14001 y 45001" },
-  { year: "2010s", text: "Marcado CE (UNE EN 1090) y exportaci\u00f3n europea" },
-  { year: "2024", text: "Lanzamiento de Sliderack: almacenaje deslizante de precisi\u00f3n" },
+  { year: "2010s", text: "Marcado CE (UNE EN 1090) y exportación europea" },
+  { year: "2024", text: "Lanzamiento de Sliderack: almacenaje deslizante de precisión" },
 ];
 
 const certs = [
   {
     name: "ISO 9001",
-    desc: "Gesti\u00f3n de calidad",
+    desc: "Gestión de calidad",
   },
   {
     name: "ISO 14001",
-    desc: "Gesti\u00f3n ambiental",
+    desc: "Gestión ambiental",
   },
   {
     name: "ISO 45001",
@@ -33,22 +33,22 @@ const certs = [
   },
   {
     name: "UNE EN 1090",
-    desc: "Marcado CE \u2014 Estructuras met\u00e1licas",
+    desc: "Marcado CE — Estructuras metálicas",
   },
 ];
 
 const values = [
   {
-    title: "Precisi\u00f3n",
-    desc: "Cada componente fabricado con tolerancias m\u00ednimas. El mecanismo deslizante es el resultado de d\u00e9cadas de ingenier\u00eda aplicada.",
+    title: "Precisión",
+    desc: "Cada componente fabricado con tolerancias mínimas. El mecanismo deslizante es el resultado de décadas de ingeniería aplicada.",
   },
   {
     title: "Robustez",
-    desc: "Acero de alta resistencia con tratamiento anticorrosi\u00f3n. Nuestros sistemas est\u00e1n dise\u00f1ados para entornos industriales exigentes.",
+    desc: "Acero de alta resistencia con tratamiento anticorrosión. Nuestros sistemas están diseñados para entornos industriales exigentes.",
   },
   {
     title: "Sencillez",
-    desc: "La fortaleza de la sencillez. Un sistema intuitivo que no necesita formaci\u00f3n ni mantenimiento complejo.",
+    desc: "La fortaleza de la sencillez. Un sistema intuitivo que no necesita formación ni mantenimiento complejo.",
   },
 ];
 
@@ -104,7 +104,7 @@ export default function CompaniaPage() {
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
                   src="/images/sliderack/photos/taller-completo.jpg"
-                  alt="Instalaci\u00f3n Sliderack en taller"
+                  alt="Instalación Sliderack en taller"
                   fill
                   className="object-cover"
                 />

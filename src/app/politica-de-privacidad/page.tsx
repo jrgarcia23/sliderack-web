@@ -2,9 +2,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Pol\u00edtica de Privacidad",
+  title: "Política de Privacidad",
   description:
-    "Pol\u00edtica de privacidad y protecci\u00f3n de datos personales de Sliderack, marca de Esnova Racks (NIF A33880931). RGPD.",
+    "Política de privacidad y protección de datos personales de Sliderack, marca de Esnova Racks (NIF A33880931). RGPD.",
 };
 
 export default function PoliticaPrivacidad() {

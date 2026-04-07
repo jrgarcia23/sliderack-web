@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Gracias por tu consulta",
-  description: "Hemos recibido tu solicitud. Nuestro equipo t\u00e9cnico te contactar\u00e1 en 24-48h.",
+  description: "Hemos recibido tu solicitud. Nuestro equipo técnico te contactará en 24-48h.",
   robots: { index: false, follow: false },
 };
 
