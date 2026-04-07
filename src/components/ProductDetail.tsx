@@ -181,14 +181,14 @@ export default function ProductDetail({
               {/* CTA buttons — side by side */}
               <div className="grid grid-cols-2 gap-3 mb-5">
                 <Link
-                  href="/contacto"
+                  href={`/contacto?modelo=${product.slug}`}
                   className="bg-[#A52430] text-white text-center px-4 py-3.5 rounded-lg hover:bg-[#8a1e28] transition-colors uppercase tracking-[1px]"
                   style={{ fontFamily: "var(--font-rajdhani)", fontSize: 14, fontWeight: 700 }}
                 >
                   Solicitar información
                 </Link>
                 <Link
-                  href="/contacto"
+                  href={`/contacto?modelo=${product.slug}`}
                   className="border-2 border-[#A52430] text-[#A52430] text-center px-4 py-3.5 rounded-lg hover:bg-[#A52430] hover:text-white transition-colors uppercase tracking-[1px]"
                   style={{ fontFamily: "var(--font-rajdhani)", fontSize: 14, fontWeight: 700 }}
                 >
