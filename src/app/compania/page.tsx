@@ -10,46 +10,11 @@ export const metadata = {
     "Sliderack es una marca de Esnova Racks, empresa española con más de +50 años diseñando y fabricando sistemas de almacenaje industrial.",
 };
 
-const milestones = [
-  { year: "1969", text: "Fundación de Esnova en Gijón, Asturias" },
-  { year: "1980s", text: "Expansión nacional en almacenaje industrial" },
-  { year: "2000s", text: "Certificaciones ISO 9001, 14001 y 45001" },
-  { year: "2010s", text: "Marcado CE (UNE EN 1090) y exportación europea" },
-  { year: "2024", text: "Lanzamiento de Sliderack: almacenaje deslizante de precisión" },
-];
-
 const certs = [
-  {
-    name: "ISO 9001",
-    desc: "Gestión de calidad",
-  },
-  {
-    name: "ISO 14001",
-    desc: "Gestión ambiental",
-  },
-  {
-    name: "ISO 45001",
-    desc: "Seguridad y salud laboral",
-  },
-  {
-    name: "UNE EN 1090",
-    desc: "Marcado CE — Estructuras metálicas",
-  },
-];
-
-const values = [
-  {
-    title: "Precisión",
-    desc: "Cada componente fabricado con tolerancias mínimas. El mecanismo deslizante es el resultado de décadas de ingeniería aplicada.",
-  },
-  {
-    title: "Robustez",
-    desc: "Acero de alta resistencia con tratamiento anticorrosión. Nuestros sistemas están diseñados para entornos industriales exigentes.",
-  },
-  {
-    title: "Sencillez",
-    desc: "La fortaleza de la sencillez. Un sistema intuitivo que no necesita formación ni mantenimiento complejo.",
-  },
+  { name: "ISO 9001", desc: "Gestión de calidad" },
+  { name: "ISO 14001", desc: "Gestión ambiental" },
+  { name: "ISO 45001", desc: "Seguridad y salud laboral" },
+  { name: "UNE EN 1090", desc: "Marcado CE — Estructuras metálicas" },
 ];
 
 export default function CompaniaPage() {
@@ -59,7 +24,7 @@ export default function CompaniaPage() {
       <main>
         {/* Hero */}
         <section
-          className="relative h-[300px] md:h-[400px] flex items-center justify-center"
+          className="relative h-[350px] md:h-[450px] flex items-center justify-center"
           style={{
             backgroundImage: 'url("/images/sliderack/bg/instalacion-taller.jpg")',
             backgroundSize: "cover",
@@ -68,114 +33,121 @@ export default function CompaniaPage() {
         >
           <div className="absolute inset-0 bg-black/60" />
           <div className="relative z-10 text-center px-6">
-            <span className="mb-4 inline-block rounded-full bg-white/10 px-4 py-1.5 font-[family-name:var(--font-heading)] text-[13px] font-semibold uppercase tracking-[2px] text-[#A52430]">
-              Sobre nosotros
-            </span>
             <h1 className="font-[family-name:var(--font-heading)] text-[36px] md:text-[52px] font-bold uppercase text-white">
-              Compa&ntilde;&iacute;a
+              Sobre nosotros
             </h1>
             <p className="mt-4 max-w-[550px] mx-auto font-[family-name:var(--font-body)] text-[17px] text-white/70">
-              M&aacute;s de 50 a&ntilde;os fabricando soluciones de almacenaje que funcionan.
+              Más de +50 años fabricando soluciones de almacenaje que funcionan.
             </p>
           </div>
-        </section>
-
-        {/* About */}
-        <section className="bg-white px-6 py-20">
-          <div className="mx-auto max-w-[1100px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <ScrollReveal>
-              <div>
-                <h2 className="font-[family-name:var(--font-heading)] text-[32px] md:text-[40px] font-bold uppercase leading-[1.1] text-[#201F20] mb-6">
-                  Esnova Racks: ingenier&iacute;a espa&ntilde;ola desde 1969
-                </h2>
-                <p className="font-[family-name:var(--font-body)] text-[16px] leading-relaxed text-[#666] mb-4">
-                  Esnova Racks naci&oacute; en Gij&oacute;n (Asturias) con una misi&oacute;n clara: dise&ntilde;ar y fabricar sistemas de almacenaje que resuelvan problemas reales en entornos industriales. Hoy contamos con una <strong className="text-[#201F20]">planta de producci&oacute;n de 46.600 m&sup2;</strong> y presencia en <strong className="text-[#201F20]">m&aacute;s de 45 pa&iacute;ses</strong>.
-                </p>
-                <p className="font-[family-name:var(--font-body)] text-[16px] leading-relaxed text-[#666] mb-4">
-                  Tras m&aacute;s de cinco d&eacute;cadas de experiencia, hemos canalizado toda esa ingenier&iacute;a en <strong className="text-[#201F20]">Sliderack</strong>: un sistema de almacenaje deslizante que combina la robustez del acero con la precisi&oacute;n de un mecanismo que funciona con un solo dedo.
-                </p>
-                <p className="font-[family-name:var(--font-body)] text-[16px] leading-relaxed text-[#666]">
-                  Todo nuestro proceso &mdash; desde el dise&ntilde;o hasta el montaje final &mdash; se realiza en Espa&ntilde;a con fabricaci&oacute;n propia, tecnolog&iacute;a de &uacute;ltima generaci&oacute;n y bajo los est&aacute;ndares de calidad m&aacute;s exigentes del sector.
-                </p>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal direction="right">
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-                <Image
-                  src="/images/sliderack/photos/taller-completo.jpg"
-                  alt="Instalación Sliderack en taller"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </ScrollReveal>
-          </div>
-        </section>
-
-        {/* Values */}
-        <section className="bg-[#f8f8f8] px-6 py-20">
-          <div className="mx-auto max-w-[1100px]">
-            <ScrollReveal>
-              <h2 className="text-center font-[family-name:var(--font-heading)] text-[32px] font-bold uppercase text-[#201F20] mb-12">
-                Nuestros valores
-              </h2>
-            </ScrollReveal>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {values.map((v, i) => (
-                <ScrollReveal key={v.title} delay={i * 100} direction="up">
-                  <div className="text-center">
-                    <h3 className="font-[family-name:var(--font-heading)] text-[24px] font-bold uppercase text-[#A52430] mb-3">
-                      {v.title}
-                    </h3>
-                    <p className="font-[family-name:var(--font-body)] text-[15px] leading-relaxed text-[#777]">
-                      {v.desc}
-                    </p>
-                  </div>
-                </ScrollReveal>
+          {/* Badges bar */}
+          <div className="absolute bottom-0 left-0 right-0 bg-black/40 backdrop-blur-sm border-t border-white/10">
+            <div className="mx-auto max-w-[1200px] px-6 py-3 flex flex-wrap items-center justify-center gap-6 md:gap-10">
+              {["Fabricado por Esnova Racks", "+50 años", "Producción propia certificada", "Tecnología industrial a medida"].map((badge) => (
+                <span key={badge} className="font-[family-name:var(--font-heading)] text-[12px] font-semibold uppercase tracking-[1.5px] text-white/80">
+                  {badge}
+                </span>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Timeline */}
+        {/* Ingeniería, fabricación y experiencia */}
         <section className="bg-white px-6 py-20">
-          <div className="mx-auto max-w-[700px]">
-            <ScrollReveal>
-              <h2 className="text-center font-[family-name:var(--font-heading)] text-[32px] font-bold uppercase text-[#201F20] mb-12">
-                Nuestra historia
-              </h2>
-            </ScrollReveal>
-
-            <div className="relative">
-              {/* Vertical line */}
-              <div className="absolute left-[22px] top-0 bottom-0 w-px bg-gray-200" />
-
-              <div className="flex flex-col gap-8">
-                {milestones.map((m, i) => (
-                  <ScrollReveal key={m.year} delay={i * 80}>
-                    <div className="flex gap-6 items-start">
-                      <div className="relative z-10 w-[45px] h-[45px] rounded-full bg-white border-2 border-[#A52430] flex items-center justify-center shrink-0">
-                        <div className="w-2.5 h-2.5 rounded-full bg-[#A52430]" />
-                      </div>
-                      <div className="pt-2">
-                        <span className="font-[family-name:var(--font-heading)] text-[18px] font-bold text-[#A52430]">
-                          {m.year}
-                        </span>
-                        <p className="font-[family-name:var(--font-body)] text-[15px] text-[#666] mt-1">
-                          {m.text}
-                        </p>
-                      </div>
-                    </div>
-                  </ScrollReveal>
-                ))}
+          <div className="mx-auto max-w-[1100px] grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+            <ScrollReveal direction="left">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                <Image
+                  src="/images/sliderack/photos/taller-completo.jpg"
+                  alt="Instalación de estanterías deslizantes Sliderack en un entorno industrial"
+                  fill
+                  className="object-cover"
+                />
               </div>
-            </div>
+            </ScrollReveal>
+            <ScrollReveal direction="right">
+              <div>
+                <h2 className="font-[family-name:var(--font-heading)] text-[28px] md:text-[36px] font-bold uppercase leading-[1.15] text-[#201F20] mb-6">
+                  Ingeniería, fabricación y experiencia al servicio del almacenaje
+                </h2>
+                <p className="font-[family-name:var(--font-body)] text-[16px] leading-relaxed text-[#666] mb-4">
+                  Sliderack forma parte de Esnova Racks, empresa española con más de +50 años de experiencia en el diseño y fabricación de sistemas de almacenaje industrial.
+                </p>
+                <p className="font-[family-name:var(--font-body)] text-[16px] leading-relaxed text-[#666]">
+                  A lo largo de su trayectoria, Esnova ha desarrollado soluciones para múltiples sectores, consolidando un modelo de trabajo basado en la calidad, la innovación y la eficiencia operativa.
+                </p>
+              </div>
+            </ScrollReveal>
           </div>
         </section>
 
-        {/* Certifications */}
+        {/* Fabricación propia */}
+        <section className="bg-[#f8f8f8] px-6 py-20">
+          <div className="mx-auto max-w-[900px]">
+            <ScrollReveal>
+              <h2 className="font-[family-name:var(--font-heading)] text-[28px] md:text-[36px] font-bold uppercase text-[#201F20] mb-6 leading-[1.15]">
+                Fabricación propia con enfoque industrial
+              </h2>
+              <p className="font-[family-name:var(--font-body)] text-[16px] leading-[1.8] text-[#555] mb-4">
+                La capacidad productiva de Esnova permite controlar todo el proceso, desde el diseño hasta la fabricación final. Esto garantiza sistemas robustos, precisos y adaptados a las exigencias de entornos profesionales.
+              </p>
+              <p className="font-[family-name:var(--font-body)] text-[16px] leading-[1.8] text-[#555]">
+                El uso de tecnología avanzada y procesos optimizados permite ofrecer soluciones fiables, pensadas para un uso intensivo y duradero. Nuestra planta de <strong className="text-[#201F20]">46.600 m²</strong> en Gijón (Asturias) opera con presencia en <strong className="text-[#201F20]">+45 países</strong>.
+              </p>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* Diseño funcional */}
+        <section className="bg-white px-6 py-20">
+          <div className="mx-auto max-w-[1100px] grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+            <ScrollReveal direction="left">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                <Image
+                  src="/images/sliderack/photos/garaje-bmw.jpg"
+                  alt="Sistema Sliderack instalado en un garaje premium con vehículo de alta gama"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </ScrollReveal>
+            <ScrollReveal direction="right">
+              <div>
+                <h2 className="font-[family-name:var(--font-heading)] text-[28px] md:text-[36px] font-bold uppercase leading-[1.15] text-[#201F20] mb-6">
+                  Diseño funcional orientado al rendimiento
+                </h2>
+                <p className="font-[family-name:var(--font-body)] text-[16px] leading-relaxed text-[#666] mb-4">
+                  Sliderack nace como una evolución del conocimiento industrial aplicado a espacios donde el orden y la accesibilidad son clave.
+                </p>
+                <p className="font-[family-name:var(--font-body)] text-[16px] leading-relaxed text-[#666] mb-4">
+                  Cada sistema está diseñado para optimizar el espacio disponible, facilitar el acceso a los materiales y mejorar la organización del entorno de trabajo.
+                </p>
+                <p className="font-[family-name:var(--font-body)] text-[16px] leading-relaxed text-[#666]">
+                  El resultado es una solución que combina estructura, funcionalidad y una estética técnica cuidada.
+                </p>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* Compromiso con la calidad */}
+        <section className="bg-[#f8f8f8] px-6 py-20">
+          <div className="mx-auto max-w-[900px]">
+            <ScrollReveal>
+              <h2 className="font-[family-name:var(--font-heading)] text-[28px] md:text-[36px] font-bold uppercase text-[#201F20] mb-6 leading-[1.15]">
+                Compromiso con la calidad y la mejora continua
+              </h2>
+              <p className="font-[family-name:var(--font-body)] text-[16px] leading-[1.8] text-[#555] mb-4">
+                La actividad de Esnova se desarrolla bajo estándares de calidad certificados, garantizando el cumplimiento de las normativas más exigentes.
+              </p>
+              <p className="font-[family-name:var(--font-body)] text-[16px] leading-[1.8] text-[#555]">
+                El enfoque de mejora continua permite evolucionar tanto en producto como en procesos, adaptándose a las necesidades de cada cliente y sector.
+              </p>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* Certificaciones */}
         <section className="bg-[#201F20] px-6 py-20">
           <div className="mx-auto max-w-[1100px]">
             <ScrollReveal>
@@ -183,7 +155,7 @@ export default function CompaniaPage() {
                 Certificaciones
               </h2>
               <p className="text-center font-[family-name:var(--font-body)] text-[15px] text-white/50 mb-12 max-w-[500px] mx-auto">
-                Todos nuestros procesos est&aacute;n certificados bajo los est&aacute;ndares internacionales m&aacute;s exigentes.
+                Todos nuestros procesos están certificados bajo los estándares internacionales más exigentes.
               </p>
             </ScrollReveal>
 
@@ -204,21 +176,43 @@ export default function CompaniaPage() {
           </div>
         </section>
 
+        {/* Base sólida */}
+        <section className="bg-white px-6 py-20">
+          <div className="mx-auto max-w-[900px]">
+            <ScrollReveal>
+              <h2 className="font-[family-name:var(--font-heading)] text-[28px] md:text-[36px] font-bold uppercase text-[#201F20] mb-6 leading-[1.15]">
+                Una base sólida para soluciones fiables
+              </h2>
+              <p className="font-[family-name:var(--font-body)] text-[16px] leading-[1.8] text-[#555] mb-4">
+                Sliderack representa la aplicación de una experiencia industrial consolidada en un sistema de almacenaje pensado para entornos técnicos y profesionales.
+              </p>
+              <p className="font-[family-name:var(--font-body)] text-[16px] leading-[1.8] text-[#555]">
+                Una solución que responde a una necesidad clara: organizar mejor, trabajar con mayor eficiencia y mantener el control del espacio.
+              </p>
+            </ScrollReveal>
+          </div>
+        </section>
+
         {/* CTA */}
-        <section className="border-t border-gray-100 bg-white px-6 py-20">
-          <div className="mx-auto max-w-[700px] text-center">
-            <h2 className="font-[family-name:var(--font-heading)] text-[28px] md:text-[36px] font-bold uppercase text-[#201F20] mb-4">
-              &iquest;Trabajamos juntos?
-            </h2>
-            <p className="font-[family-name:var(--font-body)] text-[16px] text-[#888] mb-8">
-              Cont&aacute;ctanos y descubre c&oacute;mo Sliderack puede transformar tu espacio de trabajo.
+        <section className="bg-[#A52430] px-6 py-14">
+          <div className="mx-auto max-w-[900px] text-center">
+            <p className="font-[family-name:var(--font-body)] text-[17px] text-white/90 mb-6">
+              Descubre cómo Sliderack puede adaptarse a tu espacio o solicita información a nuestro equipo técnico.
             </p>
-            <Link
-              href="/contacto"
-              className="inline-block rounded-lg bg-[#A52430] px-10 py-4 font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-white hover:bg-[#8a1e28] transition-colors"
-            >
-              Contactar
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Link
+                href="/contacto"
+                className="rounded-lg border-2 border-white px-10 py-4 font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-white hover:bg-white hover:text-[#A52430] transition-colors"
+              >
+                Contactar
+              </Link>
+              <Link
+                href="/sistemas"
+                className="rounded-lg border-2 border-white/30 px-10 py-4 font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-white hover:border-white transition-colors"
+              >
+                Ver modelos
+              </Link>
+            </div>
           </div>
         </section>
       </main>

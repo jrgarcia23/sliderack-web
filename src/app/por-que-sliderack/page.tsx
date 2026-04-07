@@ -10,42 +10,15 @@ export const metadata = {
     "Descubre por qué Sliderack es el sistema de almacenaje deslizante elegido por talleres, garajes premium y servicios de emergencia en toda Europa.",
 };
 
-const reasons = [
+const diferencias = [
   {
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
       </svg>
     ),
-    title: "Fabricación española certificada",
-    desc: "Diseñado y fabricado en España por Esnova Racks, empresa con más de 50 años de experiencia. Certificaciones ISO 9001, ISO 14001, ISO 45001 y UNE EN 1090 (Marcado CE).",
-  },
-  {
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
-      </svg>
-    ),
-    title: "Mecanismo deslizante de precisión",
-    desc: "Guías de alta precisión que permiten deslizar módulos de hasta 150 kg con un solo dedo. Movimiento suave, silencioso y sin esfuerzo, incluso a plena carga.",
-  },
-  {
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25a2.25 2.25 0 01-2.25-2.25v-2.25z" />
-      </svg>
-    ),
-    title: "Modular y configurable",
-    desc: "Tres anchos (1825, 2700 y 3600 mm), dos profundidades (370 y 470 mm) y configuraciones de uno o dos niveles. Accesorios compatibles entre todos los modelos.",
-  },
-  {
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
-      </svg>
-    ),
-    title: "Aprovecha el 100% del espacio",
-    desc: "El sistema deslizante elimina los pasillos fijos entre estanterías. Accede a cualquier módulo deslizando lateralmente. Mismo almacenaje en la mitad de espacio.",
+    title: "Orden",
+    desc: "Sliderack está fabricado en España bajo los estándares de calidad de Esnova Racks, con procesos certificados y controlados en todas las fases de producción.",
   },
   {
     icon: (
@@ -53,23 +26,23 @@ const reasons = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17l-5.58-3.22a.993.993 0 01-.534-.872V6.073a1 1 0 01.534-.872l5.58-3.22a1 1 0 01.96 0l5.58 3.22a1 1 0 01.534.872v5.005a1 1 0 01-.534.872l-5.58 3.22a1 1 0 01-.96 0z" />
       </svg>
     ),
-    title: "Estructura de acero de alta resistencia",
-    desc: "Estructura metálica con tratamiento anticorrosión, diseñada para soportar cargas pesadas en entornos industriales exigentes. Durabilidad garantizada.",
+    title: "Ingeniería de precisión",
+    desc: "La ingeniería aplicada al diseño permite ofrecer un sistema preciso, fiable y preparado para un uso continuado en entornos exigentes.",
   },
   {
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5" />
       </svg>
     ),
-    title: "Diseño que cuida cada detalle",
-    desc: "Acabados premium, tiradores ergonómicos en rojo característico, paneles perforados opcionales y cierre con llave. Un sistema que se integra en cualquier entorno.",
+    title: "Eficiencia operativa",
+    desc: "A diferencia de soluciones convencionales, Sliderack no solo organiza el espacio, sino que mejora la operativa diaria y la eficiencia del trabajo.",
   },
 ];
 
 const sectors = [
   {
-    name: "Talleres mecánicos y de automoción",
+    name: "Automoción, industria y mantenimiento técnico",
     desc: "Llaves, vasos, herramientas eléctricas y recambios organizados por tipo y tamaño. Acceso inmediato a cada pieza sin mover otras estanterías. El sistema deslizante reduce los tiempos muertos y mejora la productividad del equipo.",
   },
   {
@@ -101,7 +74,7 @@ export default function PorQueSliderack() {
       <main>
         {/* Hero */}
         <section
-          className="relative h-[300px] md:h-[400px] flex items-center justify-center"
+          className="relative h-[350px] md:h-[450px] flex items-center justify-center"
           style={{
             backgroundImage: 'url("/images/sliderack/bg/vista-general.jpg")',
             backgroundSize: "cover",
@@ -110,40 +83,109 @@ export default function PorQueSliderack() {
         >
           <div className="absolute inset-0 bg-black/60" />
           <div className="relative z-10 text-center px-6">
-            <span className="mb-4 inline-block rounded-full bg-white/10 px-4 py-1.5 font-[family-name:var(--font-heading)] text-[13px] font-semibold uppercase tracking-[2px] text-[#A52430]">
-              La diferencia
-            </span>
             <h1 className="font-[family-name:var(--font-heading)] text-[36px] md:text-[52px] font-bold uppercase text-white">
-              Por qu&eacute; Sliderack
+              Por qué elegir Sliderack
             </h1>
             <p className="mt-4 max-w-[550px] mx-auto font-[family-name:var(--font-body)] text-[17px] text-white/70">
-              La fortaleza de la sencillez. Un sistema que combina ingenier&iacute;a de precisi&oacute;n con la robustez del acero espa&ntilde;ol.
+              La fortaleza de la sencillez. Un sistema que combina ingeniería de precisión con la robustez del acero español.
             </p>
+          </div>
+          {/* Badges bar */}
+          <div className="absolute bottom-0 left-0 right-0 bg-black/40 backdrop-blur-sm border-t border-white/10">
+            <div className="mx-auto max-w-[1200px] px-6 py-3 flex flex-wrap items-center justify-center gap-6 md:gap-10">
+              {["Fabricado por Esnova Racks", "+50 años", "Producción propia certificada", "Tecnología industrial a medida"].map((badge) => (
+                <span key={badge} className="font-[family-name:var(--font-heading)] text-[12px] font-semibold uppercase tracking-[1.5px] text-white/80">
+                  {badge}
+                </span>
+              ))}
+            </div>
           </div>
         </section>
 
-        {/* Reasons Grid */}
+        {/* Intro: Qué es Sliderack */}
+        <section className="bg-white px-6 py-20">
+          <div className="mx-auto max-w-[1100px] grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+            <ScrollReveal direction="left">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                <Image
+                  src="/images/sliderack/photos/taller-completo.jpg"
+                  alt="Sistema de estanterías deslizantes Sliderack instalado en un taller profesional"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </ScrollReveal>
+            <ScrollReveal direction="right">
+              <div>
+                <h2 className="font-[family-name:var(--font-heading)] text-[28px] md:text-[36px] font-bold uppercase text-[#201F20] mb-6 leading-[1.15]">
+                  Diseñado para entornos que exigen precisión, orden y fiabilidad
+                </h2>
+                <p className="font-[family-name:var(--font-body)] text-[16px] leading-relaxed text-[#666] mb-4">
+                  Desarrollado por Esnova Racks, Sliderack combina la experiencia industrial con un enfoque funcional, ofreciendo una solución robusta y eficiente para la organización de espacios técnicos y profesionales.
+                </p>
+                <p className="font-[family-name:var(--font-body)] text-[16px] leading-relaxed text-[#666]">
+                  Su diseño responde a una lógica clara: optimizar el espacio disponible, mejorar el acceso a los materiales y garantizar un entorno de trabajo más ordenado y seguro.
+                </p>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* Ventajas técnicas del sistema */}
+        <section className="bg-[#f8f8f8] px-6 py-20">
+          <div className="mx-auto max-w-[1100px]">
+            <ScrollReveal>
+              <h2 className="text-center font-[family-name:var(--font-heading)] text-[32px] md:text-[40px] font-bold uppercase text-[#201F20] mb-14">
+                Ventajas técnicas del sistema
+              </h2>
+            </ScrollReveal>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+              <ScrollReveal direction="left">
+                <div>
+                  <p className="font-[family-name:var(--font-body)] text-[16px] leading-[1.8] text-[#555] mb-4">
+                    El sistema Sliderack permite aprovechar al máximo cada metro cuadrado, reduciendo espacios muertos y facilitando la organización del material.
+                  </p>
+                  <p className="font-[family-name:var(--font-body)] text-[16px] leading-[1.8] text-[#555]">
+                    Su estructura metálica garantiza estabilidad y resistencia en entornos de uso intensivo, mientras que el sistema deslizante proporciona un acceso cómodo y controlado a cada módulo.
+                  </p>
+                </div>
+              </ScrollReveal>
+              <ScrollReveal direction="right">
+                <div>
+                  <p className="font-[family-name:var(--font-body)] text-[16px] leading-[1.8] text-[#555] mb-4">
+                    La modularidad del sistema permite adaptar la configuración según el uso, incorporando bandejas y accesorios en función de las necesidades específicas.
+                  </p>
+                  <p className="font-[family-name:var(--font-body)] text-[16px] leading-[1.8] text-[#555]">
+                    Además, su diseño facilita el mantenimiento, asegurando durabilidad y rendimiento a largo plazo.
+                  </p>
+                </div>
+              </ScrollReveal>
+            </div>
+          </div>
+        </section>
+
+        {/* Diferencias del sistema */}
         <section className="bg-white px-6 py-20">
           <div className="mx-auto max-w-[1100px]">
             <ScrollReveal>
-              <h2 className="text-center font-[family-name:var(--font-heading)] text-[32px] md:text-[40px] font-bold uppercase text-[#201F20] mb-4">
-                6 razones para elegir Sliderack
+              <h2 className="text-center font-[family-name:var(--font-heading)] text-[32px] md:text-[40px] font-bold uppercase text-[#201F20] mb-14">
+                Diferencias del sistema
               </h2>
-              <p className="text-center max-w-[600px] mx-auto font-[family-name:var(--font-body)] text-[16px] text-[#888] mb-16">
-                Cada detalle est&aacute; pensado para que tu espacio funcione mejor.
-              </p>
             </ScrollReveal>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {reasons.map((r, i) => (
-                <ScrollReveal key={r.title} delay={i * 80} direction="up">
-                  <div className="group rounded-xl border border-gray-100 bg-white p-7 hover:border-[#A52430]/20 hover:shadow-lg transition-all duration-300 h-full">
-                    <div className="mb-4 text-[#A52430]">{r.icon}</div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {diferencias.map((d, i) => (
+                <ScrollReveal key={d.title} delay={i * 100} direction="up">
+                  <div className="text-center h-full">
+                    <div className="mx-auto mb-5 w-16 h-16 rounded-full bg-[#A52430]/10 flex items-center justify-center text-[#A52430]">
+                      {d.icon}
+                    </div>
                     <h3 className="font-[family-name:var(--font-heading)] text-[20px] font-bold uppercase text-[#201F20] mb-3">
-                      {r.title}
+                      {d.title}
                     </h3>
                     <p className="font-[family-name:var(--font-body)] text-[14px] leading-relaxed text-[#777]">
-                      {r.desc}
+                      {d.desc}
                     </p>
                   </div>
                 </ScrollReveal>
@@ -152,29 +194,49 @@ export default function PorQueSliderack() {
           </div>
         </section>
 
+        {/* Configuración y evolución */}
+        <section className="bg-[#f8f8f8] px-6 py-20">
+          <div className="mx-auto max-w-[900px]">
+            <ScrollReveal>
+              <h2 className="font-[family-name:var(--font-heading)] text-[28px] md:text-[36px] font-bold uppercase text-[#201F20] mb-6 leading-[1.15]">
+                Configuración por altura y evolución del sistema
+              </h2>
+              <p className="font-[family-name:var(--font-body)] text-[16px] leading-[1.8] text-[#555] mb-4">
+                Sliderack no es un sistema a medida, sino una solución configurable que permite adaptarse a diferentes necesidades sin perder coherencia estructural.
+              </p>
+              <p className="font-[family-name:var(--font-body)] text-[16px] leading-[1.8] text-[#555] mb-4">
+                El sistema ofrece una configuración clara y definida, pensada para facilitar la instalación y garantizar un rendimiento óptimo.
+              </p>
+              <p className="font-[family-name:var(--font-body)] text-[16px] leading-[1.8] text-[#555]">
+                Su diseño modular permite incorporar mejoras o ampliaciones con el tiempo, acompañando la evolución del espacio y del uso.
+              </p>
+            </ScrollReveal>
+          </div>
+        </section>
+
         {/* Photo break */}
         <section
           className="relative h-[300px] md:h-[400px] flex items-center justify-center"
           style={{
-            backgroundImage: 'url("/images/sliderack/photos/taller-completo.jpg")',
+            backgroundImage: 'url("/images/sliderack/photos/garaje-bmw.jpg")',
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
           <div className="absolute inset-0 bg-black/50" />
           <div className="relative z-10 text-center px-6">
-            <h2 className="font-[family-name:var(--font-heading)] text-[28px] md:text-[40px] font-bold uppercase text-white">
+            <h2 className="font-[family-name:var(--font-heading)] text-[28px] md:text-[40px] font-bold uppercase text-white max-w-[700px]">
               Orden que se ve. Rendimiento que se nota.
             </h2>
           </div>
         </section>
 
-        {/* Sectors */}
-        <section className="bg-[#f8f8f8] px-6 py-20">
+        {/* Sectores */}
+        <section className="bg-white px-6 py-20">
           <div className="mx-auto max-w-[1100px]">
             <ScrollReveal>
               <h2 className="text-center font-[family-name:var(--font-heading)] text-[32px] font-bold uppercase text-[#201F20] mb-4">
-                D&oacute;nde se usa Sliderack
+                Dónde se usa Sliderack
               </h2>
               <p className="text-center max-w-[500px] mx-auto font-[family-name:var(--font-body)] text-[16px] text-[#888] mb-12">
                 Soluciones adaptadas a cada sector profesional.
@@ -184,11 +246,11 @@ export default function PorQueSliderack() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {sectors.map((s, i) => (
                 <ScrollReveal key={s.name} delay={i * 60} direction="up">
-                  <div className="rounded-xl bg-white border border-gray-100 p-6 h-full">
-                    <h3 className="font-[family-name:var(--font-heading)] text-[18px] font-bold uppercase text-[#201F20]">
+                  <div className="rounded-xl bg-[#f8f8f8] border border-gray-100 p-6 h-full">
+                    <h3 className="font-[family-name:var(--font-heading)] text-[18px] font-bold uppercase text-[#201F20] mb-3">
                       {s.name}
                     </h3>
-                    <p className="mt-2 font-[family-name:var(--font-body)] text-[14px] text-[#999]">
+                    <p className="font-[family-name:var(--font-body)] text-[14px] leading-relaxed text-[#777]">
                       {s.desc}
                     </p>
                   </div>
@@ -202,23 +264,23 @@ export default function PorQueSliderack() {
         <section className="bg-[#201F20] px-6 py-20">
           <div className="mx-auto max-w-[700px] text-center">
             <h2 className="font-[family-name:var(--font-heading)] text-[28px] md:text-[36px] font-bold uppercase text-white mb-4">
-              &iquest;Listo para optimizar tu espacio?
+              ¿Listo para optimizar tu espacio?
             </h2>
             <p className="font-[family-name:var(--font-body)] text-[16px] text-white/60 mb-8">
-              Solicita informaci&oacute;n sin compromiso. Nuestro equipo te asesorar&aacute; sobre la configuraci&oacute;n perfecta.
+              Solicita información sin compromiso. Nuestro equipo te asesorará sobre la configuración perfecta.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link
                 href="/contacto"
                 className="rounded-lg bg-[#A52430] px-10 py-4 font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-white hover:bg-[#8a1e28] transition-colors"
               >
-                Solicitar informaci&oacute;n
+                Solicitar información
               </Link>
               <Link
                 href="/sistemas"
                 className="rounded-lg border-2 border-white/20 px-10 py-4 font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-white hover:border-white/40 transition-colors"
               >
-                Ver cat&aacute;logo
+                Ver catálogo
               </Link>
             </div>
           </div>
