@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Rajdhani, Heebo, Open_Sans, Roboto } from "next/font/google";
+import { Barlow_Condensed, DM_Sans, Open_Sans, Roboto } from "next/font/google";
 import "./globals.css";
 import CookieBanner from "@/components/CookieBanner";
 import Analytics from "@/components/Analytics";
 import { OrganizationSchema } from "@/components/SchemaOrg";
 
-const rajdhani = Rajdhani({
+const barlowCondensed = Barlow_Condensed({
   variable: "--font-rajdhani",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
 
-const heebo = Heebo({
+const dmSans = DM_Sans({
   variable: "--font-heebo",
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -79,7 +79,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${rajdhani.variable} ${heebo.variable} ${openSans.variable} ${roboto.variable} h-full antialiased`}
+      className={`${barlowCondensed.variable} ${dmSans.variable} ${openSans.variable} ${roboto.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-heebo text-[#201F20] bg-white">
         <OrganizationSchema />
