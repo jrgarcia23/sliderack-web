@@ -19,7 +19,7 @@ export const products: Product[] = [
   // ── SISTEMAS 1 NIVEL · Prof. 370 ──
   {
     slug: "sliderack-1825-370",
-    name: "Sliderack 1825 × 370",
+    name: "Estantería deslizante Sliderack 1825 × 370",
     category: "sistemas",
     badge: "1 Nivel",
     shortDesc: "1825 × 370 mm",
@@ -63,7 +63,7 @@ export const products: Product[] = [
   },
   {
     slug: "sliderack-2700-370",
-    name: "Sliderack 2700 × 370",
+    name: "Estantería deslizante Sliderack 2700 × 370",
     category: "sistemas",
     badge: "1 Nivel",
     shortDesc: "2700 × 370 mm",
@@ -107,7 +107,7 @@ export const products: Product[] = [
   },
   {
     slug: "sliderack-3600-370",
-    name: "Sliderack 3600 × 370",
+    name: "Estantería deslizante Sliderack 3600 × 370",
     category: "sistemas",
     badge: "1 Nivel",
     shortDesc: "3600 × 370 mm",
@@ -152,7 +152,7 @@ export const products: Product[] = [
   // ── SISTEMAS 1 NIVEL · Prof. 470 ──
   {
     slug: "sliderack-1825-470",
-    name: "Sliderack 1825 × 470",
+    name: "Estantería deslizante Sliderack 1825 × 470",
     category: "sistemas",
     badge: "1 Nivel · Prof. 470",
     shortDesc: "1825 × 470 mm",
@@ -196,7 +196,7 @@ export const products: Product[] = [
   },
   {
     slug: "sliderack-2700-470",
-    name: "Sliderack 2700 × 470",
+    name: "Estantería deslizante Sliderack 2700 × 470",
     category: "sistemas",
     badge: "1 Nivel · Prof. 470",
     shortDesc: "2700 × 470 mm",
@@ -240,7 +240,7 @@ export const products: Product[] = [
   },
   {
     slug: "sliderack-3600-470",
-    name: "Sliderack 3600 × 470",
+    name: "Estantería deslizante Sliderack 3600 × 470",
     category: "sistemas",
     badge: "1 Nivel · Prof. 470",
     shortDesc: "3600 × 470 mm",
@@ -285,7 +285,7 @@ export const products: Product[] = [
   // ── SISTEMAS 2 NIVELES · Prof. 370 ──
   {
     slug: "sliderack-2n-1825-370",
-    name: "Sliderack 2 Niveles 1825 × 370",
+    name: "Estantería deslizante Sliderack 1825 × 370 · 2 Niveles",
     category: "sistemas",
     badge: "2 Niveles",
     shortDesc: "1825 × 370 mm · 2 Niveles",
@@ -329,7 +329,7 @@ export const products: Product[] = [
   },
   {
     slug: "sliderack-2n-2700-370",
-    name: "Sliderack 2 Niveles 2700 × 370",
+    name: "Estantería deslizante Sliderack 2700 × 370 · 2 Niveles",
     category: "sistemas",
     badge: "2 Niveles",
     shortDesc: "2700 × 370 mm · 2 Niveles",
@@ -373,7 +373,7 @@ export const products: Product[] = [
   },
   {
     slug: "sliderack-2n-3600-370",
-    name: "Sliderack 2 Niveles 3600 × 370",
+    name: "Estantería deslizante Sliderack 3600 × 370 · 2 Niveles",
     category: "sistemas",
     badge: "2 Niveles",
     shortDesc: "3600 × 370 mm · 2 Niveles",
@@ -418,7 +418,7 @@ export const products: Product[] = [
   // ── SISTEMAS 2 NIVELES · Prof. 470 ──
   {
     slug: "sliderack-2n-1825-470",
-    name: "Sliderack 2 Niveles 1825 × 470",
+    name: "Estantería deslizante Sliderack 1825 × 470 · 2 Niveles",
     category: "sistemas",
     badge: "2 Niveles · Prof. 470",
     shortDesc: "1825 × 470 mm · 2 Niveles",
@@ -462,7 +462,7 @@ export const products: Product[] = [
   },
   {
     slug: "sliderack-2n-2700-470",
-    name: "Sliderack 2 Niveles 2700 × 470",
+    name: "Estantería deslizante Sliderack 2700 × 470 · 2 Niveles",
     category: "sistemas",
     badge: "2 Niveles · Prof. 470",
     shortDesc: "2700 × 470 mm · 2 Niveles",
@@ -506,7 +506,7 @@ export const products: Product[] = [
   },
   {
     slug: "sliderack-2n-3600-470",
-    name: "Sliderack 2 Niveles 3600 × 470",
+    name: "Estantería deslizante Sliderack 3600 × 470 · 2 Niveles",
     category: "sistemas",
     badge: "2 Niveles · Prof. 470",
     shortDesc: "3600 × 470 mm · 2 Niveles",
