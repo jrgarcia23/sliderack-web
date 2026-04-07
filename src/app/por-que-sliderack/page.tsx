@@ -119,7 +119,7 @@ export default function PorQueSliderack() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {reasons.map((r, i) => (
                 <ScrollReveal key={r.title} delay={i * 80} direction="up">
-                  <div className="group rounded-xl border border-gray-100 bg-white p-7 hover:border-[#A52430]/20 hover:shadow-lg transition-all duration-300">
+                  <div className="group rounded-xl border border-gray-100 bg-white p-7 hover:border-[#A52430]/20 hover:shadow-lg transition-all duration-300 h-full">
                     <div className="mb-4 text-[#A52430]">{r.icon}</div>
                     <h3 className="font-[family-name:var(--font-rajdhani)] text-[20px] font-bold uppercase text-[#201F20] mb-3">
                       {r.title}
@@ -166,7 +166,7 @@ export default function PorQueSliderack() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {sectors.map((s, i) => (
                 <ScrollReveal key={s.name} delay={i * 60} direction="up">
-                  <div className="rounded-xl bg-white border border-gray-100 p-6">
+                  <div className="rounded-xl bg-white border border-gray-100 p-6 h-full">
                     <h3 className="font-[family-name:var(--font-rajdhani)] text-[18px] font-bold uppercase text-[#201F20]">
                       {s.name}
                     </h3>

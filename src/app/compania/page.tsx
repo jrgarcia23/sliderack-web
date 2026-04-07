@@ -190,7 +190,7 @@ export default function CompaniaPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {certs.map((c, i) => (
                 <ScrollReveal key={c.name} delay={i * 80} direction="up">
-                  <div className="rounded-xl border border-white/10 bg-white/5 p-6 text-center hover:border-[#A52430]/40 transition-colors">
+                  <div className="rounded-xl border border-white/10 bg-white/5 p-6 text-center hover:border-[#A52430]/40 transition-colors h-full">
                     <p className="font-[family-name:var(--font-rajdhani)] text-[22px] font-bold text-white">
                       {c.name}
                     </p>

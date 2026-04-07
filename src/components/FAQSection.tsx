@@ -5,39 +5,54 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const faqs = [
   {
-    question: "¿Qué medidas de Sliderack están disponibles?",
+    question: "\u00bfQu\u00e9 medidas de Sliderack est\u00e1n disponibles?",
     answer:
-      "Sliderack se ofrece en tres anchos principales: 1825 mm, 2700 mm y 3600 mm, con profundidades de 370 mm y 470 mm. Disponible en configuraciones de uno o dos niveles.",
+      "Sliderack se ofrece en tres anchos principales: 1825 mm, 2700 mm y 3600 mm, con profundidades de 370 mm y 470 mm. Disponible en configuraciones de uno o dos niveles. La altura est\u00e1ndar es de 2255 mm y la profundidad de 1160 mm. Acabado en Negro Mate RAL-9005.",
   },
   {
-    question: "¿Cuántos módulos puede incorporar cada sistema?",
+    question: "\u00bfCu\u00e1nto peso soporta cada m\u00f3dulo deslizante?",
     answer:
-      "El número de módulos depende del ancho del sistema. Consulta con nuestro equipo técnico para una configuración adaptada a tu espacio.",
+      "Cada m\u00f3dulo deslizante est\u00e1 dise\u00f1ado para soportar hasta 150 kg de carga, y puede deslizarse con un solo dedo gracias al sistema de gu\u00edas de alta precisi\u00f3n.",
   },
   {
-    question: "¿Puedo elegir la configuración según el espacio disponible?",
+    question: "\u00bfCu\u00e1ntos m\u00f3dulos puede incorporar cada sistema?",
     answer:
-      "Sí. El sistema es modular y permite adaptarse a distintas dimensiones y necesidades de almacenaje.",
+      "Depende del ancho: el sistema de 1825 mm incluye 3 m\u00f3dulos deslizantes (9 baldas), el de 2700 mm incluye 5 m\u00f3dulos (15 baldas) y el de 3600 mm incluye 7 m\u00f3dulos (21 baldas). Los modelos de 2 niveles duplican la capacidad.",
   },
   {
-    question: "¿Sliderack se adapta a garajes, talleres y espacios técnicos?",
+    question: "\u00bfSliderack se adapta a garajes, talleres y espacios t\u00e9cnicos?",
     answer:
-      "Absolutamente. Sliderack está diseñado para entornos industriales, talleres, garajes de alto nivel y servicios técnicos.",
+      "S\u00ed. Sliderack est\u00e1 dise\u00f1ado para talleres mec\u00e1nicos, garajes premium, servicios de emergencia, laboratorios, centros log\u00edsticos y cualquier entorno profesional que requiera almacenaje organizado y accesible.",
   },
   {
-    question: "¿Es posible ampliar la configuración en el futuro?",
+    question: "\u00bfQu\u00e9 accesorios est\u00e1n disponibles?",
     answer:
-      "Sí. El diseño modular permite incorporar módulos y accesorios adicionales en cualquier momento.",
+      "Puestos de trabajo con mesa integrada, paneles perforados para herramientas, kit de cajones divisorios, cerraduras con llave, baldas adicionales ajustables en altura, m\u00f3dulos de ampliaci\u00f3n y kit de perchero para EPIs y uniformes.",
   },
   {
-    question: "¿Qué accesorios están disponibles para Sliderack?",
+    question: "\u00bfEs posible ampliar la configuraci\u00f3n en el futuro?",
     answer:
-      "Cajones, paneles perforados, puestos de trabajo, cerraduras, baldas adicionales, tiradores y colgadores.",
+      "S\u00ed. El dise\u00f1o modular permite incorporar m\u00f3dulos y accesorios adicionales en cualquier momento. Todos los accesorios son compatibles entre s\u00ed y con cualquier modelo del sistema.",
   },
   {
-    question: "¿Se pueden incorporar cajones en cualquier módulo?",
+    question: "\u00bfQu\u00e9 certificaciones tiene Sliderack?",
     answer:
-      "Sí. Los cajones son compatibles con todos los módulos del sistema Sliderack.",
+      "Sliderack est\u00e1 fabricado por Esnova Racks, empresa certificada con ISO 9001 (calidad), ISO 14001 (medioambiente), ISO 45001 (seguridad laboral) y UNE EN 1090 (Marcado CE para estructuras met\u00e1licas).",
+  },
+  {
+    question: "\u00bfD\u00f3nde se fabrica Sliderack?",
+    answer:
+      "Sliderack se dise\u00f1a y fabrica \u00edntegramente en Espa\u00f1a, en la planta de producci\u00f3n de Esnova Racks en Gij\u00f3n (Asturias), con 46.600 m\u00b2 de instalaciones y tecnolog\u00eda de \u00faltima generaci\u00f3n.",
+  },
+  {
+    question: "\u00bfC\u00f3mo solicito informaci\u00f3n o presupuesto?",
+    answer:
+      "Puedes rellenar el formulario de contacto en nuestra web o llamarnos al 946 00 31 28. Nuestro equipo t\u00e9cnico te asesorar\u00e1 sin compromiso y te responder\u00e1 en 24-48 horas.",
+  },
+  {
+    question: "\u00bfSliderack necesita mantenimiento?",
+    answer:
+      "El sistema est\u00e1 dise\u00f1ado para un uso intensivo con m\u00ednimo mantenimiento. La estructura de acero con tratamiento anticorrosi\u00f3n y las gu\u00edas de precisi\u00f3n garantizan durabilidad a largo plazo sin intervenciones frecuentes.",
   },
 ];
 

@@ -4,16 +4,9 @@ import Link from "next/link";
 const navLinks = [
   { label: "Sistemas", href: "/sistemas" },
   { label: "Accesorios", href: "/accesorios" },
-  { label: "Por qué Sliderack", href: "/por-que-sliderack" },
-  { label: "Compañía", href: "/compania" },
+  { label: "Por qu\u00e9 Sliderack", href: "/por-que-sliderack" },
+  { label: "Compa\u00f1\u00eda", href: "/compania" },
   { label: "Contacto", href: "/contacto" },
-];
-
-const certifications = [
-  "ISO 9001",
-  "ISO 14001",
-  "ISO 45001",
-  "UNE EN 1090 (Marcado CE)",
 ];
 
 const socialLinks = [
@@ -40,8 +33,8 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer className="w-full bg-black" style={{ padding: "25px 0 26px" }}>
-      {/* ── Top Section: 4 columns ── */}
-      <div className="mx-auto max-w-[1200px] px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {/* \u2500\u2500 Top Section: 3 columns \u2500\u2500 */}
+      <div className="mx-auto max-w-[1200px] px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Column 1 - Logo & Description */}
         <div>
           <Image
@@ -55,8 +48,8 @@ export default function Footer() {
             className="font-[family-name:var(--font-heebo)] text-[14px] leading-relaxed"
             style={{ color: "rgba(255,255,255,0.7)" }}
           >
-            Sliderack forma parte de Esnova Racks, empresa española con más de
-            50 años de experiencia en el diseño y fabricación de sistemas de
+            Sliderack forma parte de Esnova Racks, empresa espa\u00f1ola con m\u00e1s de
+            50 a\u00f1os de experiencia en el dise\u00f1o y fabricaci\u00f3n de sistemas de
             almacenaje industrial.
           </p>
         </div>
@@ -71,25 +64,7 @@ export default function Footer() {
             style={{ color: "rgba(255,255,255,0.7)" }}
           >
             <p>
-              Información general:{" "}
-              <a
-                href="mailto:info@sliderack.com"
-                className="text-white hover:underline"
-              >
-                info@sliderack.com
-              </a>
-            </p>
-            <p>
-              Consultas comerciales:{" "}
-              <a
-                href="mailto:comercial@sliderack.com"
-                className="text-white hover:underline"
-              >
-                comercial@sliderack.com
-              </a>
-            </p>
-            <p>
-              Teléfono:{" "}
+              Tel\u00e9fono Sliderack:{" "}
               <a
                 href="tel:+34946003128"
                 className="text-white hover:underline"
@@ -97,13 +72,22 @@ export default function Footer() {
                 946 00 31 28
               </a>
             </p>
+            <p>
+              Tel\u00e9fono Esnova:{" "}
+              <a
+                href="tel:+34985308980"
+                className="text-white hover:underline"
+              >
+                985 30 89 80
+              </a>
+            </p>
           </div>
         </div>
 
-        {/* Column 3 - Navegación */}
+        {/* Column 3 - Navegaci\u00f3n */}
         <div>
           <h3 className="font-[family-name:var(--font-rajdhani)] text-[20px] font-bold uppercase text-white mb-4">
-            Navegación
+            Navegaci\u00f3n
           </h3>
           <ul className="space-y-2">
             {navLinks.map((link) => (
@@ -119,27 +103,9 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-
-        {/* Column 4 - Certificaciones */}
-        <div>
-          <h3 className="font-[family-name:var(--font-rajdhani)] text-[20px] font-bold uppercase text-white mb-4">
-            Certificaciones
-          </h3>
-          <ul className="space-y-2">
-            {certifications.map((cert) => (
-              <li
-                key={cert}
-                className="font-[family-name:var(--font-heebo)] text-[14px]"
-                style={{ color: "rgba(255,255,255,0.7)" }}
-              >
-                {cert}
-              </li>
-            ))}
-          </ul>
-        </div>
       </div>
 
-      {/* ── Bottom Bar ── */}
+      {/* \u2500\u2500 Bottom Bar \u2500\u2500 */}
       <div className="mx-auto max-w-[1200px] px-4 mt-8 pt-6 border-t border-white/10">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-4">
           <p

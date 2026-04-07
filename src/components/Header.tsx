@@ -72,8 +72,8 @@ export default function Header() {
               946 00 31 28
             </Link>
             <span className="opacity-60">|</span>
-            <Link href="mailto:info@sliderack.com" className="transition-opacity duration-300 hover:opacity-75">
-              info@sliderack.com
+            <Link href="tel:+34985308980" className="transition-opacity duration-300 hover:opacity-75">
+              985 30 89 80
             </Link>
           </div>
           <button className="text-white transition-opacity duration-300 hover:opacity-75" aria-label="Search">
