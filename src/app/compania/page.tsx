@@ -68,13 +68,13 @@ export default function CompaniaPage() {
         >
           <div className="absolute inset-0 bg-black/60" />
           <div className="relative z-10 text-center px-6">
-            <span className="mb-4 inline-block rounded-full bg-white/10 px-4 py-1.5 font-[family-name:var(--font-rajdhani)] text-[13px] font-semibold uppercase tracking-[2px] text-[#A52430]">
+            <span className="mb-4 inline-block rounded-full bg-white/10 px-4 py-1.5 font-[family-name:var(--font-heading)] text-[13px] font-semibold uppercase tracking-[2px] text-[#A52430]">
               Sobre nosotros
             </span>
-            <h1 className="font-[family-name:var(--font-rajdhani)] text-[36px] md:text-[52px] font-bold uppercase text-white">
+            <h1 className="font-[family-name:var(--font-heading)] text-[36px] md:text-[52px] font-bold uppercase text-white">
               Compa&ntilde;&iacute;a
             </h1>
-            <p className="mt-4 max-w-[550px] mx-auto font-[family-name:var(--font-heebo)] text-[17px] text-white/70">
+            <p className="mt-4 max-w-[550px] mx-auto font-[family-name:var(--font-body)] text-[17px] text-white/70">
               M&aacute;s de 50 a&ntilde;os fabricando soluciones de almacenaje que funcionan.
             </p>
           </div>
@@ -85,16 +85,16 @@ export default function CompaniaPage() {
           <div className="mx-auto max-w-[1100px] grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <ScrollReveal>
               <div>
-                <h2 className="font-[family-name:var(--font-rajdhani)] text-[32px] md:text-[40px] font-bold uppercase leading-[1.1] text-[#201F20] mb-6">
+                <h2 className="font-[family-name:var(--font-heading)] text-[32px] md:text-[40px] font-bold uppercase leading-[1.1] text-[#201F20] mb-6">
                   Esnova Racks: ingenier&iacute;a espa&ntilde;ola desde 1969
                 </h2>
-                <p className="font-[family-name:var(--font-heebo)] text-[16px] leading-relaxed text-[#666] mb-4">
+                <p className="font-[family-name:var(--font-body)] text-[16px] leading-relaxed text-[#666] mb-4">
                   Esnova Racks naci&oacute; en Gij&oacute;n (Asturias) con una misi&oacute;n clara: dise&ntilde;ar y fabricar sistemas de almacenaje que resuelvan problemas reales en entornos industriales. Hoy contamos con una <strong className="text-[#201F20]">planta de producci&oacute;n de 46.600 m&sup2;</strong> y presencia en <strong className="text-[#201F20]">m&aacute;s de 45 pa&iacute;ses</strong>.
                 </p>
-                <p className="font-[family-name:var(--font-heebo)] text-[16px] leading-relaxed text-[#666] mb-4">
+                <p className="font-[family-name:var(--font-body)] text-[16px] leading-relaxed text-[#666] mb-4">
                   Tras m&aacute;s de cinco d&eacute;cadas de experiencia, hemos canalizado toda esa ingenier&iacute;a en <strong className="text-[#201F20]">Sliderack</strong>: un sistema de almacenaje deslizante que combina la robustez del acero con la precisi&oacute;n de un mecanismo que funciona con un solo dedo.
                 </p>
-                <p className="font-[family-name:var(--font-heebo)] text-[16px] leading-relaxed text-[#666]">
+                <p className="font-[family-name:var(--font-body)] text-[16px] leading-relaxed text-[#666]">
                   Todo nuestro proceso &mdash; desde el dise&ntilde;o hasta el montaje final &mdash; se realiza en Espa&ntilde;a con fabricaci&oacute;n propia, tecnolog&iacute;a de &uacute;ltima generaci&oacute;n y bajo los est&aacute;ndares de calidad m&aacute;s exigentes del sector.
                 </p>
               </div>
@@ -117,7 +117,7 @@ export default function CompaniaPage() {
         <section className="bg-[#f8f8f8] px-6 py-20">
           <div className="mx-auto max-w-[1100px]">
             <ScrollReveal>
-              <h2 className="text-center font-[family-name:var(--font-rajdhani)] text-[32px] font-bold uppercase text-[#201F20] mb-12">
+              <h2 className="text-center font-[family-name:var(--font-heading)] text-[32px] font-bold uppercase text-[#201F20] mb-12">
                 Nuestros valores
               </h2>
             </ScrollReveal>
@@ -126,10 +126,10 @@ export default function CompaniaPage() {
               {values.map((v, i) => (
                 <ScrollReveal key={v.title} delay={i * 100} direction="up">
                   <div className="text-center">
-                    <h3 className="font-[family-name:var(--font-rajdhani)] text-[24px] font-bold uppercase text-[#A52430] mb-3">
+                    <h3 className="font-[family-name:var(--font-heading)] text-[24px] font-bold uppercase text-[#A52430] mb-3">
                       {v.title}
                     </h3>
-                    <p className="font-[family-name:var(--font-heebo)] text-[15px] leading-relaxed text-[#777]">
+                    <p className="font-[family-name:var(--font-body)] text-[15px] leading-relaxed text-[#777]">
                       {v.desc}
                     </p>
                   </div>
@@ -143,7 +143,7 @@ export default function CompaniaPage() {
         <section className="bg-white px-6 py-20">
           <div className="mx-auto max-w-[700px]">
             <ScrollReveal>
-              <h2 className="text-center font-[family-name:var(--font-rajdhani)] text-[32px] font-bold uppercase text-[#201F20] mb-12">
+              <h2 className="text-center font-[family-name:var(--font-heading)] text-[32px] font-bold uppercase text-[#201F20] mb-12">
                 Nuestra historia
               </h2>
             </ScrollReveal>
@@ -160,10 +160,10 @@ export default function CompaniaPage() {
                         <div className="w-2.5 h-2.5 rounded-full bg-[#A52430]" />
                       </div>
                       <div className="pt-2">
-                        <span className="font-[family-name:var(--font-rajdhani)] text-[18px] font-bold text-[#A52430]">
+                        <span className="font-[family-name:var(--font-heading)] text-[18px] font-bold text-[#A52430]">
                           {m.year}
                         </span>
-                        <p className="font-[family-name:var(--font-heebo)] text-[15px] text-[#666] mt-1">
+                        <p className="font-[family-name:var(--font-body)] text-[15px] text-[#666] mt-1">
                           {m.text}
                         </p>
                       </div>
@@ -179,10 +179,10 @@ export default function CompaniaPage() {
         <section className="bg-[#201F20] px-6 py-20">
           <div className="mx-auto max-w-[1100px]">
             <ScrollReveal>
-              <h2 className="text-center font-[family-name:var(--font-rajdhani)] text-[32px] font-bold uppercase text-white mb-4">
+              <h2 className="text-center font-[family-name:var(--font-heading)] text-[32px] font-bold uppercase text-white mb-4">
                 Certificaciones
               </h2>
-              <p className="text-center font-[family-name:var(--font-heebo)] text-[15px] text-white/50 mb-12 max-w-[500px] mx-auto">
+              <p className="text-center font-[family-name:var(--font-body)] text-[15px] text-white/50 mb-12 max-w-[500px] mx-auto">
                 Todos nuestros procesos est&aacute;n certificados bajo los est&aacute;ndares internacionales m&aacute;s exigentes.
               </p>
             </ScrollReveal>
@@ -191,10 +191,10 @@ export default function CompaniaPage() {
               {certs.map((c, i) => (
                 <ScrollReveal key={c.name} delay={i * 80} direction="up">
                   <div className="rounded-xl border border-white/10 bg-white/5 p-6 text-center hover:border-[#A52430]/40 transition-colors h-full">
-                    <p className="font-[family-name:var(--font-rajdhani)] text-[22px] font-bold text-white">
+                    <p className="font-[family-name:var(--font-heading)] text-[22px] font-bold text-white">
                       {c.name}
                     </p>
-                    <p className="mt-2 font-[family-name:var(--font-heebo)] text-[13px] text-white/50">
+                    <p className="mt-2 font-[family-name:var(--font-body)] text-[13px] text-white/50">
                       {c.desc}
                     </p>
                   </div>
@@ -207,15 +207,15 @@ export default function CompaniaPage() {
         {/* CTA */}
         <section className="border-t border-gray-100 bg-white px-6 py-20">
           <div className="mx-auto max-w-[700px] text-center">
-            <h2 className="font-[family-name:var(--font-rajdhani)] text-[28px] md:text-[36px] font-bold uppercase text-[#201F20] mb-4">
+            <h2 className="font-[family-name:var(--font-heading)] text-[28px] md:text-[36px] font-bold uppercase text-[#201F20] mb-4">
               &iquest;Trabajamos juntos?
             </h2>
-            <p className="font-[family-name:var(--font-heebo)] text-[16px] text-[#888] mb-8">
+            <p className="font-[family-name:var(--font-body)] text-[16px] text-[#888] mb-8">
               Cont&aacute;ctanos y descubre c&oacute;mo Sliderack puede transformar tu espacio de trabajo.
             </p>
             <Link
               href="/contacto"
-              className="inline-block rounded-lg bg-[#A52430] px-10 py-4 font-[family-name:var(--font-rajdhani)] text-[16px] font-bold uppercase text-white hover:bg-[#8a1e28] transition-colors"
+              className="inline-block rounded-lg bg-[#A52430] px-10 py-4 font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-white hover:bg-[#8a1e28] transition-colors"
             >
               Contactar
             </Link>

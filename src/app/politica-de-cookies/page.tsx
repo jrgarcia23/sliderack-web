@@ -12,22 +12,22 @@ export default function PoliticaCookies() {
     <>
       <Header />
       <main className="bg-white px-6 py-20">
-        <article className="mx-auto max-w-[800px] font-[family-name:var(--font-heebo)] text-[16px] leading-[1.8] text-[#444]">
-          <h1 className="font-[family-name:var(--font-rajdhani)] text-[36px] font-bold uppercase text-[#201F20] mb-8">
+        <article className="mx-auto max-w-[800px] font-[family-name:var(--font-body)] text-[16px] leading-[1.8] text-[#444]">
+          <h1 className="font-[family-name:var(--font-heading)] text-[36px] font-bold uppercase text-[#201F20] mb-8">
             Pol&iacute;tica de Cookies
           </h1>
 
           {/* Panel de preferencias */}
           <CookiePreferencesPanel />
 
-          <h2 className="font-[family-name:var(--font-rajdhani)] text-[24px] font-bold uppercase text-[#201F20] mt-10 mb-4">
+          <h2 className="font-[family-name:var(--font-heading)] text-[24px] font-bold uppercase text-[#201F20] mt-10 mb-4">
             &iquest;Qu&eacute; son las cookies?
           </h2>
           <p className="mb-6">
             Las cookies son archivos que se pueden descargar en su equipo a trav&eacute;s de las p&aacute;ginas web. Son herramientas que tienen un papel esencial para la prestaci&oacute;n de numerosos servicios de la sociedad de la informaci&oacute;n.
           </p>
 
-          <h2 className="font-[family-name:var(--font-rajdhani)] text-[24px] font-bold uppercase text-[#201F20] mt-10 mb-4">
+          <h2 className="font-[family-name:var(--font-heading)] text-[24px] font-bold uppercase text-[#201F20] mt-10 mb-4">
             Tipos de cookies
           </h2>
           <ul className="mb-6 list-disc pl-6 space-y-2">
@@ -37,7 +37,7 @@ export default function PoliticaCookies() {
             <li><strong>Cookies persistentes:</strong> datos almacenados durante un periodo definido por el responsable.</li>
           </ul>
 
-          <h3 className="font-[family-name:var(--font-rajdhani)] text-[20px] font-bold text-[#201F20] mt-8 mb-3">
+          <h3 className="font-[family-name:var(--font-heading)] text-[20px] font-bold text-[#201F20] mt-8 mb-3">
             Clasificaci&oacute;n por finalidad
           </h3>
           <ul className="mb-6 list-disc pl-6 space-y-2">
@@ -47,17 +47,17 @@ export default function PoliticaCookies() {
             <li><strong>Publicitarias:</strong> permiten gestionar los espacios publicitarios del sitio web.</li>
           </ul>
 
-          <h2 className="font-[family-name:var(--font-rajdhani)] text-[24px] font-bold uppercase text-[#201F20] mt-10 mb-4">
+          <h2 className="font-[family-name:var(--font-heading)] text-[24px] font-bold uppercase text-[#201F20] mt-10 mb-4">
             Cookies utilizadas en este portal
           </h2>
           <div className="overflow-x-auto mb-6">
             <table className="w-full border-collapse text-[14px]">
               <thead>
                 <tr className="border-b-2 border-[#A52430]">
-                  <th className="py-3 pr-4 text-left font-[family-name:var(--font-rajdhani)] font-bold uppercase text-[#201F20]">Cookie</th>
-                  <th className="py-3 pr-4 text-left font-[family-name:var(--font-rajdhani)] font-bold uppercase text-[#201F20]">Duraci&oacute;n</th>
-                  <th className="py-3 pr-4 text-left font-[family-name:var(--font-rajdhani)] font-bold uppercase text-[#201F20]">Tipo</th>
-                  <th className="py-3 text-left font-[family-name:var(--font-rajdhani)] font-bold uppercase text-[#201F20]">Finalidad</th>
+                  <th className="py-3 pr-4 text-left font-[family-name:var(--font-heading)] font-bold uppercase text-[#201F20]">Cookie</th>
+                  <th className="py-3 pr-4 text-left font-[family-name:var(--font-heading)] font-bold uppercase text-[#201F20]">Duraci&oacute;n</th>
+                  <th className="py-3 pr-4 text-left font-[family-name:var(--font-heading)] font-bold uppercase text-[#201F20]">Tipo</th>
+                  <th className="py-3 text-left font-[family-name:var(--font-heading)] font-bold uppercase text-[#201F20]">Finalidad</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
@@ -70,7 +70,7 @@ export default function PoliticaCookies() {
             </table>
           </div>
 
-          <h2 className="font-[family-name:var(--font-rajdhani)] text-[24px] font-bold uppercase text-[#201F20] mt-10 mb-4">
+          <h2 className="font-[family-name:var(--font-heading)] text-[24px] font-bold uppercase text-[#201F20] mt-10 mb-4">
             &iquest;C&oacute;mo desactivar las cookies?
           </h2>
           <p className="mb-6">
@@ -83,7 +83,7 @@ export default function PoliticaCookies() {
             <li>Microsoft Edge: Configuraci&oacute;n &rarr; Privacidad</li>
           </ul>
 
-          <h2 className="font-[family-name:var(--font-rajdhani)] text-[24px] font-bold uppercase text-[#201F20] mt-10 mb-4">
+          <h2 className="font-[family-name:var(--font-heading)] text-[24px] font-bold uppercase text-[#201F20] mt-10 mb-4">
             Contacto
           </h2>
           <p className="mb-6">

@@ -20,7 +20,7 @@ export default function CookiePreferencesPanel() {
 
   return (
     <div className="rounded-xl border border-gray-200 bg-[#f8f8f8] p-6 mb-10">
-      <h2 className="font-[family-name:var(--font-rajdhani)] text-[20px] font-bold uppercase text-[#201F20] mb-4">
+      <h2 className="font-[family-name:var(--font-heading)] text-[20px] font-bold uppercase text-[#201F20] mb-4">
         Tus preferencias de cookies
       </h2>
 
@@ -28,10 +28,10 @@ export default function CookiePreferencesPanel() {
         {/* Necesarias */}
         <div className="flex items-center justify-between">
           <div>
-            <p className="font-[family-name:var(--font-rajdhani)] text-[15px] font-semibold text-[#201F20]">
+            <p className="font-[family-name:var(--font-heading)] text-[15px] font-semibold text-[#201F20]">
               Cookies necesarias
             </p>
-            <p className="font-[family-name:var(--font-heebo)] text-[13px] text-[#888]">
+            <p className="font-[family-name:var(--font-body)] text-[13px] text-[#888]">
               Imprescindibles para el funcionamiento del sitio. No se pueden desactivar.
             </p>
           </div>
@@ -43,10 +43,10 @@ export default function CookiePreferencesPanel() {
         {/* Anal&iacute;tica */}
         <div className="flex items-center justify-between">
           <div>
-            <p className="font-[family-name:var(--font-rajdhani)] text-[15px] font-semibold text-[#201F20]">
+            <p className="font-[family-name:var(--font-heading)] text-[15px] font-semibold text-[#201F20]">
               Cookies de anal&iacute;tica
             </p>
-            <p className="font-[family-name:var(--font-heebo)] text-[13px] text-[#888]">
+            <p className="font-[family-name:var(--font-body)] text-[13px] text-[#888]">
               Google Analytics &mdash; nos ayudan a entender c&oacute;mo se usa el sitio de forma an&oacute;nima.
             </p>
           </div>
@@ -63,12 +63,12 @@ export default function CookiePreferencesPanel() {
       <div className="mt-6 flex items-center gap-4">
         <button
           onClick={save}
-          className="rounded-lg bg-[#A52430] px-6 py-2.5 font-[family-name:var(--font-rajdhani)] text-[14px] font-bold uppercase text-white hover:bg-[#8a1e28] transition-colors"
+          className="rounded-lg bg-[#A52430] px-6 py-2.5 font-[family-name:var(--font-heading)] text-[14px] font-bold uppercase text-white hover:bg-[#8a1e28] transition-colors"
         >
           Guardar preferencias
         </button>
         {saved && (
-          <span className="font-[family-name:var(--font-heebo)] text-[14px] text-green-600">
+          <span className="font-[family-name:var(--font-body)] text-[14px] text-green-600">
             Preferencias guardadas
           </span>
         )}

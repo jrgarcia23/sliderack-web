@@ -37,20 +37,20 @@ const products = [
 
 export default function ExploreLevrack() {
   return (
-    <section className="bg-white py-24 px-6">
+    <section className="bg-white py-20 px-6">
       <div className="mx-auto max-w-[1200px]">
         {/* Section header */}
         <div className="mb-12 flex items-end justify-between max-md:flex-col max-md:items-start max-md:gap-4">
           <h2
             className="text-[34px] font-bold uppercase text-[#201F20] max-md:text-[28px]"
-            style={{ fontFamily: "var(--font-rajdhani)" }}
+            style={{ fontFamily: "var(--font-heading)" }}
           >
             Modelos principales
           </h2>
           <Link
             href="/sistemas"
             className="text-[14px] text-[#A52430] transition hover:underline"
-            style={{ fontFamily: "var(--font-heebo)" }}
+            style={{ fontFamily: "var(--font-body)" }}
           >
             Ver cat&aacute;logo completo &rarr;
           </Link>
@@ -72,7 +72,7 @@ export default function ExploreLevrack() {
                   {/* Badge */}
                   <span
                     className="absolute left-3 top-3 rounded bg-[#A52430] px-2.5 py-1 text-[11px] font-semibold uppercase text-white"
-                    style={{ fontFamily: "var(--font-rajdhani)" }}
+                    style={{ fontFamily: "var(--font-heading)" }}
                   >
                     {product.badge}
                   </span>
@@ -80,7 +80,7 @@ export default function ExploreLevrack() {
                   <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent px-4 py-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     <span
                       className="text-[13px] uppercase tracking-[0.5px] text-white"
-                      style={{ fontFamily: "var(--font-rajdhani)" }}
+                      style={{ fontFamily: "var(--font-heading)" }}
                     >
                       {product.dims}
                     </span>
@@ -91,13 +91,13 @@ export default function ExploreLevrack() {
                 <div className="pt-4">
                   <p
                     className="text-[22px] font-semibold uppercase text-[#201F20]"
-                    style={{ fontFamily: "var(--font-rajdhani)" }}
+                    style={{ fontFamily: "var(--font-heading)" }}
                   >
                     {product.name}
                   </p>
                   <p
                     className="mt-1 text-[13px] text-[#999]"
-                    style={{ fontFamily: "var(--font-heebo)" }}
+                    style={{ fontFamily: "var(--font-body)" }}
                   >
                     {product.dims}
                   </p>

@@ -15,19 +15,19 @@ export default function Footer() {
       {/* CTA Bar */}
       <div className="bg-[#A52430] px-6 py-5">
         <div className="mx-auto max-w-[1200px] flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="font-[family-name:var(--font-rajdhani)] text-[18px] md:text-[20px] font-bold uppercase text-white">
+          <p className="font-[family-name:var(--font-heading)] text-[18px] md:text-[20px] font-bold uppercase text-white">
             ¿Necesitas asesoramiento técnico?
           </p>
           <div className="flex gap-3">
             <Link
               href="/contacto"
-              className="rounded-lg border-2 border-white px-6 py-2.5 font-[family-name:var(--font-rajdhani)] text-[14px] font-bold uppercase text-white hover:bg-white hover:text-[#A52430] transition-colors"
+              className="rounded-lg border-2 border-white px-6 py-2.5 font-[family-name:var(--font-heading)] text-[14px] font-bold uppercase text-white hover:bg-white hover:text-[#A52430] transition-colors"
             >
               Contactar
             </Link>
             <a
               href="tel:+34985308980"
-              className="rounded-lg border-2 border-white/30 px-6 py-2.5 font-[family-name:var(--font-rajdhani)] text-[14px] font-bold uppercase text-white hover:border-white transition-colors"
+              className="rounded-lg border-2 border-white/30 px-6 py-2.5 font-[family-name:var(--font-heading)] text-[14px] font-bold uppercase text-white hover:border-white transition-colors"
             >
               985 30 89 80
             </a>
@@ -48,7 +48,7 @@ export default function Footer() {
               className="mb-4"
             />
             <p
-              className="font-[family-name:var(--font-heebo)] text-[14px] leading-relaxed max-w-[350px]"
+              className="font-[family-name:var(--font-body)] text-[14px] leading-relaxed max-w-[350px]"
               style={{ color: "rgba(255,255,255,0.6)" }}
             >
               Sistema de almacenaje deslizante de alta precisión. Diseñado y fabricado en España por Esnova Racks.
@@ -57,7 +57,7 @@ export default function Footer() {
 
           {/* Col 2 — Navegación */}
           <div>
-            <h3 className="font-[family-name:var(--font-rajdhani)] text-[14px] font-bold uppercase text-white mb-4 tracking-[1px]">
+            <h3 className="font-[family-name:var(--font-heading)] text-[14px] font-bold uppercase text-white mb-4 tracking-[1px]">
               Navegación
             </h3>
             <ul className="space-y-2">
@@ -65,7 +65,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="font-[family-name:var(--font-heebo)] text-[14px] hover:text-white transition-colors"
+                    className="font-[family-name:var(--font-body)] text-[14px] hover:text-white transition-colors"
                     style={{ color: "rgba(255,255,255,0.6)" }}
                   >
                     {link.label}
@@ -77,11 +77,11 @@ export default function Footer() {
 
           {/* Col 3 — Contacto */}
           <div>
-            <h3 className="font-[family-name:var(--font-rajdhani)] text-[14px] font-bold uppercase text-white mb-4 tracking-[1px]">
+            <h3 className="font-[family-name:var(--font-heading)] text-[14px] font-bold uppercase text-white mb-4 tracking-[1px]">
               Contacto
             </h3>
             <div
-              className="font-[family-name:var(--font-heebo)] text-[14px] space-y-2"
+              className="font-[family-name:var(--font-body)] text-[14px] space-y-2"
               style={{ color: "rgba(255,255,255,0.6)" }}
             >
               <p>
@@ -103,7 +103,7 @@ export default function Footer() {
       <div className="bg-[#201F20] border-t border-white/10 px-6 py-5">
         <div className="mx-auto max-w-[1200px] flex flex-col sm:flex-row items-center justify-between gap-3">
           <span
-            className="font-[family-name:var(--font-heebo)] text-[13px]"
+            className="font-[family-name:var(--font-body)] text-[13px]"
             style={{ color: "rgba(255,255,255,0.4)" }}
           >
             &copy; 2026 Sliderack by Esnova Racks
@@ -117,7 +117,7 @@ export default function Footer() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="font-[family-name:var(--font-heebo)] text-[12px] hover:text-white transition-colors"
+                className="font-[family-name:var(--font-body)] text-[12px] hover:text-white transition-colors"
                 style={{ color: "rgba(255,255,255,0.4)" }}
               >
                 {link.label}

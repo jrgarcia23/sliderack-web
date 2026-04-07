@@ -82,7 +82,7 @@ export default function Header() {
             >
               <Link
                 href="/sistemas"
-                className={`flex items-center gap-1 px-4 py-6 font-rajdhani text-[14px] font-bold uppercase text-white transition-all duration-300 ${openMega === "sistemas" ? "bg-white/10" : "hover:bg-white/5"}`}
+                className={`flex items-center gap-1 px-4 py-6 font-heading text-[14px] font-bold uppercase text-white transition-all duration-300 ${openMega === "sistemas" ? "bg-white/10" : "hover:bg-white/5"}`}
               >
                 Modelos
                 <ChevronDown className={`h-3 w-3 opacity-70 transition-transform duration-200 ${openMega === "sistemas" ? "rotate-180" : ""}`} />
@@ -93,17 +93,17 @@ export default function Header() {
                 <div className="absolute top-full left-1/2 -translate-x-1/2 w-[1200px] bg-white shadow-2xl border-t-2 border-[#A52430] rounded-b-xl z-50">
                   <div className="px-8 py-8">
                     <div className="flex justify-between items-center mb-6">
-                      <h3 className="font-rajdhani text-[18px] font-bold uppercase text-[#201F20]">Sistemas de estanterías deslizantes</h3>
-                      <Link href="/sistemas" className="font-heebo text-[13px] text-[#A52430] hover:underline" onClick={() => setOpenMega(null)}>Ver todos →</Link>
+                      <h3 className="font-heading text-[18px] font-bold uppercase text-[#201F20]">Sistemas de estanterías deslizantes</h3>
+                      <Link href="/sistemas" className="font-body text-[13px] text-[#A52430] hover:underline" onClick={() => setOpenMega(null)}>Ver todos →</Link>
                     </div>
                     <div className="grid grid-cols-4 gap-8">
                       {sistemasMenu.columns.map((col) => (
                         <div key={col.title}>
-                          <p className="font-rajdhani text-[11px] font-semibold uppercase tracking-[1.5px] text-[#A52430] mb-3 pb-2 border-b border-gray-200">{col.title}</p>
+                          <p className="font-heading text-[11px] font-semibold uppercase tracking-[1.5px] text-[#A52430] mb-3 pb-2 border-b border-gray-200">{col.title}</p>
                           <ul className="flex flex-col gap-0.5">
                             {col.items.map((item) => (
                               <li key={item.href}>
-                                <Link href={item.href} className="block py-2 px-3 rounded-lg font-heebo text-[14px] text-[#555] hover:bg-[#f8f8f8] hover:text-[#A52430] transition-colors" onClick={() => setOpenMega(null)}>{item.name}</Link>
+                                <Link href={item.href} className="block py-2 px-3 rounded-lg font-body text-[14px] text-[#555] hover:bg-[#f8f8f8] hover:text-[#A52430] transition-colors" onClick={() => setOpenMega(null)}>{item.name}</Link>
                               </li>
                             ))}
                           </ul>
@@ -123,7 +123,7 @@ export default function Header() {
             >
               <Link
                 href="/accesorios"
-                className={`flex items-center gap-1 px-4 py-6 font-rajdhani text-[14px] font-bold uppercase text-white transition-all duration-300 ${openMega === "accesorios" ? "bg-white/10" : "hover:bg-white/5"}`}
+                className={`flex items-center gap-1 px-4 py-6 font-heading text-[14px] font-bold uppercase text-white transition-all duration-300 ${openMega === "accesorios" ? "bg-white/10" : "hover:bg-white/5"}`}
               >
                 Accesorios
                 <ChevronDown className={`h-3 w-3 opacity-70 transition-transform duration-200 ${openMega === "accesorios" ? "rotate-180" : ""}`} />
@@ -134,13 +134,13 @@ export default function Header() {
                   <div className="px-5 py-5">
                     <div className="grid grid-cols-2 gap-x-6 gap-y-1">
                       {accesoriosMenu.map((item) => (
-                        <Link key={item.href} href={item.href} className="block py-2 px-3 rounded-lg font-heebo text-[13px] text-[#555] hover:bg-[#f8f8f8] hover:text-[#A52430] transition-colors whitespace-nowrap" onClick={() => setOpenMega(null)}>
+                        <Link key={item.href} href={item.href} className="block py-2 px-3 rounded-lg font-body text-[13px] text-[#555] hover:bg-[#f8f8f8] hover:text-[#A52430] transition-colors whitespace-nowrap" onClick={() => setOpenMega(null)}>
                           {item.name}
                         </Link>
                       ))}
                     </div>
                     <div className="mt-3 pt-3 border-t border-gray-100">
-                      <Link href="/accesorios" className="block text-center font-rajdhani text-[13px] font-semibold text-[#A52430] uppercase tracking-[1px] hover:underline" onClick={() => setOpenMega(null)}>Ver todos los accesorios →</Link>
+                      <Link href="/accesorios" className="block text-center font-heading text-[13px] font-semibold text-[#A52430] uppercase tracking-[1px] hover:underline" onClick={() => setOpenMega(null)}>Ver todos los accesorios →</Link>
                     </div>
                   </div>
                 </div>
@@ -152,7 +152,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="flex items-center px-4 py-6 font-rajdhani text-[14px] font-bold uppercase text-white transition-all duration-300 hover:bg-white/5"
+                className="flex items-center px-4 py-6 font-heading text-[14px] font-bold uppercase text-white transition-all duration-300 hover:bg-white/5"
                 onMouseEnter={() => setOpenMega(null)}
               >
                 {link.label}
@@ -172,15 +172,15 @@ export default function Header() {
             <div className="mx-auto max-w-[1200px] flex flex-col pt-2">
               {/* Sistemas group */}
               <div className="border-b border-white/10 pb-3 mb-3">
-                <Link href="/sistemas" className="block py-3 font-rajdhani text-[14px] font-bold uppercase text-white" onClick={() => setMobileOpen(false)}>
+                <Link href="/sistemas" className="block py-3 font-heading text-[14px] font-bold uppercase text-white" onClick={() => setMobileOpen(false)}>
                   Modelos
                 </Link>
                 <div className="pl-4 flex flex-col gap-0.5">
                   {sistemasMenu.columns.map((col) => (
                     <div key={col.title} className="mb-2">
-                      <p className="font-rajdhani text-[11px] font-semibold uppercase tracking-[1px] text-[#A52430] mb-1">{col.title}</p>
+                      <p className="font-heading text-[11px] font-semibold uppercase tracking-[1px] text-[#A52430] mb-1">{col.title}</p>
                       {col.items.map((item) => (
-                        <Link key={item.href} href={item.href} className="block py-1.5 font-heebo text-[13px] text-white/70 hover:text-white" onClick={() => setMobileOpen(false)}>
+                        <Link key={item.href} href={item.href} className="block py-1.5 font-body text-[13px] text-white/70 hover:text-white" onClick={() => setMobileOpen(false)}>
                           {item.name}
                         </Link>
                       ))}
@@ -191,12 +191,12 @@ export default function Header() {
 
               {/* Accesorios group */}
               <div className="border-b border-white/10 pb-3 mb-3">
-                <Link href="/accesorios" className="block py-3 font-rajdhani text-[14px] font-bold uppercase text-white" onClick={() => setMobileOpen(false)}>
+                <Link href="/accesorios" className="block py-3 font-heading text-[14px] font-bold uppercase text-white" onClick={() => setMobileOpen(false)}>
                   Accesorios
                 </Link>
                 <div className="pl-4 flex flex-col gap-0.5">
                   {accesoriosMenu.map((item) => (
-                    <Link key={item.href} href={item.href} className="block py-1.5 font-heebo text-[13px] text-white/70 hover:text-white" onClick={() => setMobileOpen(false)}>
+                    <Link key={item.href} href={item.href} className="block py-1.5 font-body text-[13px] text-white/70 hover:text-white" onClick={() => setMobileOpen(false)}>
                       {item.name}
                     </Link>
                   ))}
@@ -205,7 +205,7 @@ export default function Header() {
 
               {/* Simple links */}
               {simpleLinks.map((link) => (
-                <Link key={link.href} href={link.href} className="block py-3 font-rajdhani text-[14px] font-bold uppercase text-white" onClick={() => setMobileOpen(false)}>
+                <Link key={link.href} href={link.href} className="block py-3 font-heading text-[14px] font-bold uppercase text-white" onClick={() => setMobileOpen(false)}>
                   {link.label}
                 </Link>
               ))}

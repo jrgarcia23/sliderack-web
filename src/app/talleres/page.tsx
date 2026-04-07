@@ -99,25 +99,25 @@ export default function TalleresPage() {
         >
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
           <div className="relative z-10 mx-auto max-w-[1200px] px-6 w-full">
-            <span className="mb-4 inline-block rounded-full bg-[#A52430] px-4 py-1.5 font-[family-name:var(--font-rajdhani)] text-[13px] font-semibold uppercase tracking-[2px] text-white">
+            <span className="mb-4 inline-block rounded-full bg-[#A52430] px-4 py-1.5 font-[family-name:var(--font-heading)] text-[13px] font-semibold uppercase tracking-[2px] text-white">
               Solución para talleres
             </span>
-            <h1 className="font-[family-name:var(--font-rajdhani)] text-[36px] md:text-[52px] font-bold uppercase text-white leading-[1.1] max-w-[700px]">
+            <h1 className="font-[family-name:var(--font-heading)] text-[36px] md:text-[52px] font-bold uppercase text-white leading-[1.1] max-w-[700px]">
               Estanterías deslizantes para talleres mecánicos
             </h1>
-            <p className="mt-6 max-w-[500px] font-[family-name:var(--font-heebo)] text-[17px] text-white/70 leading-relaxed">
+            <p className="mt-6 max-w-[500px] font-[family-name:var(--font-body)] text-[17px] text-white/70 leading-relaxed">
               Organiza herramientas, piezas y recambios en un sistema que aprovecha el 100% del espacio y te da acceso instantáneo a todo.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <Link
                 href="/contacto"
-                className="rounded-lg bg-[#A52430] px-8 py-4 text-center font-[family-name:var(--font-rajdhani)] text-[15px] font-bold uppercase text-white hover:bg-[#8a1e28] transition-colors"
+                className="rounded-lg bg-[#A52430] px-8 py-4 text-center font-[family-name:var(--font-heading)] text-[15px] font-bold uppercase text-white hover:bg-[#8a1e28] transition-colors"
               >
                 Solicitar información
               </Link>
               <Link
                 href="/sistemas"
-                className="rounded-lg border-2 border-white/30 px-8 py-4 text-center font-[family-name:var(--font-rajdhani)] text-[15px] font-bold uppercase text-white hover:border-white transition-colors"
+                className="rounded-lg border-2 border-white/30 px-8 py-4 text-center font-[family-name:var(--font-heading)] text-[15px] font-bold uppercase text-white hover:border-white transition-colors"
               >
                 Ver modelos
               </Link>
@@ -129,13 +129,13 @@ export default function TalleresPage() {
         <section className="bg-white px-6 py-20">
           <div className="mx-auto max-w-[1100px]">
             <ScrollReveal>
-              <span className="block text-center font-[family-name:var(--font-rajdhani)] text-[13px] font-semibold uppercase tracking-[2px] text-[#A52430] mb-3">
+              <span className="block text-center font-[family-name:var(--font-heading)] text-[13px] font-semibold uppercase tracking-[2px] text-[#A52430] mb-3">
                 El problema
               </span>
-              <h2 className="text-center font-[family-name:var(--font-rajdhani)] text-[32px] md:text-[40px] font-bold uppercase text-[#201F20] mb-4">
+              <h2 className="text-center font-[family-name:var(--font-heading)] text-[32px] md:text-[40px] font-bold uppercase text-[#201F20] mb-4">
                 El desorden en el taller tiene un coste real
               </h2>
-              <p className="text-center max-w-[600px] mx-auto font-[family-name:var(--font-heebo)] text-[16px] text-[#888] mb-14">
+              <p className="text-center max-w-[600px] mx-auto font-[family-name:var(--font-body)] text-[16px] text-[#888] mb-14">
                 Cada herramienta fuera de sitio es tiempo perdido. Cada pasillo entre estanterías es espacio que no produce.
               </p>
             </ScrollReveal>
@@ -145,10 +145,10 @@ export default function TalleresPage() {
                 <ScrollReveal key={p.title} delay={i * 100} direction="up">
                   <div className="rounded-xl border border-gray-100 p-7 h-full">
                     <div className="mb-4 text-[#A52430]">{p.icon}</div>
-                    <h3 className="font-[family-name:var(--font-rajdhani)] text-[20px] font-bold uppercase text-[#201F20] mb-3">
+                    <h3 className="font-[family-name:var(--font-heading)] text-[20px] font-bold uppercase text-[#201F20] mb-3">
                       {p.title}
                     </h3>
-                    <p className="font-[family-name:var(--font-heebo)] text-[14px] leading-relaxed text-[#777]">
+                    <p className="font-[family-name:var(--font-body)] text-[14px] leading-relaxed text-[#777]">
                       {p.desc}
                     </p>
                   </div>
@@ -162,10 +162,10 @@ export default function TalleresPage() {
         <section className="bg-[#201F20] px-6 py-20">
           <div className="mx-auto max-w-[1100px]">
             <ScrollReveal>
-              <span className="block text-center font-[family-name:var(--font-rajdhani)] text-[13px] font-semibold uppercase tracking-[2px] text-[#A52430] mb-3">
+              <span className="block text-center font-[family-name:var(--font-heading)] text-[13px] font-semibold uppercase tracking-[2px] text-[#A52430] mb-3">
                 La solución
               </span>
-              <h2 className="text-center font-[family-name:var(--font-rajdhani)] text-[32px] md:text-[40px] font-bold uppercase text-white mb-14">
+              <h2 className="text-center font-[family-name:var(--font-heading)] text-[32px] md:text-[40px] font-bold uppercase text-white mb-14">
                 Sliderack en números
               </h2>
             </ScrollReveal>
@@ -174,13 +174,13 @@ export default function TalleresPage() {
               {solutions.map((s, i) => (
                 <ScrollReveal key={s.label} delay={i * 80} direction="up">
                   <div className="text-center">
-                    <span className="font-[family-name:var(--font-rajdhani)] text-[48px] md:text-[56px] font-bold text-[#A52430] leading-none">
+                    <span className="font-[family-name:var(--font-heading)] text-[48px] md:text-[56px] font-bold text-[#A52430] leading-none">
                       {s.stat}
                     </span>
-                    <p className="font-[family-name:var(--font-rajdhani)] text-[14px] font-semibold uppercase tracking-[1px] text-white mt-2 mb-2">
+                    <p className="font-[family-name:var(--font-heading)] text-[14px] font-semibold uppercase tracking-[1px] text-white mt-2 mb-2">
                       {s.label}
                     </p>
-                    <p className="font-[family-name:var(--font-heebo)] text-[13px] text-white/50 leading-relaxed">
+                    <p className="font-[family-name:var(--font-body)] text-[13px] text-white/50 leading-relaxed">
                       {s.desc}
                     </p>
                   </div>
@@ -201,7 +201,7 @@ export default function TalleresPage() {
         >
           <div className="absolute inset-0 bg-black/50" />
           <div className="relative z-10 text-center px-6">
-            <h2 className="font-[family-name:var(--font-rajdhani)] text-[28px] md:text-[40px] font-bold uppercase text-white max-w-[700px]">
+            <h2 className="font-[family-name:var(--font-heading)] text-[28px] md:text-[40px] font-bold uppercase text-white max-w-[700px]">
               Cada herramienta en su sitio. Cada minuto aprovechado.
             </h2>
           </div>
@@ -211,10 +211,10 @@ export default function TalleresPage() {
         <section className="bg-[#f8f8f8] px-6 py-20">
           <div className="mx-auto max-w-[1100px]">
             <ScrollReveal>
-              <h2 className="text-center font-[family-name:var(--font-rajdhani)] text-[32px] font-bold uppercase text-[#201F20] mb-4">
+              <h2 className="text-center font-[family-name:var(--font-heading)] text-[32px] font-bold uppercase text-[#201F20] mb-4">
                 Cómo se usa en cada tipo de taller
               </h2>
-              <p className="text-center max-w-[550px] mx-auto font-[family-name:var(--font-heebo)] text-[16px] text-[#888] mb-12">
+              <p className="text-center max-w-[550px] mx-auto font-[family-name:var(--font-body)] text-[16px] text-[#888] mb-12">
                 Sliderack se adapta a las necesidades específicas de cada entorno profesional.
               </p>
             </ScrollReveal>
@@ -223,14 +223,14 @@ export default function TalleresPage() {
               {useCases.map((uc, i) => (
                 <ScrollReveal key={uc.title} delay={i * 100} direction="up">
                   <div className="rounded-xl bg-white border border-gray-100 p-7 h-full">
-                    <h3 className="font-[family-name:var(--font-rajdhani)] text-[20px] font-bold uppercase text-[#A52430] mb-4">
+                    <h3 className="font-[family-name:var(--font-heading)] text-[20px] font-bold uppercase text-[#A52430] mb-4">
                       {uc.title}
                     </h3>
                     <ul className="space-y-3">
                       {uc.items.map((item) => (
                         <li key={item} className="flex items-start gap-3">
                           <div className="w-1.5 h-1.5 rounded-full bg-[#A52430] mt-2 shrink-0" />
-                          <span className="font-[family-name:var(--font-heebo)] text-[14px] text-[#666] leading-relaxed">
+                          <span className="font-[family-name:var(--font-body)] text-[14px] text-[#666] leading-relaxed">
                             {item}
                           </span>
                         </li>
@@ -247,10 +247,10 @@ export default function TalleresPage() {
         <section className="bg-white px-6 py-20">
           <div className="mx-auto max-w-[1200px]">
             <ScrollReveal>
-              <h2 className="text-center font-[family-name:var(--font-rajdhani)] text-[32px] font-bold uppercase text-[#201F20] mb-4">
+              <h2 className="text-center font-[family-name:var(--font-heading)] text-[32px] font-bold uppercase text-[#201F20] mb-4">
                 Modelos recomendados para talleres
               </h2>
-              <p className="text-center max-w-[550px] mx-auto font-[family-name:var(--font-heebo)] text-[16px] text-[#888] mb-12">
+              <p className="text-center max-w-[550px] mx-auto font-[family-name:var(--font-body)] text-[16px] text-[#888] mb-12">
                 Los sistemas más elegidos por talleres profesionales.
               </p>
             </ScrollReveal>
@@ -266,12 +266,12 @@ export default function TalleresPage() {
                         fill
                         className="object-contain p-6"
                       />
-                      <span className="absolute left-3 top-3 rounded bg-[#A52430] px-2.5 py-1 font-[family-name:var(--font-rajdhani)] text-[11px] font-semibold uppercase text-white">
+                      <span className="absolute left-3 top-3 rounded bg-[#A52430] px-2.5 py-1 font-[family-name:var(--font-heading)] text-[11px] font-semibold uppercase text-white">
                         {p.badge}
                       </span>
                     </div>
                     <div className="pt-3">
-                      <h3 className="font-[family-name:var(--font-rajdhani)] text-[18px] font-semibold uppercase text-[#201F20]">
+                      <h3 className="font-[family-name:var(--font-heading)] text-[18px] font-semibold uppercase text-[#201F20]">
                         {p.name}
                       </h3>
                     </div>
@@ -283,7 +283,7 @@ export default function TalleresPage() {
             <div className="text-center mt-10">
               <Link
                 href="/sistemas"
-                className="font-[family-name:var(--font-rajdhani)] text-[14px] font-semibold uppercase tracking-[1px] text-[#A52430] hover:underline"
+                className="font-[family-name:var(--font-heading)] text-[14px] font-semibold uppercase tracking-[1px] text-[#A52430] hover:underline"
               >
                 Ver todos los modelos →
               </Link>
@@ -295,10 +295,10 @@ export default function TalleresPage() {
         <section className="bg-[#f8f8f8] px-6 py-20">
           <div className="mx-auto max-w-[1200px]">
             <ScrollReveal>
-              <h2 className="text-center font-[family-name:var(--font-rajdhani)] text-[32px] font-bold uppercase text-[#201F20] mb-4">
+              <h2 className="text-center font-[family-name:var(--font-heading)] text-[32px] font-bold uppercase text-[#201F20] mb-4">
                 Accesorios imprescindibles para el taller
               </h2>
-              <p className="text-center max-w-[550px] mx-auto font-[family-name:var(--font-heebo)] text-[16px] text-[#888] mb-12">
+              <p className="text-center max-w-[550px] mx-auto font-[family-name:var(--font-body)] text-[16px] text-[#888] mb-12">
                 Personaliza tu Sliderack con los complementos que más necesitas.
               </p>
             </ScrollReveal>
@@ -316,7 +316,7 @@ export default function TalleresPage() {
                       />
                     </div>
                     <div className="pt-3">
-                      <h3 className="font-[family-name:var(--font-rajdhani)] text-[18px] font-semibold uppercase text-[#201F20]">
+                      <h3 className="font-[family-name:var(--font-heading)] text-[18px] font-semibold uppercase text-[#201F20]">
                         {p.name}
                       </h3>
                     </div>
@@ -339,10 +339,10 @@ export default function TalleresPage() {
                   { stat: "4", label: "Certificaciones ISO" },
                 ].map((item) => (
                   <div key={item.label}>
-                    <span className="font-[family-name:var(--font-rajdhani)] text-[36px] font-bold text-[#A52430]">
+                    <span className="font-[family-name:var(--font-heading)] text-[36px] font-bold text-[#A52430]">
                       {item.stat}
                     </span>
-                    <p className="font-[family-name:var(--font-heebo)] text-[13px] text-[#999] mt-1">
+                    <p className="font-[family-name:var(--font-body)] text-[13px] text-[#999] mt-1">
                       {item.label}
                     </p>
                   </div>
@@ -352,22 +352,22 @@ export default function TalleresPage() {
 
             <ScrollReveal>
               <div className="text-center">
-                <h2 className="font-[family-name:var(--font-rajdhani)] text-[28px] md:text-[36px] font-bold uppercase text-[#201F20] mb-4">
+                <h2 className="font-[family-name:var(--font-heading)] text-[28px] md:text-[36px] font-bold uppercase text-[#201F20] mb-4">
                   ¿Quieres ver cómo Sliderack transforma tu taller?
                 </h2>
-                <p className="font-[family-name:var(--font-heebo)] text-[16px] text-[#888] mb-8 max-w-[500px] mx-auto">
+                <p className="font-[family-name:var(--font-body)] text-[16px] text-[#888] mb-8 max-w-[500px] mx-auto">
                   Nuestro equipo técnico te asesora sin compromiso sobre la configuración ideal para tu espacio.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <Link
                     href="/contacto"
-                    className="rounded-lg bg-[#A52430] px-10 py-4 font-[family-name:var(--font-rajdhani)] text-[16px] font-bold uppercase text-white hover:bg-[#8a1e28] transition-colors"
+                    className="rounded-lg bg-[#A52430] px-10 py-4 font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-white hover:bg-[#8a1e28] transition-colors"
                   >
                     Solicitar información
                   </Link>
                   <a
                     href="tel:+34985308980"
-                    className="rounded-lg border-2 border-gray-300 px-10 py-4 font-[family-name:var(--font-rajdhani)] text-[16px] font-bold uppercase text-[#201F20] hover:border-[#A52430] hover:text-[#A52430] transition-colors"
+                    className="rounded-lg border-2 border-gray-300 px-10 py-4 font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-[#201F20] hover:border-[#A52430] hover:text-[#A52430] transition-colors"
                   >
                     985 30 89 80
                   </a>

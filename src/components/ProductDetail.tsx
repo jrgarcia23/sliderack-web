@@ -126,7 +126,7 @@ export default function ProductDetail({
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
                   </svg>
                 </button>
-                <span className="font-[family-name:var(--font-rajdhani)] text-[13px] text-[#999]">
+                <span className="font-[family-name:var(--font-heading)] text-[13px] text-[#999]">
                   {activeImage + 1} / {allImages.length}
                 </span>
                 <button
@@ -150,7 +150,7 @@ export default function ProductDetail({
           <Link
             href={categoryPath}
             className="inline-flex items-center gap-2 text-[#A52430] hover:underline transition"
-            style={{ fontFamily: "var(--font-heebo)", fontSize: 14 }}
+            style={{ fontFamily: "var(--font-body)", fontSize: 14 }}
           >
             ← Ver más {categoryLabel}
           </Link>
@@ -177,7 +177,7 @@ export default function ProductDetail({
                 <span
                   className="absolute top-4 left-4 bg-[#A52430] text-white px-3 py-1.5 rounded uppercase"
                   style={{
-                    fontFamily: "var(--font-rajdhani)",
+                    fontFamily: "var(--font-heading)",
                     fontSize: 12,
                     fontWeight: 600,
                   }}
@@ -217,20 +217,20 @@ export default function ProductDetail({
             <div className="flex flex-col h-full">
               <p
                 className="mb-2 text-[#A52430] uppercase tracking-[2px]"
-                style={{ fontFamily: "var(--font-rajdhani)", fontSize: 13, fontWeight: 600 }}
+                style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 600 }}
               >
                 {product.badge}
               </p>
               <h1
                 className="mb-4 text-[#201F20] uppercase"
-                style={{ fontFamily: "var(--font-rajdhani)", fontSize: 45, fontWeight: 700, lineHeight: 1.1 }}
+                style={{ fontFamily: "var(--font-heading)", fontSize: 45, fontWeight: 700, lineHeight: 1.1 }}
               >
                 {product.name}
               </h1>
 
               <p
                 className="mb-6 text-[#555]"
-                style={{ fontFamily: "var(--font-heebo)", fontSize: 16, lineHeight: 1.7 }}
+                style={{ fontFamily: "var(--font-body)", fontSize: 16, lineHeight: 1.7 }}
               >
                 {product.description}
               </p>
@@ -239,8 +239,8 @@ export default function ProductDetail({
               <div className="grid grid-cols-2 gap-3 mb-6 bg-[#f8f8f8] rounded-xl p-4">
                 {product.specs.slice(0, 4).map((s, i) => (
                   <div key={i}>
-                    <p className="text-[#999] mb-0.5" style={{ fontFamily: "var(--font-heebo)", fontSize: 11 }}>{s.label}</p>
-                    <p className="text-[#201F20]" style={{ fontFamily: "var(--font-rajdhani)", fontSize: 16, fontWeight: 700 }}>{s.value}</p>
+                    <p className="text-[#999] mb-0.5" style={{ fontFamily: "var(--font-body)", fontSize: 11 }}>{s.label}</p>
+                    <p className="text-[#201F20]" style={{ fontFamily: "var(--font-heading)", fontSize: 16, fontWeight: 700 }}>{s.value}</p>
                   </div>
                 ))}
               </div>
@@ -250,7 +250,7 @@ export default function ProductDetail({
                 {product.features.map((f, i) => (
                   <li key={i} className="flex items-start gap-2.5">
                     <CheckIcon />
-                    <span className="text-[#555]" style={{ fontFamily: "var(--font-heebo)", fontSize: 14 }}>{f}</span>
+                    <span className="text-[#555]" style={{ fontFamily: "var(--font-body)", fontSize: 14 }}>{f}</span>
                   </li>
                 ))}
               </ul>
@@ -261,14 +261,14 @@ export default function ProductDetail({
                 <Link
                   href={`/contacto?modelo=${product.slug}`}
                   className="bg-[#A52430] text-white text-center px-4 py-3.5 rounded-lg hover:bg-[#8a1e28] transition-colors uppercase tracking-[1px]"
-                  style={{ fontFamily: "var(--font-rajdhani)", fontSize: 14, fontWeight: 700 }}
+                  style={{ fontFamily: "var(--font-heading)", fontSize: 14, fontWeight: 700 }}
                 >
                   Solicitar información
                 </Link>
                 <Link
                   href={`/contacto?modelo=${product.slug}`}
                   className="border-2 border-[#A52430] text-[#A52430] text-center px-4 py-3.5 rounded-lg hover:bg-[#A52430] hover:text-white transition-colors uppercase tracking-[1px]"
-                  style={{ fontFamily: "var(--font-rajdhani)", fontSize: 14, fontWeight: 700 }}
+                  style={{ fontFamily: "var(--font-heading)", fontSize: 14, fontWeight: 700 }}
                 >
                   Descargar catálogo
                 </Link>
@@ -284,13 +284,13 @@ export default function ProductDetail({
         <div className="max-w-[1200px] mx-auto">
           <h2
             className="text-[#201F20] uppercase mb-2"
-            style={{ fontFamily: "var(--font-rajdhani)", fontSize: 28, fontWeight: 700 }}
+            style={{ fontFamily: "var(--font-heading)", fontSize: 28, fontWeight: 700 }}
           >
             Ficha técnica
           </h2>
           <p
             className="text-[#999] mb-8"
-            style={{ fontFamily: "var(--font-heebo)", fontSize: 15 }}
+            style={{ fontFamily: "var(--font-body)", fontSize: 15 }}
           >
             Especificaciones detalladas del modelo {product.name}.
           </p>
@@ -302,21 +302,21 @@ export default function ProductDetail({
               <div>
                 <p
                   className="text-[#A52430] uppercase tracking-[2px] mb-4"
-                  style={{ fontFamily: "var(--font-rajdhani)", fontSize: 13, fontWeight: 600 }}
+                  style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 600 }}
                 >
                   Dimensiones
                 </p>
                 <div className="bg-white rounded-xl overflow-hidden">
                   {product.specs.map((s, i) => (
                     <div key={i} className={`flex justify-between px-5 py-3.5 ${i < product.specs.length - 1 ? "border-b border-gray-100" : ""}`}>
-                      <span className="text-[#999]" style={{ fontFamily: "var(--font-heebo)", fontSize: 14 }}>{s.label}</span>
-                      <span className="text-[#201F20]" style={{ fontFamily: "var(--font-rajdhani)", fontSize: 15, fontWeight: 600 }}>{s.value}</span>
+                      <span className="text-[#999]" style={{ fontFamily: "var(--font-body)", fontSize: 14 }}>{s.label}</span>
+                      <span className="text-[#201F20]" style={{ fontFamily: "var(--font-heading)", fontSize: 15, fontWeight: 600 }}>{s.value}</span>
                     </div>
                   ))}
                   {product.finish && (
                     <div className="flex justify-between px-5 py-3.5 border-t border-gray-100">
-                      <span className="text-[#999]" style={{ fontFamily: "var(--font-heebo)", fontSize: 14 }}>Acabado</span>
-                      <span className="text-[#201F20]" style={{ fontFamily: "var(--font-rajdhani)", fontSize: 15, fontWeight: 600 }}>{product.finish}</span>
+                      <span className="text-[#999]" style={{ fontFamily: "var(--font-body)", fontSize: 14 }}>Acabado</span>
+                      <span className="text-[#201F20]" style={{ fontFamily: "var(--font-heading)", fontSize: 15, fontWeight: 600 }}>{product.finish}</span>
                     </div>
                   )}
                 </div>
@@ -330,15 +330,15 @@ export default function ProductDetail({
                   <>
                     <p
                       className="text-[#A52430] uppercase tracking-[2px] mb-4"
-                      style={{ fontFamily: "var(--font-rajdhani)", fontSize: 13, fontWeight: 600 }}
+                      style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 600 }}
                     >
                       Qué incluye
                     </p>
                     <div className="bg-white rounded-xl overflow-hidden mb-6">
                       {product.includes.map((s, i) => (
                         <div key={i} className={`flex justify-between px-5 py-3.5 ${i < product.includes!.length - 1 ? "border-b border-gray-100" : ""}`}>
-                          <span className="text-[#999]" style={{ fontFamily: "var(--font-heebo)", fontSize: 14 }}>{s.label}</span>
-                          <span className="text-[#201F20]" style={{ fontFamily: "var(--font-rajdhani)", fontSize: 15, fontWeight: 600 }}>{s.value}</span>
+                          <span className="text-[#999]" style={{ fontFamily: "var(--font-body)", fontSize: 14 }}>{s.label}</span>
+                          <span className="text-[#201F20]" style={{ fontFamily: "var(--font-heading)", fontSize: 15, fontWeight: 600 }}>{s.value}</span>
                         </div>
                       ))}
                     </div>
@@ -348,15 +348,15 @@ export default function ProductDetail({
                   <>
                     <p
                       className="text-[#A52430] uppercase tracking-[2px] mb-4"
-                      style={{ fontFamily: "var(--font-rajdhani)", fontSize: 13, fontWeight: 600 }}
+                      style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 600 }}
                     >
                       Capacidad de carga
                     </p>
                     <div className="bg-white rounded-xl overflow-hidden">
                       {product.capacity.map((s, i) => (
                         <div key={i} className={`flex justify-between px-5 py-3.5 ${i < product.capacity!.length - 1 ? "border-b border-gray-100" : ""}`}>
-                          <span className="text-[#999]" style={{ fontFamily: "var(--font-heebo)", fontSize: 14 }}>{s.label}</span>
-                          <span className="text-[#201F20]" style={{ fontFamily: "var(--font-rajdhani)", fontSize: 15, fontWeight: 600 }}>{s.value}</span>
+                          <span className="text-[#999]" style={{ fontFamily: "var(--font-body)", fontSize: 14 }}>{s.label}</span>
+                          <span className="text-[#201F20]" style={{ fontFamily: "var(--font-heading)", fontSize: 15, fontWeight: 600 }}>{s.value}</span>
                         </div>
                       ))}
                     </div>
@@ -377,31 +377,31 @@ export default function ProductDetail({
             <div>
               <p
                 className="text-[#A52430] uppercase tracking-[2px] mb-3"
-                style={{ fontFamily: "var(--font-rajdhani)", fontSize: 13, fontWeight: 600 }}
+                style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 600 }}
               >
                 Sobre este modelo
               </p>
               <h2
                 className="text-[#201F20] uppercase mb-6"
-                style={{ fontFamily: "var(--font-rajdhani)", fontSize: 28, fontWeight: 700, lineHeight: 1.15 }}
+                style={{ fontFamily: "var(--font-heading)", fontSize: 28, fontWeight: 700, lineHeight: 1.15 }}
               >
                 {product.name}
               </h2>
               <p
                 className="text-[#555] mb-5"
-                style={{ fontFamily: "var(--font-heebo)", fontSize: 16, lineHeight: 1.8 }}
+                style={{ fontFamily: "var(--font-body)", fontSize: 16, lineHeight: 1.8 }}
               >
                 {product.description}
               </p>
               <p
                 className="text-[#555] mb-5"
-                style={{ fontFamily: "var(--font-heebo)", fontSize: 16, lineHeight: 1.8 }}
+                style={{ fontFamily: "var(--font-body)", fontSize: 16, lineHeight: 1.8 }}
               >
                 Su estructura metálica de acero laminado en frío garantiza estabilidad y resistencia en entornos de uso intensivo. El sistema deslizante proporciona un acceso cómodo y controlado a cada módulo, mientras que la modularidad permite adaptar la configuración según las necesidades específicas de cada proyecto.
               </p>
               <p
                 className="text-[#555]"
-                style={{ fontFamily: "var(--font-heebo)", fontSize: 16, lineHeight: 1.8 }}
+                style={{ fontFamily: "var(--font-body)", fontSize: 16, lineHeight: 1.8 }}
               >
                 Diseñado y fabricado en España por Esnova Racks, bajo certificaciones ISO 9001, ISO 14001 e ISO 45001. Cada sistema cumple con la normativa europea UNE EN 1090 de marcado CE, garantizando los más altos estándares de calidad y seguridad.
               </p>
@@ -413,7 +413,7 @@ export default function ProductDetail({
             <div>
               <p
                 className="text-[#A52430] uppercase tracking-[2px] mb-3"
-                style={{ fontFamily: "var(--font-rajdhani)", fontSize: 13, fontWeight: 600 }}
+                style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 600 }}
               >
                 Ideal para
               </p>
@@ -428,11 +428,11 @@ export default function ProductDetail({
                     <div>
                       <h4
                         className="text-[#201F20] uppercase mb-1"
-                        style={{ fontFamily: "var(--font-rajdhani)", fontSize: 16, fontWeight: 700 }}
+                        style={{ fontFamily: "var(--font-heading)", fontSize: 16, fontWeight: 700 }}
                       >
                         {sector.title}
                       </h4>
-                      <p className="text-[#666]" style={{ fontFamily: "var(--font-heebo)", fontSize: 14, lineHeight: 1.6 }}>
+                      <p className="text-[#666]" style={{ fontFamily: "var(--font-body)", fontSize: 14, lineHeight: 1.6 }}>
                         {sector.desc}
                       </p>
                     </div>
@@ -459,7 +459,7 @@ export default function ProductDetail({
             <h2
               className="text-white uppercase mb-4"
               style={{
-                fontFamily: "var(--font-rajdhani)",
+                fontFamily: "var(--font-heading)",
                 fontSize: 36,
                 fontWeight: 700,
                 lineHeight: 1.15,
@@ -469,7 +469,7 @@ export default function ProductDetail({
             </h2>
             <p
               className="text-white/70"
-              style={{ fontFamily: "var(--font-heebo)", fontSize: 16, lineHeight: 1.7 }}
+              style={{ fontFamily: "var(--font-body)", fontSize: 16, lineHeight: 1.7 }}
             >
               Con distintas configuraciones de altura, profundidad y accesorios,
               Sliderack se adapta a cualquier entorno profesional. Desde talleres
@@ -486,7 +486,7 @@ export default function ProductDetail({
             <h2
               className="text-[#201F20] uppercase"
               style={{
-                fontFamily: "var(--font-rajdhani)",
+                fontFamily: "var(--font-heading)",
                 fontSize: 26,
                 fontWeight: 700,
               }}
@@ -496,7 +496,7 @@ export default function ProductDetail({
             <Link
               href="/accesorios"
               className="text-[#A52430] hover:underline transition"
-              style={{ fontFamily: "var(--font-heebo)", fontSize: 15 }}
+              style={{ fontFamily: "var(--font-body)", fontSize: 15 }}
             >
               Ver todos los accesorios →
             </Link>
@@ -515,7 +515,7 @@ export default function ProductDetail({
                     <span
                       className="absolute top-3 left-3 bg-[#A52430] text-white px-2.5 py-1 rounded uppercase"
                       style={{
-                        fontFamily: "var(--font-rajdhani)",
+                        fontFamily: "var(--font-heading)",
                         fontSize: 11,
                         fontWeight: 600,
                       }}
@@ -526,7 +526,7 @@ export default function ProductDetail({
                   <h3
                     className="mt-3 text-[#201F20] uppercase group-hover:text-[#A52430] transition-colors"
                     style={{
-                      fontFamily: "var(--font-rajdhani)",
+                      fontFamily: "var(--font-heading)",
                       fontSize: 16,
                       fontWeight: 700,
                     }}
@@ -535,7 +535,7 @@ export default function ProductDetail({
                   </h3>
                   <p
                     className="text-[#999] mt-1"
-                    style={{ fontFamily: "var(--font-heebo)", fontSize: 13 }}
+                    style={{ fontFamily: "var(--font-body)", fontSize: 13 }}
                   >
                     {p.shortDesc}
                   </p>
@@ -552,7 +552,7 @@ export default function ProductDetail({
           <h2
             className="text-[#201F20] uppercase text-center mb-10"
             style={{
-              fontFamily: "var(--font-rajdhani)",
+              fontFamily: "var(--font-heading)",
               fontSize: 28,
               fontWeight: 700,
             }}
@@ -570,7 +570,7 @@ export default function ProductDetail({
                     <span
                       className="text-[#201F20]"
                       style={{
-                        fontFamily: "var(--font-rajdhani)",
+                        fontFamily: "var(--font-heading)",
                         fontSize: 18,
                         fontWeight: 600,
                       }}
@@ -583,7 +583,7 @@ export default function ProductDetail({
                     <div
                       className="px-6 pb-5 border-t border-gray-100 pt-4 text-[#666]"
                       style={{
-                        fontFamily: "var(--font-heebo)",
+                        fontFamily: "var(--font-body)",
                         fontSize: 15,
                         lineHeight: 1.7,
                       }}
@@ -605,7 +605,7 @@ export default function ProductDetail({
             <h2
               className="mb-4 text-[#201F20] uppercase"
               style={{
-                fontFamily: "var(--font-rajdhani)",
+                fontFamily: "var(--font-heading)",
                 fontSize: 28,
                 fontWeight: 700,
               }}
@@ -614,7 +614,7 @@ export default function ProductDetail({
             </h2>
             <p
               className="mb-8 text-[#666]"
-              style={{ fontFamily: "var(--font-heebo)", fontSize: 16 }}
+              style={{ fontFamily: "var(--font-body)", fontSize: 16 }}
             >
               Nuestro equipo técnico te asesora sin compromiso.
             </p>
@@ -623,7 +623,7 @@ export default function ProductDetail({
                 href="/contacto"
                 className="bg-[#A52430] text-white px-10 py-4 rounded-lg hover:bg-[#8a1e28] transition uppercase tracking-[1px]"
                 style={{
-                  fontFamily: "var(--font-rajdhani)",
+                  fontFamily: "var(--font-heading)",
                   fontSize: 15,
                   fontWeight: 700,
                 }}
@@ -634,7 +634,7 @@ export default function ProductDetail({
                 href="tel:+34985308980"
                 className="border-2 border-gray-300 text-[#201F20] px-10 py-4 rounded-lg hover:border-[#A52430] hover:text-[#A52430] transition uppercase tracking-[1px]"
                 style={{
-                  fontFamily: "var(--font-rajdhani)",
+                  fontFamily: "var(--font-heading)",
                   fontSize: 15,
                   fontWeight: 700,
                 }}

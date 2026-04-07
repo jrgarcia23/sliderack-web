@@ -6,13 +6,13 @@ import Analytics from "@/components/Analytics";
 import { OrganizationSchema } from "@/components/SchemaOrg";
 
 const barlowCondensed = Barlow_Condensed({
-  variable: "--font-rajdhani",
+  variable: "--font-heading",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
 
 const dmSans = DM_Sans({
-  variable: "--font-heebo",
+  variable: "--font-body",
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
@@ -81,7 +81,7 @@ export default function RootLayout({
       lang="es"
       className={`${barlowCondensed.variable} ${dmSans.variable} ${openSans.variable} ${roboto.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-heebo text-[#201F20] bg-white">
+      <body className="min-h-full flex flex-col font-body text-[#201F20] bg-white">
         <OrganizationSchema />
         <Analytics />
         {children}

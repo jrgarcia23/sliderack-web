@@ -5,54 +5,59 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const faqs = [
   {
-    question: "¿Qué medidas de Sliderack están disponibles?",
+    question: "¿Qué es Sliderack y en qué se diferencia de una estantería convencional?",
     answer:
-      "Sliderack se ofrece en tres anchos principales: 1825 mm, 2700 mm y 3600 mm, con profundidades de 370 mm y 470 mm. Disponible en configuraciones de uno o dos niveles. La altura estándar es de 2255 mm y la profundidad de 1160 mm. Acabado en Negro Mate RAL-9005.",
+      "Sliderack es un sistema de estanterías deslizantes fabricado en España por Esnova Racks. A diferencia de las estanterías convencionales, los módulos de Sliderack se deslizan lateralmente sobre guías de alta precisión, eliminando los pasillos fijos entre estanterías. Esto permite almacenar el mismo volumen de herramientas, piezas o materiales en aproximadamente la mitad de espacio. Cada módulo soporta hasta 150 kg y puede moverse con un solo dedo.",
+  },
+  {
+    question: "¿Qué medidas y configuraciones están disponibles?",
+    answer:
+      "Sliderack se ofrece en tres anchos (1825 mm, 2700 mm y 3600 mm) y dos profundidades (370 mm y 470 mm). Cada modelo está disponible en configuración de uno o dos niveles. La altura estándar es de 2255 mm y la profundidad total de 1160 mm. El acabado es Negro Mate RAL-9005. En total, hay 12 configuraciones de sistema que cubren desde talleres pequeños hasta instalaciones industriales de gran capacidad.",
   },
   {
     question: "¿Cuánto peso soporta cada módulo deslizante?",
     answer:
-      "Cada módulo deslizante está diseñado para soportar hasta 150 kg de carga, y puede deslizarse con un solo dedo gracias al sistema de guías de alta precisión.",
+      "Cada módulo deslizante de Sliderack está diseñado para soportar hasta 150 kg de carga distribuida en sus baldas. A pesar de este peso, el mecanismo de guías de precisión permite deslizar el módulo completo con un solo dedo, sin esfuerzo y sin ruido. La estructura de acero laminado en frío con tratamiento anticorrosión garantiza que esta capacidad se mantenga a lo largo del tiempo, incluso en entornos industriales de uso intensivo.",
   },
   {
-    question: "¿Cuántos módulos puede incorporar cada sistema?",
+    question: "¿Para qué tipo de espacios está diseñado Sliderack?",
     answer:
-      "Depende del ancho: el sistema de 1825 mm incluye 3 módulos deslizantes (9 baldas), el de 2700 mm incluye 5 módulos (15 baldas) y el de 3600 mm incluye 7 módulos (21 baldas). Los modelos de 2 niveles duplican la capacidad.",
+      "Sliderack está diseñado para cualquier entorno profesional que necesite almacenaje organizado y accesible: talleres mecánicos y de automoción, garajes premium y viviendas de alto standing, servicios de emergencia y parques de bomberos (para almacenar EPIs y equipamiento de intervención), centros logísticos, laboratorios y centros de investigación, e instalaciones industriales de mantenimiento técnico. El sistema se adapta tanto a espacios reducidos como a grandes superficies.",
   },
   {
-    question: "¿Sliderack se adapta a garajes, talleres y espacios técnicos?",
+    question: "¿Qué accesorios se pueden añadir al sistema?",
     answer:
-      "Sí. Sliderack está diseñado para talleres mecánicos, garajes premium, servicios de emergencia, laboratorios, centros logísticos y cualquier entorno profesional que requiera almacenaje organizado y accesible.",
+      "Sliderack dispone de siete familias de accesorios compatibles con todos los modelos del sistema: puestos de trabajo con mesa integrada y panel perforado, paneles perforados independientes para organización vertical de herramientas, kits de cajones divisorios para piezas pequeñas, cerraduras con llave para módulos que requieran seguridad, kits de baldas adicionales ajustables en altura, módulos de ampliación para aumentar la capacidad, y kits de perchero para almacenaje de EPIs, uniformes y prendas de trabajo.",
   },
   {
-    question: "¿Qué accesorios están disponibles?",
+    question: "¿Es posible ampliar o modificar la configuración en el futuro?",
     answer:
-      "Puestos de trabajo con mesa integrada, paneles perforados para herramientas, kit de cajones divisorios, cerraduras con llave, baldas adicionales ajustables en altura, módulos de ampliación y kit de perchero para EPIs y uniformes.",
+      "Sí. El diseño modular de Sliderack permite incorporar módulos adicionales, accesorios o cambiar la distribución interna en cualquier momento, sin necesidad de modificar la estructura existente. Todos los accesorios son compatibles entre sí y con cualquier modelo del sistema, lo que permite que la inversión crezca con las necesidades del espacio.",
   },
   {
-    question: "¿Es posible ampliar la configuración en el futuro?",
+    question: "¿Qué certificaciones de calidad tiene Sliderack?",
     answer:
-      "Sí. El diseño modular permite incorporar módulos y accesorios adicionales en cualquier momento. Todos los accesorios son compatibles entre sí y con cualquier modelo del sistema.",
-  },
-  {
-    question: "¿Qué certificaciones tiene Sliderack?",
-    answer:
-      "Sliderack está fabricado por Esnova Racks, empresa certificada con ISO 9001 (calidad), ISO 14001 (medioambiente), ISO 45001 (seguridad laboral) y UNE EN 1090 (Marcado CE para estructuras metálicas).",
+      "Sliderack está fabricado por Esnova Racks, empresa española con +50 años de experiencia certificada con ISO 9001 (gestión de calidad y mejora continua), ISO 14001 (gestión ambiental y uso responsable de recursos), ISO 45001 (seguridad y salud laboral) y UNE EN 1090 (Marcado CE para estructuras metálicas). Estas certificaciones garantizan que cada componente del sistema cumple los estándares europeos más exigentes en calidad, seguridad y sostenibilidad.",
   },
   {
     question: "¿Dónde se fabrica Sliderack?",
     answer:
-      "Sliderack se diseña y fabrica íntegramente en España, en la planta de producción de Esnova Racks en Gijón (Asturias), con 46.600 m² de instalaciones y tecnología de última generación.",
+      "Sliderack se diseña y fabrica íntegramente en España, en la planta de producción de Esnova Racks ubicada en Gijón (Asturias). La planta cuenta con 46.600 m² de instalaciones equipadas con tecnología de última generación. Todo el proceso — desde el diseño hasta el montaje final — se realiza en España con materiales europeos, lo que garantiza control total sobre la calidad del producto y tiempos de entrega competitivos.",
   },
   {
-    question: "¿Cómo solicito información o presupuesto?",
+    question: "¿Cuánto espacio puedo ahorrar con estanterías deslizantes frente a estanterías fijas?",
     answer:
-      "Puedes rellenar el formulario de contacto en nuestra web o llamarnos al 985 30 89 80. Nuestro equipo técnico te asesorará sin compromiso y te responderá en 24-48 horas.",
+      "El sistema deslizante de Sliderack elimina los pasillos fijos entre estanterías. En una configuración típica con estanterías fijas, aproximadamente el 50% de la superficie se dedica a pasillos de acceso. Con Sliderack, solo se necesita un pasillo de acceso que se abre deslizando lateralmente los módulos, lo que permite duplicar la capacidad de almacenaje en la misma superficie o liberar la mitad del espacio para otras funciones del taller o garaje.",
   },
   {
     question: "¿Sliderack necesita mantenimiento?",
     answer:
-      "El sistema está diseñado para un uso intensivo con mínimo mantenimiento. La estructura de acero con tratamiento anticorrosión y las guías de precisión garantizan durabilidad a largo plazo sin intervenciones frecuentes.",
+      "El sistema está diseñado para un uso intensivo diario con mínimo mantenimiento. La estructura de acero laminado en frío con tratamiento anticorrosión resiste entornos industriales exigentes. Las guías de precisión están fabricadas para millones de ciclos de apertura y cierre sin degradación. No requiere lubricación ni intervenciones periódicas. Basta con una limpieza ocasional de los raíles para mantener el rendimiento óptimo del sistema a largo plazo.",
+  },
+  {
+    question: "¿Cómo puedo solicitar información o presupuesto?",
+    answer:
+      "Puedes solicitar información de dos formas: rellenando el formulario de contacto en nuestra web (recibirás respuesta de nuestro equipo técnico en 24-48 horas) o llamándonos directamente al 985 30 89 80 (lunes a viernes de 9:00 a 18:00). El asesoramiento es gratuito y sin compromiso. Nuestro equipo te ayudará a definir la configuración más adecuada para tu espacio.",
   },
 ];
 
@@ -64,19 +69,19 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="bg-[#f8f8f8] px-6 py-24">
+    <section className="bg-[#f8f8f8] px-6 py-20">
       <div className="mx-auto max-w-[800px]">
         {/* Header */}
         <div className="mb-12 text-center">
           <span
             className="mb-3 block text-[13px] font-semibold uppercase tracking-[2px] text-[#A52430]"
-            style={{ fontFamily: "var(--font-rajdhani)" }}
+            style={{ fontFamily: "var(--font-heading)" }}
           >
             PREGUNTAS FRECUENTES
           </span>
           <h2
             className="text-[28px] font-bold uppercase text-[#201F20] sm:text-[34px]"
-            style={{ fontFamily: "var(--font-rajdhani)" }}
+            style={{ fontFamily: "var(--font-heading)" }}
           >
             Todo lo que debes saber sobre nuestro sistema
           </h2>
@@ -89,11 +94,14 @@ export default function FAQSection() {
               <div className="mb-3 overflow-hidden rounded-xl bg-white shadow-sm">
                 <button
                   onClick={() => toggle(index)}
+                  aria-expanded={openIndex === index}
+                  aria-controls={`faq-answer-${index}`}
+                  id={`faq-question-${index}`}
                   className="flex w-full cursor-pointer items-center justify-between px-6 py-5 text-left transition-colors hover:bg-gray-50"
                 >
                   <span
                     className="text-[18px] font-semibold text-[#201F20]"
-                    style={{ fontFamily: "var(--font-rajdhani)" }}
+                    style={{ fontFamily: "var(--font-heading)" }}
                   >
                     {faq.question}
                   </span>
@@ -118,8 +126,11 @@ export default function FAQSection() {
 
                 {openIndex === index && (
                   <div
+                    id={`faq-answer-${index}`}
+                    role="region"
+                    aria-labelledby={`faq-question-${index}`}
                     className="border-t border-gray-100 px-6 pb-5 pt-4 text-[15px] leading-[1.7] text-[#666]"
-                    style={{ fontFamily: "var(--font-heebo)" }}
+                    style={{ fontFamily: "var(--font-body)" }}
                   >
                     {faq.answer}
                   </div>

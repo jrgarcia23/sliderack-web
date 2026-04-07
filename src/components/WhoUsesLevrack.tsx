@@ -64,19 +64,19 @@ const features = [
 
 export default function WhoUsesLevrack() {
   return (
-    <section className="bg-[#f8f8f8] py-24 px-6">
+    <section className="bg-[#f8f8f8] py-20 px-6">
       <div className="mx-auto max-w-[1200px]">
         {/* Header */}
         <div className="mb-16 text-center">
           <p
             className="mb-3 text-[13px] font-semibold uppercase tracking-[2px] text-[#A52430]"
-            style={{ fontFamily: "var(--font-rajdhani)" }}
+            style={{ fontFamily: "var(--font-heading)" }}
           >
             VENTAJAS DEL SISTEMA
           </p>
           <h2
             className="mx-auto max-w-[700px] text-[28px] font-bold uppercase text-[#201F20] md:text-[34px]"
-            style={{ fontFamily: "var(--font-rajdhani)" }}
+            style={{ fontFamily: "var(--font-heading)" }}
           >
             Orden, seguridad y estética en un mismo sistema
           </h2>
@@ -94,14 +94,14 @@ export default function WhoUsesLevrack() {
                 {/* Title */}
                 <h4
                   className="mb-3 text-[18px] font-bold uppercase text-[#201F20]"
-                  style={{ fontFamily: "var(--font-rajdhani)" }}
+                  style={{ fontFamily: "var(--font-heading)" }}
                 >
                   {feature.title}
                 </h4>
                 {/* Description */}
                 <p
                   className="text-[14px] leading-[1.7] text-[#666]"
-                  style={{ fontFamily: "var(--font-heebo)" }}
+                  style={{ fontFamily: "var(--font-body)" }}
                 >
                   {feature.description}
                 </p>

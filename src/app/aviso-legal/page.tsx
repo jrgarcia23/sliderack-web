@@ -11,8 +11,8 @@ export default function AvisoLegal() {
     <>
       <Header />
       <main className="bg-white px-6 py-20">
-        <article className="mx-auto max-w-[800px] font-[family-name:var(--font-heebo)] text-[16px] leading-[1.8] text-[#444]">
-          <h1 className="font-[family-name:var(--font-rajdhani)] text-[36px] font-bold uppercase text-[#201F20] mb-8">
+        <article className="mx-auto max-w-[800px] font-[family-name:var(--font-body)] text-[16px] leading-[1.8] text-[#444]">
+          <h1 className="font-[family-name:var(--font-heading)] text-[36px] font-bold uppercase text-[#201F20] mb-8">
             Aviso Legal
           </h1>
 
@@ -33,7 +33,7 @@ export default function AvisoLegal() {
             Inscrita en el Registro Mercantil de Asturias al Tomo 3416, folio 80, secci&oacute;n 8, hoja n&uacute;mero A-25765, inscripci&oacute;n 53.
           </p>
 
-          <h2 className="font-[family-name:var(--font-rajdhani)] text-[24px] font-bold uppercase text-[#201F20] mt-10 mb-4">
+          <h2 className="font-[family-name:var(--font-heading)] text-[24px] font-bold uppercase text-[#201F20] mt-10 mb-4">
             Condiciones de uso
           </h2>
           <p className="mb-6">
@@ -43,21 +43,21 @@ export default function AvisoLegal() {
             Los contenidos e informaci&oacute;n no vinculan a Esnova Racks ni constituyen opiniones, consejos o asesoramiento legal de ning&uacute;n tipo, pues se trata meramente de un servicio ofrecido con car&aacute;cter informativo y divulgativo.
           </p>
 
-          <h2 className="font-[family-name:var(--font-rajdhani)] text-[24px] font-bold uppercase text-[#201F20] mt-10 mb-4">
+          <h2 className="font-[family-name:var(--font-heading)] text-[24px] font-bold uppercase text-[#201F20] mt-10 mb-4">
             Enlaces externos
           </h2>
           <p className="mb-6">
             Las p&aacute;ginas de Internet de Sliderack pueden contener enlaces (links) a otras p&aacute;ginas de terceras partes que Esnova Racks no puede controlar. Por lo tanto, Esnova Racks no puede asumir responsabilidades por el contenido que pueda aparecer en p&aacute;ginas de terceros.
           </p>
 
-          <h2 className="font-[family-name:var(--font-rajdhani)] text-[24px] font-bold uppercase text-[#201F20] mt-10 mb-4">
+          <h2 className="font-[family-name:var(--font-heading)] text-[24px] font-bold uppercase text-[#201F20] mt-10 mb-4">
             Propiedad intelectual
           </h2>
           <p className="mb-6">
             Los textos, im&aacute;genes, sonidos, animaciones, software y el resto de los contenidos incluidos en este website son propiedad exclusiva de Esnova Racks o sus licenciantes. Cualquier acto de transmisi&oacute;n, distribuci&oacute;n, cesi&oacute;n, reproducci&oacute;n, almacenamiento o comunicaci&oacute;n p&uacute;blica total o parcial, deber&aacute; contar con el consentimiento expreso de Esnova Racks.
           </p>
 
-          <h2 className="font-[family-name:var(--font-rajdhani)] text-[24px] font-bold uppercase text-[#201F20] mt-10 mb-4">
+          <h2 className="font-[family-name:var(--font-heading)] text-[24px] font-bold uppercase text-[#201F20] mt-10 mb-4">
             Protecci&oacute;n de datos
           </h2>
           <p className="mb-6">

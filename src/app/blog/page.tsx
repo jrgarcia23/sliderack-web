@@ -32,14 +32,14 @@ export default function BlogPage() {
       <Header />
       <main className="bg-white px-6 py-20">
         <div className="mx-auto max-w-[900px] text-center">
-          <h1 className="font-[family-name:var(--font-rajdhani)] text-[36px] md:text-[48px] font-bold uppercase text-[#201F20] mb-6">
+          <h1 className="font-[family-name:var(--font-heading)] text-[36px] md:text-[48px] font-bold uppercase text-[#201F20] mb-6">
             Blog
           </h1>
-          <p className="font-[family-name:var(--font-heebo)] text-[17px] text-[#888] mb-12">
+          <p className="font-[family-name:var(--font-body)] text-[17px] text-[#888] mb-12">
             Pr&oacute;ximamente publicaremos art&iacute;culos sobre almacenaje, organizaci&oacute;n de espacios de trabajo y novedades Sliderack.
           </p>
           <div className="inline-block rounded-full bg-[#f5f5f5] px-6 py-3">
-            <span className="font-[family-name:var(--font-rajdhani)] text-[14px] font-semibold uppercase tracking-[2px] text-[#999]">
+            <span className="font-[family-name:var(--font-heading)] text-[14px] font-semibold uppercase tracking-[2px] text-[#999]">
               Pr&oacute;ximamente
             </span>
           </div>

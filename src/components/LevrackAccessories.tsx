@@ -24,19 +24,19 @@ const sectors = [
 
 export default function LevrackAccessories() {
   return (
-    <section className="bg-white px-6 py-24">
+    <section className="bg-white px-6 py-20">
       <div className="mx-auto max-w-[1200px]">
         {/* Header */}
         <div className="mb-16 text-center">
           <span
             className="mb-3 block text-[13px] font-semibold uppercase tracking-[2px] text-[#A52430]"
-            style={{ fontFamily: "var(--font-rajdhani)" }}
+            style={{ fontFamily: "var(--font-heading)" }}
           >
             APLICACIONES
           </span>
           <h2
             className="text-[28px] font-bold uppercase text-[#201F20] sm:text-[34px]"
-            style={{ fontFamily: "var(--font-rajdhani)" }}
+            style={{ fontFamily: "var(--font-heading)" }}
           >
             Sectores donde Sliderack funciona especialmente bien
           </h2>
@@ -55,14 +55,14 @@ export default function LevrackAccessories() {
                 <div className="relative h-[200px] overflow-hidden">
                   <Image
                     src={sector.photo}
-                    alt={sector.title}
+                    alt={`Sliderack en ${sector.title.toLowerCase()} — sistema de almacenaje deslizante`}
                     fill
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                   <h3
                     className="absolute bottom-4 left-5 text-[22px] font-bold uppercase text-white"
-                    style={{ fontFamily: "var(--font-rajdhani)" }}
+                    style={{ fontFamily: "var(--font-heading)" }}
                   >
                     {sector.title}
                   </h3>
@@ -72,7 +72,7 @@ export default function LevrackAccessories() {
                 <div className="p-6 flex-1">
                   <p
                     className="text-[15px] leading-[1.7] text-[#555]"
-                    style={{ fontFamily: "var(--font-heebo)" }}
+                    style={{ fontFamily: "var(--font-body)" }}
                   >
                     {sector.description}
                   </p>

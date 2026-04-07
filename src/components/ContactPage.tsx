@@ -106,13 +106,13 @@ export default function ContactPage() {
         <div className="relative z-10 text-center px-6">
           <h1
             className="text-white uppercase"
-            style={{ fontFamily: "var(--font-rajdhani)", fontSize: 48, fontWeight: 700 }}
+            style={{ fontFamily: "var(--font-heading)", fontSize: 48, fontWeight: 700 }}
           >
             Solicitar información
           </h1>
           <p
             className="text-white/70 mt-4 max-w-[500px] mx-auto"
-            style={{ fontFamily: "var(--font-heebo)", fontSize: 17 }}
+            style={{ fontFamily: "var(--font-body)", fontSize: 17 }}
           >
             Configura tu consulta y nuestro equipo técnico te responderá en 24-48h.
           </p>
@@ -130,7 +130,7 @@ export default function ContactPage() {
                 <div>
                   <label
                     className="block mb-2 uppercase tracking-[1px]"
-                    style={{ fontFamily: "var(--font-rajdhani)", fontSize: 13, fontWeight: 600, color: "#A52430" }}
+                    style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 600, color: "#A52430" }}
                   >
                     Modelo de producto
                   </label>
@@ -174,7 +174,7 @@ export default function ContactPage() {
                 <div>
                   <label
                     className="block mb-2 uppercase tracking-[1px]"
-                    style={{ fontFamily: "var(--font-rajdhani)", fontSize: 13, fontWeight: 600, color: "#A52430" }}
+                    style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 600, color: "#A52430" }}
                   >
                     Accesorios
                   </label>
@@ -215,7 +215,7 @@ export default function ContactPage() {
                       type="button"
                       onClick={addAccessory}
                       className="self-start flex items-center gap-2 py-2 px-4 rounded-lg border border-dashed border-gray-300 text-[#A52430] hover:border-[#A52430] hover:bg-[#A52430]/5 transition-colors"
-                      style={{ fontFamily: "var(--font-rajdhani)", fontSize: 13, fontWeight: 600 }}
+                      style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 600 }}
                     >
                       <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
@@ -233,7 +233,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       className="block mb-2 uppercase tracking-[1px]"
-                      style={{ fontFamily: "var(--font-rajdhani)", fontSize: 13, fontWeight: 600, color: "#201F20" }}
+                      style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 600, color: "#201F20" }}
                     >
                       Nombre *
                     </label>
@@ -249,7 +249,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       className="block mb-2 uppercase tracking-[1px]"
-                      style={{ fontFamily: "var(--font-rajdhani)", fontSize: 13, fontWeight: 600, color: "#201F20" }}
+                      style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 600, color: "#201F20" }}
                     >
                       Email *
                     </label>
@@ -268,7 +268,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       className="block mb-2 uppercase tracking-[1px]"
-                      style={{ fontFamily: "var(--font-rajdhani)", fontSize: 13, fontWeight: 600, color: "#201F20" }}
+                      style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 600, color: "#201F20" }}
                     >
                       Teléfono
                     </label>
@@ -283,7 +283,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       className="block mb-2 uppercase tracking-[1px]"
-                      style={{ fontFamily: "var(--font-rajdhani)", fontSize: 13, fontWeight: 600, color: "#201F20" }}
+                      style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 600, color: "#201F20" }}
                     >
                       Empresa
                     </label>
@@ -300,7 +300,7 @@ export default function ContactPage() {
                 <div>
                   <label
                     className="block mb-2 uppercase tracking-[1px]"
-                    style={{ fontFamily: "var(--font-rajdhani)", fontSize: 13, fontWeight: 600, color: "#201F20" }}
+                    style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 600, color: "#201F20" }}
                   >
                     País
                   </label>
@@ -316,7 +316,7 @@ export default function ContactPage() {
                 <div>
                   <label
                     className="block mb-2 uppercase tracking-[1px]"
-                    style={{ fontFamily: "var(--font-rajdhani)", fontSize: 13, fontWeight: 600, color: "#201F20" }}
+                    style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 600, color: "#201F20" }}
                   >
                     Mensaje
                   </label>
@@ -338,7 +338,7 @@ export default function ContactPage() {
                     onChange={(e) => setPrivacidad(e.target.checked)}
                     className="mt-1 w-4 h-4 accent-[#A52430] cursor-pointer"
                   />
-                  <span className="text-[#666]" style={{ fontFamily: "var(--font-heebo)", fontSize: 13, lineHeight: 1.5 }}>
+                  <span className="text-[#666]" style={{ fontFamily: "var(--font-body)", fontSize: 13, lineHeight: 1.5 }}>
                     He leído y acepto la{" "}
                     <a href="/politica-de-privacidad" className="text-[#A52430] hover:underline">
                       política de privacidad
@@ -348,17 +348,17 @@ export default function ContactPage() {
                 </label>
 
                 {error && (
-                  <p className="text-red-600 text-[14px]" style={{ fontFamily: "var(--font-heebo)" }}>
+                  <p className="text-red-600 text-[14px]" style={{ fontFamily: "var(--font-body)" }}>
                     {error}
                   </p>
                 )}
 
                 {sent ? (
                   <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center">
-                    <p className="text-green-800 font-semibold" style={{ fontFamily: "var(--font-rajdhani)", fontSize: 18 }}>
+                    <p className="text-green-800 font-semibold" style={{ fontFamily: "var(--font-heading)", fontSize: 18 }}>
                       Solicitud enviada correctamente
                     </p>
-                    <p className="text-green-700 mt-2" style={{ fontFamily: "var(--font-heebo)", fontSize: 14 }}>
+                    <p className="text-green-700 mt-2" style={{ fontFamily: "var(--font-body)", fontSize: 14 }}>
                       Nuestro equipo te contactar&aacute; en 24-48h.
                     </p>
                   </div>
@@ -367,7 +367,7 @@ export default function ContactPage() {
                     type="submit"
                     disabled={sending}
                     className="bg-[#A52430] text-white py-4 rounded-lg hover:bg-[#8a1e28] transition-colors uppercase tracking-[2px] mt-2 disabled:opacity-50 disabled:cursor-not-allowed"
-                    style={{ fontFamily: "var(--font-rajdhani)", fontSize: 16, fontWeight: 700 }}
+                    style={{ fontFamily: "var(--font-heading)", fontSize: 16, fontWeight: 700 }}
                   >
                     {sending ? "Enviando..." : "Enviar solicitud"}
                   </button>
@@ -388,25 +388,25 @@ export default function ContactPage() {
                   />
                   <p
                     className="text-[#666] mb-4"
-                    style={{ fontFamily: "var(--font-heebo)", fontSize: 14, lineHeight: 1.6 }}
+                    style={{ fontFamily: "var(--font-body)", fontSize: 14, lineHeight: 1.6 }}
                   >
                     Nuestro equipo técnico te asesorará sobre la configuración más adecuada para tu espacio.
                   </p>
                   <div className="border-t border-gray-200 pt-4">
                     <p
                       className="uppercase tracking-[1px] mb-2"
-                      style={{ fontFamily: "var(--font-rajdhani)", fontSize: 12, fontWeight: 600, color: "#201F20" }}
+                      style={{ fontFamily: "var(--font-heading)", fontSize: 12, fontWeight: 600, color: "#201F20" }}
                     >
                       ¿Prefieres llamarnos?
                     </p>
                     <a
                       href="tel:+34985308980"
                       className="text-[#A52430] hover:underline"
-                      style={{ fontFamily: "var(--font-rajdhani)", fontSize: 24, fontWeight: 700 }}
+                      style={{ fontFamily: "var(--font-heading)", fontSize: 24, fontWeight: 700 }}
                     >
                       985 30 89 80
                     </a>
-                    <p className="text-[#999] mt-1" style={{ fontFamily: "var(--font-heebo)", fontSize: 12 }}>
+                    <p className="text-[#999] mt-1" style={{ fontFamily: "var(--font-body)", fontSize: 12 }}>
                       Lunes a viernes · 9:00–18:00
                     </p>
                   </div>
@@ -420,7 +420,7 @@ export default function ContactPage() {
                   ].map((t) => (
                     <div key={t} className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 bg-[#A52430] rounded-full" />
-                      <span className="text-[#999]" style={{ fontFamily: "var(--font-heebo)", fontSize: 13 }}>
+                      <span className="text-[#999]" style={{ fontFamily: "var(--font-body)", fontSize: 13 }}>
                         {t}
                       </span>
                     </div>

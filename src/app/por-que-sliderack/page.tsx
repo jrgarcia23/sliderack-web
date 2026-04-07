@@ -110,13 +110,13 @@ export default function PorQueSliderack() {
         >
           <div className="absolute inset-0 bg-black/60" />
           <div className="relative z-10 text-center px-6">
-            <span className="mb-4 inline-block rounded-full bg-white/10 px-4 py-1.5 font-[family-name:var(--font-rajdhani)] text-[13px] font-semibold uppercase tracking-[2px] text-[#A52430]">
+            <span className="mb-4 inline-block rounded-full bg-white/10 px-4 py-1.5 font-[family-name:var(--font-heading)] text-[13px] font-semibold uppercase tracking-[2px] text-[#A52430]">
               La diferencia
             </span>
-            <h1 className="font-[family-name:var(--font-rajdhani)] text-[36px] md:text-[52px] font-bold uppercase text-white">
+            <h1 className="font-[family-name:var(--font-heading)] text-[36px] md:text-[52px] font-bold uppercase text-white">
               Por qu&eacute; Sliderack
             </h1>
-            <p className="mt-4 max-w-[550px] mx-auto font-[family-name:var(--font-heebo)] text-[17px] text-white/70">
+            <p className="mt-4 max-w-[550px] mx-auto font-[family-name:var(--font-body)] text-[17px] text-white/70">
               La fortaleza de la sencillez. Un sistema que combina ingenier&iacute;a de precisi&oacute;n con la robustez del acero espa&ntilde;ol.
             </p>
           </div>
@@ -126,10 +126,10 @@ export default function PorQueSliderack() {
         <section className="bg-white px-6 py-20">
           <div className="mx-auto max-w-[1100px]">
             <ScrollReveal>
-              <h2 className="text-center font-[family-name:var(--font-rajdhani)] text-[32px] md:text-[40px] font-bold uppercase text-[#201F20] mb-4">
+              <h2 className="text-center font-[family-name:var(--font-heading)] text-[32px] md:text-[40px] font-bold uppercase text-[#201F20] mb-4">
                 6 razones para elegir Sliderack
               </h2>
-              <p className="text-center max-w-[600px] mx-auto font-[family-name:var(--font-heebo)] text-[16px] text-[#888] mb-16">
+              <p className="text-center max-w-[600px] mx-auto font-[family-name:var(--font-body)] text-[16px] text-[#888] mb-16">
                 Cada detalle est&aacute; pensado para que tu espacio funcione mejor.
               </p>
             </ScrollReveal>
@@ -139,10 +139,10 @@ export default function PorQueSliderack() {
                 <ScrollReveal key={r.title} delay={i * 80} direction="up">
                   <div className="group rounded-xl border border-gray-100 bg-white p-7 hover:border-[#A52430]/20 hover:shadow-lg transition-all duration-300 h-full">
                     <div className="mb-4 text-[#A52430]">{r.icon}</div>
-                    <h3 className="font-[family-name:var(--font-rajdhani)] text-[20px] font-bold uppercase text-[#201F20] mb-3">
+                    <h3 className="font-[family-name:var(--font-heading)] text-[20px] font-bold uppercase text-[#201F20] mb-3">
                       {r.title}
                     </h3>
-                    <p className="font-[family-name:var(--font-heebo)] text-[14px] leading-relaxed text-[#777]">
+                    <p className="font-[family-name:var(--font-body)] text-[14px] leading-relaxed text-[#777]">
                       {r.desc}
                     </p>
                   </div>
@@ -163,7 +163,7 @@ export default function PorQueSliderack() {
         >
           <div className="absolute inset-0 bg-black/50" />
           <div className="relative z-10 text-center px-6">
-            <h2 className="font-[family-name:var(--font-rajdhani)] text-[28px] md:text-[40px] font-bold uppercase text-white">
+            <h2 className="font-[family-name:var(--font-heading)] text-[28px] md:text-[40px] font-bold uppercase text-white">
               Orden que se ve. Rendimiento que se nota.
             </h2>
           </div>
@@ -173,10 +173,10 @@ export default function PorQueSliderack() {
         <section className="bg-[#f8f8f8] px-6 py-20">
           <div className="mx-auto max-w-[1100px]">
             <ScrollReveal>
-              <h2 className="text-center font-[family-name:var(--font-rajdhani)] text-[32px] font-bold uppercase text-[#201F20] mb-4">
+              <h2 className="text-center font-[family-name:var(--font-heading)] text-[32px] font-bold uppercase text-[#201F20] mb-4">
                 D&oacute;nde se usa Sliderack
               </h2>
-              <p className="text-center max-w-[500px] mx-auto font-[family-name:var(--font-heebo)] text-[16px] text-[#888] mb-12">
+              <p className="text-center max-w-[500px] mx-auto font-[family-name:var(--font-body)] text-[16px] text-[#888] mb-12">
                 Soluciones adaptadas a cada sector profesional.
               </p>
             </ScrollReveal>
@@ -185,10 +185,10 @@ export default function PorQueSliderack() {
               {sectors.map((s, i) => (
                 <ScrollReveal key={s.name} delay={i * 60} direction="up">
                   <div className="rounded-xl bg-white border border-gray-100 p-6 h-full">
-                    <h3 className="font-[family-name:var(--font-rajdhani)] text-[18px] font-bold uppercase text-[#201F20]">
+                    <h3 className="font-[family-name:var(--font-heading)] text-[18px] font-bold uppercase text-[#201F20]">
                       {s.name}
                     </h3>
-                    <p className="mt-2 font-[family-name:var(--font-heebo)] text-[14px] text-[#999]">
+                    <p className="mt-2 font-[family-name:var(--font-body)] text-[14px] text-[#999]">
                       {s.desc}
                     </p>
                   </div>
@@ -201,22 +201,22 @@ export default function PorQueSliderack() {
         {/* CTA */}
         <section className="bg-[#201F20] px-6 py-20">
           <div className="mx-auto max-w-[700px] text-center">
-            <h2 className="font-[family-name:var(--font-rajdhani)] text-[28px] md:text-[36px] font-bold uppercase text-white mb-4">
+            <h2 className="font-[family-name:var(--font-heading)] text-[28px] md:text-[36px] font-bold uppercase text-white mb-4">
               &iquest;Listo para optimizar tu espacio?
             </h2>
-            <p className="font-[family-name:var(--font-heebo)] text-[16px] text-white/60 mb-8">
+            <p className="font-[family-name:var(--font-body)] text-[16px] text-white/60 mb-8">
               Solicita informaci&oacute;n sin compromiso. Nuestro equipo te asesorar&aacute; sobre la configuraci&oacute;n perfecta.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link
                 href="/contacto"
-                className="rounded-lg bg-[#A52430] px-10 py-4 font-[family-name:var(--font-rajdhani)] text-[16px] font-bold uppercase text-white hover:bg-[#8a1e28] transition-colors"
+                className="rounded-lg bg-[#A52430] px-10 py-4 font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-white hover:bg-[#8a1e28] transition-colors"
               >
                 Solicitar informaci&oacute;n
               </Link>
               <Link
                 href="/sistemas"
-                className="rounded-lg border-2 border-white/20 px-10 py-4 font-[family-name:var(--font-rajdhani)] text-[16px] font-bold uppercase text-white hover:border-white/40 transition-colors"
+                className="rounded-lg border-2 border-white/20 px-10 py-4 font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-white hover:border-white/40 transition-colors"
               >
                 Ver cat&aacute;logo
               </Link>

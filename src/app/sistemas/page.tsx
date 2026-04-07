@@ -32,14 +32,14 @@ export default function SistemasPage() {
           <div className="absolute inset-0 bg-black/60" />
           <div className="relative z-10 flex flex-col items-center text-center px-6">
             <span
-              className="mb-4 inline-block rounded-full bg-white/10 px-4 py-1.5 font-[family-name:var(--font-rajdhani)] text-[13px] font-semibold uppercase tracking-[2px] text-[#A52430]"
+              className="mb-4 inline-block rounded-full bg-white/10 px-4 py-1.5 font-[family-name:var(--font-heading)] text-[13px] font-semibold uppercase tracking-[2px] text-[#A52430]"
             >
               CATÁLOGO
             </span>
-            <h1 className="font-[family-name:var(--font-rajdhani)] text-[32px] md:text-[48px] font-bold uppercase text-white">
+            <h1 className="font-[family-name:var(--font-heading)] text-[32px] md:text-[48px] font-bold uppercase text-white">
               Sistemas de estanterías deslizantes
             </h1>
-            <p className="mt-4 max-w-[600px] font-[family-name:var(--font-heebo)] text-[18px] text-white/70">
+            <p className="mt-4 max-w-[600px] font-[family-name:var(--font-body)] text-[18px] text-white/70">
               Configura tu Sliderack según el espacio y las necesidades de tu
               proyecto.
             </p>
@@ -53,7 +53,7 @@ export default function SistemasPage() {
               <h2
                 className="text-center uppercase mb-6"
                 style={{
-                  fontFamily: "var(--font-rajdhani)",
+                  fontFamily: "var(--font-heading)",
                   fontSize: 36,
                   fontWeight: 700,
                   color: "#201F20",
@@ -65,7 +65,7 @@ export default function SistemasPage() {
               <p
                 className="text-center mx-auto max-w-[750px]"
                 style={{
-                  fontFamily: "var(--font-heebo)",
+                  fontFamily: "var(--font-body)",
                   fontSize: 17,
                   lineHeight: 1.7,
                   color: "#666",
@@ -94,20 +94,20 @@ export default function SistemasPage() {
                       fill
                       className="object-contain p-6"
                     />
-                    <span className="absolute left-3 top-3 rounded bg-[#A52430] px-2.5 py-1 font-[family-name:var(--font-rajdhani)] text-[11px] font-semibold uppercase text-white">
+                    <span className="absolute left-3 top-3 rounded bg-[#A52430] px-2.5 py-1 font-[family-name:var(--font-heading)] text-[11px] font-semibold uppercase text-white">
                       {product.badge}
                     </span>
                   </div>
 
                   {/* Info */}
                   <div className="pt-4">
-                    <h3 className="font-[family-name:var(--font-rajdhani)] text-[20px] font-semibold uppercase text-[#201F20]">
+                    <h3 className="font-[family-name:var(--font-heading)] text-[20px] font-semibold uppercase text-[#201F20]">
                       {product.name}
                     </h3>
-                    <p className="mt-1 font-[family-name:var(--font-heebo)] text-[14px] text-[#999]">
+                    <p className="mt-1 font-[family-name:var(--font-body)] text-[14px] text-[#999]">
                       {product.shortDesc}
                     </p>
-                    <span className="mt-3 inline-block font-[family-name:var(--font-rajdhani)] text-[13px] uppercase tracking-[1px] text-[#A52430] opacity-0 transition-opacity group-hover:opacity-100">
+                    <span className="mt-3 inline-block font-[family-name:var(--font-heading)] text-[13px] uppercase tracking-[1px] text-[#A52430] opacity-0 transition-opacity group-hover:opacity-100">
                       Ver detalles &rarr;
                     </span>
                   </div>
@@ -128,10 +128,10 @@ export default function SistemasPage() {
         >
           <div className="absolute inset-0 bg-black/50" />
           <div className="relative z-10 flex flex-col items-center text-center px-6">
-            <h2 className="font-[family-name:var(--font-rajdhani)] text-[24px] md:text-[36px] font-bold uppercase text-white text-center">
+            <h2 className="font-[family-name:var(--font-heading)] text-[24px] md:text-[36px] font-bold uppercase text-white text-center">
               Diseñado para durar en entornos exigentes
             </h2>
-            <p className="mt-4 max-w-[600px] font-[family-name:var(--font-heebo)] text-[16px] text-white/70 text-center">
+            <p className="mt-4 max-w-[600px] font-[family-name:var(--font-body)] text-[16px] text-white/70 text-center">
               Estructura metálica certificada, fabricación española y un sistema de guías de alta precisión.
             </p>
           </div>
@@ -141,12 +141,12 @@ export default function SistemasPage() {
         <section className="bg-[#f8f8f8] px-6 py-16">
           <div className="mx-auto max-w-[1200px]">
             <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
-              <h2 className="font-[family-name:var(--font-rajdhani)] text-[32px] font-bold uppercase text-[#201F20]">
+              <h2 className="font-[family-name:var(--font-heading)] text-[32px] font-bold uppercase text-[#201F20]">
                 Completa tu sistema con accesorios
               </h2>
               <Link
                 href="/accesorios"
-                className="font-[family-name:var(--font-heebo)] text-[15px] text-[#A52430] hover:underline"
+                className="font-[family-name:var(--font-body)] text-[15px] text-[#A52430] hover:underline"
               >
                 Ver todos &rarr;
               </Link>
@@ -162,12 +162,12 @@ export default function SistemasPage() {
                         fill
                         className="object-contain p-6"
                       />
-                      <span className="absolute left-3 top-3 rounded bg-[#A52430] px-2.5 py-1 font-[family-name:var(--font-rajdhani)] text-[11px] font-semibold uppercase text-white">
+                      <span className="absolute left-3 top-3 rounded bg-[#A52430] px-2.5 py-1 font-[family-name:var(--font-heading)] text-[11px] font-semibold uppercase text-white">
                         {p.badge}
                       </span>
                     </div>
                     <div className="pt-4">
-                      <h3 className="font-[family-name:var(--font-rajdhani)] text-[20px] font-semibold uppercase text-[#201F20]">
+                      <h3 className="font-[family-name:var(--font-heading)] text-[20px] font-semibold uppercase text-[#201F20]">
                         {p.name}
                       </h3>
                     </div>
@@ -182,23 +182,23 @@ export default function SistemasPage() {
         <section className="border-t border-gray-100 bg-white px-6 py-20">
           <div className="mx-auto grid max-w-[900px] grid-cols-1 items-center gap-10 lg:grid-cols-[1fr_auto]">
             <div>
-              <h2 className="font-[family-name:var(--font-rajdhani)] text-[28px] md:text-[36px] font-bold uppercase leading-[1.15] text-[#201F20]">
+              <h2 className="font-[family-name:var(--font-heading)] text-[28px] md:text-[36px] font-bold uppercase leading-[1.15] text-[#201F20]">
                 ¿Necesitas asesoramiento técnico?
               </h2>
-              <p className="mt-4 font-[family-name:var(--font-heebo)] text-[16px] leading-[1.7] text-[#666]">
+              <p className="mt-4 font-[family-name:var(--font-body)] text-[16px] leading-[1.7] text-[#666]">
                 Nuestro equipo te ayuda a configurar el sistema perfecto para tu espacio. Sin compromiso.
               </p>
             </div>
             <div className="flex flex-col gap-3">
               <Link
                 href="/contacto"
-                className="rounded-lg bg-[#A52430] px-10 py-4 text-center font-[family-name:var(--font-rajdhani)] text-[16px] font-bold uppercase text-white hover:bg-[#8a1e28] transition-colors"
+                className="rounded-lg bg-[#A52430] px-10 py-4 text-center font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-white hover:bg-[#8a1e28] transition-colors"
               >
                 Contactar
               </Link>
               <a
                 href="tel:+34985308980"
-                className="rounded-lg border-2 border-gray-300 px-10 py-4 text-center font-[family-name:var(--font-rajdhani)] text-[16px] font-bold uppercase text-[#201F20] hover:border-[#A52430] hover:text-[#A52430] transition-colors"
+                className="rounded-lg border-2 border-gray-300 px-10 py-4 text-center font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-[#201F20] hover:border-[#A52430] hover:text-[#A52430] transition-colors"
               >
                 985 30 89 80
               </a>

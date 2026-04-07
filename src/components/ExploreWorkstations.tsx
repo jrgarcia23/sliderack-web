@@ -39,20 +39,20 @@ const products = [
 
 export default function ExploreWorkstations() {
   return (
-    <section className="bg-white py-24 px-6">
+    <section className="bg-white py-20 px-6">
       <div className="mx-auto max-w-[1200px]">
         {/* Header */}
         <div className="mb-12 flex flex-col items-start gap-4 md:flex-row md:items-end md:justify-between">
           <h2
             className="text-[28px] font-bold uppercase text-[#201F20] md:text-[34px]"
-            style={{ fontFamily: "var(--font-rajdhani)" }}
+            style={{ fontFamily: "var(--font-heading)" }}
           >
             Accesorios que completan tu sistema
           </h2>
           <a
             href="/accesorios"
             className="whitespace-nowrap text-[15px] text-[#A52430] hover:underline"
-            style={{ fontFamily: "var(--font-heebo)" }}
+            style={{ fontFamily: "var(--font-body)" }}
           >
             Ver todos →
           </a>
@@ -78,7 +78,7 @@ export default function ExploreWorkstations() {
                 <div className="px-4 py-3">
                   <p
                     className="text-center text-[14px] font-semibold uppercase text-[#201F20]"
-                    style={{ fontFamily: "var(--font-rajdhani)" }}
+                    style={{ fontFamily: "var(--font-heading)" }}
                   >
                     {product.name}
                   </p>
