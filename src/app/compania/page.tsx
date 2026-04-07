@@ -147,6 +147,46 @@ export default function CompaniaPage() {
           </div>
         </section>
 
+        {/* Timeline */}
+        <section className="bg-white px-6 py-20">
+          <div className="mx-auto max-w-[700px]">
+            <ScrollReveal>
+              <h2 className="text-center font-[family-name:var(--font-heading)] text-[32px] font-bold uppercase text-[#201F20] mb-12">
+                Nuestra historia
+              </h2>
+            </ScrollReveal>
+
+            <div className="relative">
+              <div className="absolute left-[22px] top-0 bottom-0 w-px bg-gray-200" />
+              <div className="flex flex-col gap-8">
+                {[
+                  { year: "1969", text: "Fundación de Esnova en Gijón, Asturias" },
+                  { year: "1980s", text: "Expansión nacional en almacenaje industrial" },
+                  { year: "2000s", text: "Certificaciones ISO 9001, 14001 y 45001" },
+                  { year: "2010s", text: "Marcado CE (UNE EN 1090) y exportación europea" },
+                  { year: "2024", text: "Lanzamiento de Sliderack: almacenaje deslizante de precisión" },
+                ].map((m, i) => (
+                  <ScrollReveal key={m.year} delay={i * 80}>
+                    <div className="flex gap-6 items-start">
+                      <div className="relative z-10 w-[45px] h-[45px] rounded-full bg-white border-2 border-[#A52430] flex items-center justify-center shrink-0">
+                        <div className="w-2.5 h-2.5 rounded-full bg-[#A52430]" />
+                      </div>
+                      <div className="pt-2">
+                        <span className="font-[family-name:var(--font-heading)] text-[18px] font-bold text-[#A52430]">
+                          {m.year}
+                        </span>
+                        <p className="font-[family-name:var(--font-body)] text-[15px] text-[#666] mt-1">
+                          {m.text}
+                        </p>
+                      </div>
+                    </div>
+                  </ScrollReveal>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Certificaciones */}
         <section className="bg-[#201F20] px-6 py-20">
           <div className="mx-auto max-w-[1100px]">
@@ -176,41 +216,27 @@ export default function CompaniaPage() {
           </div>
         </section>
 
-        {/* Base sólida */}
-        <section className="bg-white px-6 py-20">
-          <div className="mx-auto max-w-[900px]">
-            <ScrollReveal>
-              <h2 className="font-[family-name:var(--font-heading)] text-[28px] md:text-[36px] font-bold uppercase text-[#201F20] mb-6 leading-[1.15]">
-                Una base sólida para soluciones fiables
-              </h2>
-              <p className="font-[family-name:var(--font-body)] text-[16px] leading-[1.8] text-[#555] mb-4">
-                Sliderack representa la aplicación de una experiencia industrial consolidada en un sistema de almacenaje pensado para entornos técnicos y profesionales.
-              </p>
-              <p className="font-[family-name:var(--font-body)] text-[16px] leading-[1.8] text-[#555]">
-                Una solución que responde a una necesidad clara: organizar mejor, trabajar con mayor eficiencia y mantener el control del espacio.
-              </p>
-            </ScrollReveal>
-          </div>
-        </section>
-
         {/* CTA */}
-        <section className="bg-[#A52430] px-6 py-14">
-          <div className="mx-auto max-w-[900px] text-center">
-            <p className="font-[family-name:var(--font-body)] text-[17px] text-white/90 mb-6">
-              Descubre cómo Sliderack puede adaptarse a tu espacio o solicita información a nuestro equipo técnico.
+        <section className="bg-[#201F20] px-6 py-20">
+          <div className="mx-auto max-w-[700px] text-center">
+            <h2 className="font-[family-name:var(--font-heading)] text-[28px] md:text-[36px] font-bold uppercase text-white mb-4">
+              ¿Trabajamos juntos?
+            </h2>
+            <p className="font-[family-name:var(--font-body)] text-[16px] text-white/60 mb-8">
+              Solicita información sin compromiso. Nuestro equipo te asesorará sobre la configuración perfecta.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link
                 href="/contacto"
-                className="rounded-lg border-2 border-white px-10 py-4 font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-white hover:bg-white hover:text-[#A52430] transition-colors"
+                className="rounded-lg bg-[#A52430] px-10 py-4 font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-white hover:bg-[#8a1e28] transition-colors"
               >
-                Contactar
+                Solicitar información
               </Link>
               <Link
                 href="/sistemas"
-                className="rounded-lg border-2 border-white/30 px-10 py-4 font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-white hover:border-white transition-colors"
+                className="rounded-lg border-2 border-white/20 px-10 py-4 font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-white hover:border-white/40 transition-colors"
               >
-                Ver modelos
+                Ver catálogo
               </Link>
             </div>
           </div>
