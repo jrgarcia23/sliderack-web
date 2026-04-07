@@ -82,47 +82,64 @@ export default function ProductDetail({
       {/* ── Lightbox ── */}
       {lightboxOpen && (
         <div
-          className="fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center p-4"
+          className="fixed inset-0 z-[9999] flex items-center justify-center"
           onClick={() => setLightboxOpen(false)}
         >
-          <button
-            className="absolute top-6 right-6 text-white/70 hover:text-white transition"
-            onClick={() => setLightboxOpen(false)}
-            aria-label="Cerrar"
+          {/* Backdrop — only covers area around the image */}
+          <div className="absolute inset-0 bg-black/20" />
+
+          {/* Lightbox container */}
+          <div
+            className="relative bg-white rounded-2xl shadow-2xl p-6 max-w-[520px] w-[90vw]"
+            onClick={(e) => e.stopPropagation()}
           >
-            <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-          {allImages.length > 1 && (
-            <>
-              <button
-                className="absolute left-4 md:left-8 text-white/70 hover:text-white transition"
-                onClick={(e) => { e.stopPropagation(); setActiveImage((activeImage - 1 + allImages.length) % allImages.length); }}
-                aria-label="Anterior"
-              >
-                <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-              <button
-                className="absolute right-4 md:right-8 text-white/70 hover:text-white transition"
-                onClick={(e) => { e.stopPropagation(); setActiveImage((activeImage + 1) % allImages.length); }}
-                aria-label="Siguiente"
-              >
-                <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            </>
-          )}
-          <div className="relative w-full max-w-[900px] aspect-[4/3]" onClick={(e) => e.stopPropagation()}>
-            <Image
-              src={allImages[activeImage]}
-              alt={`${product.name} - vista ${activeImage + 1}`}
-              fill
-              className="object-contain"
-            />
+            {/* Close button */}
+            <button
+              className="absolute -top-3 -right-3 bg-[#201F20] text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-[#A52430] transition z-10"
+              onClick={() => setLightboxOpen(false)}
+              aria-label="Cerrar"
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+
+            {/* Image */}
+            <div className="relative aspect-[4/3]">
+              <Image
+                src={allImages[activeImage]}
+                alt={`${product.name} - vista ${activeImage + 1}`}
+                fill
+                className="object-contain"
+              />
+            </div>
+
+            {/* Navigation arrows */}
+            {allImages.length > 1 && (
+              <div className="flex items-center justify-between mt-4">
+                <button
+                  className="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-[#201F20] hover:border-[#A52430] hover:text-[#A52430] transition"
+                  onClick={() => setActiveImage((activeImage - 1 + allImages.length) % allImages.length)}
+                  aria-label="Anterior"
+                >
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <span className="font-[family-name:var(--font-rajdhani)] text-[13px] text-[#999]">
+                  {activeImage + 1} / {allImages.length}
+                </span>
+                <button
+                  className="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-[#201F20] hover:border-[#A52430] hover:text-[#A52430] transition"
+                  onClick={() => setActiveImage((activeImage + 1) % allImages.length)}
+                  aria-label="Siguiente"
+                >
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            )}
           </div>
         </div>
       )}
