@@ -379,31 +379,25 @@ export default function ProductDetail({
                 className="text-[#A52430] uppercase tracking-[2px] mb-3"
                 style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 600 }}
               >
-                Sobre este modelo
+                Fabricación y calidad
               </p>
               <h2
                 className="text-[#201F20] uppercase mb-6"
                 style={{ fontFamily: "var(--font-heading)", fontSize: 28, fontWeight: 700, lineHeight: 1.15 }}
               >
-                {product.name}
+                Ingeniería española de precisión
               </h2>
               <p
                 className="text-[#555] mb-5"
                 style={{ fontFamily: "var(--font-body)", fontSize: 16, lineHeight: 1.8 }}
               >
-                {product.description}
-              </p>
-              <p
-                className="text-[#555] mb-5"
-                style={{ fontFamily: "var(--font-body)", fontSize: 16, lineHeight: 1.8 }}
-              >
-                Su estructura metálica de acero laminado en frío garantiza estabilidad y resistencia en entornos de uso intensivo. El sistema deslizante proporciona un acceso cómodo y controlado a cada módulo, mientras que la modularidad permite adaptar la configuración según las necesidades específicas de cada proyecto.
+                Cada módulo de este sistema está construido con acero laminado en frío y tratamiento anticorrosión, diseñado para soportar hasta 150 kg de carga con un deslizamiento suave y silencioso. Las guías de alta precisión están fabricadas para millones de ciclos de apertura y cierre sin degradación del rendimiento.
               </p>
               <p
                 className="text-[#555]"
                 style={{ fontFamily: "var(--font-body)", fontSize: 16, lineHeight: 1.8 }}
               >
-                Diseñado y fabricado en España por Esnova Racks, bajo certificaciones ISO 9001, ISO 14001 e ISO 45001. Cada sistema cumple con la normativa europea UNE EN 1090 de marcado CE, garantizando los más altos estándares de calidad y seguridad.
+                Diseñado y fabricado íntegramente en España por Esnova Racks en su planta de 46.600 m² en Gijón (Asturias). Certificaciones ISO 9001 (calidad), ISO 14001 (medioambiente), ISO 45001 (seguridad laboral) y UNE EN 1090 (Marcado CE para estructuras metálicas).
               </p>
             </div>
           </ScrollReveal>
