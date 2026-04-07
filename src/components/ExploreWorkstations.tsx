@@ -39,7 +39,7 @@ const products = [
 
 export default function ExploreWorkstations() {
   return (
-    <section className="bg-white py-20 px-6">
+    <section className="bg-[#f8f8f8] py-20 px-6">
       <div className="mx-auto max-w-[1200px]">
         {/* Header */}
         <div className="mb-12 flex flex-col items-start gap-4 md:flex-row md:items-end md:justify-between">
