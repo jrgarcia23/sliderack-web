@@ -10,7 +10,7 @@ const stats = [
 
 export default function LeadersBanner() {
   return (
-    <section className="bg-white py-20 px-6">
+    <section className="bg-[#f8f8f8] py-20 px-6">
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-16 md:grid-cols-2">
         {/* Left column — photo */}
         <ScrollReveal direction="left">

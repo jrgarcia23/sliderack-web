@@ -64,7 +64,7 @@ const features = [
 
 export default function WhoUsesLevrack() {
   return (
-    <section className="bg-[#f8f8f8] py-20 px-6">
+    <section className="bg-white py-20 px-6">
       <div className="mx-auto max-w-[1200px]">
         {/* Header */}
         <div className="mb-16 text-center">
