@@ -16,8 +16,8 @@ export default function LeadersBanner() {
         <ScrollReveal direction="left">
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl">
             <Image
-              src="/images/sliderack/bg/paneles-numerados.jpg"
-              alt="Detalle de paneles numerados del sistema de estanterías deslizantes Sliderack fabricado por Esnova Racks"
+              src="/images/sliderack/photos/esnova-fabrica.jpg"
+              alt="Planta de fabricación de Esnova Racks — estanterías deslizantes Sliderack"
               fill
               className="object-cover"
             />
