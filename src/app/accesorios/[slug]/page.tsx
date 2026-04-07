@@ -1,0 +1,44 @@
+import { notFound } from "next/navigation";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import ProductDetail from "@/components/ProductDetail";
+import { products, getProductBySlug } from "@/data/products";
+import type { Metadata } from "next";
+
+interface PageProps {
+  params: Promise<{ slug: string }>;
+}
+
+export function generateStaticParams() {
+  return products
+    .filter((p) => p.category === "accesorios")
+    .map((p) => ({ slug: p.slug }));
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const product = getProductBySlug(slug);
+  if (!product) return { title: "Producto no encontrado | Sliderack" };
+  return {
+    title: `${product.name} | Accesorios | Sliderack`,
+    description: product.shortDesc + " — " + product.description,
+  };
+}
+
+export default async function AccesorioDetailPage({ params }: PageProps) {
+  const { slug } = await params;
+  const product = getProductBySlug(slug);
+  if (!product) notFound();
+
+  return (
+    <>
+      <Header />
+      <ProductDetail
+        product={product}
+        categoryLabel="Accesorios"
+        categoryPath="/accesorios"
+      />
+      <Footer />
+    </>
+  );
+}
