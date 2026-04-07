@@ -3,8 +3,8 @@
 import ScrollReveal from "@/components/ScrollReveal";
 
 const stats = [
-  { number: "50+", label: "Años de experiencia" },
-  { number: "45+", label: "Países de exportación" },
+  { number: "+50", label: "Años de experiencia" },
+  { number: "+45", label: "Países de exportación" },
   { number: "46.600 m²", label: "Planta productiva" },
 ];
 

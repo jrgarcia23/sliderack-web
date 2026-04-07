@@ -7,7 +7,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata = {
   title: "Sobre Esnova Racks — Fabricante Español",
   description:
-    "Sliderack es una marca de Esnova Racks, empresa española con más de 50 años diseñando y fabricando sistemas de almacenaje industrial.",
+    "Sliderack es una marca de Esnova Racks, empresa española con más de +50 años diseñando y fabricando sistemas de almacenaje industrial.",
 };
 
 const milestones = [

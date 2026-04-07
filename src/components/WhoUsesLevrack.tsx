@@ -86,7 +86,7 @@ export default function WhoUsesLevrack() {
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, i) => (
             <ScrollReveal key={feature.title} delay={i * 100} direction="up">
-              <div className="rounded-2xl bg-white p-8 shadow-sm transition-shadow duration-300 hover:shadow-lg">
+              <div className="rounded-2xl bg-white p-8 shadow-sm transition-shadow duration-300 hover:shadow-lg h-full">
                 {/* Icon */}
                 <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-[#A52430]/10">
                   {feature.icon}

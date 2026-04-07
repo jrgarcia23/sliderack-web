@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const trustBadges = [
   "Fabricado en España",
-  "50+ años de experiencia",
+  "+50 años de experiencia",
   "Certificado ISO",
 ];
 

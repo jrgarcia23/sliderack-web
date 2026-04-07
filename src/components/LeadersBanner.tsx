@@ -5,7 +5,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 const stats = [
   { number: "4", label: "Certificaciones ISO" },
   { number: "46.600", label: "m² de planta" },
-  { number: "45+", label: "Países" },
+  { number: "+45", label: "Países" },
 ];
 
 export default function LeadersBanner() {
