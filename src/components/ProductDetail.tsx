@@ -592,11 +592,11 @@ export default function ProductDetail({
       </section>
 
       {/* ── Contact CTA ── */}
-      <section className="bg-white py-16 px-6 border-t border-gray-100">
-        <div className="max-w-[800px] mx-auto text-center">
+      <section className="bg-[#A52430] py-20 px-6">
+        <div className="max-w-[700px] mx-auto text-center">
           <ScrollReveal>
             <h2
-              className="mb-4 text-[#201F20] uppercase"
+              className="mb-4 text-white uppercase"
               style={{
                 fontFamily: "var(--font-heading)",
                 fontSize: 28,
@@ -606,7 +606,7 @@ export default function ProductDetail({
               ¿Necesitas ayuda para elegir?
             </h2>
             <p
-              className="mb-8 text-[#666]"
+              className="mb-8 text-white/80"
               style={{ fontFamily: "var(--font-body)", fontSize: 16 }}
             >
               Nuestro equipo técnico te asesora sin compromiso.
@@ -614,7 +614,7 @@ export default function ProductDetail({
             <div className="flex justify-center gap-4 flex-wrap">
               <Link
                 href="/contacto"
-                className="bg-[#A52430] text-white px-10 py-4 rounded-lg hover:bg-[#8a1e28] transition uppercase tracking-[1px]"
+                className="border-2 border-white bg-white text-[#A52430] px-10 py-4 rounded-lg hover:bg-transparent hover:text-white transition uppercase tracking-[1px]"
                 style={{
                   fontFamily: "var(--font-heading)",
                   fontSize: 15,
@@ -625,7 +625,7 @@ export default function ProductDetail({
               </Link>
               <a
                 href="tel:+34985308980"
-                className="border-2 border-gray-300 text-[#201F20] px-10 py-4 rounded-lg hover:border-[#A52430] hover:text-[#A52430] transition uppercase tracking-[1px]"
+                className="border-2 border-white/40 text-white px-10 py-4 rounded-lg hover:border-white transition uppercase tracking-[1px]"
                 style={{
                   fontFamily: "var(--font-heading)",
                   fontSize: 15,

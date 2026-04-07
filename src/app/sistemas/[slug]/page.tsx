@@ -46,7 +46,7 @@ export default async function SistemaDetailPage({ params }: PageProps) {
         categoryLabel="Sistemas"
         categoryPath="/sistemas"
       />
-      <Footer />
+      <Footer hideCta />
     </>
   );
 }

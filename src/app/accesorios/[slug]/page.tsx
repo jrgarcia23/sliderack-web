@@ -46,7 +46,7 @@ export default async function AccesorioDetailPage({ params }: PageProps) {
         categoryLabel="Accesorios"
         categoryPath="/accesorios"
       />
-      <Footer />
+      <Footer hideCta />
     </>
   );
 }
