@@ -25,7 +25,7 @@ export default function AvisoLegal() {
             <li><strong>Marca comercial:</strong> Sliderack</li>
             <li><strong>NIF:</strong> A33880931</li>
             <li><strong>Domicilio:</strong> C/ Ataulfo Friera Tarfe, 5, 33211 &mdash; Gij&oacute;n (Asturias)</li>
-            <li><strong>Tel&eacute;fono:</strong> 946 00 31 28</li>
+            <li><strong>Tel&eacute;fono:</strong> 985 30 89 80</li>
             <li><strong>Email:</strong> info@sliderack.com</li>
           </ul>
 

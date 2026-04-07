@@ -553,7 +553,7 @@ export default function ProductDetail({
                 Contactar
               </Link>
               <a
-                href="tel:+34946003128"
+                href="tel:+34985308980"
                 className="border-2 border-gray-300 text-[#201F20] px-10 py-4 rounded-lg hover:border-[#A52430] hover:text-[#A52430] transition uppercase tracking-[1px]"
                 style={{
                   fontFamily: "var(--font-rajdhani)",
@@ -561,7 +561,7 @@ export default function ProductDetail({
                   fontWeight: 700,
                 }}
               >
-                946 00 31 28
+                985 30 89 80
               </a>
             </div>
           </ScrollReveal>

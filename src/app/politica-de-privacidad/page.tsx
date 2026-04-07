@@ -26,7 +26,7 @@ export default function PoliticaPrivacidad() {
             <li><strong>NIF:</strong> A33880931</li>
             <li><strong>Domicilio:</strong> C/ Ataulfo Friera Tarfe, 5, 33211 &mdash; Gij&oacute;n (Asturias)</li>
             <li><strong>Email de contacto:</strong> <a href="mailto:info@sliderack.com" className="text-[#A52430] hover:underline">info@sliderack.com</a></li>
-            <li><strong>Tel&eacute;fono:</strong> 946 00 31 28</li>
+            <li><strong>Tel&eacute;fono:</strong> 985 30 89 80</li>
           </ul>
 
           <h2 className="font-[family-name:var(--font-rajdhani)] text-[24px] font-bold uppercase text-[#201F20] mt-10 mb-4">

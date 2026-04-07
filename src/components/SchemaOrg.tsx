@@ -20,7 +20,7 @@ export function OrganizationSchema() {
       postalCode: "33211",
       addressCountry: "ES",
     },
-    telephone: "+34946003128",
+    telephone: "+34985308980",
     email: "info@sliderack.com",
     sameAs: [],
   };

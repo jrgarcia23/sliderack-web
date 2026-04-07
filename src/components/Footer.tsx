@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const navLinks = [
-  { label: "Sistemas", href: "/sistemas" },
+  { label: "Modelos", href: "/sistemas" },
   { label: "Accesorios", href: "/accesorios" },
   { label: "Por qu\u00e9 Sliderack", href: "/por-que-sliderack" },
   { label: "Compa\u00f1\u00eda", href: "/compania" },
@@ -66,10 +66,10 @@ export default function Footer() {
             <p>
               Tel\u00e9fono Sliderack:{" "}
               <a
-                href="tel:+34946003128"
+                href="tel:+34985308980"
                 className="text-white hover:underline"
               >
-                946 00 31 28
+                985 30 89 80
               </a>
             </p>
             <p>

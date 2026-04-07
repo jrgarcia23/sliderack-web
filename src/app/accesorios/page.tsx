@@ -196,10 +196,10 @@ export default function AccesoriosPage() {
                 Contactar
               </Link>
               <a
-                href="tel:+34946003128"
+                href="tel:+34985308980"
                 className="rounded-lg border-2 border-gray-300 px-10 py-4 text-center font-[family-name:var(--font-rajdhani)] text-[16px] font-bold uppercase text-[#201F20] hover:border-[#A52430] hover:text-[#A52430] transition-colors"
               >
-                946 00 31 28
+                985 30 89 80
               </a>
             </div>
           </div>

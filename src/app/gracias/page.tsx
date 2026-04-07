@@ -66,7 +66,7 @@ export default function GraciasPage() {
               <div className="mt-10 pt-8 border-t border-gray-200">
                 <p className="font-[family-name:var(--font-heebo)] text-[14px] text-[#999]">
                   &iquest;Prefieres hablar directamente? Ll&aacute;manos al{" "}
-                  <a href="tel:+34946003128" className="text-[#A52430] font-semibold hover:underline">946 00 31 28</a>
+                  <a href="tel:+34985308980" className="text-[#A52430] font-semibold hover:underline">985 30 89 80</a>
                   {" "}(L-V, 9:00–18:00)
                 </p>
               </div>

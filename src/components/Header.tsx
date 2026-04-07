@@ -68,8 +68,8 @@ export default function Header() {
       <div className="w-full bg-levrack-red">
         <div className="mx-auto max-w-[1200px] flex items-center justify-between px-4 py-[11px]">
           <div className="flex items-center gap-4 font-rajdhani text-[14px] font-bold text-white">
-            <Link href="tel:+34946003128" className="transition-opacity duration-300 hover:opacity-75">
-              946 00 31 28
+            <Link href="tel:+34985308980" className="transition-opacity duration-300 hover:opacity-75">
+              985 30 89 80
             </Link>
             <span className="opacity-60">|</span>
             <Link href="tel:+34985308980" className="transition-opacity duration-300 hover:opacity-75">

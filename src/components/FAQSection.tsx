@@ -47,7 +47,7 @@ const faqs = [
   {
     question: "\u00bfC\u00f3mo solicito informaci\u00f3n o presupuesto?",
     answer:
-      "Puedes rellenar el formulario de contacto en nuestra web o llamarnos al 946 00 31 28. Nuestro equipo t\u00e9cnico te asesorar\u00e1 sin compromiso y te responder\u00e1 en 24-48 horas.",
+      "Puedes rellenar el formulario de contacto en nuestra web o llamarnos al 985 30 89 80. Nuestro equipo t\u00e9cnico te asesorar\u00e1 sin compromiso y te responder\u00e1 en 24-48 horas.",
   },
   {
     question: "\u00bfSliderack necesita mantenimiento?",

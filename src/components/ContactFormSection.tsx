@@ -66,11 +66,11 @@ export default function ContactFormSection() {
                 ¿Prefieres llamarnos?
               </p>
               <a
-                href="tel:946003128"
+                href="tel:985308980"
                 className="block text-[28px] font-bold text-[#A52430] hover:underline"
                 style={{ fontFamily: "var(--font-rajdhani)" }}
               >
-                946 00 31 28
+                985 30 89 80
               </a>
               <p
                 className="mt-1 text-[13px] text-[#999]"

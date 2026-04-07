@@ -400,11 +400,11 @@ export default function ContactPage() {
                       ¿Prefieres llamarnos?
                     </p>
                     <a
-                      href="tel:+34946003128"
+                      href="tel:+34985308980"
                       className="text-[#A52430] hover:underline"
                       style={{ fontFamily: "var(--font-rajdhani)", fontSize: 24, fontWeight: 700 }}
                     >
-                      946 00 31 28
+                      985 30 89 80
                     </a>
                     <p className="text-[#999] mt-1" style={{ fontFamily: "var(--font-heebo)", fontSize: 12 }}>
                       Lunes a viernes · 9:00–18:00
