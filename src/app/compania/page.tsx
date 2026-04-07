@@ -78,46 +78,35 @@ export default function CompaniaPage() {
                 </p>
               </div>
             </ScrollReveal>
-          </div>
-        </section>
-
-        {/* Timeline */}
-        <section className="bg-[#f8f8f8] px-6 py-20">
-          <div className="mx-auto max-w-[700px]">
+            {/* Timeline integrado */}
             <ScrollReveal>
-              <h2 className="text-center font-[family-name:var(--font-heading)] text-[32px] font-bold uppercase text-[#201F20] mb-12">
-                Nuestra historia
-              </h2>
-            </ScrollReveal>
-
-            <div className="relative">
-              <div className="absolute left-[22px] top-0 bottom-0 w-px bg-gray-200" />
-              <div className="flex flex-col gap-8">
-                {[
-                  { year: "1969", text: "Fundación de Esnova en Gijón, Asturias" },
-                  { year: "1980s", text: "Expansión nacional en almacenaje industrial" },
-                  { year: "2000s", text: "Certificaciones ISO 9001, 14001 y 45001" },
-                  { year: "2010s", text: "Marcado CE (UNE EN 1090) y exportación europea" },
-                  { year: "2024", text: "Lanzamiento de Sliderack: almacenaje deslizante de precisión" },
-                ].map((m, i) => (
-                  <ScrollReveal key={m.year} delay={i * 80}>
-                    <div className="flex gap-6 items-start">
-                      <div className="relative z-10 w-[45px] h-[45px] rounded-full bg-[#f8f8f8] border-2 border-[#A52430] flex items-center justify-center shrink-0">
-                        <div className="w-2.5 h-2.5 rounded-full bg-[#A52430]" />
+              <div className="relative mt-10">
+                <div className="absolute left-[22px] top-0 bottom-0 w-px bg-gray-200" />
+                <div className="flex flex-col gap-6">
+                  {[
+                    { year: "1969", text: "Fundación de Esnova en Gijón, Asturias" },
+                    { year: "1980s", text: "Expansión nacional en almacenaje industrial" },
+                    { year: "2000s", text: "Certificaciones ISO 9001, 14001 y 45001" },
+                    { year: "2010s", text: "Marcado CE (UNE EN 1090) y exportación europea" },
+                    { year: "2024", text: "Lanzamiento de Sliderack" },
+                  ].map((m) => (
+                    <div key={m.year} className="flex gap-5 items-start">
+                      <div className="relative z-10 w-[40px] h-[40px] rounded-full bg-white border-2 border-[#A52430] flex items-center justify-center shrink-0">
+                        <div className="w-2 h-2 rounded-full bg-[#A52430]" />
                       </div>
-                      <div className="pt-2">
-                        <span className="font-[family-name:var(--font-heading)] text-[18px] font-bold text-[#A52430]">
+                      <div className="pt-1.5">
+                        <span className="font-[family-name:var(--font-heading)] text-[16px] font-bold text-[#A52430]">
                           {m.year}
                         </span>
-                        <p className="font-[family-name:var(--font-body)] text-[15px] text-[#666] mt-1">
+                        <p className="font-[family-name:var(--font-body)] text-[14px] text-[#666] mt-0.5">
                           {m.text}
                         </p>
                       </div>
                     </div>
-                  </ScrollReveal>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
+            </ScrollReveal>
           </div>
         </section>
 
