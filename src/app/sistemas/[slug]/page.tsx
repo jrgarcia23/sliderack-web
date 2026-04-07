@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!product) return { title: "Producto no encontrado | Sliderack" };
   return {
     title: `${product.name} | Sistemas | Sliderack`,
-    description: product.shortDesc + " — " + product.description,
+    description: (product.shortDesc + " \u2014 " + product.description).slice(0, 155) + "...",
   };
 }
 

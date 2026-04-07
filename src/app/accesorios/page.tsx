@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Accesorios | Sliderack",
+  title: "Accesorios para Estanter\u00edas Deslizantes",
   description:
     "Complementos y accesorios que amplían y personalizan tu sistema de almacenaje Sliderack.",
 };

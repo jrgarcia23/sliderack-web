@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 import { getProductsByCategory } from "@/data/products";
@@ -11,11 +11,21 @@ const accesorios = getProductsByCategory("accesorios");
 
 export default function ContactPage() {
   const searchParams = useSearchParams();
+  const router = useRouter();
   const [selectedModel, setSelectedModel] = useState("");
+  const [gclid, setGclid] = useState("");
 
   useEffect(() => {
     const modelo = searchParams.get("modelo");
     if (modelo) setSelectedModel(modelo);
+    const gclidParam = searchParams.get("gclid");
+    if (gclidParam) {
+      setGclid(gclidParam);
+      sessionStorage.setItem("gclid", gclidParam);
+    } else {
+      const stored = sessionStorage.getItem("gclid");
+      if (stored) setGclid(stored);
+    }
   }, [searchParams]);
   const [selectedAccessories, setSelectedAccessories] = useState<string[]>([""]);
   const [nombre, setNombre] = useState("");
@@ -58,11 +68,16 @@ export default function ContactPage() {
           mensaje,
           modelo: selectedModel,
           accesorios: selectedAccessories.filter(Boolean),
+          privacidadAceptada: privacidad,
+          consentTimestamp: new Date().toISOString(),
+          gclid: gclid || undefined,
+          source: document.referrer || undefined,
+          page: window.location.href,
         }),
       });
 
       if (!res.ok) throw new Error("Error al enviar");
-      setSent(true);
+      router.push("/gracias");
     } catch {
       setError("Ha ocurrido un error. Por favor, inténtalo de nuevo o llámanos directamente.");
     } finally {

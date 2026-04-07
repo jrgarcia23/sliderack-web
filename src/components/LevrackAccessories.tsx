@@ -3,15 +3,15 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const sectors = [
   {
-    title: "Automocion e industria",
+    title: "Automoción e industria",
     description:
-      "Almacenaje preciso para piezas, herramientas y componentes. Organizacion tecnica que mejora la eficiencia del taller.",
+      "Almacenaje preciso para piezas, herramientas y componentes. Organización técnica que mejora la eficiencia del taller.",
     photo: "/images/sliderack/photos/taller-completo.jpg",
   },
   {
     title: "Garajes premium",
     description:
-      "Estetica cuidada y funcionalidad para espacios de alto nivel donde el orden es parte del diseno.",
+      "Estética cuidada y funcionalidad para espacios de alto nivel donde el orden es parte del diseño.",
     photo: "/images/sliderack/photos/garaje-bmw.jpg",
   },
   {
@@ -50,7 +50,7 @@ export default function LevrackAccessories() {
               delay={index * 150}
               direction="up"
             >
-              <div className="overflow-hidden rounded-2xl bg-white shadow-md transition-shadow duration-300 hover:shadow-xl">
+              <div className="overflow-hidden rounded-2xl bg-white shadow-md transition-shadow duration-300 hover:shadow-xl h-full flex flex-col">
                 {/* Image area */}
                 <div className="relative h-[200px] overflow-hidden">
                   <Image
@@ -69,7 +69,7 @@ export default function LevrackAccessories() {
                 </div>
 
                 {/* Content */}
-                <div className="p-6">
+                <div className="p-6 flex-1">
                   <p
                     className="text-[15px] leading-[1.7] text-[#555]"
                     style={{ fontFamily: "var(--font-heebo)" }}

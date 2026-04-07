@@ -4,7 +4,7 @@ import CookiePreferencesPanel from "./CookiePreferencesPanel";
 
 export const metadata = {
   title: "Pol\u00edtica de Cookies",
-  description: "Pol\u00edtica de cookies del sitio web Sliderack (Esnova Racks).",
+  description: "Pol\u00edtica de cookies del sitio web Sliderack (Esnova Racks). Consulta qu\u00e9 cookies utilizamos y configura tus preferencias.",
 };
 
 export default function PoliticaCookies() {
@@ -61,11 +61,11 @@ export default function PoliticaCookies() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
-                <tr><td className="py-2 pr-4">cookie-consent</td><td className="py-2 pr-4">Permanente</td><td className="py-2 pr-4">Propia</td><td className="py-2">T&eacute;cnica &mdash; Almacena tu elecci&oacute;n de cookies</td></tr>
-                <tr><td className="py-2 pr-4">cookie-preferences</td><td className="py-2 pr-4">Permanente</td><td className="py-2 pr-4">Propia</td><td className="py-2">T&eacute;cnica &mdash; Guarda tus preferencias de cookies</td></tr>
+                <tr><td className="py-2 pr-4">cookie-consent</td><td className="py-2 pr-4">Permanente</td><td className="py-2 pr-4">Propia (localStorage)</td><td className="py-2">T&eacute;cnica &mdash; Almacena tu elecci&oacute;n de cookies</td></tr>
+                <tr><td className="py-2 pr-4">cookie-preferences</td><td className="py-2 pr-4">Permanente</td><td className="py-2 pr-4">Propia (localStorage)</td><td className="py-2">T&eacute;cnica &mdash; Guarda tus preferencias de cookies</td></tr>
                 <tr><td className="py-2 pr-4">_ga</td><td className="py-2 pr-4">2 a&ntilde;os</td><td className="py-2 pr-4">Tercero (Google)</td><td className="py-2">Anal&iacute;tica &mdash; Distingue usuarios &uacute;nicos</td></tr>
+                <tr><td className="py-2 pr-4">_ga_*</td><td className="py-2 pr-4">2 a&ntilde;os</td><td className="py-2 pr-4">Tercero (Google)</td><td className="py-2">Anal&iacute;tica &mdash; Mantiene el estado de la sesi&oacute;n</td></tr>
                 <tr><td className="py-2 pr-4">_gid</td><td className="py-2 pr-4">24 horas</td><td className="py-2 pr-4">Tercero (Google)</td><td className="py-2">Anal&iacute;tica &mdash; Distingue usuarios</td></tr>
-                <tr><td className="py-2 pr-4">_gat</td><td className="py-2 pr-4">1 minuto</td><td className="py-2 pr-4">Tercero (Google)</td><td className="py-2">Anal&iacute;tica &mdash; Limita el porcentaje de solicitudes</td></tr>
               </tbody>
             </table>
           </div>

@@ -1,23 +1,37 @@
 "use client";
 
 import Script from "next/script";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { getCookiePreferences } from "@/components/CookieBanner";
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 export default function Analytics() {
-  useEffect(() => {
-    if (!GA_ID) return;
-    const consent = localStorage.getItem("cookie-consent");
-    if (consent !== "accepted") return;
+  const [analyticsConsented, setAnalyticsConsented] = useState(false);
 
-    // Initialize GA4 after consent
-    window.gtag?.("config", GA_ID, {
-      page_path: window.location.pathname,
-    });
+  useEffect(() => {
+    // Check initial consent
+    const prefs = getCookiePreferences();
+    setAnalyticsConsented(prefs.analytics);
+
+    // Listen for consent updates
+    const handler = () => {
+      const updated = getCookiePreferences();
+      setAnalyticsConsented(updated.analytics);
+      if (updated.analytics) {
+        window.gtag?.("consent", "update", {
+          analytics_storage: "granted",
+        });
+      }
+    };
+    window.addEventListener("cookie-consent-update", handler);
+    return () => window.removeEventListener("cookie-consent-update", handler);
   }, []);
 
   if (!GA_ID) return null;
+
+  // Only load GA4 script after analytics consent
+  if (!analyticsConsented) return null;
 
   return (
     <>
@@ -31,17 +45,9 @@ export default function Analytics() {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('consent', 'default', {
-            analytics_storage: 'denied',
+            analytics_storage: 'granted',
             ad_storage: 'denied',
           });
-
-          // Check existing consent
-          if (localStorage.getItem('cookie-consent') === 'accepted') {
-            gtag('consent', 'update', {
-              analytics_storage: 'granted',
-            });
-          }
-
           gtag('config', '${GA_ID}');
         `}
       </Script>

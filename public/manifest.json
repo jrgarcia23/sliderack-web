@@ -1,0 +1,13 @@
+{
+  "name": "Sliderack",
+  "short_name": "Sliderack",
+  "description": "Sistema de almacenaje deslizante de alta precisi\u00f3n",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#201F20",
+  "theme_color": "#A52430",
+  "icons": [
+    { "src": "/icon-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
