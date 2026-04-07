@@ -59,8 +59,8 @@ export default function CompaniaPage() {
             <ScrollReveal direction="left">
               <div className="relative rounded-2xl overflow-hidden h-full min-h-[500px]">
                 <Image
-                  src="/images/sliderack/photos/sistema-completo.jpg"
-                  alt="Vista completa del sistema de estanterías deslizantes Sliderack"
+                  src="/images/sliderack/photos/estanteria-esnova.jpg"
+                  alt="Estantería deslizante Sliderack fabricada por Esnova Racks"
                   fill
                   className="object-cover"
                 />
