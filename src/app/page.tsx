@@ -24,7 +24,7 @@ export default function Home() {
         <FAQSection />
         <ContactFormSection />
       </main>
-      <Footer />
+      <Footer hideCta />
     </>
   );
 }

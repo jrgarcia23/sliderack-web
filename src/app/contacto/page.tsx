@@ -15,7 +15,7 @@ export default function Contacto() {
       <Suspense>
         <ContactPage />
       </Suspense>
-      <Footer />
+      <Footer hideCta />
     </>
   );
 }
