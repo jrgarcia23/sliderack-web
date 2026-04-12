@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { ChevronDown, ChevronRight, Menu, X } from "lucide-react";
 
 const sistemasMenu = {
   columns: [
@@ -61,6 +61,7 @@ const simpleLinks = [
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openMega, setOpenMega] = useState<"sistemas" | "accesorios" | null>(null);
+  const [mobileAccordion, setMobileAccordion] = useState<"modelos" | "accesorios" | null>(null);
 
   return (
     <header className="w-full relative z-50">
@@ -90,25 +91,34 @@ export default function Header() {
 
               {/* Mega dropdown — inside the same div so hover stays connected */}
               {openMega === "sistemas" && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 w-[1200px] bg-white shadow-2xl border-t-2 border-[#A52430] rounded-b-xl z-50">
-                  <div className="px-8 py-8">
-                    <div className="flex justify-between items-center mb-6">
-                      <h3 className="font-heading text-[18px] font-bold uppercase text-[#201F20]">Sistemas de estanterías deslizantes</h3>
-                      <Link href="/sistemas" className="font-body text-[13px] text-[#A52430] hover:underline" onClick={() => setOpenMega(null)}>Ver todos →</Link>
+                <div className="absolute top-full left-1/2 -translate-x-1/2 w-[min(1200px,calc(100vw-2rem))] bg-white shadow-2xl border-t-2 border-[#A52430] rounded-b-xl z-50">
+                  <div className="px-8 py-8 flex gap-8">
+                    {/* Grid de modelos */}
+                    <div className="flex-1">
+                      <div className="flex justify-between items-center mb-6">
+                        <h3 className="font-heading text-[18px] font-bold uppercase text-[#201F20]">Estanterías deslizantes</h3>
+                        <Link href="/sistemas" className="font-body text-[13px] text-[#A52430] hover:underline" onClick={() => setOpenMega(null)}>Ver todos →</Link>
+                      </div>
+                      <div className="grid grid-cols-4 gap-8">
+                        {sistemasMenu.columns.map((col) => (
+                          <div key={col.title}>
+                            <p className="font-heading text-[11px] font-semibold uppercase tracking-[1.5px] text-[#A52430] mb-3 pb-2 border-b border-gray-200">{col.title}</p>
+                            <ul className="flex flex-col gap-0.5">
+                              {col.items.map((item) => (
+                                <li key={item.href}>
+                                  <Link href={item.href} className="block py-2 px-3 rounded-lg font-body text-[14px] text-[#555] hover:bg-[#f8f8f8] hover:text-[#A52430] transition-colors" onClick={() => setOpenMega(null)}>{item.name}</Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
                     </div>
-                    <div className="grid grid-cols-4 gap-8">
-                      {sistemasMenu.columns.map((col) => (
-                        <div key={col.title}>
-                          <p className="font-heading text-[11px] font-semibold uppercase tracking-[1.5px] text-[#A52430] mb-3 pb-2 border-b border-gray-200">{col.title}</p>
-                          <ul className="flex flex-col gap-0.5">
-                            {col.items.map((item) => (
-                              <li key={item.href}>
-                                <Link href={item.href} className="block py-2 px-3 rounded-lg font-body text-[14px] text-[#555] hover:bg-[#f8f8f8] hover:text-[#A52430] transition-colors" onClick={() => setOpenMega(null)}>{item.name}</Link>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      ))}
+                    {/* Imagen destacada */}
+                    <div className="hidden xl:flex w-[260px] shrink-0 flex-col justify-center items-center rounded-xl bg-[#f8f8f8] p-4">
+                      <Image src="/images/sliderack/products/sr-2700-370.webp" alt="Sliderack estantería deslizante" width={240} height={180} className="rounded-lg object-contain" />
+                      <p className="mt-3 text-center font-heading text-[12px] font-semibold uppercase tracking-[1px] text-[#201F20]">Almacenaje inteligente</p>
+                      <p className="text-center font-body text-[12px] text-[#777] mt-1">Máxima capacidad, mínimo espacio</p>
                     </div>
                   </div>
                 </div>
@@ -167,20 +177,29 @@ export default function Header() {
         </div>
 
         {/* Mobile menu */}
-        {mobileOpen && (
-          <nav className="lg:hidden border-t border-white/10 px-4 pb-6 max-h-[80vh] overflow-y-auto">
-            <div className="mx-auto max-w-[1200px] flex flex-col pt-2">
-              {/* Sistemas group */}
-              <div className="border-b border-white/10 pb-3 mb-3">
-                <Link href="/sistemas" className="block py-3 font-heading text-[14px] font-bold uppercase text-white" onClick={() => setMobileOpen(false)}>
-                  Modelos
+        <nav
+          className={`lg:hidden border-t border-white/10 px-4 overflow-hidden transition-all duration-300 ease-in-out ${mobileOpen ? "max-h-[80vh] overflow-y-auto pb-6 opacity-100" : "max-h-0 pb-0 opacity-0"}`}
+        >
+          <div className="mx-auto max-w-[1200px] flex flex-col pt-2">
+            {/* Modelos accordion */}
+            <div className="border-b border-white/10">
+              <button
+                className="flex w-full items-center justify-between py-3 font-heading text-[14px] font-bold uppercase text-white"
+                onClick={() => setMobileAccordion(mobileAccordion === "modelos" ? null : "modelos")}
+              >
+                Modelos
+                <ChevronRight className={`h-4 w-4 opacity-70 transition-transform duration-200 ${mobileAccordion === "modelos" ? "rotate-90" : ""}`} />
+              </button>
+              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${mobileAccordion === "modelos" ? "max-h-[600px] opacity-100 pb-3" : "max-h-0 opacity-0"}`}>
+                <Link href="/sistemas" className="block pl-4 py-1.5 font-body text-[13px] text-[#A52430] font-semibold" onClick={() => setMobileOpen(false)}>
+                  Ver todos los modelos →
                 </Link>
                 <div className="pl-4 flex flex-col gap-0.5">
                   {sistemasMenu.columns.map((col) => (
                     <div key={col.title} className="mb-2">
                       <p className="font-heading text-[11px] font-semibold uppercase tracking-[1px] text-[#A52430] mb-1">{col.title}</p>
                       {col.items.map((item) => (
-                        <Link key={item.href} href={item.href} className="block py-1.5 font-body text-[13px] text-white/70 hover:text-white" onClick={() => setMobileOpen(false)}>
+                        <Link key={item.href} href={item.href} className="block py-1.5 font-body text-[13px] text-white/70 hover:text-white transition-colors" onClick={() => setMobileOpen(false)}>
                           {item.name}
                         </Link>
                       ))}
@@ -188,30 +207,39 @@ export default function Header() {
                   ))}
                 </div>
               </div>
+            </div>
 
-              {/* Accesorios group */}
-              <div className="border-b border-white/10 pb-3 mb-3">
-                <Link href="/accesorios" className="block py-3 font-heading text-[14px] font-bold uppercase text-white" onClick={() => setMobileOpen(false)}>
-                  Accesorios
+            {/* Accesorios accordion */}
+            <div className="border-b border-white/10">
+              <button
+                className="flex w-full items-center justify-between py-3 font-heading text-[14px] font-bold uppercase text-white"
+                onClick={() => setMobileAccordion(mobileAccordion === "accesorios" ? null : "accesorios")}
+              >
+                Accesorios
+                <ChevronRight className={`h-4 w-4 opacity-70 transition-transform duration-200 ${mobileAccordion === "accesorios" ? "rotate-90" : ""}`} />
+              </button>
+              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${mobileAccordion === "accesorios" ? "max-h-[400px] opacity-100 pb-3" : "max-h-0 opacity-0"}`}>
+                <Link href="/accesorios" className="block pl-4 py-1.5 font-body text-[13px] text-[#A52430] font-semibold" onClick={() => setMobileOpen(false)}>
+                  Ver todos los accesorios →
                 </Link>
                 <div className="pl-4 flex flex-col gap-0.5">
                   {accesoriosMenu.map((item) => (
-                    <Link key={item.href} href={item.href} className="block py-1.5 font-body text-[13px] text-white/70 hover:text-white" onClick={() => setMobileOpen(false)}>
+                    <Link key={item.href} href={item.href} className="block py-1.5 font-body text-[13px] text-white/70 hover:text-white transition-colors" onClick={() => setMobileOpen(false)}>
                       {item.name}
                     </Link>
                   ))}
                 </div>
               </div>
-
-              {/* Simple links */}
-              {simpleLinks.map((link) => (
-                <Link key={link.href} href={link.href} className="block py-3 font-heading text-[14px] font-bold uppercase text-white" onClick={() => setMobileOpen(false)}>
-                  {link.label}
-                </Link>
-              ))}
             </div>
-          </nav>
-        )}
+
+            {/* Simple links */}
+            {simpleLinks.map((link) => (
+              <Link key={link.href} href={link.href} className="block py-3 font-heading text-[14px] font-bold uppercase text-white" onClick={() => setMobileOpen(false)}>
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </nav>
       </div>
     </header>
   );
