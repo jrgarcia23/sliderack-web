@@ -9,6 +9,7 @@ const sistemasMenu = {
   columns: [
     {
       title: "1 Nivel · Prof. 370",
+      img: "/images/sliderack/products/sr-1825-370.webp",
       items: [
         { name: "Sliderack 1825 × 370", href: "/sistemas/sliderack-1825-370" },
         { name: "Sliderack 2700 × 370", href: "/sistemas/sliderack-2700-370" },
@@ -17,6 +18,7 @@ const sistemasMenu = {
     },
     {
       title: "1 Nivel · Prof. 470",
+      img: "/images/sliderack/products/sr-1825-470.webp",
       items: [
         { name: "Sliderack 1825 × 470", href: "/sistemas/sliderack-1825-470" },
         { name: "Sliderack 2700 × 470", href: "/sistemas/sliderack-2700-470" },
@@ -25,6 +27,7 @@ const sistemasMenu = {
     },
     {
       title: "2 Niveles · Prof. 370",
+      img: "/images/sliderack/products/sr-2n-1825-370.webp",
       items: [
         { name: "Sliderack 2N 1825 × 370", href: "/sistemas/sliderack-2n-1825-370" },
         { name: "Sliderack 2N 2700 × 370", href: "/sistemas/sliderack-2n-2700-370" },
@@ -33,6 +36,7 @@ const sistemasMenu = {
     },
     {
       title: "2 Niveles · Prof. 470",
+      img: "/images/sliderack/products/sr-2n-1825-470.webp",
       items: [
         { name: "Sliderack 2N 1825 × 470", href: "/sistemas/sliderack-2n-1825-470" },
         { name: "Sliderack 2N 2700 × 470", href: "/sistemas/sliderack-2n-2700-470" },
@@ -92,33 +96,27 @@ export default function Header() {
               {/* Mega dropdown — inside the same div so hover stays connected */}
               {openMega === "sistemas" && (
                 <div className="absolute top-full left-1/2 -translate-x-1/2 w-[min(1200px,calc(100vw-2rem))] bg-white shadow-2xl border-t-2 border-[#A52430] rounded-b-xl z-50">
-                  <div className="px-8 py-8 flex gap-8">
-                    {/* Grid de modelos */}
-                    <div className="flex-1">
-                      <div className="flex justify-between items-center mb-6">
-                        <h3 className="font-heading text-[18px] font-bold uppercase text-[#201F20]">Estanterías deslizantes</h3>
-                        <Link href="/sistemas" className="font-body text-[13px] text-[#A52430] hover:underline" onClick={() => setOpenMega(null)}>Ver todos →</Link>
-                      </div>
-                      <div className="grid grid-cols-4 gap-8">
-                        {sistemasMenu.columns.map((col) => (
-                          <div key={col.title}>
-                            <p className="font-heading text-[11px] font-semibold uppercase tracking-[1.5px] text-[#A52430] mb-3 pb-2 border-b border-gray-200">{col.title}</p>
-                            <ul className="flex flex-col gap-0.5">
-                              {col.items.map((item) => (
-                                <li key={item.href}>
-                                  <Link href={item.href} className="block py-2 px-3 rounded-lg font-body text-[14px] text-[#555] hover:bg-[#f8f8f8] hover:text-[#A52430] transition-colors" onClick={() => setOpenMega(null)}>{item.name}</Link>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        ))}
-                      </div>
+                  <div className="px-8 py-8">
+                    <div className="flex justify-between items-center mb-6">
+                      <h3 className="font-heading text-[18px] font-bold uppercase text-[#201F20]">Estanterías deslizantes</h3>
+                      <Link href="/sistemas" className="font-body text-[13px] text-[#A52430] hover:underline" onClick={() => setOpenMega(null)}>Ver todos →</Link>
                     </div>
-                    {/* Imagen destacada */}
-                    <div className="hidden xl:flex w-[260px] shrink-0 flex-col justify-center items-center rounded-xl bg-[#f8f8f8] p-4">
-                      <Image src="/images/sliderack/products/sr-2700-370.webp" alt="Sliderack estantería deslizante" width={240} height={180} className="rounded-lg object-contain" />
-                      <p className="mt-3 text-center font-heading text-[12px] font-semibold uppercase tracking-[1px] text-[#201F20]">Almacenaje inteligente</p>
-                      <p className="text-center font-body text-[12px] text-[#777] mt-1">Máxima capacidad, mínimo espacio</p>
+                    <div className="grid grid-cols-4 gap-8">
+                      {sistemasMenu.columns.map((col) => (
+                        <div key={col.title}>
+                          <div className="mb-3 rounded-lg bg-[#f8f8f8] p-3 flex items-center justify-center">
+                            <Image src={col.img} alt={col.title} width={160} height={120} className="object-contain h-[100px] w-auto" />
+                          </div>
+                          <p className="font-heading text-[11px] font-semibold uppercase tracking-[1.5px] text-[#A52430] mb-3 pb-2 border-b border-gray-200">{col.title}</p>
+                          <ul className="flex flex-col gap-0.5">
+                            {col.items.map((item) => (
+                              <li key={item.href}>
+                                <Link href={item.href} className="block py-2 px-3 rounded-lg font-body text-[14px] text-[#555] hover:bg-[#f8f8f8] hover:text-[#A52430] transition-colors" onClick={() => setOpenMega(null)}>{item.name}</Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </div>
@@ -140,12 +138,18 @@ export default function Header() {
               </Link>
 
               {openMega === "accesorios" && (
-                <div className="absolute top-full left-0 w-[380px] bg-white shadow-2xl border-t-2 border-[#A52430] rounded-b-xl z-50">
+                <div className="absolute top-full left-0 w-[520px] bg-white shadow-2xl border-t-2 border-[#A52430] rounded-b-xl z-50">
                   <div className="px-5 py-5">
-                    <div className="grid grid-cols-2 gap-x-6 gap-y-1">
+                    <div className="grid grid-cols-2 gap-3">
                       {accesoriosMenu.map((item) => (
-                        <Link key={item.href} href={item.href} className="block py-2 px-3 rounded-lg font-body text-[13px] text-[#555] hover:bg-[#f8f8f8] hover:text-[#A52430] transition-colors whitespace-nowrap" onClick={() => setOpenMega(null)}>
-                          {item.name}
+                        <Link key={item.href} href={item.href} className="flex items-center gap-3 py-2 px-3 rounded-lg hover:bg-[#f8f8f8] transition-colors group" onClick={() => setOpenMega(null)}>
+                          <div className="w-[48px] h-[48px] shrink-0 rounded-md bg-[#f8f8f8] group-hover:bg-white flex items-center justify-center overflow-hidden">
+                            <Image src={item.img} alt={item.name} width={44} height={44} className="object-contain" />
+                          </div>
+                          <div>
+                            <p className="font-body text-[13px] font-semibold text-[#333] group-hover:text-[#A52430] transition-colors">{item.name}</p>
+                            <p className="font-body text-[11px] text-[#999] leading-tight">{item.desc}</p>
+                          </div>
                         </Link>
                       ))}
                     </div>
