@@ -39,7 +39,7 @@ function ChevronIcon({ open }: { open: boolean }) {
 const faqItems = [
   {
     q: "¿Qué incluye el sistema?",
-    a: "El sistema incluye la estructura metálica, los armarios móviles deslizantes con guías de precisión y el manual de instalación. Los accesorios se adquieren por separado.",
+    a: "El sistema incluye la estructura metálica, los armarios deslizantes con guías de precisión, tres baldas por armario deslizante y las mallas de los estantes superiores. Los accesorios se adquieren por separado.",
   },
   {
     q: "¿Puedo ampliar la configuración en el futuro?",
@@ -51,7 +51,7 @@ const faqItems = [
   },
   {
     q: "¿Ofrecen servicio de instalación?",
-    a: "Consulta con nuestro equipo técnico. Podemos asesorarte sobre la instalación o recomendarte un instalador en tu zona.",
+    a: "Sí, la instalación va incluida dentro del territorio español. Para instalaciones fuera de España consulta con nuestro equipo técnico. Podemos asesorarte sobre la instalación o recomendarte un instalador en tu zona.",
   },
   {
     q: "¿Cuál es el plazo de entrega?",

@@ -37,7 +37,7 @@ export default function CompaniaPage() {
               Sobre nosotros
             </h1>
             <p className="mt-4 max-w-[550px] mx-auto font-[family-name:var(--font-body)] text-[17px] text-white/70">
-              Más de 50 años fabricando soluciones de almacenaje que funcionan.
+              Más de 50 años de conocimiento en la fabricación de soluciones de almacenaje que funcionan.
             </p>
           </div>
           {/* Badges bar */}
