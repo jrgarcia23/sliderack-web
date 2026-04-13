@@ -252,13 +252,15 @@ export default function ProductDetail({
                 >
                   Solicitar información
                 </Link>
-                <Link
-                  href={`/contacto?modelo=${product.slug}`}
+                <a
+                  href="/catalogo-sliderack.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="border-2 border-[#A52430] text-[#A52430] text-center px-4 py-3.5 rounded-lg hover:bg-[#A52430] hover:text-white transition-colors uppercase tracking-[1px]"
                   style={{ fontFamily: "var(--font-heading)", fontSize: 14, fontWeight: 700 }}
                 >
                   Descargar catálogo
-                </Link>
+                </a>
               </div>
 
             </div>

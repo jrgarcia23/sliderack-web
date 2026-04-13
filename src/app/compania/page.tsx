@@ -223,12 +223,14 @@ export default function CompaniaPage() {
               >
                 Solicitar información
               </Link>
-              <Link
-                href="/sistemas"
+              <a
+                href="/catalogo-sliderack.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-lg border-2 border-white/40 px-10 py-4 font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-white hover:border-white transition-colors"
               >
-                Ver catálogo
-              </Link>
+                Descargar catálogo
+              </a>
             </div>
           </div>
         </section>
