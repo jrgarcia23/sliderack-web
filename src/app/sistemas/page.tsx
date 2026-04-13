@@ -71,7 +71,7 @@ export default function SistemasPage() {
                   color: "#666",
                 }}
               >
-                Nuestros sistemas combinan estructura metálica de alta resistencia con un mecanismo deslizante de precisión. Disponibles en tres anchos (2090 mm, 2965 mm y 3865 mm) y con dos profundidades de armario móvil (370 mm y 470 mm), configuraciones de uno o dos niveles y una profundidad total de 1160 mm. Cada modelo se adapta a talleres, garajes premium, servicios de emergencia y entornos industriales.
+                Nuestros sistemas combinan estructura metálica de alta resistencia con un mecanismo deslizante de precisión. Con un fondo fijo de 1160 mm, modelos disponibles en tres anchos (2090, 2965 y 3865 mm), con dos profundidades de armario móvil (370 y 470 mm) y configuraciones de uno o dos niveles. Cada modelo se adapta a talleres, garajes premium, servicios de emergencia y entornos industriales.
               </p>
             </ScrollReveal>
           </div>
