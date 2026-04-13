@@ -93,7 +93,7 @@ export default function PorQueSliderack() {
           {/* Badges bar */}
           <div className="absolute bottom-0 left-0 right-0 bg-black/40 backdrop-blur-sm border-t border-white/10">
             <div className="mx-auto max-w-[1200px] px-6 py-3 flex flex-wrap items-center justify-center gap-6 md:gap-10">
-              {["Fabricado por Esnova Racks", "+50 años", "Producción propia certificada", "Tecnología industrial a medida"].map((badge) => (
+              {["Fabricado por Esnova Racks", "Más de 50 años", "Producción propia certificada", "Tecnología industrial a medida"].map((badge) => (
                 <span key={badge} className="font-[family-name:var(--font-heading)] text-[12px] font-semibold uppercase tracking-[1.5px] text-white/80">
                   {badge}
                 </span>

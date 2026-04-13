@@ -37,7 +37,7 @@ const faqs = [
   {
     question: "¿Qué certificaciones de calidad tiene Sliderack?",
     answer:
-      "Sliderack está fabricado por Esnova Racks, empresa española con +50 años de experiencia certificada con ISO 9001 (gestión de calidad y mejora continua), ISO 14001 (gestión ambiental y uso responsable de recursos), ISO 45001 (seguridad y salud laboral) y UNE EN 1090 (Marcado CE para estructuras metálicas). Estas certificaciones garantizan que cada componente del sistema cumple los estándares europeos más exigentes en calidad, seguridad y sostenibilidad.",
+      "Sliderack está fabricado por Esnova Racks, empresa española con más de 50 años de experiencia certificada con ISO 9001 (gestión de calidad y mejora continua), ISO 14001 (gestión ambiental y uso responsable de recursos), ISO 45001 (seguridad y salud laboral) y UNE EN 1090 (Marcado CE para estructuras metálicas). Estas certificaciones garantizan que cada componente del sistema cumple los estándares europeos más exigentes en calidad, seguridad y sostenibilidad.",
   },
   {
     question: "¿Dónde se fabrica Sliderack?",

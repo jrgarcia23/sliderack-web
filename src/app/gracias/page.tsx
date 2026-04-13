@@ -88,7 +88,7 @@ export default function GraciasPage() {
                   Fabricado en Espa&ntilde;a
                 </p>
                 <p className="font-[family-name:var(--font-heading)] text-[20px] font-bold text-white mt-0.5">
-                  +50 a&ntilde;os de experiencia
+                  M&aacute;s de 50 a&ntilde;os
                 </p>
               </div>
             </div>

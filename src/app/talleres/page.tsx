@@ -333,7 +333,7 @@ export default function TalleresPage() {
             <ScrollReveal>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center mb-16">
                 {[
-                  { stat: "+50", label: "Años de experiencia" },
+                  { stat: "50+", label: "Años de experiencia" },
                   { stat: "+45", label: "Países" },
                   { stat: "46.600", label: "m² de planta" },
                   { stat: "4", label: "Certificaciones ISO" },

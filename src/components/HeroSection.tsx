@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const trustBadges = [
   "Fabricado en España",
-  "+50 años de experiencia",
+  "Más de 50 años de experiencia",
   "Certificado ISO",
 ];
 

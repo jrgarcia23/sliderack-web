@@ -7,7 +7,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata = {
   title: "Sobre Esnova Racks — Fabricante Español",
   description:
-    "Sliderack es una marca de Esnova Racks, empresa española con más de +50 años diseñando y fabricando sistemas de almacenaje industrial.",
+    "Sliderack es una marca de Esnova Racks, empresa española con más de 50 años diseñando y fabricando sistemas de almacenaje industrial.",
 };
 
 const certs = [
@@ -37,13 +37,13 @@ export default function CompaniaPage() {
               Sobre nosotros
             </h1>
             <p className="mt-4 max-w-[550px] mx-auto font-[family-name:var(--font-body)] text-[17px] text-white/70">
-              Más de +50 años fabricando soluciones de almacenaje que funcionan.
+              Más de 50 años fabricando soluciones de almacenaje que funcionan.
             </p>
           </div>
           {/* Badges bar */}
           <div className="absolute bottom-0 left-0 right-0 bg-black/40 backdrop-blur-sm border-t border-white/10">
             <div className="mx-auto max-w-[1200px] px-6 py-3 flex flex-wrap items-center justify-center gap-6 md:gap-10">
-              {["Fabricado por Esnova Racks", "+50 años", "Producción propia certificada", "Tecnología industrial a medida"].map((badge) => (
+              {["Fabricado por Esnova Racks", "Más de 50 años", "Producción propia certificada", "Tecnología industrial a medida"].map((badge) => (
                 <span key={badge} className="font-[family-name:var(--font-heading)] text-[12px] font-semibold uppercase tracking-[1.5px] text-white/80">
                   {badge}
                 </span>
@@ -74,7 +74,7 @@ export default function CompaniaPage() {
                   Ingeniería, fabricación y experiencia al servicio del almacenaje
                 </h2>
                 <p className="font-[family-name:var(--font-body)] text-[16px] leading-relaxed text-[#666] mb-4">
-                  Sliderack forma parte de Esnova Racks, empresa española con más de +50 años de experiencia en el diseño y fabricación de sistemas de almacenaje industrial.
+                  Sliderack forma parte de Esnova Racks, empresa española con más de 50 años de conocimiento en el diseño y fabricación de sistemas de almacenaje.
                 </p>
                 <p className="font-[family-name:var(--font-body)] text-[16px] leading-relaxed text-[#666] mb-10">
                   A lo largo de su trayectoria, Esnova ha desarrollado soluciones para múltiples sectores, consolidando un modelo de trabajo basado en la calidad, la innovación y la eficiencia operativa.
