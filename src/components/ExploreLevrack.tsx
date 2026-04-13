@@ -6,32 +6,32 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const products = [
   {
-    name: "Sliderack 1825",
-    slug: "sliderack-1825-370",
+    name: "Sliderack 1-1837",
+    slug: "sliderack-1-1837",
     image: "/images/sliderack/products/sr-1825-370.webp",
     badge: "1 Nivel",
-    dims: "1825 × 370 mm",
+    dims: "2090 × 1160 mm · 3 armarios móviles",
   },
   {
-    name: "Sliderack 2700",
-    slug: "sliderack-2700-370",
+    name: "Sliderack 1-2737",
+    slug: "sliderack-1-2737",
     image: "/images/sliderack/products/sr-2700-370.webp",
     badge: "1 Nivel",
-    dims: "2700 × 370 mm",
+    dims: "2965 × 1160 mm · 5 armarios móviles",
   },
   {
-    name: "Sliderack 3600",
-    slug: "sliderack-3600-370",
+    name: "Sliderack 1-3637",
+    slug: "sliderack-1-3637",
     image: "/images/sliderack/products/sr-3600-370.webp",
     badge: "1 Nivel",
-    dims: "3600 × 370 mm",
+    dims: "3865 × 1160 mm · 7 armarios móviles",
   },
   {
-    name: "Sliderack 2 Niveles",
-    slug: "sliderack-2n-2700-370",
+    name: "Sliderack 2-2737",
+    slug: "sliderack-2-2737",
     image: "/images/sliderack/products/sr-2n-2700-370.webp",
     badge: "2 Niveles",
-    dims: "2700 × 370 mm",
+    dims: "2965 × 1160 mm · 5 armarios móviles",
   },
 ];
 
@@ -69,13 +69,6 @@ export default function ExploreLevrack() {
                     fill
                     className="object-contain p-4"
                   />
-                  {/* Badge */}
-                  <span
-                    className="absolute left-3 top-3 rounded bg-[#A52430] px-2.5 py-1 text-[11px] font-semibold uppercase text-white"
-                    style={{ fontFamily: "var(--font-heading)" }}
-                  >
-                    {product.badge}
-                  </span>
                   {/* Dimensions overlay on hover */}
                   <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent px-4 py-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     <span

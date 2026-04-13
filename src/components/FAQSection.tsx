@@ -7,17 +7,17 @@ const faqs = [
   {
     question: "¿Qué es Sliderack y en qué se diferencia de una estantería convencional?",
     answer:
-      "Sliderack es un sistema de estanterías deslizantes fabricado en España por Esnova Racks. A diferencia de las estanterías convencionales, los módulos de Sliderack se deslizan lateralmente sobre guías de alta precisión, eliminando los pasillos fijos entre estanterías. Esto permite almacenar el mismo volumen de herramientas, piezas o materiales en aproximadamente la mitad de espacio. Cada módulo soporta hasta 150 kg y puede moverse con un solo dedo.",
+      "Sliderack es un sistema de estanterías deslizantes fabricado en España por Esnova Racks. A diferencia de las estanterías convencionales, los armarios móviles de Sliderack se deslizan lateralmente sobre guías de alta precisión, eliminando los pasillos fijos entre estanterías. Esto permite almacenar el mismo volumen de herramientas, piezas o materiales en aproximadamente la mitad de espacio. Cada armario móvil soporta hasta 150 kg y puede moverse con un solo dedo.",
   },
   {
     question: "¿Qué medidas y configuraciones están disponibles?",
     answer:
-      "Sliderack se ofrece en tres anchos (1825 mm, 2700 mm y 3600 mm) y dos profundidades (370 mm y 470 mm). Cada modelo está disponible en configuración de uno o dos niveles. La altura estándar es de 2255 mm y la profundidad total de 1160 mm. El acabado es Negro Mate RAL-9005. En total, hay 12 configuraciones de sistema que cubren desde talleres pequeños hasta instalaciones industriales de gran capacidad.",
+      "Sliderack se ofrece con un fondo fijo de 1160 mm, en tres anchos (2090, 2965 y 3865 mm) y dos profundidades de armario móvil (370 y 470 mm). Cada modelo está disponible en configuración de uno o dos niveles. La altura estándar es de 2255 mm (1 nivel) o 3505 mm (2 niveles). El acabado es Negro Mate RAL-9005. En total, hay 12 configuraciones de sistema que cubren desde talleres pequeños hasta instalaciones industriales de gran capacidad.",
   },
   {
-    question: "¿Cuánto peso soporta cada módulo deslizante?",
+    question: "¿Cuánto peso soporta cada armario móvil?",
     answer:
-      "Cada módulo deslizante de Sliderack está diseñado para soportar hasta 150 kg de carga distribuida en sus baldas. A pesar de este peso, el mecanismo de guías de precisión permite deslizar el módulo completo con un solo dedo, sin esfuerzo y sin ruido. La estructura de acero laminado en frío con tratamiento anticorrosión garantiza que esta capacidad se mantenga a lo largo del tiempo, incluso en entornos industriales de uso intensivo.",
+      "Cada armario móvil deslizante de Sliderack está diseñado para soportar hasta 150 kg de carga distribuida en sus baldas. A pesar de este peso, el mecanismo de guías de precisión permite deslizar el armario completo con un solo dedo, sin esfuerzo y sin ruido. La estructura de acero laminado en frío con tratamiento anticorrosión garantiza que esta capacidad se mantenga a lo largo del tiempo, incluso en entornos industriales de uso intensivo.",
   },
   {
     question: "¿Para qué tipo de espacios está diseñado Sliderack?",
@@ -27,12 +27,12 @@ const faqs = [
   {
     question: "¿Qué accesorios se pueden añadir al sistema?",
     answer:
-      "Sliderack dispone de siete familias de accesorios compatibles con todos los modelos del sistema: puestos de trabajo con mesa integrada y panel perforado, paneles perforados independientes para organización vertical de herramientas, kits de cajones divisorios para piezas pequeñas, cerraduras con llave para módulos que requieran seguridad, kits de baldas adicionales ajustables en altura, módulos de ampliación para aumentar la capacidad, y kits de perchero para almacenaje de EPIs, uniformes y prendas de trabajo.",
+      "Sliderack dispone de siete familias de accesorios compatibles con todos los modelos del sistema: puestos de trabajo con mesa integrada y panel perforado, paneles perforados independientes para organización vertical de herramientas, kits de 5 cajones divisorios para piezas pequeñas, cerraduras con llave para armarios móviles que requieran seguridad, kits de baldas adicionales ajustables en altura, armarios móviles adicionales para aumentar la capacidad, y kits de perchero para almacenaje de EPIs, uniformes y prendas de trabajo.",
   },
   {
     question: "¿Es posible ampliar o modificar la configuración en el futuro?",
     answer:
-      "Sí. El diseño modular de Sliderack permite incorporar módulos adicionales, accesorios o cambiar la distribución interna en cualquier momento, sin necesidad de modificar la estructura existente. Todos los accesorios son compatibles entre sí y con cualquier modelo del sistema, lo que permite que la inversión crezca con las necesidades del espacio.",
+      "Sí. El diseño modular de Sliderack permite incorporar armarios móviles adicionales, accesorios o cambiar la distribución interna en cualquier momento, sin necesidad de modificar la estructura existente. Todos los accesorios son compatibles entre sí y con cualquier modelo del sistema, lo que permite que la inversión crezca con las necesidades del espacio.",
   },
   {
     question: "¿Qué certificaciones de calidad tiene Sliderack?",
@@ -47,7 +47,7 @@ const faqs = [
   {
     question: "¿Cuánto espacio puedo ahorrar con estanterías deslizantes frente a estanterías fijas?",
     answer:
-      "El sistema deslizante de Sliderack elimina los pasillos fijos entre estanterías. En una configuración típica con estanterías fijas, aproximadamente el 50% de la superficie se dedica a pasillos de acceso. Con Sliderack, solo se necesita un pasillo de acceso que se abre deslizando lateralmente los módulos, lo que permite duplicar la capacidad de almacenaje en la misma superficie o liberar la mitad del espacio para otras funciones del taller o garaje.",
+      "El sistema deslizante de Sliderack elimina los pasillos fijos entre estanterías. En una configuración típica con estanterías fijas, aproximadamente el 50% de la superficie se dedica a pasillos de acceso. Con Sliderack, solo se necesita un pasillo de acceso que se abre deslizando lateralmente los armarios móviles, lo que permite duplicar la capacidad de almacenaje en la misma superficie o liberar la mitad del espacio para otras funciones del taller o garaje.",
   },
   {
     question: "¿Sliderack necesita mantenimiento?",

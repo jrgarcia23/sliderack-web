@@ -50,13 +50,13 @@ const solutions = [
   },
   {
     stat: "150 kg",
-    label: "por módulo",
-    desc: "Cada módulo soporta hasta 150 kg de carga y se desliza con un solo dedo.",
+    label: "por armario móvil",
+    desc: "Cada armario móvil soporta hasta 150 kg de carga y se desliza con un solo dedo.",
   },
   {
     stat: "100%",
     label: "accesible",
-    desc: "Desliza lateralmente para acceder a cualquier módulo. Sin estorbos, sin mover nada.",
+    desc: "Desliza lateralmente para acceder a cualquier armario móvil. Sin estorbos, sin mover nada.",
   },
   {
     stat: "0",
@@ -72,7 +72,7 @@ const useCases = [
   },
   {
     title: "Taller industrial",
-    items: ["Utillaje de producción accesible por turno", "Componentes y repuestos por línea", "EPIs del equipo en módulo con cerradura", "Documentación técnica en paneles perforados"],
+    items: ["Utillaje de producción accesible por turno", "Componentes y repuestos por línea", "EPIs del equipo en armario móvil con cerradura", "Documentación técnica en paneles perforados"],
   },
   {
     title: "Servicio técnico",

@@ -93,9 +93,6 @@ export default function AccesoriosPage() {
                       fill
                       className="object-contain p-6"
                     />
-                    <span className="absolute left-3 top-3 rounded bg-[#A52430] px-2.5 py-1 font-[family-name:var(--font-heading)] text-[11px] font-semibold uppercase text-white">
-                      {product.badge}
-                    </span>
                   </div>
 
                   {/* Info */}
@@ -161,9 +158,6 @@ export default function AccesoriosPage() {
                         fill
                         className="object-contain p-6"
                       />
-                      <span className="absolute left-3 top-3 rounded bg-[#A52430] px-2.5 py-1 font-[family-name:var(--font-heading)] text-[11px] font-semibold uppercase text-white">
-                        {p.badge}
-                      </span>
                     </div>
                     <div className="pt-4">
                       <h3 className="font-[family-name:var(--font-heading)] text-[20px] font-semibold uppercase text-[#201F20]">

@@ -39,11 +39,11 @@ function ChevronIcon({ open }: { open: boolean }) {
 const faqItems = [
   {
     q: "¿Qué incluye el sistema?",
-    a: "El sistema incluye la estructura metálica, los módulos deslizantes con guías de precisión y el manual de instalación. Los accesorios se adquieren por separado.",
+    a: "El sistema incluye la estructura metálica, los armarios móviles deslizantes con guías de precisión y el manual de instalación. Los accesorios se adquieren por separado.",
   },
   {
     q: "¿Puedo ampliar la configuración en el futuro?",
-    a: "Sí. El diseño modular permite incorporar módulos y accesorios adicionales en cualquier momento sin modificar la estructura existente.",
+    a: "Sí. El diseño modular permite incorporar armarios móviles y accesorios adicionales en cualquier momento sin modificar la estructura existente.",
   },
   {
     q: "¿Se adapta a garajes, talleres y espacios técnicos?",
@@ -173,18 +173,6 @@ export default function ProductDetail({
                 fill
                 className="object-contain"
               />
-              {product.badge && (
-                <span
-                  className="absolute top-4 left-4 bg-[#A52430] text-white px-3 py-1.5 rounded uppercase"
-                  style={{
-                    fontFamily: "var(--font-heading)",
-                    fontSize: 12,
-                    fontWeight: 600,
-                  }}
-                >
-                  {product.badge}
-                </span>
-              )}
               {/* Zoom icon */}
               <div className="absolute bottom-4 right-4 bg-white/80 rounded-full p-2">
                 <svg className="w-5 h-5 text-[#201F20]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -390,7 +378,7 @@ export default function ProductDetail({
                 className="text-[#555] mb-5"
                 style={{ fontFamily: "var(--font-body)", fontSize: 16, lineHeight: 1.8 }}
               >
-                Cada módulo de este sistema está construido con acero laminado en frío y tratamiento anticorrosión, diseñado para soportar hasta 150 kg de carga con un deslizamiento suave y silencioso. Las guías de alta precisión están fabricadas para millones de ciclos de apertura y cierre sin degradación del rendimiento.
+                Cada armario móvil de este sistema está construido con acero laminado en frío y tratamiento anticorrosión, diseñado para soportar hasta 150 kg de carga con un deslizamiento suave y silencioso. Las guías de alta precisión están fabricadas para millones de ciclos de apertura y cierre sin degradación del rendimiento.
               </p>
               <p
                 className="text-[#555]"

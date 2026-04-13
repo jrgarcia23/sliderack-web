@@ -11,7 +11,7 @@ export default function NotFound() {
           404
         </span>
         <h1 className="mt-2 font-[family-name:var(--font-heading)] text-[28px] md:text-[36px] font-bold uppercase text-[#201F20]">
-          Este módulo está vacío
+          Este armario está vacío
         </h1>
         <p className="mt-4 max-w-[500px] font-[family-name:var(--font-body)] text-[16px] leading-relaxed text-[#666]">
           Parece que esta página se ha deslizado fuera de su sitio. No te preocupes, el resto de nuestro sistema de almacenaje sigue en orden.
@@ -27,7 +27,7 @@ export default function NotFound() {
             href="/sistemas"
             className="rounded-lg border-2 border-gray-300 px-8 py-3 font-[family-name:var(--font-heading)] text-[15px] font-bold uppercase text-[#201F20] hover:border-[#A52430] hover:text-[#A52430] transition-colors"
           >
-            Ver módulos
+            Ver modelos
           </Link>
         </div>
       </main>

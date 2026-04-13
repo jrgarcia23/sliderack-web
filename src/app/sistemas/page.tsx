@@ -71,7 +71,7 @@ export default function SistemasPage() {
                   color: "#666",
                 }}
               >
-                Nuestros sistemas combinan estructura metálica de alta resistencia con un mecanismo deslizante de precisión. Disponibles en tres anchos (1825, 2700 y 3600 mm), dos profundidades (370 y 470 mm) y configuraciones de uno o dos niveles. Cada modelo se adapta a talleres, garajes premium, servicios de emergencia y entornos industriales.
+                Nuestros sistemas combinan estructura metálica de alta resistencia con un mecanismo deslizante de precisión. Con un fondo fijo de 1160 mm, modelos disponibles en tres anchos (2090, 2965 y 3865 mm), con dos profundidades de armario móvil (370 y 470 mm) y configuraciones de uno o dos niveles. Cada modelo se adapta a talleres, garajes premium, servicios de emergencia y entornos industriales.
               </p>
             </ScrollReveal>
           </div>
@@ -94,9 +94,6 @@ export default function SistemasPage() {
                       fill
                       className="object-contain p-6"
                     />
-                    <span className="absolute left-3 top-3 rounded bg-[#A52430] px-2.5 py-1 font-[family-name:var(--font-heading)] text-[11px] font-semibold uppercase text-white">
-                      {product.badge}
-                    </span>
                   </div>
 
                   {/* Info */}
@@ -162,9 +159,6 @@ export default function SistemasPage() {
                         fill
                         className="object-contain p-6"
                       />
-                      <span className="absolute left-3 top-3 rounded bg-[#A52430] px-2.5 py-1 font-[family-name:var(--font-heading)] text-[11px] font-semibold uppercase text-white">
-                        {p.badge}
-                      </span>
                     </div>
                     <div className="pt-4">
                       <h3 className="font-[family-name:var(--font-heading)] text-[20px] font-semibold uppercase text-[#201F20]">

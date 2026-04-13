@@ -11,36 +11,36 @@ const sistemasMenu = {
       title: "1 Nivel · Prof. 370",
       img: "/images/sliderack/products/sr-1825-370.webp",
       items: [
-        { name: "Sliderack 1825 × 370", href: "/sistemas/sliderack-1825-370" },
-        { name: "Sliderack 2700 × 370", href: "/sistemas/sliderack-2700-370" },
-        { name: "Sliderack 3600 × 370", href: "/sistemas/sliderack-3600-370" },
+        { name: "Sliderack 1-1837", href: "/sistemas/sliderack-1-1837" },
+        { name: "Sliderack 1-2737", href: "/sistemas/sliderack-1-2737" },
+        { name: "Sliderack 1-3637", href: "/sistemas/sliderack-1-3637" },
       ],
     },
     {
       title: "1 Nivel · Prof. 470",
       img: "/images/sliderack/products/sr-1825-470.webp",
       items: [
-        { name: "Sliderack 1825 × 470", href: "/sistemas/sliderack-1825-470" },
-        { name: "Sliderack 2700 × 470", href: "/sistemas/sliderack-2700-470" },
-        { name: "Sliderack 3600 × 470", href: "/sistemas/sliderack-3600-470" },
+        { name: "Sliderack 1-1847", href: "/sistemas/sliderack-1-1847" },
+        { name: "Sliderack 1-2747", href: "/sistemas/sliderack-1-2747" },
+        { name: "Sliderack 1-3647", href: "/sistemas/sliderack-1-3647" },
       ],
     },
     {
       title: "2 Niveles · Prof. 370",
       img: "/images/sliderack/products/sr-2n-1825-370.webp",
       items: [
-        { name: "Sliderack 2N 1825 × 370", href: "/sistemas/sliderack-2n-1825-370" },
-        { name: "Sliderack 2N 2700 × 370", href: "/sistemas/sliderack-2n-2700-370" },
-        { name: "Sliderack 2N 3600 × 370", href: "/sistemas/sliderack-2n-3600-370" },
+        { name: "Sliderack 2-1837", href: "/sistemas/sliderack-2-1837" },
+        { name: "Sliderack 2-2737", href: "/sistemas/sliderack-2-2737" },
+        { name: "Sliderack 2-3637", href: "/sistemas/sliderack-2-3637" },
       ],
     },
     {
       title: "2 Niveles · Prof. 470",
       img: "/images/sliderack/products/sr-2n-1825-470.webp",
       items: [
-        { name: "Sliderack 2N 1825 × 470", href: "/sistemas/sliderack-2n-1825-470" },
-        { name: "Sliderack 2N 2700 × 470", href: "/sistemas/sliderack-2n-2700-470" },
-        { name: "Sliderack 2N 3600 × 470", href: "/sistemas/sliderack-2n-3600-470" },
+        { name: "Sliderack 2-1847", href: "/sistemas/sliderack-2-1847" },
+        { name: "Sliderack 2-2747", href: "/sistemas/sliderack-2-2747" },
+        { name: "Sliderack 2-3647", href: "/sistemas/sliderack-2-3647" },
       ],
     },
   ],
@@ -49,10 +49,10 @@ const sistemasMenu = {
 const accesoriosMenu = [
   { name: "Puesto de Trabajo", desc: "Mesa de trabajo integrada con panel perforado", href: "/accesorios/puesto-trabajo", img: "/images/sliderack/products/acc-puesto-trabajo.webp" },
   { name: "Panel Perforado", desc: "Organización vertical de herramientas", href: "/accesorios/panel-perforado", img: "/images/sliderack/products/acc-panel-perforado.webp" },
-  { name: "Cerradura", desc: "Seguridad con llave para módulos", href: "/accesorios/cerradura", img: "/images/sliderack/photos/logo-cerradura.jpg" },
-  { name: "Kit Cajón", desc: "Cajones divisorios para piezas pequeñas", href: "/accesorios/kit-cajon", img: "/images/sliderack/products/acc-kit-cajon.webp" },
+  { name: "Cerradura", desc: "Seguridad con llave para armarios móviles", href: "/accesorios/cerradura", img: "/images/sliderack/photos/logo-cerradura.jpg" },
+  { name: "Kit 5 Cajones", desc: "5 cajones divisorios para piezas pequeñas", href: "/accesorios/kit-5-cajones", img: "/images/sliderack/products/acc-kit-cajon.webp" },
   { name: "Kit Balda", desc: "Baldas adicionales ajustables en altura", href: "/accesorios/kit-balda", img: "/images/sliderack/products/acc-kit-balda.webp" },
-  { name: "Módulo Adicional", desc: "Amplía la capacidad de tu sistema", href: "/accesorios/modulo", img: "/images/sliderack/products/acc-sistema-riveto.webp" },
+  { name: "Armario Móvil Adicional", desc: "Amplía la capacidad de tu sistema", href: "/accesorios/armario-movil-adicional", img: "/images/sliderack/products/acc-sistema-riveto.webp" },
   { name: "Kit Perchero", desc: "Almacenaje de EPIs, uniformes y prendas", href: "/accesorios/kit-perchero", img: "/images/sliderack/products/acc-perchero.webp" },
 ];
 

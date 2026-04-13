@@ -18,8 +18,8 @@ const products = [
     contain: false,
   },
   {
-    name: "Kit cajón",
-    slug: "kit-cajon",
+    name: "Kit 5 cajones",
+    slug: "kit-5-cajones",
     image: "/images/sliderack/products/acc-kit-cajon.webp",
     contain: true,
   },
