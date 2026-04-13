@@ -594,7 +594,7 @@ export const products: Product[] = [
       { label: "Compatibilidad", value: "Todos los modelos" },
     ],
     image: "/images/sliderack/products/acc-panel-perforado.webp",
-    gallery: ["/images/sliderack/products/acc-panel-perforado.webp"],
+    gallery: ["/images/sliderack/products/acc-panel-perforado.webp", "/images/sliderack/products/acc-panel-perforado-2.webp"],
     related: ["puesto-trabajo", "kit-balda", "sliderack-1-2737"],
   },
   {
@@ -640,8 +640,8 @@ export const products: Product[] = [
       { label: "Material", value: "Acero galvanizado" },
       { label: "Compatibilidad", value: "Todos los armarios móviles" },
     ],
-    image: "/images/sliderack/products/acc-kit-cajon.webp",
-    gallery: ["/images/sliderack/products/acc-kit-cajon.webp"],
+    image: "/images/sliderack/products/acc-kit-cajon-detalle.webp",
+    gallery: ["/images/sliderack/products/acc-kit-cajon-detalle.webp", "/images/sliderack/products/acc-kit-cajon.webp"],
     related: ["cerradura", "kit-balda", "sliderack-1-2737"],
   },
   {
