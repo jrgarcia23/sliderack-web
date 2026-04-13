@@ -87,7 +87,7 @@ export default function PorQueSliderack() {
               Por qué elegir Sliderack
             </h1>
             <p className="mt-4 max-w-[550px] mx-auto font-[family-name:var(--font-body)] text-[17px] text-white/70">
-              La fortaleza de la sencillez. Un sistema que combina ingeniería de precisión con la robustez del acero español.
+              La fortaleza de la sencillez. Un sistema que combina ingeniería de precisión con la robustez del acero.
             </p>
           </div>
           {/* Badges bar */}
