@@ -14,7 +14,7 @@ export default function LeadersBanner() {
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-16 md:grid-cols-2">
         {/* Left column — photo */}
         <ScrollReveal direction="left">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl">
+          <div className="relative aspect-[4/3] overflow-hidden shadow-2xl">
             <Image
               src="/images/sliderack/photos/esnova-fabrica.jpg"
               alt="Planta de fabricación de Esnova Racks — estanterías deslizantes Sliderack"

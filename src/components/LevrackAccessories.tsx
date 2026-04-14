@@ -50,7 +50,7 @@ export default function LevrackAccessories() {
               delay={index * 150}
               direction="up"
             >
-              <div className="overflow-hidden rounded-2xl bg-white shadow-md transition-shadow duration-300 hover:shadow-xl h-full flex flex-col">
+              <div className="overflow-hidden bg-white shadow-md transition-shadow duration-300 hover:shadow-xl h-full flex flex-col">
                 {/* Image area */}
                 <div className="relative h-[200px] overflow-hidden">
                   <Image

@@ -62,7 +62,7 @@ export default function ExploreLevrack() {
             <ScrollReveal key={product.name} delay={i * 100}>
               <Link href={`/sistemas/${product.slug}`} className="group block transition-all duration-300">
                 {/* Image container */}
-                <div className="relative aspect-square overflow-hidden rounded-xl bg-[#f5f5f5] transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
+                <div className="relative aspect-square overflow-hidden bg-[#f5f5f5] transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
                   <Image
                     src={product.image}
                     alt={product.name}

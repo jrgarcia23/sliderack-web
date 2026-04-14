@@ -259,7 +259,7 @@ export default function TalleresPage() {
               {sistemas.map((p, i) => (
                 <ScrollReveal key={p.slug} delay={i * 80} direction="up">
                   <Link href={`/sistemas/${p.slug}`} className="group block">
-                    <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-[#f5f5f5] transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
+                    <div className="relative aspect-[4/3] overflow-hidden bg-[#f5f5f5] transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
                       <Image
                         src={p.image}
                         alt={p.name}
@@ -307,7 +307,7 @@ export default function TalleresPage() {
               {accesorios.map((p, i) => (
                 <ScrollReveal key={p.slug} delay={i * 80} direction="up">
                   <Link href={`/accesorios/${p.slug}`} className="group block">
-                    <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-white transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
+                    <div className="relative aspect-[4/3] overflow-hidden bg-white transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
                       <Image
                         src={p.image}
                         alt={p.name}

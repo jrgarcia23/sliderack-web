@@ -62,7 +62,7 @@ export default function ExploreWorkstations() {
         <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-5">
           {products.map((product, i) => (
             <ScrollReveal key={product.name} delay={i * 80} direction="up">
-              <Link href={`/accesorios/${product.slug}`} className="group block overflow-hidden rounded-xl bg-[#f5f5f5]">
+              <Link href={`/accesorios/${product.slug}`} className="group block overflow-hidden bg-[#f5f5f5]">
                 {/* Image */}
                 <div className="relative aspect-square overflow-hidden">
                   <Image

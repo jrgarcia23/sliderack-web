@@ -90,7 +90,7 @@ export default function ProductDetail({
 
           {/* Lightbox container */}
           <div
-            className="relative bg-white rounded-2xl shadow-2xl p-6 max-w-[860px] w-[90vw]"
+            className="relative bg-white shadow-2xl p-6 max-w-[860px] w-[90vw]"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close button */}
@@ -164,7 +164,7 @@ export default function ProductDetail({
           <div>
             {/* Main image — click to open lightbox */}
             <div
-              className="bg-[#f5f5f5] rounded-2xl overflow-hidden aspect-[4/3] relative p-8 cursor-zoom-in"
+              className="bg-[#f5f5f5] overflow-hidden aspect-[4/3] relative p-8 cursor-zoom-in"
               onClick={() => setLightboxOpen(true)}
             >
               <Image
@@ -187,7 +187,7 @@ export default function ProductDetail({
                   <button
                     key={i}
                     onClick={() => setActiveImage(i)}
-                    className={`bg-[#f5f5f5] rounded-xl overflow-hidden aspect-square relative p-3 transition ${
+                    className={`bg-[#f5f5f5] overflow-hidden aspect-square relative p-3 transition ${
                       activeImage === i
                         ? "ring-2 ring-[#A52430]"
                         : "hover:ring-2 hover:ring-gray-300"
@@ -224,7 +224,7 @@ export default function ProductDetail({
               </p>
 
               {/* Quick dimensions — 2x2 grid */}
-              <div className="grid grid-cols-2 gap-3 mb-6 bg-[#f8f8f8] rounded-xl p-4">
+              <div className="grid grid-cols-2 gap-3 mb-6 bg-[#f8f8f8] p-4">
                 {product.specs.slice(0, 4).map((s, i) => (
                   <div key={i}>
                     <p className="text-[#999] mb-0.5" style={{ fontFamily: "var(--font-body)", fontSize: 11 }}>{s.label}</p>
@@ -295,7 +295,7 @@ export default function ProductDetail({
                 >
                   Dimensiones
                 </p>
-                <div className="bg-white rounded-xl overflow-hidden">
+                <div className="bg-white overflow-hidden">
                   {product.specs.map((s, i) => (
                     <div key={i} className={`flex justify-between px-5 py-3.5 ${i < product.specs.length - 1 ? "border-b border-gray-100" : ""}`}>
                       <span className="text-[#999]" style={{ fontFamily: "var(--font-body)", fontSize: 14 }}>{s.label}</span>
@@ -323,7 +323,7 @@ export default function ProductDetail({
                     >
                       Qué incluye
                     </p>
-                    <div className="bg-white rounded-xl overflow-hidden mb-6">
+                    <div className="bg-white overflow-hidden mb-6">
                       {product.includes.map((s, i) => (
                         <div key={i} className={`flex justify-between px-5 py-3.5 ${i < product.includes!.length - 1 ? "border-b border-gray-100" : ""}`}>
                           <span className="text-[#999]" style={{ fontFamily: "var(--font-body)", fontSize: 14 }}>{s.label}</span>
@@ -341,7 +341,7 @@ export default function ProductDetail({
                     >
                       Capacidad de carga
                     </p>
-                    <div className="bg-white rounded-xl overflow-hidden">
+                    <div className="bg-white overflow-hidden">
                       {product.capacity.map((s, i) => (
                         <div key={i} className={`flex justify-between px-5 py-3.5 ${i < product.capacity!.length - 1 ? "border-b border-gray-100" : ""}`}>
                           <span className="text-[#999]" style={{ fontFamily: "var(--font-body)", fontSize: 14 }}>{s.label}</span>
@@ -406,7 +406,7 @@ export default function ProductDetail({
                   { title: "Garajes premium y viviendas de alto standing", desc: "Estética cuidada y funcionalidad para espacios de alto nivel donde el orden es parte del diseño. Acceso rápido y organización impecable." },
                   { title: "Servicios de emergencia y organismos públicos", desc: "EPIs, uniformes y material operativo siempre visibles, protegidos y accesibles. Sistema seguro con cerradura opcional para materiales sensibles." },
                 ].map((sector) => (
-                  <div key={sector.title} className="bg-[#f8f8f8] rounded-xl p-5 flex gap-4 items-start">
+                  <div key={sector.title} className="bg-[#f8f8f8] p-5 flex gap-4 items-start">
                     <div className="w-2 h-2 bg-[#A52430] rounded-full mt-2 flex-shrink-0" />
                     <div>
                       <h4
@@ -488,7 +488,7 @@ export default function ProductDetail({
             {accessories.map((p, i) => (
               <ScrollReveal key={p.slug} delay={i * 100}>
                 <Link href={`/accesorios/${p.slug}`} className="group block">
-                  <div className="bg-[#f5f5f5] rounded-xl overflow-hidden aspect-[4/3] relative p-6 group-hover:shadow-lg group-hover:-translate-y-1 transition-all duration-300">
+                  <div className="bg-[#f5f5f5] overflow-hidden aspect-[4/3] relative p-6 group-hover:shadow-lg group-hover:-translate-y-1 transition-all duration-300">
                     <Image
                       src={p.image}
                       alt={p.name}
@@ -545,7 +545,7 @@ export default function ProductDetail({
           <div className="flex flex-col gap-3">
             {faqItems.map((item, i) => (
               <ScrollReveal key={i} delay={i * 80}>
-                <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+                <div className="bg-white shadow-sm overflow-hidden">
                   <button
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
                     className="w-full flex justify-between items-center px-6 py-5 cursor-pointer hover:bg-gray-50 transition text-left"

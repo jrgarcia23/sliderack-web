@@ -87,7 +87,7 @@ export default function SistemasPage() {
                   className="group cursor-pointer"
                 >
                   {/* Image Container */}
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-[#f5f5f5] transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
+                  <div className="relative aspect-[4/3] overflow-hidden bg-[#f5f5f5] transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
                     <Image
                       src={product.image}
                       alt={product.name}
@@ -152,7 +152,7 @@ export default function SistemasPage() {
               {accessories.map((p, i) => (
                 <ScrollReveal key={p.slug} delay={i * 100} direction="up">
                   <Link href={`/accesorios/${p.slug}`} className="group block">
-                    <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-[#f5f5f5] transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
+                    <div className="relative aspect-[4/3] overflow-hidden bg-[#f5f5f5] transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
                       <Image
                         src={p.image}
                         alt={p.name}

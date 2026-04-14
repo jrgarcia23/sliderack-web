@@ -86,12 +86,12 @@ export default function AccesoriosPage() {
                   className="group cursor-pointer"
                 >
                   {/* Image Container */}
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-[#f5f5f5] transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
+                  <div className="relative aspect-[4/3] overflow-hidden transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
                     <Image
                       src={product.image}
                       alt={product.name}
                       fill
-                      className="object-contain p-6"
+                      className="object-cover"
                     />
                   </div>
 
@@ -151,12 +151,12 @@ export default function AccesoriosPage() {
               {systems.map((p, i) => (
                 <ScrollReveal key={p.slug} delay={i * 100} direction="up">
                   <Link href={`/sistemas/${p.slug}`} className="group block">
-                    <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-[#f5f5f5] transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
+                    <div className="relative aspect-[4/3] overflow-hidden bg-[#f5f5f5] transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
                       <Image
                         src={p.image}
                         alt={p.name}
                         fill
-                        className="object-contain p-6"
+                        className="object-cover"
                       />
                     </div>
                     <div className="pt-4">

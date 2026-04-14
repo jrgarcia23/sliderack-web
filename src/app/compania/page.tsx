@@ -57,7 +57,7 @@ export default function CompaniaPage() {
           <div className="mx-auto max-w-[1100px] grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] gap-14">
             {/* Left: Foto vertical */}
             <ScrollReveal direction="left">
-              <div className="relative rounded-2xl overflow-hidden h-full min-h-[500px]">
+              <div className="relative overflow-hidden h-full min-h-[500px]">
                 <Image
                   src="/images/sliderack/photos/estanteria-esnova.jpg"
                   alt="Estantería deslizante Sliderack fabricada por Esnova Racks"
@@ -133,7 +133,7 @@ export default function CompaniaPage() {
         <section className="bg-white px-6 py-20">
           <div className="mx-auto max-w-[1100px] grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             <ScrollReveal direction="left">
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+              <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
                   src="/images/sliderack/photos/sliderack-detalle.jpg"
                   alt="Detalle del sistema de estanterías deslizantes Sliderack de Esnova Racks"

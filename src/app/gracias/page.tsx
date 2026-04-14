@@ -74,7 +74,7 @@ export default function GraciasPage() {
 
             {/* Right: Product image */}
             <div className="relative">
-              <div className="relative aspect-square rounded-2xl bg-[#f5f5f5] overflow-hidden">
+              <div className="relative aspect-square bg-[#f5f5f5] overflow-hidden">
                 <Image
                   src="/images/sliderack/products/sr-2700-370.webp"
                   alt="Sistema Sliderack 2700"
@@ -83,7 +83,7 @@ export default function GraciasPage() {
                 />
               </div>
               {/* Floating badge */}
-              <div className="absolute -bottom-4 -left-4 md:-left-6 rounded-xl bg-[#201F20] px-5 py-4 shadow-xl">
+              <div className="absolute -bottom-4 -left-4 md:-left-6 bg-[#201F20] px-5 py-4 shadow-xl">
                 <p className="font-[family-name:var(--font-heading)] text-[12px] font-semibold uppercase tracking-[2px] text-[#A52430]">
                   Fabricado en Espa&ntilde;a
                 </p>

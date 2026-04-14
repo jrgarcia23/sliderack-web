@@ -106,7 +106,7 @@ export default function PorQueSliderack() {
         <section className="bg-white px-6 py-20">
           <div className="mx-auto max-w-[1100px] grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             <ScrollReveal direction="left">
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+              <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
                   src="/images/sliderack/photos/taller-completo.jpg"
                   alt="Sistema de estanterías deslizantes Sliderack instalado en un taller profesional"
