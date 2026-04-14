@@ -9,31 +9,26 @@ const products = [
     name: "Puesto de trabajo",
     slug: "puesto-trabajo",
     image: "/images/sliderack/products/acc-puesto-trabajo.webp",
-    contain: false,
   },
   {
     name: "Panel perforado",
     slug: "panel-perforado",
     image: "/images/sliderack/products/acc-panel-perforado.webp",
-    contain: false,
   },
   {
     name: "Kit 5 cajones",
     slug: "kit-5-cajones",
-    image: "/images/sliderack/products/acc-kit-cajon.webp",
-    contain: true,
+    image: "/images/sliderack/products/acc-kit-cajon-detalle.webp",
   },
   {
     name: "Cerradura",
     slug: "cerradura",
     image: "/images/sliderack/photos/logo-cerradura.jpg",
-    contain: false,
   },
   {
     name: "Kit balda",
     slug: "kit-balda",
     image: "/images/sliderack/products/acc-kit-balda.webp",
-    contain: true,
   },
 ];
 
@@ -69,9 +64,7 @@ export default function ExploreWorkstations() {
                     src={product.image}
                     alt={product.name}
                     fill
-                    className={`transition-transform duration-500 group-hover:scale-105 ${
-                      product.contain ? "object-contain p-6" : "object-cover"
-                    }`}
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 {/* Name */}
