@@ -213,7 +213,7 @@ export default function ProductDetail({
                 className="mb-4 text-[#201F20] uppercase"
                 style={{ fontFamily: "var(--font-heading)", fontSize: 45, fontWeight: 700, lineHeight: 1.1 }}
               >
-                {product.name}
+                {product.category === "sistemas" ? `Sliderack ${product.name}` : product.name}
               </h1>
 
               <p
@@ -281,7 +281,7 @@ export default function ProductDetail({
             className="text-[#999] mb-8"
             style={{ fontFamily: "var(--font-body)", fontSize: 15 }}
           >
-            Especificaciones detalladas del modelo {product.name}.
+            Especificaciones detalladas del modelo Sliderack {product.name}.
           </p>
 
           {/* Top row: Dimensiones left + Qué incluye right */}
@@ -474,7 +474,7 @@ export default function ProductDetail({
                 fontWeight: 700,
               }}
             >
-              Accesorios para tu {product.name.split(" ").slice(0, 2).join(" ")}
+              Accesorios para tu Sliderack {product.name}
             </h2>
             <Link
               href="/accesorios"

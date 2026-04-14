@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const product = getProductBySlug(slug);
   if (!product) return { title: "Producto no encontrado | Sliderack" };
   return {
-    title: `${product.name} | Accesorios | Sliderack`,
+    title: `${product.name} | Accesorios`,
     description: (product.shortDesc + " — " + product.description).slice(0, 155) + "...",
   };
 }

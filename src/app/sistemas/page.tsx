@@ -99,7 +99,7 @@ export default function SistemasPage() {
                   {/* Info */}
                   <div className="pt-4">
                     <h3 className="font-[family-name:var(--font-heading)] text-[20px] font-semibold uppercase text-[#201F20]">
-                      {product.name}
+                      Sliderack {product.name}
                     </h3>
                     <p className="mt-1 font-[family-name:var(--font-body)] text-[14px] text-[#999]">
                       {product.shortDesc}

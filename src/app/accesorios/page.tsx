@@ -161,7 +161,7 @@ export default function AccesoriosPage() {
                     </div>
                     <div className="pt-4">
                       <h3 className="font-[family-name:var(--font-heading)] text-[20px] font-semibold uppercase text-[#201F20]">
-                        {p.name}
+                        Sliderack {p.name}
                       </h3>
                     </div>
                   </Link>

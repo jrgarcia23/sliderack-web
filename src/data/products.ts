@@ -19,7 +19,7 @@ export const products: Product[] = [
   // ── SISTEMAS 1 NIVEL · Prof. 370 ──
   {
     slug: "sliderack-1-1837",
-    name: "Sliderack 1-1837",
+    name: "1-1837",
     category: "sistemas",
     badge: "1 Nivel",
     shortDesc: "2090 × 1160 mm · 3 armarios móviles de 370 mm",
@@ -63,7 +63,7 @@ export const products: Product[] = [
   },
   {
     slug: "sliderack-1-2737",
-    name: "Sliderack 1-2737",
+    name: "1-2737",
     category: "sistemas",
     badge: "1 Nivel",
     shortDesc: "2965 × 1160 mm · 5 armarios móviles de 370 mm",
@@ -107,7 +107,7 @@ export const products: Product[] = [
   },
   {
     slug: "sliderack-1-3637",
-    name: "Sliderack 1-3637",
+    name: "1-3637",
     category: "sistemas",
     badge: "1 Nivel",
     shortDesc: "3865 × 1160 mm · 7 armarios móviles de 370 mm",
@@ -152,7 +152,7 @@ export const products: Product[] = [
   // ── SISTEMAS 1 NIVEL · Prof. 470 ──
   {
     slug: "sliderack-1-1847",
-    name: "Sliderack 1-1847",
+    name: "1-1847",
     category: "sistemas",
     badge: "1 Nivel · Prof. 470",
     shortDesc: "2090 × 1160 mm · 2 armarios móviles de 470 mm",
@@ -196,7 +196,7 @@ export const products: Product[] = [
   },
   {
     slug: "sliderack-1-2747",
-    name: "Sliderack 1-2747",
+    name: "1-2747",
     category: "sistemas",
     badge: "1 Nivel · Prof. 470",
     shortDesc: "2965 × 1160 mm · 4 armarios móviles de 470 mm",
@@ -240,7 +240,7 @@ export const products: Product[] = [
   },
   {
     slug: "sliderack-1-3647",
-    name: "Sliderack 1-3647",
+    name: "1-3647",
     category: "sistemas",
     badge: "1 Nivel · Prof. 470",
     shortDesc: "3865 × 1160 mm · 6 armarios móviles de 470 mm",
@@ -285,7 +285,7 @@ export const products: Product[] = [
   // ── SISTEMAS 2 NIVELES · Prof. 370 ──
   {
     slug: "sliderack-2-1837",
-    name: "Sliderack 2-1837",
+    name: "2-1837",
     category: "sistemas",
     badge: "2 Niveles",
     shortDesc: "2090 × 1160 mm · 3 armarios móviles de 370 mm · 2 Niveles",
@@ -329,7 +329,7 @@ export const products: Product[] = [
   },
   {
     slug: "sliderack-2-2737",
-    name: "Sliderack 2-2737",
+    name: "2-2737",
     category: "sistemas",
     badge: "2 Niveles",
     shortDesc: "2965 × 1160 mm · 5 armarios móviles de 370 mm · 2 Niveles",
@@ -373,7 +373,7 @@ export const products: Product[] = [
   },
   {
     slug: "sliderack-2-3637",
-    name: "Sliderack 2-3637",
+    name: "2-3637",
     category: "sistemas",
     badge: "2 Niveles",
     shortDesc: "3865 × 1160 mm · 7 armarios móviles de 370 mm · 2 Niveles",
@@ -418,7 +418,7 @@ export const products: Product[] = [
   // ── SISTEMAS 2 NIVELES · Prof. 470 ──
   {
     slug: "sliderack-2-1847",
-    name: "Sliderack 2-1847",
+    name: "2-1847",
     category: "sistemas",
     badge: "2 Niveles · Prof. 470",
     shortDesc: "2090 × 1160 mm · 2 armarios móviles de 470 mm · 2 Niveles",
@@ -462,7 +462,7 @@ export const products: Product[] = [
   },
   {
     slug: "sliderack-2-2747",
-    name: "Sliderack 2-2747",
+    name: "2-2747",
     category: "sistemas",
     badge: "2 Niveles · Prof. 470",
     shortDesc: "2965 × 1160 mm · 4 armarios móviles de 470 mm · 2 Niveles",
@@ -506,7 +506,7 @@ export const products: Product[] = [
   },
   {
     slug: "sliderack-2-3647",
-    name: "Sliderack 2-3647",
+    name: "2-3647",
     category: "sistemas",
     badge: "2 Niveles · Prof. 470",
     shortDesc: "3865 × 1160 mm · 6 armarios móviles de 470 mm · 2 Niveles",
@@ -688,8 +688,8 @@ export const products: Product[] = [
       { label: "Material", value: "Acero laminado en frío" },
       { label: "Compatibilidad", value: "Todos los sistemas" },
     ],
-    image: "/images/sliderack/products/acc-sistema-riveto.webp",
-    gallery: ["/images/sliderack/products/acc-sistema-riveto.webp"],
+    image: "/images/sliderack/products/acc-modulo-suspendido.webp",
+    gallery: ["/images/sliderack/products/acc-modulo-suspendido.webp"],
     related: ["kit-balda", "cerradura", "sliderack-1-2737"],
   },
   {

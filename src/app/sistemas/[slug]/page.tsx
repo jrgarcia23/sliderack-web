@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const product = getProductBySlug(slug);
   if (!product) return { title: "Producto no encontrado | Sliderack" };
   return {
-    title: `${product.name} | Sistemas | Sliderack`,
+    title: `Sliderack ${product.name} | Sistemas`,
     description: (product.shortDesc + " — " + product.description).slice(0, 155) + "...",
   };
 }
@@ -34,7 +34,7 @@ export default async function SistemaDetailPage({ params }: PageProps) {
   return (
     <>
       <ProductSchema
-        name={product.name}
+        name={`Sliderack ${product.name}`}
         description={product.description}
         image={product.image}
         slug={product.slug}
