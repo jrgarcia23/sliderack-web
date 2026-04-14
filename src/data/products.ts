@@ -688,8 +688,8 @@ export const products: Product[] = [
       { label: "Material", value: "Acero laminado en frío" },
       { label: "Compatibilidad", value: "Todos los sistemas" },
     ],
-    image: "/images/sliderack/products/acc-modulo-suspendido.webp",
-    gallery: ["/images/sliderack/products/acc-modulo-suspendido.webp"],
+    image: "/images/sliderack/products/acc-armario-movil.webp",
+    gallery: ["/images/sliderack/products/acc-armario-movil.webp", "/images/sliderack/products/acc-modulo-suspendido.webp"],
     related: ["kit-balda", "cerradura", "sliderack-1-2737"],
   },
   {
