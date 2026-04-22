@@ -260,7 +260,7 @@ export default function ProductDetail({
                     >
                       Precio desde
                     </span>
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-baseline gap-3 flex-wrap">
                       <span
                         className="text-[#201F20] leading-none"
                         style={{
@@ -271,12 +271,7 @@ export default function ProductDetail({
                         }}
                       >
                         {product.priceFrom.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}
-                        <sup
-                          className="align-top"
-                          style={{ fontSize: 24, fontWeight: 600, marginLeft: 4, top: -12, position: "relative" }}
-                        >
-                          €
-                        </sup>
+                        <span style={{ marginLeft: 6 }}>€</span>
                       </span>
                       <span
                         className="inline-flex items-center bg-[#201F20] text-white rounded-sm"
