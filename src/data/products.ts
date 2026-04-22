@@ -3,6 +3,7 @@ export interface Product {
   name: string;
   category: "sistemas" | "accesorios";
   badge: string;
+  priceFrom?: number;
   shortDesc: string;
   description: string;
   features: string[];
@@ -22,6 +23,7 @@ export const products: Product[] = [
     name: "1-1837",
     category: "sistemas",
     badge: "1 Nivel",
+    priceFrom: 3400,
     shortDesc: "2090 × 1160 mm · 3 armarios móviles de 370 mm",
     description:
       "Sistema deslizante compacto con 3 armarios móviles y 9 baldas. Ideal para talleres pequeños, zonas de trabajo auxiliares o garajes donde el espacio es limitado pero se necesita acceso rápido a herramientas y piezas organizadas por categoría. Con solo 2090 mm de ancho, encaja en paredes donde una estantería convencional desperdiciaría espacio en pasillos.",
@@ -66,6 +68,7 @@ export const products: Product[] = [
     name: "1-2737",
     category: "sistemas",
     badge: "1 Nivel",
+    priceFrom: 5200,
     shortDesc: "2965 × 1160 mm · 5 armarios móviles de 370 mm",
     description:
       "El modelo más equilibrado de la gama. 5 armarios móviles deslizantes con 15 baldas ofrecen capacidad suficiente para organizar el utillaje completo de un taller mecánico de tamaño medio, manteniendo cada herramienta localizable y accesible sin mover otras estanterías. La configuración más elegida por talleres de automoción y servicios técnicos.",
@@ -110,6 +113,7 @@ export const products: Product[] = [
     name: "1-3637",
     category: "sistemas",
     badge: "1 Nivel",
+    priceFrom: 7200,
     shortDesc: "3865 × 1160 mm · 7 armarios móviles de 370 mm",
     description:
       "El sistema de mayor capacidad en un nivel con 7 armarios móviles deslizantes y 21 baldas. Diseñado para talleres industriales, centros logísticos y parques de bomberos que necesitan almacenar un gran volumen de herramientas, recambios o equipamiento con acceso rápido a cada armario. Ocupa menos de 4 metros de pared y elimina la necesidad de pasillos entre estanterías.",
@@ -155,6 +159,7 @@ export const products: Product[] = [
     name: "1-1847",
     category: "sistemas",
     badge: "1 Nivel · Prof. 470",
+    priceFrom: 2600,
     shortDesc: "2090 × 1160 mm · 2 armarios móviles de 470 mm",
     description:
       "Versión compacta con profundidad extendida de 470 mm. 2 armarios móviles con 6 baldas de mayor fondo, pensadas para almacenar herramientas eléctricas, cajas de recambios voluminosas o equipos de diagnóstico que no caben en los armarios de 370 mm. Ideal para zonas de servicio técnico o puestos de trabajo especializados.",
@@ -199,6 +204,7 @@ export const products: Product[] = [
     name: "1-2747",
     category: "sistemas",
     badge: "1 Nivel · Prof. 470",
+    priceFrom: 4500,
     shortDesc: "2965 × 1160 mm · 4 armarios móviles de 470 mm",
     description:
       "4 armarios móviles deslizantes con 12 baldas de profundidad extendida (470 mm). La opción preferida cuando se necesita almacenar materiales de gran tamaño como kits de reparación, repuestos de automoción o equipos de medición en un taller de tamaño medio. Combina la versatilidad del ancho medio con la capacidad extra de los armarios profundos.",
@@ -243,6 +249,7 @@ export const products: Product[] = [
     name: "1-3647",
     category: "sistemas",
     badge: "1 Nivel · Prof. 470",
+    priceFrom: 6600,
     shortDesc: "3865 × 1160 mm · 6 armarios móviles de 470 mm",
     description:
       "Máxima capacidad en un nivel con armarios profundos: 6 armarios móviles deslizantes y 18 baldas de 470 mm. Diseñado para almacenes industriales y centros de mantenimiento que gestionan grandes volúmenes de material pesado o voluminoso. La solución cuando necesitas el máximo almacenaje sin recurrir a un segundo nivel.",
@@ -288,6 +295,7 @@ export const products: Product[] = [
     name: "2-1837",
     category: "sistemas",
     badge: "2 Niveles",
+    priceFrom: 3700,
     shortDesc: "2090 × 1160 mm · 3 armarios móviles de 370 mm · 2 Niveles",
     description:
       "Duplica la capacidad del modelo compacto con un segundo nivel de almacenaje fijo sobre los armarios móviles deslizantes. El nivel inferior mantiene los 3 armarios móviles con 9 baldas accesibles con un dedo; el nivel superior añade almacenaje estático para cajas, material de uso menos frecuente o stock de reserva. Altura total de 3505 mm.",
@@ -332,6 +340,7 @@ export const products: Product[] = [
     name: "2-2737",
     category: "sistemas",
     badge: "2 Niveles",
+    priceFrom: 5600,
     shortDesc: "2965 × 1160 mm · 5 armarios móviles de 370 mm · 2 Niveles",
     description:
       "El modelo de dos niveles más versátil de la gama. 5 armarios móviles deslizantes con 15 baldas en el nivel inferior, más almacenaje fijo en el superior. Perfecto para talleres industriales que necesitan organizar herramientas de uso diario abajo y stock de repuestos o materiales pesados arriba, maximizando cada metro cuadrado de pared disponible.",
@@ -376,6 +385,7 @@ export const products: Product[] = [
     name: "2-3637",
     category: "sistemas",
     badge: "2 Niveles",
+    priceFrom: 7700,
     shortDesc: "3865 × 1160 mm · 7 armarios móviles de 370 mm · 2 Niveles",
     description:
       "El sistema de mayor capacidad total de la gama Sliderack. 7 armarios móviles deslizantes con 21 baldas en el nivel inferior y almacenaje fijo completo en el superior. Diseñado para parques de bomberos, centros logísticos y grandes instalaciones industriales donde se gestiona un alto volumen de equipamiento, EPIs o materiales de intervención que deben estar siempre localizables.",
@@ -421,6 +431,7 @@ export const products: Product[] = [
     name: "2-1847",
     category: "sistemas",
     badge: "2 Niveles · Prof. 470",
+    priceFrom: 2900,
     shortDesc: "2090 × 1160 mm · 2 armarios móviles de 470 mm · 2 Niveles",
     description:
       "El modelo más compacto de dos niveles con profundidad extendida. 2 armarios móviles deslizantes de 470 mm en el nivel inferior para equipos voluminosos, más almacenaje fijo superior. La solución cuando necesitas almacenar material grande en un espacio reducido con acceso desde un solo punto de pared.",
@@ -465,6 +476,7 @@ export const products: Product[] = [
     name: "2-2747",
     category: "sistemas",
     badge: "2 Niveles · Prof. 470",
+    priceFrom: 4900,
     shortDesc: "2965 × 1160 mm · 4 armarios móviles de 470 mm · 2 Niveles",
     description:
       "4 armarios móviles profundos deslizantes con 12 baldas de 470 mm en el nivel inferior, más capacidad fija arriba. El sistema preferido por servicios de mantenimiento industrial que manejan repuestos de gran tamaño, herramientas pesadas y equipos de diagnóstico que necesitan fondo extra. Combina capacidad máxima con organización profesional.",
@@ -509,6 +521,7 @@ export const products: Product[] = [
     name: "2-3647",
     category: "sistemas",
     badge: "2 Niveles · Prof. 470",
+    priceFrom: 7100,
     shortDesc: "3865 × 1160 mm · 6 armarios móviles de 470 mm · 2 Niveles",
     description:
       "La configuración de máxima capacidad absoluta de toda la gama. 6 armarios móviles profundos deslizantes con 18 baldas de 470 mm más nivel superior completo. Pensado para grandes instalaciones industriales, bases logísticas o centros de distribución donde cada metro cuadrado debe almacenar el máximo volumen posible de material pesado y voluminoso con acceso organizado.",

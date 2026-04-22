@@ -243,6 +243,71 @@ export default function ProductDetail({
                 ))}
               </ul>
 
+              {/* Precio desde — destacado antes de los CTAs */}
+              {product.priceFrom && (
+                <div
+                  className="flex items-center justify-between gap-6 flex-wrap mb-4 p-5 bg-[#f8f8f8] border-l-4 border-[#A52430]"
+                >
+                  <div className="flex flex-col gap-1">
+                    <span
+                      className="text-[#A52430] uppercase"
+                      style={{
+                        fontFamily: "var(--font-heading)",
+                        fontSize: 13,
+                        fontWeight: 700,
+                        letterSpacing: 3,
+                      }}
+                    >
+                      Precio desde
+                    </span>
+                    <div className="flex items-center gap-3">
+                      <span
+                        className="text-[#201F20] leading-none"
+                        style={{
+                          fontFamily: "var(--font-heading)",
+                          fontSize: 48,
+                          fontWeight: 700,
+                          letterSpacing: "-0.01em",
+                        }}
+                      >
+                        {product.priceFrom.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}
+                        <sup
+                          className="align-top"
+                          style={{ fontSize: 24, fontWeight: 600, marginLeft: 4, top: -12, position: "relative" }}
+                        >
+                          €
+                        </sup>
+                      </span>
+                      <span
+                        className="inline-flex items-center bg-[#201F20] text-white rounded-sm"
+                        style={{
+                          fontFamily: "var(--font-heading)",
+                          fontSize: 12,
+                          fontWeight: 700,
+                          letterSpacing: 2,
+                          padding: "5px 11px",
+                        }}
+                      >
+                        + IVA
+                      </span>
+                    </div>
+                    <span
+                      className="flex items-center gap-1.5 text-[#888]"
+                      style={{ fontFamily: "var(--font-body)", fontSize: 12, marginTop: 4 }}
+                    >
+                      <svg className="w-3.5 h-3.5 text-[#A52430]" viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      Instalación en España incluida
+                    </span>
+                  </div>
+                </div>
+              )}
+
               {/* CTA buttons — side by side */}
               <div className="grid grid-cols-2 gap-3">
                 <Link

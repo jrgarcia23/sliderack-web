@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Sliderack 1-1837 | Sistemas</title>
+<meta name="description" content="Sistema deslizante compacto con 3 armarios móviles y 9 baldas. Desde 3.400 €." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --red:#A52430;
+    --red-dark:#8a1e28;
+    --ink:#201F20;
+    --heading:'Barlow Condensed',sans-serif;
+    --body:'DM Sans',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#fff;color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+
+  /* ── Back link ── */
+  .back-bar{background:#fff;padding:24px 24px 0}
+  .back-bar .inner{max-width:1400px;margin:0 auto}
+  .back-link{display:inline-flex;align-items:center;gap:8px;color:var(--red);font-family:var(--body);font-size:14px}
+  .back-link:hover{text-decoration:underline}
+
+  /* ── Hero product section ── */
+  .product-sec{background:#fff;padding:40px 24px}
+  .product-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:55% 1fr;gap:40px 56px;align-items:flex-start}
+  @media(max-width:1024px){.product-grid{grid-template-columns:1fr}}
+
+  .main-img{background:#f5f5f5;overflow:hidden;aspect-ratio:4/3;position:relative;padding:32px;cursor:zoom-in}
+  .main-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:32px}
+  .zoom-ico{position:absolute;bottom:16px;right:16px;background:rgba(255,255,255,.8);border-radius:50%;padding:8px;display:flex}
+  .zoom-ico svg{width:20px;height:20px;color:var(--ink)}
+
+  .thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}
+  .thumb{background:#f5f5f5;overflow:hidden;aspect-ratio:1;position:relative;padding:12px;border:2px solid transparent;cursor:pointer;transition:border .15s}
+  .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:12px}
+  .thumb.active{border-color:var(--red)}
+  .thumb:hover:not(.active){border-color:#ddd}
+
+  .badge-t{margin-bottom:8px;color:var(--red);text-transform:uppercase;letter-spacing:2px;font-family:var(--heading);font-size:13px;font-weight:600}
+  .title{margin-bottom:16px;color:var(--ink);text-transform:uppercase;font-family:var(--heading);font-size:45px;font-weight:700;line-height:1.1}
+
+  /* ── Price block — destacado antes de los CTAs ── */
+  .price{background:#f8f8f8;border-left:4px solid var(--red);padding:22px 26px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  .price .left{display:flex;flex-direction:column;gap:4px}
+  .price .from{font-family:var(--heading);font-size:13px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:3px}
+  .price .amount{font-family:var(--heading);font-size:56px;font-weight:700;color:var(--ink);line-height:.95;letter-spacing:-.01em}
+  .price .amount sup{font-size:28px;margin-left:4px;top:-14px;position:relative;font-weight:600}
+  .price .vat-pill{display:inline-flex;align-items:center;gap:6px;background:var(--ink);color:#fff;padding:5px 12px;font-family:var(--heading);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;border-radius:2px;align-self:flex-start}
+  .price .note{font-size:12px;color:#888;font-family:var(--body);margin-top:6px;display:flex;gap:6px;align-items:center}
+  .price .note svg{color:var(--red)}
+
+  .desc{margin-bottom:24px;color:#555;font-family:var(--body);font-size:16px;line-height:1.7}
+
+  .specs-mini{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:24px;background:#f8f8f8;padding:16px}
+  .specs-mini .lbl{color:#999;font-family:var(--body);font-size:11px;margin-bottom:2px}
+  .specs-mini .val{color:var(--ink);font-family:var(--heading);font-size:16px;font-weight:700}
+
+  .features{display:flex;flex-direction:column;gap:8px;margin-bottom:24px;list-style:none}
+  .features li{display:flex;gap:10px;align-items:flex-start;color:#555;font-size:14px}
+  .features svg{width:20px;height:20px;color:var(--red);flex-shrink:0;margin-top:1px}
+
+  .ctas{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .btn{font-family:var(--heading);font-weight:700;text-transform:uppercase;letter-spacing:1px;font-size:14px;padding:14px 16px;border-radius:8px;text-align:center;cursor:pointer;transition:all .15s;border:2px solid transparent;display:block}
+  .btn-primary{background:var(--red);color:#fff}
+  .btn-primary:hover{background:var(--red-dark)}
+  .btn-outline{border-color:var(--red);color:var(--red);background:#fff}
+  .btn-outline:hover{background:var(--red);color:#fff}
+
+  /* ── Ficha técnica ── */
+  .spec-sec{background:#f8f8f8;padding:56px 24px}
+  .spec-sec .inner{max-width:1200px;margin:0 auto}
+  .spec-sec h2{color:var(--ink);text-transform:uppercase;margin-bottom:8px;font-family:var(--heading);font-size:28px;font-weight:700}
+  .spec-sec .sub{color:#999;font-family:var(--body);font-size:15px;margin-bottom:32px}
+  .spec-cols{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+  @media(max-width:900px){.spec-cols{grid-template-columns:1fr}}
+  .spec-title{color:var(--red);text-transform:uppercase;letter-spacing:2px;margin-bottom:16px;font-family:var(--heading);font-size:13px;font-weight:600}
+  .spec-tbl{background:#fff;overflow:hidden;margin-bottom:24px}
+  .spec-tbl .r{display:flex;justify-content:space-between;padding:14px 20px;border-bottom:1px solid #f0f0f0}
+  .spec-tbl .r:last-child{border-bottom:none}
+  .spec-tbl .k{color:#999;font-family:var(--body);font-size:14px}
+  .spec-tbl .v{color:var(--ink);font-family:var(--heading);font-size:15px;font-weight:600}
+
+  /* ── Fabricación + sectores ── */
+  .fab{background:#fff;padding:56px 24px}
+  .fab .inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px}
+  @media(max-width:900px){.fab .inner{grid-template-columns:1fr}}
+  .fab h2{color:var(--ink);text-transform:uppercase;margin-bottom:24px;font-family:var(--heading);font-size:28px;font-weight:700;line-height:1.15}
+  .fab p{color:#555;font-family:var(--body);font-size:16px;line-height:1.8;margin-bottom:20px}
+  .sector{background:#f8f8f8;padding:20px;display:flex;gap:16px;align-items:flex-start;margin-bottom:16px}
+  .sector .dot{width:8px;height:8px;background:var(--red);border-radius:50%;margin-top:8px;flex-shrink:0}
+  .sector h4{color:var(--ink);text-transform:uppercase;margin-bottom:4px;font-family:var(--heading);font-size:16px;font-weight:700}
+  .sector p{color:#666;font-family:var(--body);font-size:14px;line-height:1.6;margin:0}
+
+  /* ── Banner ── */
+  .banner{position:relative;padding:80px 24px;background:url('../public/images/sliderack/bg/instalacion-taller.jpg') center/cover}
+  .banner:before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.7)}
+  .banner .inner{position:relative;max-width:800px;margin:0 auto;text-align:center;z-index:1}
+  .banner h2{color:#fff;text-transform:uppercase;margin-bottom:16px;font-family:var(--heading);font-size:36px;font-weight:700;line-height:1.15}
+  .banner p{color:rgba(255,255,255,.7);font-family:var(--body);font-size:16px;line-height:1.7}
+
+  /* ── Accesorios ── */
+  .acc{background:#fff;padding:64px 24px}
+  .acc .inner{max-width:1400px;margin:0 auto}
+  .acc-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;flex-wrap:wrap;gap:16px}
+  .acc-head h2{color:var(--ink);text-transform:uppercase;font-family:var(--heading);font-size:26px;font-weight:700}
+  .acc-head a{color:var(--red);font-family:var(--body);font-size:15px}
+  .acc-head a:hover{text-decoration:underline}
+  .acc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  @media(max-width:900px){.acc-grid{grid-template-columns:repeat(2,1fr)}}
+  .acc-card{display:block}
+  .acc-card .ph{background:#f5f5f5;overflow:hidden;aspect-ratio:4/3;position:relative;padding:24px;transition:all .3s}
+  .acc-card:hover .ph{box-shadow:0 10px 20px rgba(0,0,0,.1);transform:translateY(-4px)}
+  .acc-card .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:24px;transition:transform .3s}
+  .acc-card:hover .ph img{transform:scale(1.05)}
+  .acc-card .b{position:absolute;top:12px;left:12px;background:var(--red);color:#fff;padding:4px 10px;border-radius:3px;text-transform:uppercase;font-family:var(--heading);font-size:11px;font-weight:600}
+  .acc-card h3{margin-top:12px;color:var(--ink);text-transform:uppercase;font-family:var(--heading);font-size:16px;font-weight:700;transition:color .15s}
+  .acc-card:hover h3{color:var(--red)}
+  .acc-card .dsc{color:#999;margin-top:4px;font-family:var(--body);font-size:13px}
+
+  /* ── FAQ ── */
+  .faq-sec{background:#f8f8f8;padding:64px 24px}
+  .faq-sec .inner{max-width:800px;margin:0 auto}
+  .faq-sec h2{color:var(--ink);text-transform:uppercase;text-align:center;margin-bottom:40px;font-family:var(--heading);font-size:28px;font-weight:700}
+  .faq{display:flex;flex-direction:column;gap:12px}
+  details.qa{background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.04);overflow:hidden}
+  details.qa summary{list-style:none;cursor:pointer;padding:20px 24px;display:flex;justify-content:space-between;align-items:center;color:var(--ink);font-family:var(--heading);font-size:18px;font-weight:600}
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary:after{content:"▾";color:var(--red);transition:transform .2s}
+  details.qa[open] summary:after{transform:rotate(180deg)}
+  details.qa .ans{padding:16px 24px 20px;border-top:1px solid #f0f0f0;color:#666;font-family:var(--body);font-size:15px;line-height:1.7}
+
+  /* ── CTA final ── */
+  .cta{background:var(--red);padding:80px 24px}
+  .cta .inner{max-width:700px;margin:0 auto;text-align:center}
+  .cta h2{margin-bottom:16px;color:#fff;text-transform:uppercase;font-family:var(--heading);font-size:28px;font-weight:700}
+  .cta p{margin-bottom:32px;color:rgba(255,255,255,.8);font-family:var(--body);font-size:16px}
+  .cta .btns{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+  .cta .btn-white{background:#fff;color:var(--red);border-color:#fff;padding:16px 40px;font-size:15px;border-radius:8px;text-transform:uppercase;letter-spacing:1px;font-family:var(--heading);font-weight:700;border:2px solid #fff}
+  .cta .btn-white:hover{background:transparent;color:#fff}
+  .cta .btn-outline-w{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.4);padding:16px 40px;font-size:15px;border-radius:8px;text-transform:uppercase;letter-spacing:1px;font-family:var(--heading);font-weight:700}
+  .cta .btn-outline-w:hover{border-color:#fff}
+</style>
+</head>
+<body>
+
+<!-- ── Back link ── -->
+<div class="back-bar">
+  <div class="inner">
+    <a class="back-link" href="#">← Ver más Sistemas</a>
+  </div>
+</div>
+
+<!-- ── Product Section: Gallery + Info ── -->
+<section class="product-sec">
+  <div class="product-grid">
+
+    <!-- Gallery -->
+    <div>
+      <div class="main-img">
+        <img id="mainImg" src="../public/images/sliderack/products/sr-1825-370.webp" alt="Sliderack 1-1837">
+        <div class="zoom-ico">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+        </div>
+      </div>
+      <div class="thumbs">
+        <div class="thumb active" onclick="setImg(this,0)"><img src="../public/images/sliderack/products/sr-1825-370.webp" alt=""></div>
+        <div class="thumb" onclick="setImg(this,1)"><img src="../public/images/sliderack/products/sr-1825-370-v2.webp" alt=""></div>
+        <div class="thumb" onclick="setImg(this,2)"><img src="../public/images/sliderack/products/sr-1825-370-v3.webp" alt=""></div>
+        <div class="thumb" onclick="setImg(this,3)"><img src="../public/images/sliderack/products/sr-1825-370-v4.webp" alt=""></div>
+      </div>
+    </div>
+
+    <!-- Info -->
+    <div>
+      <p class="badge-t">1 Nivel</p>
+      <h1 class="title">Sliderack 1-1837</h1>
+
+      <p class="desc">Sistema deslizante compacto con 3 armarios móviles y 9 baldas. Ideal para talleres pequeños, zonas de trabajo auxiliares o garajes donde el espacio es limitado pero se necesita acceso rápido a herramientas y piezas organizadas por categoría. Con solo 2090 mm de ancho, encaja en paredes donde una estantería convencional desperdiciaría espacio en pasillos.</p>
+
+      <div class="specs-mini">
+        <div><p class="lbl">Ancho de la estantería</p><p class="val">2090 mm</p></div>
+        <div><p class="lbl">Fondo de la estantería</p><p class="val">1160 mm</p></div>
+        <div><p class="lbl">Alto de la estantería</p><p class="val">2255 mm</p></div>
+        <div><p class="lbl">Fondo del armario móvil</p><p class="val">370 mm</p></div>
+      </div>
+
+      <ul class="features">
+        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>3 armarios móviles deslizantes con 9 baldas metálicas</li>
+        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Cada armario móvil soporta hasta 150 kg de carga</li>
+        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Guías de precisión: se desliza con un solo dedo</li>
+        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Cerradura opcional para armarios con material sensible</li>
+        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Compatible con todos los accesorios Sliderack</li>
+      </ul>
+
+      <!-- Precio destacado antes de los CTAs -->
+      <div class="price">
+        <div class="left">
+          <span class="from">Precio desde</span>
+          <span class="amount">3.400<sup>€</sup> <span class="vat-pill">+ IVA</span></span>
+          <span class="note">
+            <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Instalación en España incluida
+          </span>
+        </div>
+      </div>
+
+      <div class="ctas">
+        <a class="btn btn-primary" href="#">Solicitar información</a>
+        <a class="btn btn-outline" href="#">Descargar catálogo</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── Ficha técnica ── -->
+<section class="spec-sec">
+  <div class="inner">
+    <h2>Ficha técnica</h2>
+    <p class="sub">Especificaciones detalladas del modelo Sliderack 1-1837.</p>
+
+    <div class="spec-cols">
+      <!-- Dimensiones -->
+      <div>
+        <p class="spec-title">Dimensiones</p>
+        <div class="spec-tbl">
+          <div class="r"><span class="k">Ancho de la estantería</span><span class="v">2090 mm</span></div>
+          <div class="r"><span class="k">Fondo de la estantería</span><span class="v">1160 mm</span></div>
+          <div class="r"><span class="k">Alto de la estantería</span><span class="v">2255 mm</span></div>
+          <div class="r"><span class="k">Fondo del armario móvil</span><span class="v">370 mm</span></div>
+          <div class="r"><span class="k">Niveles</span><span class="v">1</span></div>
+          <div class="r"><span class="k">Configuración</span><span class="v">Modular</span></div>
+          <div class="r"><span class="k">Acabado</span><span class="v">Pintado color Negro Mate RAL-9005</span></div>
+        </div>
+      </div>
+
+      <!-- Qué incluye + Capacidad -->
+      <div>
+        <p class="spec-title">Qué incluye</p>
+        <div class="spec-tbl">
+          <div class="r"><span class="k">Bastidores de Rack</span><span class="v">2</span></div>
+          <div class="r"><span class="k">Largueros de Rack</span><span class="v">2</span></div>
+          <div class="r"><span class="k">Armarios móviles</span><span class="v">3</span></div>
+          <div class="r"><span class="k">Baldas metálicas</span><span class="v">9</span></div>
+          <div class="r"><span class="k">Paneles de malla metálica</span><span class="v">2</span></div>
+        </div>
+
+        <p class="spec-title">Capacidad de carga</p>
+        <div class="spec-tbl">
+          <div class="r"><span class="k">Capacidad de carga de la estantería</span><span class="v">Consultar</span></div>
+          <div class="r"><span class="k">Capacidad de carga por armario</span><span class="v">Consultar</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Fabricación + Sectores ── -->
+<section class="fab">
+  <div class="inner">
+    <div>
+      <p class="spec-title">Fabricación y calidad</p>
+      <h2>Ingeniería española de precisión</h2>
+      <p>Cada armario móvil de este sistema está construido con acero laminado en frío y tratamiento anticorrosión, diseñado para soportar hasta 150 kg de carga con un deslizamiento suave y silencioso. Las guías de alta precisión están fabricadas para millones de ciclos de apertura y cierre sin degradación del rendimiento.</p>
+      <p>Diseñado y fabricado íntegramente en España por Esnova Racks en su planta de 46.600 m² en Gijón (Asturias). Certificaciones ISO 9001 (calidad), ISO 14001 (medioambiente), ISO 45001 (seguridad laboral) y UNE EN 1090 (Marcado CE para estructuras metálicas).</p>
+    </div>
+    <div>
+      <p class="spec-title">Ideal para</p>
+      <div class="sector"><div class="dot"></div><div><h4>Talleres e industria</h4><p>Organización de piezas, herramientas y componentes con acceso rápido y controlado. Almacenaje preciso para entornos de producción y mantenimiento técnico.</p></div></div>
+      <div class="sector"><div class="dot"></div><div><h4>Garajes premium y viviendas de alto standing</h4><p>Estética cuidada y funcionalidad para espacios de alto nivel donde el orden es parte del diseño. Acceso rápido y organización impecable.</p></div></div>
+      <div class="sector"><div class="dot"></div><div><h4>Servicios de emergencia y organismos públicos</h4><p>EPIs, uniformes y material operativo siempre visibles, protegidos y accesibles. Sistema seguro con cerradura opcional para materiales sensibles.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Banner ── -->
+<section class="banner">
+  <div class="inner">
+    <h2>La solución perfecta para tu espacio</h2>
+    <p>Con distintas configuraciones de altura, profundidad y accesorios, Sliderack se adapta a cualquier entorno profesional. Desde talleres industriales hasta garajes premium.</p>
+  </div>
+</section>
+
+<!-- ── Accesorios ── -->
+<section class="acc">
+  <div class="inner">
+    <div class="acc-head">
+      <h2>Accesorios para tu Sliderack 1-1837</h2>
+      <a href="#">Ver todos los accesorios →</a>
+    </div>
+    <div class="acc-grid">
+      <a class="acc-card" href="#">
+        <div class="ph"><span class="b">Accesorio</span><img src="../public/images/sliderack/products/sr-1825-370-v2.webp" alt=""></div>
+        <h3>Puesto de Trabajo</h3>
+        <p class="dsc">Mesa de trabajo integrada con panel perforado</p>
+      </a>
+      <a class="acc-card" href="#">
+        <div class="ph"><span class="b">Accesorio</span><img src="../public/images/sliderack/products/sr-1825-370-v3.webp" alt=""></div>
+        <h3>Kit 5 Cajones</h3>
+        <p class="dsc">Para herramienta menuda y tornillería</p>
+      </a>
+      <a class="acc-card" href="#">
+        <div class="ph"><span class="b">Accesorio</span><img src="../public/images/sliderack/products/sr-1825-370-v4.webp" alt=""></div>
+        <h3>Panel Perforado</h3>
+        <p class="dsc">Para colgar herramienta de mano</p>
+      </a>
+      <a class="acc-card" href="#">
+        <div class="ph"><span class="b">Accesorio</span><img src="../public/images/sliderack/products/sr-1825-370.webp" alt=""></div>
+        <h3>Cerradura</h3>
+        <p class="dsc">Seguridad por armario móvil</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section class="faq-sec">
+  <div class="inner">
+    <h2>Preguntas frecuentes</h2>
+    <div class="faq">
+      <details class="qa"><summary>¿Qué incluye el sistema?</summary><div class="ans">El sistema incluye la estructura metálica, los armarios deslizantes con guías de precisión, tres baldas por armario deslizante y las mallas de los estantes superiores. Los accesorios se adquieren por separado.</div></details>
+      <details class="qa"><summary>¿Puedo ampliar la configuración en el futuro?</summary><div class="ans">Sí. El diseño modular permite incorporar armarios móviles y accesorios adicionales en cualquier momento sin modificar la estructura existente.</div></details>
+      <details class="qa"><summary>¿Se adapta a garajes, talleres y espacios técnicos?</summary><div class="ans">Absolutamente. Sliderack está diseñado para entornos industriales, talleres, garajes de alto nivel y servicios técnicos.</div></details>
+      <details class="qa"><summary>¿Ofrecen servicio de instalación?</summary><div class="ans">Sí, la instalación va incluida dentro del territorio español. Para instalaciones fuera de España consulta con nuestro equipo técnico. Podemos asesorarte sobre la instalación o recomendarte un instalador en tu zona.</div></details>
+      <details class="qa"><summary>¿Cuál es el plazo de entrega?</summary><div class="ans">Los plazos varían según el modelo y la configuración. Contacta con nosotros para obtener una estimación personalizada.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ── Contact CTA ── -->
+<section class="cta">
+  <div class="inner">
+    <h2>¿Necesitas ayuda para elegir?</h2>
+    <p>Nuestro equipo técnico te asesora sin compromiso.</p>
+    <div class="btns">
+      <a class="btn-white" href="#">Contactar</a>
+      <a class="btn-outline-w" href="#">985 30 89 80</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  const imgs = [
+    '../public/images/sliderack/products/sr-1825-370.webp',
+    '../public/images/sliderack/products/sr-1825-370-v2.webp',
+    '../public/images/sliderack/products/sr-1825-370-v3.webp',
+    '../public/images/sliderack/products/sr-1825-370-v4.webp'
+  ];
+  function setImg(el,i){
+    document.querySelectorAll('.thumb').forEach(t=>t.classList.remove('active'));
+    el.classList.add('active');
+    document.getElementById('mainImg').src = imgs[i];
+  }
+</script>
+</body>
+</html>
