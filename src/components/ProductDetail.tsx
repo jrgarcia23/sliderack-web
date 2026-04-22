@@ -260,7 +260,7 @@ export default function ProductDetail({
                     >
                       Precio desde
                     </span>
-                    <div className="flex items-baseline gap-3 flex-wrap">
+                    <div className="flex items-center gap-3 flex-wrap">
                       <span
                         className="text-[#201F20] leading-none"
                         style={{
