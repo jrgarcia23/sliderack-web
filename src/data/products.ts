@@ -345,7 +345,7 @@ export const products: Product[] = [
     description:
       "El modelo de dos niveles más versátil de la gama. 5 armarios móviles deslizantes con 15 baldas en el nivel inferior, más almacenaje fijo en el superior. Perfecto para talleres industriales que necesitan organizar herramientas de uso diario abajo y stock de repuestos o materiales pesados arriba, maximizando cada metro cuadrado de pared disponible.",
     features: [
-      "5 armarios móviles deslizantes + nivel superior fijo (30 baldas totales)",
+      "5 armarios móviles deslizantes + nivel superior fijo (15 baldas)",
       "El modelo de 2 niveles más elegido por talleres industriales",
       "6 paneles de malla para separación y ventilación",
       "Armarios móviles de ampliación disponibles para crecer en horizontal",
@@ -390,7 +390,7 @@ export const products: Product[] = [
     description:
       "El sistema de mayor capacidad total de la gama Sliderack. 7 armarios móviles deslizantes con 21 baldas en el nivel inferior y almacenaje fijo completo en el superior. Diseñado para parques de bomberos, centros logísticos y grandes instalaciones industriales donde se gestiona un alto volumen de equipamiento, EPIs o materiales de intervención que deben estar siempre localizables.",
     features: [
-      "7 armarios móviles deslizantes + nivel superior (42 baldas totales)",
+      "7 armarios móviles deslizantes + nivel superior (21 baldas)",
       "El sistema de mayor capacidad de toda la gama Sliderack",
       "8 paneles de malla metálica para organización visual",
       "Ideal para parques de bomberos y centros logísticos",
@@ -481,7 +481,7 @@ export const products: Product[] = [
     description:
       "4 armarios móviles profundos deslizantes con 12 baldas de 470 mm en el nivel inferior, más capacidad fija arriba. El sistema preferido por servicios de mantenimiento industrial que manejan repuestos de gran tamaño, herramientas pesadas y equipos de diagnóstico que necesitan fondo extra. Combina capacidad máxima con organización profesional.",
     features: [
-      "4 armarios móviles de 470 mm + nivel superior fijo (24 baldas)",
+      "4 armarios móviles de 470 mm + nivel superior fijo (12 baldas)",
       "Profundidad extendida para repuestos y equipos voluminosos",
       "Ideal para servicios de mantenimiento industrial",
       "Baldas adicionales disponibles para personalizar alturas",
@@ -526,7 +526,7 @@ export const products: Product[] = [
     description:
       "La configuración de máxima capacidad absoluta de toda la gama. 6 armarios móviles profundos deslizantes con 18 baldas de 470 mm más nivel superior completo. Pensado para grandes instalaciones industriales, bases logísticas o centros de distribución donde cada metro cuadrado debe almacenar el máximo volumen posible de material pesado y voluminoso con acceso organizado.",
     features: [
-      "6 armarios móviles de 470 mm + nivel superior (36 baldas totales)",
+      "6 armarios móviles de 470 mm + nivel superior (18 baldas)",
       "Configuración de máxima capacidad absoluta de la gama",
       "8 paneles de malla para organización y ventilación",
       "Para bases logísticas y centros de distribución",
