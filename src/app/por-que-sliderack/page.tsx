@@ -47,7 +47,7 @@ const sectors = [
   },
   {
     name: "Garajes premium y viviendas de alto standing",
-    desc: "Almacenaje que combina estética y funcionalidad en espacios donde el diseño importa. Acabado Negro Mate RAL-9005, movimiento silencioso y armarios móviles que se integran como mobiliario de alta gama.",
+    desc: "Almacenaje que combina estética y funcionalidad en espacios donde el diseño importa. Acabado Negro Mate Texturizado RAL-9005, movimiento silencioso y armarios móviles que se integran como mobiliario de alta gama.",
   },
   {
     name: "Servicios de emergencia y bomberos",

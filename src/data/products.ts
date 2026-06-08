@@ -53,7 +53,7 @@ export const products: Product[] = [
       { label: "Capacidad de carga de la estantería", value: "Consultar" },
       { label: "Capacidad de carga por armario", value: "Consultar" },
     ],
-    finish: "Pintado color Negro Mate RAL-9005",
+    finish: "Pintado color Negro Mate Texturizado RAL-9005",
     image: "/images/sliderack/products/sr-1825-370.webp",
     gallery: [
       "/images/sliderack/products/sr-1825-370.webp",
@@ -98,7 +98,7 @@ export const products: Product[] = [
       { label: "Capacidad de carga de la estantería", value: "Consultar" },
       { label: "Capacidad de carga por armario", value: "Consultar" },
     ],
-    finish: "Pintado color Negro Mate RAL-9005",
+    finish: "Pintado color Negro Mate Texturizado RAL-9005",
     image: "/images/sliderack/products/sr-2700-370.webp",
     gallery: [
       "/images/sliderack/products/sr-2700-370.webp",
@@ -143,7 +143,7 @@ export const products: Product[] = [
       { label: "Capacidad de carga de la estantería", value: "Consultar" },
       { label: "Capacidad de carga por armario", value: "Consultar" },
     ],
-    finish: "Pintado color Negro Mate RAL-9005",
+    finish: "Pintado color Negro Mate Texturizado RAL-9005",
     image: "/images/sliderack/products/sr-3600-370.webp",
     gallery: [
       "/images/sliderack/products/sr-3600-370.webp",
@@ -189,7 +189,7 @@ export const products: Product[] = [
       { label: "Capacidad de carga de la estantería", value: "Consultar" },
       { label: "Capacidad de carga por armario", value: "Consultar" },
     ],
-    finish: "Pintado color Negro Mate RAL-9005",
+    finish: "Pintado color Negro Mate Texturizado RAL-9005",
     image: "/images/sliderack/products/sr-1825-470.webp",
     gallery: [
       "/images/sliderack/products/sr-1825-470.webp",
@@ -234,7 +234,7 @@ export const products: Product[] = [
       { label: "Capacidad de carga de la estantería", value: "Consultar" },
       { label: "Capacidad de carga por armario", value: "Consultar" },
     ],
-    finish: "Pintado color Negro Mate RAL-9005",
+    finish: "Pintado color Negro Mate Texturizado RAL-9005",
     image: "/images/sliderack/products/sr-2700-470.webp",
     gallery: [
       "/images/sliderack/products/sr-2700-470.webp",
@@ -279,7 +279,7 @@ export const products: Product[] = [
       { label: "Capacidad de carga de la estantería", value: "Consultar" },
       { label: "Capacidad de carga por armario", value: "Consultar" },
     ],
-    finish: "Pintado color Negro Mate RAL-9005",
+    finish: "Pintado color Negro Mate Texturizado RAL-9005",
     image: "/images/sliderack/products/sr-3600-470.webp",
     gallery: [
       "/images/sliderack/products/sr-3600-470.webp",
@@ -325,7 +325,7 @@ export const products: Product[] = [
       { label: "Capacidad de carga de la estantería", value: "Consultar" },
       { label: "Capacidad de carga por armario", value: "Consultar" },
     ],
-    finish: "Pintado color Negro Mate RAL-9005",
+    finish: "Pintado color Negro Mate Texturizado RAL-9005",
     image: "/images/sliderack/products/sr-2n-1825-370.webp",
     gallery: [
       "/images/sliderack/products/sr-2n-1825-370.webp",
@@ -370,7 +370,7 @@ export const products: Product[] = [
       { label: "Capacidad de carga de la estantería", value: "Consultar" },
       { label: "Capacidad de carga por armario", value: "Consultar" },
     ],
-    finish: "Pintado color Negro Mate RAL-9005",
+    finish: "Pintado color Negro Mate Texturizado RAL-9005",
     image: "/images/sliderack/products/sr-2n-2700-370.webp",
     gallery: [
       "/images/sliderack/products/sr-2n-2700-370.webp",
@@ -415,7 +415,7 @@ export const products: Product[] = [
       { label: "Capacidad de carga de la estantería", value: "Consultar" },
       { label: "Capacidad de carga por armario", value: "Consultar" },
     ],
-    finish: "Pintado color Negro Mate RAL-9005",
+    finish: "Pintado color Negro Mate Texturizado RAL-9005",
     image: "/images/sliderack/products/sr-2n-3600-370.webp",
     gallery: [
       "/images/sliderack/products/sr-2n-3600-370.webp",
@@ -461,7 +461,7 @@ export const products: Product[] = [
       { label: "Capacidad de carga de la estantería", value: "Consultar" },
       { label: "Capacidad de carga por armario", value: "Consultar" },
     ],
-    finish: "Pintado color Negro Mate RAL-9005",
+    finish: "Pintado color Negro Mate Texturizado RAL-9005",
     image: "/images/sliderack/products/sr-2n-1825-470.webp",
     gallery: [
       "/images/sliderack/products/sr-2n-1825-470.webp",
@@ -506,7 +506,7 @@ export const products: Product[] = [
       { label: "Capacidad de carga de la estantería", value: "Consultar" },
       { label: "Capacidad de carga por armario", value: "Consultar" },
     ],
-    finish: "Pintado color Negro Mate RAL-9005",
+    finish: "Pintado color Negro Mate Texturizado RAL-9005",
     image: "/images/sliderack/products/sr-2n-2700-470.webp",
     gallery: [
       "/images/sliderack/products/sr-2n-2700-470.webp",
@@ -551,7 +551,7 @@ export const products: Product[] = [
       { label: "Capacidad de carga de la estantería", value: "Consultar" },
       { label: "Capacidad de carga por armario", value: "Consultar" },
     ],
-    finish: "Pintado color Negro Mate RAL-9005",
+    finish: "Pintado color Negro Mate Texturizado RAL-9005",
     image: "/images/sliderack/products/sr-2n-3600-470.webp",
     gallery: [
       "/images/sliderack/products/sr-2n-3600-470.webp",

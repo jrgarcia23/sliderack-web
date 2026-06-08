@@ -12,7 +12,7 @@ const faqs = [
   {
     question: "¿Qué medidas y configuraciones están disponibles?",
     answer:
-      "Sliderack se ofrece en tres anchos (2090 mm, 2965 mm y 3865 mm) y con dos profundidades de armario móvil (370 mm y 470 mm). Cada modelo está disponible en configuración de uno o dos niveles. La altura estándar es de 2255 mm y la profundidad total de 1160 mm. El acabado es Negro Mate RAL-9005. En total, hay 12 configuraciones de sistema que cubren desde talleres pequeños hasta instalaciones industriales de gran capacidad.",
+      "Sliderack se ofrece en tres anchos (2090 mm, 2965 mm y 3865 mm) y con dos profundidades de armario móvil (370 mm y 470 mm). Cada modelo está disponible en configuración de uno o dos niveles. La altura estándar es de 2255 mm y la profundidad total de 1160 mm. El acabado es Negro Mate Texturizado RAL-9005. En total, hay 12 configuraciones de sistema que cubren desde talleres pequeños hasta instalaciones industriales de gran capacidad.",
   },
   {
     question: "¿Cuánto peso soporta cada armario móvil?",
