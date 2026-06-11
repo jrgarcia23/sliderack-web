@@ -1,0 +1,423 @@
+{
+  "nav": {
+    "models": "Models",
+    "accessories": "Accessories",
+    "whySliderack": "Why Sliderack",
+    "company": "Company",
+    "contact": "Contact",
+    "viewAllModels": "View all models →",
+    "viewAllAccessories": "View all accessories →",
+    "slidingShelving": "Sliding shelving systems",
+    "viewFullCatalogue": "View all →",
+    "megaSistemas": "Sliding shelving systems",
+    "megaViewAll": "View all →",
+    "megaCol1": "1 Level · D. 370",
+    "megaCol2": "1 Level · D. 470",
+    "megaCol3": "2 Levels · D. 370",
+    "megaCol4": "2 Levels · D. 470",
+    "acc_puesto": "Workstation",
+    "acc_puesto_desc": "Integrated work table with perforated panel",
+    "acc_panel": "Perforated Panel",
+    "acc_panel_desc": "Vertical tool organisation",
+    "acc_cerradura": "Lock",
+    "acc_cerradura_desc": "Keyed security for mobile bays",
+    "acc_cajones": "5-Drawer Kit",
+    "acc_cajones_desc": "5 divider drawers for small parts",
+    "acc_balda": "Shelf Kit",
+    "acc_balda_desc": "Adjustable-height additional shelves",
+    "acc_armario": "Additional Mobile Bay",
+    "acc_armario_desc": "Expand your system's capacity",
+    "acc_perchero": "Garment Rail Kit",
+    "acc_perchero_desc": "Storage for PPE, uniforms and workwear"
+  },
+  "footer": {
+    "description": "High-precision sliding storage system. Designed and manufactured in Spain by Esnova Racks.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "schedule": "Mon–Fri · 9:00–18:00",
+    "location": "Gijón, Asturias, Spain",
+    "copyright": "© 2026 Sliderack by Esnova Racks",
+    "ctaTitle": "Need technical advice?",
+    "ctaButton": "Get in touch",
+    "legal": "Legal Notice",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookie Policy"
+  },
+  "hero": {
+    "badge_origin": "Made in Spain",
+    "badge_experience": "Over 50 years of expertise",
+    "badge_iso": "ISO Certified",
+    "headline": "HIGH-PRECISION\nSLIDING\nSTORAGE\nSYSTEM",
+    "subtitle": "Designed by Esnova Racks for environments that demand order, reliability and performance.",
+    "cta": "View models"
+  },
+  "exploreModels": {
+    "title": "Main models",
+    "viewAll": "View full catalogue →"
+  },
+  "leadersBanner": {
+    "eyebrow": "ABOUT ESNOVA RACKS",
+    "title": "Leaders in the manufacture of industrial shelving",
+    "body": "With over 50 years of expertise, Esnova Racks combines cutting-edge technology with a highly specialised team.",
+    "stat_certs": "ISO Certifications",
+    "stat_sqm": "m² production facility",
+    "stat_countries": "Countries",
+    "cta": "Learn about the company →"
+  },
+  "features": {
+    "eyebrow": "SYSTEM BENEFITS",
+    "title": "Order, safety and aesthetics in a single system",
+    "items": [
+      {
+        "title": "Organisation",
+        "desc": "Every item has its place, enabling fast access and a more efficient working environment."
+      },
+      {
+        "title": "Modularity",
+        "desc": "A flexible system that adapts to the space and evolves with the requirements of each project."
+      },
+      {
+        "title": "Customisation",
+        "desc": "Configurable with multiple accessories to suit every type of use and material."
+      },
+      {
+        "title": "High precision",
+        "desc": "Smooth, controlled movement thanks to an advanced engineering sliding mechanism."
+      }
+    ]
+  },
+  "accessoriesSection": {
+    "title": "Accessories that complete your system",
+    "viewAll": "View all →"
+  },
+  "sectors": {
+    "eyebrow": "APPLICATIONS",
+    "title": "Sectors where Sliderack performs especially well",
+    "items": [
+      {
+        "title": "Automotive & industry",
+        "desc": "Precise storage for parts, tools and components. Technical organisation that improves workshop efficiency."
+      },
+      {
+        "title": "Premium garages",
+        "desc": "Refined aesthetics and functionality for high-end spaces where order is part of the design."
+      },
+      {
+        "title": "Emergency services",
+        "desc": "PPE, uniforms and operational equipment always accessible, visible and secured in a safe system."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FREQUENTLY ASKED QUESTIONS",
+    "title": "Everything you need to know about our system",
+    "items": [
+      {
+        "q": "What is Sliderack and how does it differ from conventional shelving?",
+        "a": "Sliderack is a sliding shelving system manufactured in Spain by Esnova Racks. Unlike conventional shelving, Sliderack's mobile bays slide laterally on high-precision rails, eliminating fixed aisles between shelving units. This allows the same volume of tools, parts or materials to be stored in approximately half the space. Each mobile bay supports up to 400 kg and can be moved with a single finger."
+      },
+      {
+        "q": "What sizes and configurations are available?",
+        "a": "Sliderack is available in three widths (2090 mm, 2965 mm and 3865 mm) with two mobile bay depths (370 mm and 470 mm). Each model is available in single or double-level configuration. The standard height is 2255 mm and the overall depth is 1160 mm. The finish is Textured Matt Black RAL-9005. In total, there are 12 system configurations covering everything from small workshops to large-scale industrial installations."
+      },
+      {
+        "q": "How much weight does each mobile bay support?",
+        "a": "Each Sliderack sliding mobile bay is designed to support up to 400 kg of load distributed across its shelves, with a maximum of 80 kg per shelf. Despite this weight, the precision rail mechanism allows the entire bay to be slid with a single finger — effortlessly and silently. The cold-rolled steel structure with anti-corrosion treatment ensures this capacity is maintained over time, even in demanding industrial environments."
+      },
+      {
+        "q": "What types of spaces is Sliderack designed for?",
+        "a": "Sliderack is designed for any professional environment requiring organised, accessible storage: mechanical and automotive workshops, premium garages and high-end residences, emergency services and fire stations (for storing PPE and intervention equipment), logistics centres, laboratories and research facilities, and industrial technical maintenance installations. The system adapts to both compact spaces and large floor areas."
+      },
+      {
+        "q": "What accessories can be added to the system?",
+        "a": "Sliderack offers seven families of accessories compatible with all system models: workstations with integrated table and perforated panel, standalone perforated panels for vertical tool organisation, 5-drawer kits for small parts, keyed locks for mobile bays requiring security, adjustable-height shelf kits, additional mobile bays to increase capacity, and garment rail kits for storing PPE, uniforms and work clothing."
+      },
+      {
+        "q": "Can the configuration be expanded or modified in the future?",
+        "a": "Yes. Sliderack's modular design allows additional mobile bays, accessories or internal layout changes to be incorporated at any time, without modifying the existing structure. All accessories are compatible with each other and with every system model, allowing the investment to grow alongside the needs of the space."
+      },
+      {
+        "q": "What quality certifications does Sliderack hold?",
+        "a": "Sliderack is manufactured by Esnova Racks, a Spanish company with over 50 years of experience certified to ISO 9001 (quality management and continuous improvement), ISO 14001 (environmental management and responsible resource use), ISO 45001 (occupational health and safety) and UNE EN 1090 (CE marking for steel structures). These certifications ensure that every system component meets the most demanding European standards in quality, safety and sustainability."
+      },
+      {
+        "q": "Where is Sliderack manufactured?",
+        "a": "Sliderack is entirely designed and manufactured in Spain, at the Esnova Racks production facility located in Gijón (Asturias). The plant covers 46,600 m² equipped with cutting-edge technology. The entire process — from design to final assembly — is carried out in Spain using European materials, guaranteeing full control over product quality and competitive lead times."
+      },
+      {
+        "q": "How much space can I save with sliding shelving compared to fixed shelving?",
+        "a": "Sliderack's sliding system eliminates fixed aisles between shelving units. In a typical fixed shelving layout, approximately 50% of the floor area is allocated to access aisles. With Sliderack, only one access aisle is needed, opened by sliding the mobile bays laterally — allowing storage capacity to double within the same footprint, or freeing up half the space for other workshop or garage functions."
+      },
+      {
+        "q": "Does Sliderack require maintenance?",
+        "a": "The system is designed for intensive daily use with minimal maintenance. The cold-rolled steel structure with anti-corrosion treatment withstands demanding industrial environments. The precision rails are manufactured for millions of opening and closing cycles without degradation. No lubrication or periodic interventions are required. An occasional cleaning of the rails is all that is needed to maintain optimal system performance over the long term."
+      },
+      {
+        "q": "How can I request information or a quote?",
+        "a": "You can request information in two ways: by filling in the contact form on our website (our technical team will respond within 24–48 hours) or by calling us directly on +34 985 308 980 (Monday to Friday, 9:00–18:00). Advice is free and without obligation. Our team will help you define the most suitable configuration for your space."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "CONTACT",
+    "title": "Let's talk about your project",
+    "body": "Our technical team is available to help you define the most suitable solution for your space.",
+    "preferCall": "Prefer to call us?",
+    "schedule": "Monday to Friday · 9:00–18:00",
+    "trust_response": "Response within 24–48h",
+    "trust_advice": "Technical advice",
+    "trust_nocommit": "No obligation",
+    "field_name": "Name *",
+    "field_company": "Company",
+    "field_email": "Email *",
+    "field_phone": "Phone",
+    "field_message": "Message",
+    "check_catalogue": "I would like to receive the technical catalogue",
+    "check_privacy": "I have read and accept the",
+    "privacy_link": "privacy policy",
+    "submit": "Send enquiry",
+    "sending": "Sending...",
+    "error": "An error occurred. Please try again or call us directly.",
+    "catalogue_append": "[Requests technical catalogue]",
+    "heroSubtitle": "Configure your enquiry and our technical team will respond within 24–48h.",
+    "productLabel": "Product model",
+    "productPlaceholder": "Select a model",
+    "accessoriesLabel": "Accessories",
+    "accPlaceholder": "Select an accessory",
+    "addAccessory": "Add another accessory",
+    "countryLabel": "Country",
+    "countryPlaceholder": "United Kingdom",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "you@email.com",
+    "phonePlaceholder": "+44 7700 000000",
+    "companyPlaceholder": "Your company name",
+    "messagePlaceholder": "Tell us what you need...",
+    "submitRequest": "Send request",
+    "successTitle": "Request sent successfully",
+    "successBody": "Our team will be in touch within 24–48h.",
+    "sidebarText": "Our technical team will advise you on the most suitable configuration for your space.",
+    "privacySuffix": ". I authorise the processing of my data to manage my enquiry."
+  },
+  "pages": {
+    "sistemas": {
+      "eyebrow": "CATALOGUE",
+      "title": "Sliding storage systems",
+      "subtitle": "12 configurations available · 3 widths · 2 depths · 2 levels",
+      "heroSubtitle": "Configure your Sliderack to suit your space and project requirements.",
+      "introH2": "High-precision sliding storage",
+      "introText": "Our systems combine high-strength metal structure with a precision sliding mechanism. With a fixed depth of 1160 mm, models available in three widths (2090, 2965 and 3865 mm), two mobile bay depths (370 and 470 mm) and single or double-level configurations. Each model adapts to workshops, premium garages, emergency services and industrial environments.",
+      "photoTitle": "Designed to last in demanding environments",
+      "photoSubtitle": "Certified metal structure, Spanish manufacturing and a high-precision rail system.",
+      "accessoriesTitle": "Complete your system with accessories",
+      "viewDetails": "View details →",
+      "priceFrom": "From",
+      "relatedTitle": "Compatible accessories",
+      "relatedLink": "View all accessories →",
+      "ctaTitle": "Need technical advice?",
+      "ctaBody": "Our team will help you configure the perfect system for your space. No obligation.",
+      "ctaContact": "Get in touch",
+      "ctaCatalogue": "Download catalogue",
+      "ctaRequestInfo": "Which configuration is right for your space?"
+    },
+    "accesorios": {
+      "eyebrow": "CATALOGUE",
+      "title": "Sliderack Accessories",
+      "subtitle": "Compatible accessories for all system models",
+      "heroSubtitle": "Accessories that expand and personalise your storage system.",
+      "introH2": "Personalise and expand your system",
+      "introText": "Accessories designed to adapt your Sliderack to any requirement. Drawers, perforated panels, workstations, locks and additional shelves. All compatible with any system model.",
+      "photoTitle": "Personalise every detail of your space",
+      "photoSubtitle": "Precision accessories that integrate seamlessly with your Sliderack system.",
+      "compatibleTitle": "Compatible systems",
+      "viewDetails": "View details →",
+      "relatedTitle": "Main systems",
+      "relatedLink": "View all systems →",
+      "ctaTitle": "Need technical advice?",
+      "ctaBody": "Our team will help you configure the perfect system for your space. No obligation.",
+      "ctaContact": "Get in touch",
+      "ctaCatalogue": "Download catalogue",
+      "ctaRequestInfo": "Which configuration is right for your space?"
+    },
+    "whySliderack": {
+      "title": "Why choose Sliderack",
+      "subtitle": "The strength of simplicity. A system that combines precision engineering with the robustness of steel.",
+      "badge1": "Manufactured by Esnova Racks",
+      "badge2": "Over 50 years",
+      "badge3": "Certified in-house production",
+      "badge4": "Industrial technology to measure",
+      "introTitle": "Designed for environments that demand precision, order and reliability",
+      "introPara1": "Developed by Esnova Racks, Sliderack combines industrial expertise with a functional approach, offering a robust and efficient solution for organising technical and professional spaces.",
+      "introPara2": "Its design follows a clear logic: optimise the available space, improve access to materials and ensure a more orderly and safe working environment.",
+      "techTitle": "Technical advantages of the system",
+      "techPara1": "The Sliderack system allows every square metre to be maximised, reducing dead space and facilitating material organisation.",
+      "techPara2": "Its metal structure guarantees stability and resistance in intensive-use environments, while the sliding system provides comfortable, controlled access to each mobile bay.",
+      "techPara3": "The system's modularity allows the configuration to be adapted to the use, incorporating trays and accessories based on specific requirements.",
+      "techPara4": "In addition, its design facilitates maintenance, ensuring long-term durability and performance.",
+      "difTitle": "What sets the system apart",
+      "dif": [
+        { "title": "Order", "desc": "Sliderack is manufactured in Spain under Esnova Racks' quality standards, with certified and controlled processes at every stage of production." },
+        { "title": "Precision engineering", "desc": "The engineering applied to the design delivers a precise, reliable system ready for continuous use in demanding environments." },
+        { "title": "Operational efficiency", "desc": "Unlike conventional solutions, Sliderack not only organises space but also improves daily operations and overall work efficiency." }
+      ],
+      "configTitle": "Height configuration and system evolution",
+      "configPara1": "Sliderack is not a bespoke system but a configurable solution that adapts to different requirements without compromising structural coherence.",
+      "configPara2": "The system offers a clear and defined configuration, designed to simplify installation and guarantee optimal performance.",
+      "configPara3": "Its modular design allows improvements or expansions to be incorporated over time, evolving alongside the space and its use.",
+      "photoBreakQuote": "Order you can see. Performance you can feel.",
+      "sectorsTitle": "Where Sliderack is used",
+      "sectorsSubtitle": "Solutions tailored to every professional sector.",
+      "sectors": [
+        { "name": "Automotive, industry & technical maintenance", "desc": "Spanners, sockets, power tools and spare parts organised by type and size. Immediate access to every part without moving other shelving units. The sliding system reduces downtime and improves team productivity." },
+        { "name": "Premium garages & high-end residences", "desc": "Storage that combines aesthetics and functionality in spaces where design matters. Textured Matt Black RAL-9005 finish, silent movement and mobile bays that integrate as high-end furniture." },
+        { "name": "Emergency services & fire stations", "desc": "PPE, intervention equipment and operational material always traceable and secured with a lock. In emergencies, every second counts: Sliderack guarantees fast, safe access to critical equipment." },
+        { "name": "Industry & technical maintenance", "desc": "Production components, spare parts and tooling classified by line or shift. Compact sliding storage frees up floor area without sacrificing storage capacity." },
+        { "name": "Logistics centres & warehouses", "desc": "Maximise storage capacity by eliminating fixed aisles between shelving units. Ideal for spaces where every square metre has a high cost and organisation directly impacts operational efficiency." },
+        { "name": "Laboratories & research centres", "desc": "Precision storage for samples, reagents, instrumentation and technical documentation. The sliding system protects sensitive materials and facilitates inventory control in environments with strict protocols." }
+      ],
+      "ctaTitle": "Ready to optimise your space?",
+      "ctaBody": "Request information with no obligation. Our team will advise you on the perfect configuration.",
+      "ctaContact": "Request information",
+      "ctaCatalogue": "Download catalogue"
+    },
+    "company": {
+      "title": "About us",
+      "subtitle": "Over 50 years of expertise in manufacturing storage solutions that work.",
+      "badge1": "Manufactured by Esnova Racks",
+      "badge2": "Over 50 years",
+      "badge3": "Certified in-house production",
+      "badge4": "Industrial technology to measure",
+      "mainTitle": "Engineering, manufacturing and expertise at the service of storage",
+      "mainPara1": "Sliderack is part of Esnova Racks, a Spanish company with over 50 years of expertise in the design and manufacture of storage systems.",
+      "mainPara2": "Throughout its history, Esnova has developed solutions for multiple sectors, consolidating a working model based on quality, innovation and operational efficiency.",
+      "timeline": [
+        { "year": "1969", "text": "Esnova founded in Gijón, Asturias" },
+        { "year": "1980s", "text": "National expansion in industrial storage" },
+        { "year": "2000s", "text": "ISO 9001, 14001 and 45001 certifications" },
+        { "year": "2010s", "text": "CE marking (UNE EN 1090) and European export" },
+        { "year": "2024", "text": "Sliderack launch" }
+      ],
+      "mfgTitle": "In-house manufacturing with an industrial focus",
+      "mfgPara1": "Esnova's production capacity enables full control of the entire process, from design to final manufacture. This guarantees robust, precise systems adapted to the demands of professional environments.",
+      "mfgPara2": "The use of advanced technology and optimised processes delivers reliable solutions designed for intensive, long-term use. Our 46,600 m² plant in Gijón (Asturias) operates with a presence in +45 countries.",
+      "designTitle": "Performance-oriented functional design",
+      "designPara1": "Sliderack was born as an evolution of industrial knowledge applied to spaces where order and accessibility are key.",
+      "designPara2": "Every system is designed to optimise the available space, improve access to materials and enhance the organisation of the working environment.",
+      "designPara3": "The result is a solution that combines structure, functionality and a carefully considered technical aesthetic.",
+      "qualityTitle": "Commitment to quality and continuous improvement",
+      "qualityPara1": "Esnova's operations are carried out under certified quality standards, ensuring compliance with the most demanding regulations.",
+      "qualityPara2": "The continuous improvement approach enables evolution in both product and processes, adapting to the needs of each client and sector.",
+      "certsTitle": "Certifications",
+      "certsSubtitle": "All our processes are certified under the most demanding international standards.",
+      "certs": [
+        { "name": "ISO 9001", "desc": "Quality management" },
+        { "name": "ISO 14001", "desc": "Environmental management" },
+        { "name": "ISO 45001", "desc": "Occupational health & safety" },
+        { "name": "UNE EN 1090", "desc": "CE marking — Steel structures" }
+      ],
+      "ctaTitle": "Shall we work together?",
+      "ctaBody": "Request information with no obligation. Our team will advise you on the perfect configuration.",
+      "ctaContact": "Request information",
+      "ctaCatalogue": "Download catalogue"
+    },
+    "contact": {
+      "title": "Contact",
+      "subtitle": "Request information about Sliderack storage systems. Our technical team will advise you with no obligation."
+    },
+    "workshops": {
+      "title": "Sliding Shelving for Mechanical Workshops",
+      "subtitle": "The Sliderack system is designed to solve the most common storage problems in automotive and industrial workshops.",
+      "problemsTitle": "The problems of an unorganised workshop",
+      "solutionsTitle": "What Sliderack solves",
+      "useCasesTitle": "How workshops use it",
+      "systemsTitle": "Choose your configuration",
+      "problems": [
+        { "title": "Tools impossible to find", "desc": "The team wastes time searching for spanners, sockets and tooling in cluttered drawers or overcrowded workbenches." },
+        { "title": "Wasted space", "desc": "Fixed shelving requires aisles between units. Up to 50% of the workshop floor is lost to access routes that add no value." },
+        { "title": "Lost time", "desc": "Every minute spent searching for a part or tool is a minute not billed. In a workshop with 5 technicians, the losses multiply." }
+      ],
+      "solutions": [
+        { "stat": "50%", "label": "less floor space used", "desc": "The sliding system eliminates fixed aisles. Same storage in half the footprint." },
+        { "stat": "400 kg", "label": "per mobile bay", "desc": "Each mobile bay supports up to 400 kg of load distributed across its shelves and slides with a single finger." },
+        { "stat": "100%", "label": "accessible", "desc": "Slide laterally to access any mobile bay. No obstacles, no moving anything." },
+        { "stat": "0", "label": "maintenance", "desc": "Precision rails and anti-corrosion treated steel. Designed for intensive daily use." }
+      ],
+      "useCases": [
+        { "title": "Automotive workshop", "items": ["Spanners and sockets organised by size", "Spare parts classified by vehicle", "Oils and fluids on reinforced shelves", "Power tools with dedicated charging"] },
+        { "title": "Industrial workshop", "items": ["Production tooling accessible by shift", "Components and spare parts by line", "Team PPE in a lockable mobile bay", "Technical documentation on perforated panels"] },
+        { "title": "Technical service", "items": ["Pre-assembled repair kits", "Critical parts stock easily traceable", "Diagnostic tools protected", "Intervention records at the workstation"] }
+      ],
+      "ctaTitle": "What is the perfect configuration for your workshop?",
+      "ctaBody": "Consult our technical team. No obligation.",
+      "ctaContact": "Request information",
+      "ctaCatalogue": "Download catalogue"
+    },
+    "blog": {
+      "title": "Blog",
+      "subtitle": "Articles and guides on storage, space organisation and Sliderack news.",
+      "comingSoon": "Coming soon",
+      "comingSoonBody": "We are preparing quality content on storage systems, workshop organisation and more.",
+      "ctaTitle": "Questions about the system?",
+      "ctaBody": "Our technical team is available to advise you with no obligation.",
+      "ctaContact": "Request information"
+    },
+    "gracias": {
+      "title": "Message received!",
+      "body": "Our technical team will be in touch within 24–48 hours.",
+      "cta": "Back to home"
+    },
+    "notFound": {
+      "title": "Page not found",
+      "body": "The page you are looking for does not exist or has been moved.",
+      "cta": "Back to home"
+    }
+  },
+  "product": {
+    "requestInfo": "Request information",
+    "downloadCatalogue": "Download catalogue",
+    "specs": "Specifications",
+    "includes": "Includes",
+    "capacity": "Load capacity",
+    "finish": "Finish",
+    "compatible": "Compatible with all Sliderack models",
+    "related": "You might also like",
+    "priceFrom": "From",
+    "catalogue": "CATALOGUE",
+    "technicalSheet": "Technical specifications",
+    "specsSubtitlePrefix": "Detailed specifications for model Sliderack",
+    "dimensions": "Dimensions",
+    "whatIncludes": "What's included",
+    "mfgEyebrow": "Manufacturing & quality",
+    "mfgTitle": "Spanish precision engineering",
+    "mfgPara1": "Each mobile bay in this system is built from cold-rolled steel with anti-corrosion treatment, designed to support up to 400 kg of load (80 kg per shelf) with smooth, silent sliding. The high-precision rails are manufactured for millions of opening and closing cycles without performance degradation.",
+    "mfgPara2": "Entirely designed and manufactured in Spain by Esnova Racks at their 46,600 m² facility in Gijón (Asturias). Certifications: ISO 9001 (quality), ISO 14001 (environment), ISO 45001 (occupational safety) and UNE EN 1090 (CE marking for steel structures).",
+    "idealFor": "Ideal for",
+    "productSectors": [
+      { "title": "Workshops & industry", "desc": "Organisation of parts, tools and components with fast, controlled access. Precise storage for production and technical maintenance environments." },
+      { "title": "Premium garages & high-end residences", "desc": "Refined aesthetics and functionality for high-end spaces where order is part of the design. Fast access and impeccable organisation." },
+      { "title": "Emergency services & public bodies", "desc": "PPE, uniforms and operational equipment always visible, protected and accessible. Secure system with optional lock for sensitive materials." }
+    ],
+    "bannerTitle": "The perfect solution for your space",
+    "bannerSubtitle": "With different height, depth and accessory configurations, Sliderack adapts to any professional environment. From industrial workshops to premium garages.",
+    "accessoriesFor": "Accessories for your Sliderack {name}",
+    "seeAllAccessories": "View all accessories →",
+    "faqTitle": "Frequently asked questions",
+    "faqItems": [
+      { "q": "What does the system include?", "a": "The system includes the metal structure, the sliding bays with precision rails, three shelves per sliding bay and the upper shelf mesh panels. Accessories are purchased separately." },
+      { "q": "Can I expand the configuration in the future?", "a": "Yes. The modular design allows additional mobile bays and accessories to be incorporated at any time without modifying the existing structure." },
+      { "q": "Does it adapt to garages, workshops and technical spaces?", "a": "Absolutely. Sliderack is designed for industrial environments, workshops, high-end garages and technical services." },
+      { "q": "Do you offer an installation service?", "a": "Yes, installation is included within Spain. For installations outside Spain, please consult our technical team. We can advise you on installation or recommend an installer in your area." },
+      { "q": "What are the lead times?", "a": "Lead times vary depending on the model and configuration. Contact us for a personalised estimate." }
+    ],
+    "ctaTitle": "Need help choosing?",
+    "ctaSubtitle": "Our technical team advises you with no obligation.",
+    "ctaContact": "Get in touch",
+    "backLinkSystems": "View more Systems",
+    "backLinkAccessories": "View more Accessories",
+    "installationIncluded": "Installation in Spain included",
+    "priceFromLabel": "Price from"
+  },
+  "langSwitch": {
+    "switchTo": "ES",
+    "switchToLabel": "Cambiar a Español"
+  }
+}

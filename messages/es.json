@@ -1,0 +1,423 @@
+{
+  "nav": {
+    "models": "Modelos",
+    "accessories": "Accesorios",
+    "whySliderack": "Por qué Sliderack",
+    "company": "Compañía",
+    "contact": "Contacto",
+    "viewAllModels": "Ver todos los modelos →",
+    "viewAllAccessories": "Ver todos los accesorios →",
+    "slidingShelving": "Estanterías deslizantes",
+    "viewFullCatalogue": "Ver todos →",
+    "megaSistemas": "Estanterías deslizantes",
+    "megaViewAll": "Ver todos →",
+    "megaCol1": "1 Nivel · Prof. 370",
+    "megaCol2": "1 Nivel · Prof. 470",
+    "megaCol3": "2 Niveles · Prof. 370",
+    "megaCol4": "2 Niveles · Prof. 470",
+    "acc_puesto": "Puesto de Trabajo",
+    "acc_puesto_desc": "Mesa de trabajo integrada con panel perforado",
+    "acc_panel": "Panel Perforado",
+    "acc_panel_desc": "Organización vertical de herramientas",
+    "acc_cerradura": "Cerradura",
+    "acc_cerradura_desc": "Seguridad con llave para armarios móviles",
+    "acc_cajones": "Kit 5 Cajones",
+    "acc_cajones_desc": "5 cajones divisorios para piezas pequeñas",
+    "acc_balda": "Kit Balda",
+    "acc_balda_desc": "Baldas adicionales ajustables en altura",
+    "acc_armario": "Armario Móvil Adicional",
+    "acc_armario_desc": "Amplía la capacidad de tu sistema",
+    "acc_perchero": "Kit Perchero",
+    "acc_perchero_desc": "Almacenaje de EPIs, uniformes y prendas"
+  },
+  "footer": {
+    "description": "Sistema de almacenaje deslizante de alta precisión. Diseñado y fabricado en España por Esnova Racks.",
+    "navigation": "Navegación",
+    "contact": "Contacto",
+    "schedule": "L-V · 9:00–18:00",
+    "location": "Gijón, Asturias",
+    "copyright": "© 2026 Sliderack by Esnova Racks",
+    "ctaTitle": "¿Necesitas asesoramiento técnico?",
+    "ctaButton": "Contactar",
+    "legal": "Aviso Legal",
+    "privacy": "Política de Privacidad",
+    "cookies": "Política de Cookies"
+  },
+  "hero": {
+    "badge_origin": "Fabricado en España",
+    "badge_experience": "Más de 50 años de experiencia",
+    "badge_iso": "Certificado ISO",
+    "headline": "SISTEMA\nDESLIZANTE\nDE ALTA\nPRECISIÓN",
+    "subtitle": "Diseñado por Esnova Racks para entornos que exigen orden, fiabilidad y rendimiento.",
+    "cta": "Ver modelos"
+  },
+  "exploreModels": {
+    "title": "Modelos principales",
+    "viewAll": "Ver catálogo completo →"
+  },
+  "leadersBanner": {
+    "eyebrow": "SOBRE ESNOVA RACKS",
+    "title": "Somos líderes en la fabricación de estanterías industriales",
+    "body": "Con más de 50 años de experiencia, Esnova Racks combina tecnología de última generación con un equipo humano especializado.",
+    "stat_certs": "Certificaciones ISO",
+    "stat_sqm": "m² de planta",
+    "stat_countries": "Países",
+    "cta": "Conoce la compañía →"
+  },
+  "features": {
+    "eyebrow": "VENTAJAS DEL SISTEMA",
+    "title": "Orden, seguridad y estética en un mismo sistema",
+    "items": [
+      {
+        "title": "Orden",
+        "desc": "Cada elemento tiene su lugar, facilitando un acceso rápido y un entorno de trabajo más eficiente."
+      },
+      {
+        "title": "Modularidad",
+        "desc": "Un sistema flexible que se adapta al espacio y evoluciona según las necesidades de cada proyecto."
+      },
+      {
+        "title": "Personalización",
+        "desc": "Configurable con múltiples accesorios para responder a cada tipo de uso y material."
+      },
+      {
+        "title": "Alta precisión",
+        "desc": "Movimiento suave y controlado gracias a un sistema deslizante de ingeniería avanzada."
+      }
+    ]
+  },
+  "accessoriesSection": {
+    "title": "Accesorios que completan tu sistema",
+    "viewAll": "Ver todos →"
+  },
+  "sectors": {
+    "eyebrow": "APLICACIONES",
+    "title": "Sectores donde Sliderack funciona especialmente bien",
+    "items": [
+      {
+        "title": "Automoción e industria",
+        "desc": "Almacenaje preciso para piezas, herramientas y componentes. Organización técnica que mejora la eficiencia del taller."
+      },
+      {
+        "title": "Garajes premium",
+        "desc": "Estética cuidada y funcionalidad para espacios de alto nivel donde el orden es parte del diseño."
+      },
+      {
+        "title": "Servicios de emergencia",
+        "desc": "EPIs, uniformes y material operativo siempre accesibles, visibles y protegidos en un sistema seguro."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "PREGUNTAS FRECUENTES",
+    "title": "Todo lo que debes saber sobre nuestro sistema",
+    "items": [
+      {
+        "q": "¿Qué es Sliderack y en qué se diferencia de una estantería convencional?",
+        "a": "Sliderack es un sistema de estanterías deslizantes fabricado en España por Esnova Racks. A diferencia de las estanterías convencionales, los armarios móviles de Sliderack se deslizan lateralmente sobre guías de alta precisión, eliminando los pasillos fijos entre estanterías. Esto permite almacenar el mismo volumen de herramientas, piezas o materiales en aproximadamente la mitad de espacio. Cada armario móvil soporta hasta 400 kg y puede moverse con un solo dedo."
+      },
+      {
+        "q": "¿Qué medidas y configuraciones están disponibles?",
+        "a": "Sliderack se ofrece en tres anchos (2090 mm, 2965 mm y 3865 mm) y con dos profundidades de armario móvil (370 mm y 470 mm). Cada modelo está disponible en configuración de uno o dos niveles. La altura estándar es de 2255 mm y la profundidad total de 1160 mm. El acabado es Negro Mate Texturizado RAL-9005. En total, hay 12 configuraciones de sistema que cubren desde talleres pequeños hasta instalaciones industriales de gran capacidad."
+      },
+      {
+        "q": "¿Cuánto peso soporta cada armario móvil?",
+        "a": "Cada armario móvil deslizante de Sliderack está diseñado para soportar hasta 400 kg de carga distribuida en sus baldas, con un máximo de 80 kg por balda. A pesar de este peso, el mecanismo de guías de precisión permite deslizar el armario completo con un solo dedo, sin esfuerzo y sin ruido. La estructura de acero laminado en frío con tratamiento anticorrosión garantiza que esta capacidad se mantenga a lo largo del tiempo, incluso en entornos industriales de uso intensivo."
+      },
+      {
+        "q": "¿Para qué tipo de espacios está diseñado Sliderack?",
+        "a": "Sliderack está diseñado para cualquier entorno profesional que necesite almacenaje organizado y accesible: talleres mecánicos y de automoción, garajes premium y viviendas de alto standing, servicios de emergencia y parques de bomberos (para almacenar EPIs y equipamiento de intervención), centros logísticos, laboratorios y centros de investigación, e instalaciones industriales de mantenimiento técnico. El sistema se adapta tanto a espacios reducidos como a grandes superficies."
+      },
+      {
+        "q": "¿Qué accesorios se pueden añadir al sistema?",
+        "a": "Sliderack dispone de siete familias de accesorios compatibles con todos los modelos del sistema: puestos de trabajo con mesa integrada y panel perforado, paneles perforados independientes para organización vertical de herramientas, kits de 5 cajones divisorios para piezas pequeñas, cerraduras con llave para armarios móviles que requieran seguridad, kits de baldas adicionales ajustables en altura, armarios móviles adicionales para aumentar la capacidad, y kits de perchero para almacenaje de EPIs, uniformes y prendas de trabajo."
+      },
+      {
+        "q": "¿Es posible ampliar o modificar la configuración en el futuro?",
+        "a": "Sí. El diseño modular de Sliderack permite incorporar armarios móviles adicionales, accesorios o cambiar la distribución interna en cualquier momento, sin necesidad de modificar la estructura existente. Todos los accesorios son compatibles entre sí y con cualquier modelo del sistema, lo que permite que la inversión crezca con las necesidades del espacio."
+      },
+      {
+        "q": "¿Qué certificaciones de calidad tiene Sliderack?",
+        "a": "Sliderack está fabricado por Esnova Racks, empresa española con más de 50 años de experiencia certificada con ISO 9001 (gestión de calidad y mejora continua), ISO 14001 (gestión ambiental y uso responsable de recursos), ISO 45001 (seguridad y salud laboral) y UNE EN 1090 (Marcado CE para estructuras metálicas). Estas certificaciones garantizan que cada componente del sistema cumple los estándares europeos más exigentes en calidad, seguridad y sostenibilidad."
+      },
+      {
+        "q": "¿Dónde se fabrica Sliderack?",
+        "a": "Sliderack se diseña y fabrica íntegramente en España, en la planta de producción de Esnova Racks ubicada en Gijón (Asturias). La planta cuenta con 46.600 m² de instalaciones equipadas con tecnología de última generación. Todo el proceso — desde el diseño hasta el montaje final — se realiza en España con materiales europeos, lo que garantiza control total sobre la calidad del producto y tiempos de entrega competitivos."
+      },
+      {
+        "q": "¿Cuánto espacio puedo ahorrar con estanterías deslizantes frente a estanterías fijas?",
+        "a": "El sistema deslizante de Sliderack elimina los pasillos fijos entre estanterías. En una configuración típica con estanterías fijas, aproximadamente el 50% de la superficie se dedica a pasillos de acceso. Con Sliderack, solo se necesita un pasillo de acceso que se abre deslizando lateralmente los armarios móviles, lo que permite duplicar la capacidad de almacenaje en la misma superficie o liberar la mitad del espacio para otras funciones del taller o garaje."
+      },
+      {
+        "q": "¿Sliderack necesita mantenimiento?",
+        "a": "El sistema está diseñado para un uso intensivo diario con mínimo mantenimiento. La estructura de acero laminado en frío con tratamiento anticorrosión resiste entornos industriales exigentes. Las guías de precisión están fabricadas para millones de ciclos de apertura y cierre sin degradación. No requiere lubricación ni intervenciones periódicas. Basta con una limpieza ocasional de los raíles para mantener el rendimiento óptimo del sistema a largo plazo."
+      },
+      {
+        "q": "¿Cómo puedo solicitar información o presupuesto?",
+        "a": "Puedes solicitar información de dos formas: rellenando el formulario de contacto en nuestra web (recibirás respuesta de nuestro equipo técnico en 24-48 horas) o llamándonos directamente al 985 30 89 80 (lunes a viernes de 9:00 a 18:00). El asesoramiento es gratuito y sin compromiso. Nuestro equipo te ayudará a definir la configuración más adecuada para tu espacio."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "CONTACTO",
+    "title": "¿Hablamos de tu proyecto?",
+    "body": "Nuestro equipo técnico está disponible para ayudarte a definir la solución más adecuada para tu espacio.",
+    "preferCall": "¿Prefieres llamarnos?",
+    "schedule": "Lunes a viernes · 9:00–18:00",
+    "trust_response": "Respuesta en 24-48h",
+    "trust_advice": "Asesoramiento técnico",
+    "trust_nocommit": "Sin compromiso",
+    "field_name": "Nombre *",
+    "field_company": "Empresa",
+    "field_email": "Email *",
+    "field_phone": "Teléfono",
+    "field_message": "Mensaje",
+    "check_catalogue": "Quiero recibir el catálogo técnico",
+    "check_privacy": "He leído y acepto la",
+    "privacy_link": "política de privacidad",
+    "submit": "Enviar consulta",
+    "sending": "Enviando...",
+    "error": "Ha ocurrido un error. Por favor, inténtalo de nuevo o llámanos directamente.",
+    "catalogue_append": "[Solicita catálogo técnico]",
+    "heroSubtitle": "Configura tu consulta y nuestro equipo técnico te responderá en 24-48h.",
+    "productLabel": "Modelo de producto",
+    "productPlaceholder": "Selecciona un modelo",
+    "accessoriesLabel": "Accesorios",
+    "accPlaceholder": "Selecciona un accesorio",
+    "addAccessory": "Añadir otro accesorio",
+    "countryLabel": "País",
+    "countryPlaceholder": "España",
+    "namePlaceholder": "Tu nombre",
+    "emailPlaceholder": "tu@email.com",
+    "phonePlaceholder": "+34 600 000 000",
+    "companyPlaceholder": "Nombre de tu empresa",
+    "messagePlaceholder": "Cuéntanos qué necesitas...",
+    "submitRequest": "Enviar solicitud",
+    "successTitle": "Solicitud enviada correctamente",
+    "successBody": "Nuestro equipo te contactará en 24-48h.",
+    "sidebarText": "Nuestro equipo técnico te asesorará sobre la configuración más adecuada para tu espacio.",
+    "privacySuffix": ". Autorizo el tratamiento de mis datos para gestionar mi consulta."
+  },
+  "pages": {
+    "sistemas": {
+      "eyebrow": "CATÁLOGO",
+      "title": "Sistemas de estanterías deslizantes",
+      "subtitle": "12 configuraciones disponibles · 3 anchos · 2 profundidades · 2 niveles",
+      "heroSubtitle": "Configura tu Sliderack según el espacio y las necesidades de tu proyecto.",
+      "introH2": "Almacenaje deslizante de alta precisión",
+      "introText": "Nuestros sistemas combinan estructura metálica de alta resistencia con un mecanismo deslizante de precisión. Con un fondo fijo de 1160 mm, modelos disponibles en tres anchos (2090, 2965 y 3865 mm), con dos profundidades de armario móvil (370 y 470 mm) y configuraciones de uno o dos niveles. Cada modelo se adapta a talleres, garajes premium, servicios de emergencia y entornos industriales.",
+      "photoTitle": "Diseñado para durar en entornos exigentes",
+      "photoSubtitle": "Estructura metálica certificada, fabricación española y un sistema de guías de alta precisión.",
+      "accessoriesTitle": "Completa tu sistema con accesorios",
+      "viewDetails": "Ver detalles →",
+      "priceFrom": "Desde",
+      "relatedTitle": "Accesorios compatibles",
+      "relatedLink": "Ver todos los accesorios →",
+      "ctaTitle": "¿Necesitas asesoramiento técnico?",
+      "ctaBody": "Nuestro equipo te ayuda a configurar el sistema perfecto para tu espacio. Sin compromiso.",
+      "ctaContact": "Contactar",
+      "ctaCatalogue": "Descargar catálogo",
+      "ctaRequestInfo": "¿Cuál es la configuración ideal para tu espacio?"
+    },
+    "accesorios": {
+      "eyebrow": "CATÁLOGO",
+      "title": "Accesorios Sliderack",
+      "subtitle": "Complementos compatibles con todos los modelos del sistema",
+      "heroSubtitle": "Complementos que amplían y personalizan tu sistema de almacenaje.",
+      "introH2": "Personaliza y amplía tu sistema",
+      "introText": "Accesorios diseñados para adaptar tu Sliderack a cualquier necesidad. Cajones, paneles perforados, puestos de trabajo, cerraduras y baldas adicionales. Todos compatibles con cualquier modelo del sistema.",
+      "photoTitle": "Personaliza cada detalle de tu espacio",
+      "photoSubtitle": "Accesorios de precisión que se integran a la perfección con tu sistema Sliderack.",
+      "compatibleTitle": "Sistemas compatibles",
+      "viewDetails": "Ver detalles →",
+      "relatedTitle": "Sistemas principales",
+      "relatedLink": "Ver todos los sistemas →",
+      "ctaTitle": "¿Necesitas asesoramiento técnico?",
+      "ctaBody": "Nuestro equipo te ayuda a configurar el sistema perfecto para tu espacio. Sin compromiso.",
+      "ctaContact": "Contactar",
+      "ctaCatalogue": "Descargar catálogo",
+      "ctaRequestInfo": "¿Cuál es la configuración ideal para tu espacio?"
+    },
+    "whySliderack": {
+      "title": "Por qué elegir Sliderack",
+      "subtitle": "La fortaleza de la sencillez. Un sistema que combina ingeniería de precisión con la robustez del acero.",
+      "badge1": "Fabricado por Esnova Racks",
+      "badge2": "Más de 50 años",
+      "badge3": "Producción propia certificada",
+      "badge4": "Tecnología industrial a medida",
+      "introTitle": "Diseñado para entornos que exigen precisión, orden y fiabilidad",
+      "introPara1": "Desarrollado por Esnova Racks, Sliderack combina la experiencia industrial con un enfoque funcional, ofreciendo una solución robusta y eficiente para la organización de espacios técnicos y profesionales.",
+      "introPara2": "Su diseño responde a una lógica clara: optimizar el espacio disponible, mejorar el acceso a los materiales y garantizar un entorno de trabajo más ordenado y seguro.",
+      "techTitle": "Ventajas técnicas del sistema",
+      "techPara1": "El sistema Sliderack permite aprovechar al máximo cada metro cuadrado, reduciendo espacios muertos y facilitando la organización del material.",
+      "techPara2": "Su estructura metálica garantiza estabilidad y resistencia en entornos de uso intensivo, mientras que el sistema deslizante proporciona un acceso cómodo y controlado a cada armario móvil.",
+      "techPara3": "La modularidad del sistema permite adaptar la configuración según el uso, incorporando bandejas y accesorios en función de las necesidades específicas.",
+      "techPara4": "Además, su diseño facilita el mantenimiento, asegurando durabilidad y rendimiento a largo plazo.",
+      "difTitle": "Diferencias del sistema",
+      "dif": [
+        { "title": "Orden", "desc": "Sliderack está fabricado en España bajo los estándares de calidad de Esnova Racks, con procesos certificados y controlados en todas las fases de producción." },
+        { "title": "Ingeniería de precisión", "desc": "La ingeniería aplicada al diseño permite ofrecer un sistema preciso, fiable y preparado para un uso continuado en entornos exigentes." },
+        { "title": "Eficiencia operativa", "desc": "A diferencia de soluciones convencionales, Sliderack no solo organiza el espacio, sino que mejora la operativa diaria y la eficiencia del trabajo." }
+      ],
+      "configTitle": "Configuración por altura y evolución del sistema",
+      "configPara1": "Sliderack no es un sistema a medida, sino una solución configurable que permite adaptarse a diferentes necesidades sin perder coherencia estructural.",
+      "configPara2": "El sistema ofrece una configuración clara y definida, pensada para facilitar la instalación y garantizar un rendimiento óptimo.",
+      "configPara3": "Su diseño modular permite incorporar mejoras o ampliaciones con el tiempo, acompañando la evolución del espacio y del uso.",
+      "photoBreakQuote": "Orden que se ve. Rendimiento que se nota.",
+      "sectorsTitle": "Dónde se usa Sliderack",
+      "sectorsSubtitle": "Soluciones adaptadas a cada sector profesional.",
+      "sectors": [
+        { "name": "Automoción, industria y mantenimiento técnico", "desc": "Llaves, vasos, herramientas eléctricas y recambios organizados por tipo y tamaño. Acceso inmediato a cada pieza sin mover otras estanterías. El sistema deslizante reduce los tiempos muertos y mejora la productividad del equipo." },
+        { "name": "Garajes premium y viviendas de alto standing", "desc": "Almacenaje que combina estética y funcionalidad en espacios donde el diseño importa. Acabado Negro Mate Texturizado RAL-9005, movimiento silencioso y armarios móviles que se integran como mobiliario de alta gama." },
+        { "name": "Servicios de emergencia y bomberos", "desc": "EPIs, equipos de intervención y material operativo siempre localizable y protegido con cerradura. En situaciones de emergencia, cada segundo cuenta: Sliderack garantiza acceso rápido y seguro al equipamiento crítico." },
+        { "name": "Industria y mantenimiento técnico", "desc": "Componentes, repuestos y utillaje de producción clasificados por línea o turno. El almacenaje compacto deslizante libera superficie en planta sin sacrificar capacidad de almacenamiento." },
+        { "name": "Centros logísticos y almacenes", "desc": "Maximiza la capacidad de almacenaje eliminando pasillos fijos entre estanterías. Ideal para espacios donde cada metro cuadrado tiene un coste elevado y la organización impacta directamente en la eficiencia operativa." },
+        { "name": "Laboratorios y centros de investigación", "desc": "Almacenaje de precisión para muestras, reactivos, instrumentación y documentación técnica. El sistema deslizante protege materiales sensibles y facilita el control de inventario en entornos con protocolos estrictos." }
+      ],
+      "ctaTitle": "¿Listo para optimizar tu espacio?",
+      "ctaBody": "Solicita información sin compromiso. Nuestro equipo te asesorará sobre la configuración perfecta.",
+      "ctaContact": "Solicitar información",
+      "ctaCatalogue": "Descargar catálogo"
+    },
+    "company": {
+      "title": "Sobre nosotros",
+      "subtitle": "Más de 50 años de conocimiento en la fabricación de soluciones de almacenaje que funcionan.",
+      "badge1": "Fabricado por Esnova Racks",
+      "badge2": "Más de 50 años",
+      "badge3": "Producción propia certificada",
+      "badge4": "Tecnología industrial a medida",
+      "mainTitle": "Ingeniería, fabricación y experiencia al servicio del almacenaje",
+      "mainPara1": "Sliderack forma parte de Esnova Racks, empresa española con más de 50 años de conocimiento en el diseño y fabricación de sistemas de almacenaje.",
+      "mainPara2": "A lo largo de su trayectoria, Esnova ha desarrollado soluciones para múltiples sectores, consolidando un modelo de trabajo basado en la calidad, la innovación y la eficiencia operativa.",
+      "timeline": [
+        { "year": "1969", "text": "Fundación de Esnova en Gijón, Asturias" },
+        { "year": "1980s", "text": "Expansión nacional en almacenaje industrial" },
+        { "year": "2000s", "text": "Certificaciones ISO 9001, 14001 y 45001" },
+        { "year": "2010s", "text": "Marcado CE (UNE EN 1090) y exportación europea" },
+        { "year": "2024", "text": "Lanzamiento de Sliderack" }
+      ],
+      "mfgTitle": "Fabricación propia con enfoque industrial",
+      "mfgPara1": "La capacidad productiva de Esnova permite controlar todo el proceso, desde el diseño hasta la fabricación final. Esto garantiza sistemas robustos, precisos y adaptados a las exigencias de entornos profesionales.",
+      "mfgPara2": "El uso de tecnología avanzada y procesos optimizados permite ofrecer soluciones fiables, pensadas para un uso intensivo y duradero. Nuestra planta de 46.600 m² en Gijón (Asturias) opera con presencia en +45 países.",
+      "designTitle": "Diseño funcional orientado al rendimiento",
+      "designPara1": "Sliderack nace como una evolución del conocimiento industrial aplicado a espacios donde el orden y la accesibilidad son clave.",
+      "designPara2": "Cada sistema está diseñado para optimizar el espacio disponible, facilitar el acceso a los materiales y mejorar la organización del entorno de trabajo.",
+      "designPara3": "El resultado es una solución que combina estructura, funcionalidad y una estética técnica cuidada.",
+      "qualityTitle": "Compromiso con la calidad y la mejora continua",
+      "qualityPara1": "La actividad de Esnova se desarrolla bajo estándares de calidad certificados, garantizando el cumplimiento de las normativas más exigentes.",
+      "qualityPara2": "El enfoque de mejora continua permite evolucionar tanto en producto como en procesos, adaptándose a las necesidades de cada cliente y sector.",
+      "certsTitle": "Certificaciones",
+      "certsSubtitle": "Todos nuestros procesos están certificados bajo los estándares internacionales más exigentes.",
+      "certs": [
+        { "name": "ISO 9001", "desc": "Gestión de calidad" },
+        { "name": "ISO 14001", "desc": "Gestión ambiental" },
+        { "name": "ISO 45001", "desc": "Seguridad y salud laboral" },
+        { "name": "UNE EN 1090", "desc": "Marcado CE — Estructuras metálicas" }
+      ],
+      "ctaTitle": "¿Trabajamos juntos?",
+      "ctaBody": "Solicita información sin compromiso. Nuestro equipo te asesorará sobre la configuración perfecta.",
+      "ctaContact": "Solicitar información",
+      "ctaCatalogue": "Descargar catálogo"
+    },
+    "contact": {
+      "title": "Contacto",
+      "subtitle": "Solicita información sobre los sistemas de almacenaje Sliderack. Nuestro equipo técnico te asesorará sin compromiso."
+    },
+    "workshops": {
+      "title": "Estanterías Deslizantes para Talleres Mecánicos",
+      "subtitle": "El sistema Sliderack está diseñado para resolver los problemas de almacenaje más comunes en talleres de automoción e industria.",
+      "problemsTitle": "Los problemas del taller sin organización",
+      "solutionsTitle": "Lo que Sliderack resuelve",
+      "useCasesTitle": "Cómo lo usan los talleres",
+      "systemsTitle": "Elige tu configuración",
+      "problems": [
+        { "title": "Herramientas sin localizar", "desc": "El equipo pierde tiempo buscando llaves, vasos y utillaje en cajones desordenados o bancos de trabajo saturados." },
+        { "title": "Espacio desperdiciado", "desc": "Las estanterías fijas necesitan pasillos entre ellas. Hasta el 50% del espacio del taller se pierde en accesos que no aportan valor." },
+        { "title": "Tiempos muertos", "desc": "Cada minuto buscando una pieza o herramienta es un minuto que no se factura. En un taller con 5 operarios, las pérdidas se multiplican." }
+      ],
+      "solutions": [
+        { "stat": "50%", "label": "menos espacio ocupado", "desc": "El sistema deslizante elimina los pasillos fijos. Mismo almacenaje en la mitad de superficie." },
+        { "stat": "400 kg", "label": "por armario móvil", "desc": "Cada armario móvil soporta hasta 400 kg de carga distribuida y se desliza con un solo dedo." },
+        { "stat": "100%", "label": "accesible", "desc": "Desliza lateralmente para acceder a cualquier armario móvil. Sin estorbos, sin mover nada." },
+        { "stat": "0", "label": "mantenimiento", "desc": "Guías de precisión y acero con tratamiento anticorrosión. Diseñado para uso intensivo diario." }
+      ],
+      "useCases": [
+        { "title": "Taller de automoción", "items": ["Llaves y vasos organizados por tamaño", "Recambios clasificados por vehículo", "Aceites y líquidos en baldas reforzadas", "Herramientas eléctricas con carga dedicada"] },
+        { "title": "Taller industrial", "items": ["Utillaje de producción accesible por turno", "Componentes y repuestos por línea", "EPIs del equipo en armario móvil con cerradura", "Documentación técnica en paneles perforados"] },
+        { "title": "Servicio técnico", "items": ["Kits de reparación premontados", "Stock de piezas críticas localizable", "Herramientas de diagnóstico protegidas", "Historial de intervenciones en puesto de trabajo"] }
+      ],
+      "ctaTitle": "¿Cuál es la configuración perfecta para tu taller?",
+      "ctaBody": "Consulta con nuestro equipo técnico. Sin compromiso.",
+      "ctaContact": "Solicitar información",
+      "ctaCatalogue": "Descargar catálogo"
+    },
+    "blog": {
+      "title": "Blog",
+      "subtitle": "Artículos y guías sobre almacenaje, organización de espacios y novedades de Sliderack.",
+      "comingSoon": "Próximamente",
+      "comingSoonBody": "Estamos preparando contenido de calidad sobre sistemas de almacenaje, organización de talleres y más.",
+      "ctaTitle": "¿Tienes dudas sobre el sistema?",
+      "ctaBody": "Nuestro equipo técnico está disponible para asesorarte sin compromiso.",
+      "ctaContact": "Solicitar información"
+    },
+    "gracias": {
+      "title": "¡Mensaje recibido!",
+      "body": "Nuestro equipo técnico se pondrá en contacto contigo en 24–48 horas.",
+      "cta": "Volver al inicio"
+    },
+    "notFound": {
+      "title": "Página no encontrada",
+      "body": "La página que buscas no existe o ha sido movida.",
+      "cta": "Volver al inicio"
+    }
+  },
+  "product": {
+    "requestInfo": "Solicitar información",
+    "downloadCatalogue": "Descargar catálogo",
+    "specs": "Especificaciones",
+    "includes": "Incluye",
+    "capacity": "Capacidad de carga",
+    "finish": "Acabado",
+    "compatible": "Compatible con todos los modelos Sliderack",
+    "related": "También te puede interesar",
+    "priceFrom": "Desde",
+    "catalogue": "CATÁLOGO",
+    "technicalSheet": "Ficha técnica",
+    "specsSubtitlePrefix": "Especificaciones detalladas del modelo Sliderack",
+    "dimensions": "Dimensiones",
+    "whatIncludes": "Qué incluye",
+    "mfgEyebrow": "Fabricación y calidad",
+    "mfgTitle": "Ingeniería española de precisión",
+    "mfgPara1": "Cada armario móvil de este sistema está construido con acero laminado en frío y tratamiento anticorrosión, diseñado para soportar hasta 400 kg de carga (80 kg por balda) con un deslizamiento suave y silencioso. Las guías de alta precisión están fabricadas para millones de ciclos de apertura y cierre sin degradación del rendimiento.",
+    "mfgPara2": "Diseñado y fabricado íntegramente en España por Esnova Racks en su planta de 46.600 m² en Gijón (Asturias). Certificaciones ISO 9001 (calidad), ISO 14001 (medioambiente), ISO 45001 (seguridad laboral) y UNE EN 1090 (Marcado CE para estructuras metálicas).",
+    "idealFor": "Ideal para",
+    "productSectors": [
+      { "title": "Talleres e industria", "desc": "Organización de piezas, herramientas y componentes con acceso rápido y controlado. Almacenaje preciso para entornos de producción y mantenimiento técnico." },
+      { "title": "Garajes premium y viviendas de alto standing", "desc": "Estética cuidada y funcionalidad para espacios de alto nivel donde el orden es parte del diseño. Acceso rápido y organización impecable." },
+      { "title": "Servicios de emergencia y organismos públicos", "desc": "EPIs, uniformes y material operativo siempre visibles, protegidos y accesibles. Sistema seguro con cerradura opcional para materiales sensibles." }
+    ],
+    "bannerTitle": "La solución perfecta para tu espacio",
+    "bannerSubtitle": "Con distintas configuraciones de altura, profundidad y accesorios, Sliderack se adapta a cualquier entorno profesional. Desde talleres industriales hasta garajes premium.",
+    "accessoriesFor": "Accesorios para tu Sliderack {name}",
+    "seeAllAccessories": "Ver todos los accesorios →",
+    "faqTitle": "Preguntas frecuentes",
+    "faqItems": [
+      { "q": "¿Qué incluye el sistema?", "a": "El sistema incluye la estructura metálica, los armarios deslizantes con guías de precisión, tres baldas por armario deslizante y las mallas de los estantes superiores. Los accesorios se adquieren por separado." },
+      { "q": "¿Puedo ampliar la configuración en el futuro?", "a": "Sí. El diseño modular permite incorporar armarios móviles y accesorios adicionales en cualquier momento sin modificar la estructura existente." },
+      { "q": "¿Se adapta a garajes, talleres y espacios técnicos?", "a": "Absolutamente. Sliderack está diseñado para entornos industriales, talleres, garajes de alto nivel y servicios técnicos." },
+      { "q": "¿Ofrecen servicio de instalación?", "a": "Sí, la instalación va incluida dentro del territorio español. Para instalaciones fuera de España consulta con nuestro equipo técnico. Podemos asesorarte sobre la instalación o recomendarte un instalador en tu zona." },
+      { "q": "¿Cuál es el plazo de entrega?", "a": "Los plazos varían según el modelo y la configuración. Contacta con nosotros para obtener una estimación personalizada." }
+    ],
+    "ctaTitle": "¿Necesitas ayuda para elegir?",
+    "ctaSubtitle": "Nuestro equipo técnico te asesora sin compromiso.",
+    "ctaContact": "Contactar",
+    "backLinkSystems": "Ver más Sistemas",
+    "backLinkAccessories": "Ver más Accesorios",
+    "installationIncluded": "Instalación en España incluida",
+    "priceFromLabel": "Precio desde"
+  },
+  "langSwitch": {
+    "switchTo": "EN",
+    "switchToLabel": "Switch to English"
+  }
+}
