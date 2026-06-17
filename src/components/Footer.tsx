@@ -1,39 +1,51 @@
 import Image from "next/image";
-import Link from "next/link";
-
-const navLinks = [
-  { label: "Modelos", href: "/sistemas" },
-  { label: "Accesorios", href: "/accesorios" },
-  { label: "Por qué Sliderack", href: "/por-que-sliderack" },
-  { label: "Compañía", href: "/compania" },
-  { label: "Contacto", href: "/contacto" },
-];
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export default function Footer({ hideCta = false }: { hideCta?: boolean }) {
+  const t = useTranslations("footer");
+  const tn = useTranslations("nav");
+
+  const navLinks = [
+    { key: "models", href: "/sistemas" as const },
+    { key: "accessories", href: "/accesorios" as const },
+    { key: "whySliderack", href: "/por-que-sliderack" as const },
+    { key: "company", href: "/compania" as const },
+    { key: "contact", href: "/contacto" as const },
+  ];
+
+  const legalLinks = [
+    { key: "legal", href: "/aviso-legal" as const },
+    { key: "privacy", href: "/politica-de-privacidad" as const },
+    { key: "cookies", href: "/politica-de-cookies" as const },
+  ];
+
   return (
     <footer className="w-full">
       {/* CTA Bar */}
-      {!hideCta && <div className="bg-[#A52430] px-6 py-5">
-        <div className="mx-auto max-w-[1200px] flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="font-[family-name:var(--font-heading)] text-[18px] md:text-[20px] font-bold uppercase text-white">
-            ¿Necesitas asesoramiento técnico?
-          </p>
-          <div className="flex gap-3">
-            <Link
-              href="/contacto"
-              className="rounded-lg border-2 border-white px-6 py-2.5 font-[family-name:var(--font-heading)] text-[14px] font-bold uppercase text-white hover:bg-white hover:text-[#A52430] transition-colors"
-            >
-              Contactar
-            </Link>
-            <a
-              href="tel:+34985308980"
-              className="rounded-lg border-2 border-white/30 px-6 py-2.5 font-[family-name:var(--font-heading)] text-[14px] font-bold uppercase text-white hover:border-white transition-colors"
-            >
-              985 30 89 80
-            </a>
+      {!hideCta && (
+        <div className="bg-[#A52430] px-6 py-5">
+          <div className="mx-auto max-w-[1200px] flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="font-[family-name:var(--font-heading)] text-[18px] md:text-[20px] font-bold uppercase text-white">
+              {t("ctaTitle")}
+            </p>
+            <div className="flex gap-3">
+              <Link
+                href="/contacto"
+                className="rounded-lg border-2 border-white px-6 py-2.5 font-[family-name:var(--font-heading)] text-[14px] font-bold uppercase text-white hover:bg-white hover:text-[#A52430] transition-colors"
+              >
+                {t("ctaButton")}
+              </Link>
+              <a
+                href="tel:+34985308980"
+                className="rounded-lg border-2 border-white/30 px-6 py-2.5 font-[family-name:var(--font-heading)] text-[14px] font-bold uppercase text-white hover:border-white transition-colors"
+              >
+                985 30 89 80
+              </a>
+            </div>
           </div>
         </div>
-      </div>}
+      )}
 
       {/* Main Footer */}
       <div className="bg-[#201F20] px-6 py-10">
@@ -51,14 +63,14 @@ export default function Footer({ hideCta = false }: { hideCta?: boolean }) {
               className="font-[family-name:var(--font-body)] text-[14px] leading-relaxed max-w-[350px]"
               style={{ color: "rgba(255,255,255,0.6)" }}
             >
-              Sistema de almacenaje deslizante de alta precisión. Diseñado y fabricado en España por Esnova Racks.
+              {t("description")}
             </p>
           </div>
 
-          {/* Col 2 — Navegación */}
+          {/* Col 2 — Navigation */}
           <div>
             <h3 className="font-[family-name:var(--font-heading)] text-[14px] font-bold uppercase text-white mb-4 tracking-[1px]">
-              Navegación
+              {t("navigation")}
             </h3>
             <ul className="space-y-2">
               {navLinks.map((link) => (
@@ -68,17 +80,17 @@ export default function Footer({ hideCta = false }: { hideCta?: boolean }) {
                     className="font-[family-name:var(--font-body)] text-[14px] hover:text-white transition-colors"
                     style={{ color: "rgba(255,255,255,0.6)" }}
                   >
-                    {link.label}
+                    {tn(link.key as "models" | "accessories" | "whySliderack" | "company" | "contact")}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Col 3 — Contacto */}
+          {/* Col 3 — Contact */}
           <div>
             <h3 className="font-[family-name:var(--font-heading)] text-[14px] font-bold uppercase text-white mb-4 tracking-[1px]">
-              Contacto
+              {t("contact")}
             </h3>
             <div
               className="font-[family-name:var(--font-body)] text-[14px] space-y-2"
@@ -92,8 +104,8 @@ export default function Footer({ hideCta = false }: { hideCta?: boolean }) {
                   985 30 89 80
                 </a>
               </p>
-              <p>L-V · 9:00–18:00</p>
-              <p>Gijón, Asturias</p>
+              <p>{t("schedule")}</p>
+              <p>{t("location")}</p>
             </div>
           </div>
         </div>
@@ -106,21 +118,17 @@ export default function Footer({ hideCta = false }: { hideCta?: boolean }) {
             className="font-[family-name:var(--font-body)] text-[13px]"
             style={{ color: "rgba(255,255,255,0.4)" }}
           >
-            &copy; 2026 Sliderack by Esnova Racks
+            {t("copyright")}
           </span>
           <div className="flex flex-wrap items-center gap-5">
-            {[
-              { label: "Aviso Legal", href: "/aviso-legal" },
-              { label: "Política de Privacidad", href: "/politica-de-privacidad" },
-              { label: "Política de Cookies", href: "/politica-de-cookies" },
-            ].map((link) => (
+            {legalLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className="font-[family-name:var(--font-body)] text-[12px] hover:text-white transition-colors"
                 style={{ color: "rgba(255,255,255,0.4)" }}
               >
-                {link.label}
+                {t(link.key as "legal" | "privacy" | "cookies")}
               </Link>
             ))}
           </div>

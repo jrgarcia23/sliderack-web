@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export type CookiePreferences = {
   necessary: boolean;
@@ -26,6 +27,7 @@ export function saveCookiePreferences(prefs: CookiePreferences) {
 }
 
 export default function CookieBanner() {
+  const t = useTranslations("cookies");
   const [visible, setVisible] = useState(false);
   const [showConfig, setShowConfig] = useState(false);
   const [analytics, setAnalytics] = useState(false);
@@ -58,12 +60,12 @@ export default function CookieBanner() {
       {/* Main banner */}
       <div className="px-6 pt-5 pb-4">
         <p className="font-[family-name:var(--font-heading)] text-[15px] font-bold uppercase text-white mb-2">
-          Cookies
+          {t("title")}
         </p>
         <p className="font-[family-name:var(--font-body)] text-[13px] leading-relaxed text-white/70">
-          Usamos cookies propias (necesarias) y de terceros (anal&iacute;tica) para mejorar tu experiencia.{" "}
+          {t("description")}{" "}
           <Link href="/politica-de-cookies" className="text-[#A52430] underline hover:text-white">
-            M&aacute;s info
+            {t("moreInfo")}
           </Link>
         </p>
       </div>
@@ -73,8 +75,8 @@ export default function CookieBanner() {
         <div className="px-6 pb-4 border-t border-white/10 pt-4 space-y-3">
           <label className="flex items-center justify-between">
             <div>
-              <span className="font-[family-name:var(--font-heading)] text-[13px] font-semibold uppercase text-white">Necesarias</span>
-              <p className="font-[family-name:var(--font-body)] text-[12px] text-white/50">Funcionamiento b&aacute;sico del sitio</p>
+              <span className="font-[family-name:var(--font-heading)] text-[13px] font-semibold uppercase text-white">{t("necessary")}</span>
+              <p className="font-[family-name:var(--font-body)] text-[12px] text-white/50">{t("necessaryDesc")}</p>
             </div>
             <div className="w-10 h-5 bg-[#A52430] rounded-full relative cursor-not-allowed opacity-60">
               <div className="absolute right-0.5 top-0.5 w-4 h-4 bg-white rounded-full" />
@@ -82,8 +84,8 @@ export default function CookieBanner() {
           </label>
           <label className="flex items-center justify-between cursor-pointer">
             <div>
-              <span className="font-[family-name:var(--font-heading)] text-[13px] font-semibold uppercase text-white">Anal&iacute;tica</span>
-              <p className="font-[family-name:var(--font-body)] text-[12px] text-white/50">Google Analytics &mdash; uso an&oacute;nimo del sitio</p>
+              <span className="font-[family-name:var(--font-heading)] text-[13px] font-semibold uppercase text-white">{t("analytics")}</span>
+              <p className="font-[family-name:var(--font-body)] text-[12px] text-white/50">{t("analyticsDesc")}</p>
             </div>
             <button
               type="button"
@@ -103,7 +105,7 @@ export default function CookieBanner() {
             onClick={saveConfig}
             className="flex-1 rounded-lg bg-[#A52430] py-2.5 font-[family-name:var(--font-heading)] text-[13px] font-bold uppercase text-white hover:bg-[#8a1e28] transition-colors"
           >
-            Guardar preferencias
+            {t("save")}
           </button>
         ) : (
           <>
@@ -111,19 +113,19 @@ export default function CookieBanner() {
               onClick={rejectAll}
               className="flex-1 rounded-lg border border-white/20 py-2.5 font-[family-name:var(--font-heading)] text-[13px] font-bold uppercase text-white hover:border-white/40 transition-colors"
             >
-              Rechazar
+              {t("reject")}
             </button>
             <button
               onClick={() => setShowConfig(true)}
               className="flex-1 rounded-lg border border-white/20 py-2.5 font-[family-name:var(--font-heading)] text-[13px] font-bold uppercase text-white hover:border-white/40 transition-colors"
             >
-              Configurar
+              {t("configure")}
             </button>
             <button
               onClick={acceptAll}
               className="flex-1 rounded-lg bg-[#A52430] py-2.5 font-[family-name:var(--font-heading)] text-[13px] font-bold uppercase text-white hover:bg-[#8a1e28] transition-colors"
             >
-              Aceptar
+              {t("accept")}
             </button>
           </>
         )}

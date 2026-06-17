@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Barlow_Condensed, DM_Sans, Open_Sans, Roboto } from "next/font/google";
+import { getLocale } from "next-intl/server";
 import "./globals.css";
-import CookieBanner from "@/components/CookieBanner";
 import Analytics from "@/components/Analytics";
 import { OrganizationSchema } from "@/components/SchemaOrg";
 
@@ -66,26 +66,26 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  alternates: {
-    canonical: "https://sliderack.es",
-  },
+  // Per-page canonical + hreflang are emitted from each page's generateMetadata
+  // via buildAlternates() (see src/lib/seo.ts). A global canonical here would
+  // mark every page as a duplicate of the home.
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
   return (
     <html
-      lang="es"
+      lang={locale}
       className={`${barlowCondensed.variable} ${dmSans.variable} ${openSans.variable} ${roboto.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-body text-[#201F20] bg-white">
         <OrganizationSchema />
         <Analytics />
         {children}
-        <CookieBanner />
       </body>
     </html>
   );

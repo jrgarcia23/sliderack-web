@@ -1,4 +1,17 @@
 {
+  "cookies": {
+    "title": "Cookies",
+    "description": "Usamos cookies propias (necesarias) y de terceros (analítica) para mejorar tu experiencia.",
+    "moreInfo": "Más info",
+    "necessary": "Necesarias",
+    "necessaryDesc": "Funcionamiento básico del sitio",
+    "analytics": "Analítica",
+    "analyticsDesc": "Google Analytics — uso anónimo del sitio",
+    "reject": "Rechazar",
+    "configure": "Configurar",
+    "accept": "Aceptar",
+    "save": "Guardar preferencias"
+  },
   "nav": {
     "models": "Modelos",
     "accessories": "Accesorios",
@@ -199,6 +212,10 @@
     "privacySuffix": ". Autorizo el tratamiento de mis datos para gestionar mi consulta."
   },
   "pages": {
+    "home": {
+      "metaTitle": "Sliderack | La fortaleza de la sencillez",
+      "metaDescription": "Sistema de almacenaje deslizante de alta precisión para talleres e industria. Diseñado y fabricado por Esnova Racks."
+    },
     "sistemas": {
       "eyebrow": "CATÁLOGO",
       "title": "Sistemas de estanterías deslizantes",
@@ -368,7 +385,10 @@
     "notFound": {
       "title": "Página no encontrada",
       "body": "La página que buscas no existe o ha sido movida.",
-      "cta": "Volver al inicio"
+      "cta": "Volver al inicio",
+      "heading": "Este armario está vacío",
+      "lead": "Parece que esta página se ha deslizado fuera de su sitio. El resto de nuestro sistema de almacenaje sigue en orden.",
+      "ctaModels": "Ver modelos"
     }
   },
   "product": {

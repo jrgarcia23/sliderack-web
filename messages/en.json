@@ -1,4 +1,17 @@
 {
+  "cookies": {
+    "title": "Cookies",
+    "description": "We use our own (necessary) and third-party (analytics) cookies to improve your experience.",
+    "moreInfo": "More info",
+    "necessary": "Necessary",
+    "necessaryDesc": "Basic site functionality",
+    "analytics": "Analytics",
+    "analyticsDesc": "Google Analytics — anonymous site usage",
+    "reject": "Reject",
+    "configure": "Configure",
+    "accept": "Accept",
+    "save": "Save preferences"
+  },
   "nav": {
     "models": "Models",
     "accessories": "Accessories",
@@ -199,6 +212,10 @@
     "privacySuffix": ". I authorise the processing of my data to manage my enquiry."
   },
   "pages": {
+    "home": {
+      "metaTitle": "Sliderack | The strength of simplicity",
+      "metaDescription": "High-precision sliding storage system for workshops and industry. Designed and manufactured by Esnova Racks."
+    },
     "sistemas": {
       "eyebrow": "CATALOGUE",
       "title": "Sliding storage systems",
@@ -368,7 +385,10 @@
     "notFound": {
       "title": "Page not found",
       "body": "The page you are looking for does not exist or has been moved.",
-      "cta": "Back to home"
+      "cta": "Back to home",
+      "heading": "This cabinet is empty",
+      "lead": "It looks like this page slid out of place. The rest of our storage system is still in order.",
+      "ctaModels": "View models"
     }
   },
   "product": {
