@@ -88,7 +88,7 @@ export default function Header() {
             >
               <Link
                 href="/sistemas"
-                className={`flex items-center gap-1 px-4 py-6 font-heading text-[14px] font-bold uppercase text-white transition-all duration-300 ${openMega === "sistemas" ? "bg-white/10" : "hover:bg-white/5"}`}
+                className={`flex items-center gap-1 px-4 py-6 font-heading text-[17px] font-bold uppercase text-white transition-all duration-300 ${openMega === "sistemas" ? "bg-white/10" : "hover:bg-white/5"}`}
               >
                 {t("models")}
                 <ChevronDown className={`h-3 w-3 opacity-70 transition-transform duration-200 ${openMega === "sistemas" ? "rotate-180" : ""}`} />
@@ -137,7 +137,7 @@ export default function Header() {
             >
               <Link
                 href="/accesorios"
-                className={`flex items-center gap-1 px-4 py-6 font-heading text-[14px] font-bold uppercase text-white transition-all duration-300 ${openMega === "accesorios" ? "bg-white/10" : "hover:bg-white/5"}`}
+                className={`flex items-center gap-1 px-4 py-6 font-heading text-[17px] font-bold uppercase text-white transition-all duration-300 ${openMega === "accesorios" ? "bg-white/10" : "hover:bg-white/5"}`}
               >
                 {t("accessories")}
                 <ChevronDown className={`h-3 w-3 opacity-70 transition-transform duration-200 ${openMega === "accesorios" ? "rotate-180" : ""}`} />
@@ -183,7 +183,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="flex items-center px-4 py-6 font-heading text-[14px] font-bold uppercase text-white transition-all duration-300 hover:bg-white/5"
+                className="flex items-center px-4 py-6 font-heading text-[17px] font-bold uppercase text-white transition-all duration-300 hover:bg-white/5"
                 onMouseEnter={() => setOpenMega(null)}
               >
                 {t(link.key as "whySliderack" | "company" | "contact")}
@@ -216,7 +216,7 @@ export default function Header() {
             {/* Modelos accordion */}
             <div className="border-b border-white/10">
               <button
-                className="flex w-full items-center justify-between py-3 font-heading text-[14px] font-bold uppercase text-white"
+                className="flex w-full items-center justify-between py-3 font-heading text-[17px] font-bold uppercase text-white"
                 onClick={() => setMobileAccordion(mobileAccordion === "modelos" ? null : "modelos")}
               >
                 {t("models")}
@@ -249,7 +249,7 @@ export default function Header() {
             {/* Accesorios accordion */}
             <div className="border-b border-white/10">
               <button
-                className="flex w-full items-center justify-between py-3 font-heading text-[14px] font-bold uppercase text-white"
+                className="flex w-full items-center justify-between py-3 font-heading text-[17px] font-bold uppercase text-white"
                 onClick={() => setMobileAccordion(mobileAccordion === "accesorios" ? null : "accesorios")}
               >
                 {t("accessories")}
@@ -280,7 +280,7 @@ export default function Header() {
               { key: "company", href: "/compania" as const },
               { key: "contact", href: "/contacto" as const },
             ].map((link) => (
-              <Link key={link.href} href={link.href} className="block py-3 font-heading text-[14px] font-bold uppercase text-white" onClick={() => setMobileOpen(false)}>
+              <Link key={link.href} href={link.href} className="block py-3 font-heading text-[17px] font-bold uppercase text-white" onClick={() => setMobileOpen(false)}>
                 {t(link.key as "whySliderack" | "company" | "contact")}
               </Link>
             ))}
