@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Armario y almacenaje de taller de automoción | Sliderack (Esnova)</title>
+<meta name="description" content="Armario de taller, cajonera metálica y almacenaje para taller mecánico y de automoción en un solo sistema deslizante. Sliderack, fabricado en España por Esnova Racks." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --red:#A52430; --red-dark:#8a1e28; --dark:#201F20; --black:#000;
+    --muted:#777; --muted2:#999; --bg-soft:#f8f8f8;
+    --heading:'Barlow Condensed',Helvetica,Arial,sans-serif;
+    --body:'DM Sans',Helvetica,Arial,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--body);color:var(--dark);background:#fff;font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4,h5{font-family:var(--heading);text-transform:uppercase;font-weight:700;line-height:1.1}
+  a{text-decoration:none;color:inherit}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+  .wrap-narrow{max-width:1100px;margin:0 auto;padding:0 24px}
+
+  /* ── Header ── */
+  header{position:sticky;top:0;z-index:50;background:var(--black)}
+  .nav{max-width:1200px;margin:0 auto;height:84px;display:flex;align-items:center;justify-content:space-between;padding:0 16px}
+  .nav .logo img{width:200px;height:auto}
+  .nav nav{display:flex;align-items:center;gap:4px}
+  .nav nav a{font-family:var(--heading);font-size:17px;font-weight:700;text-transform:uppercase;color:#fff;padding:8px 16px;transition:background .3s;border-radius:6px}
+  .nav nav a:hover{background:rgba(255,255,255,.08)}
+  .nav .btn-nav{background:var(--red);padding:10px 18px}
+  .nav .btn-nav:hover{background:var(--red-dark)}
+  .hamb{display:none;background:none;border:0;color:#fff;font-size:26px;cursor:pointer}
+
+  /* ── Hero ── */
+  .hero{position:relative;min-height:560px;display:flex;align-items:center;
+    background:url('/images/sliderack/photos/taller-completo.jpg') center/cover}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.85) 0%,rgba(0,0,0,.55) 45%,rgba(0,0,0,.15) 100%)}
+  .hero .wrap{position:relative;z-index:2;width:100%;padding-top:70px;padding-bottom:70px}
+  .eyebrow{display:inline-block;background:var(--red);color:#fff;font-family:var(--heading);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:2px;padding:7px 16px;border-radius:999px;margin-bottom:22px}
+  .hero h1{color:#fff;font-size:56px;max-width:800px;letter-spacing:.5px}
+  .hero h1 .accent{color:#fff;background:var(--red);padding:0 10px;display:inline-block}
+  .hero p.lead{color:rgba(255,255,255,.85);font-size:20px;max-width:620px;margin-top:22px;line-height:1.5}
+  .hero .cta-row{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{font-family:var(--heading);font-size:15px;font-weight:700;text-transform:uppercase;padding:16px 32px;border-radius:8px;display:inline-block;transition:all .25s;cursor:pointer;border:2px solid transparent}
+  .btn-red{background:var(--red);color:#fff}
+  .btn-red:hover{background:var(--red-dark)}
+  .btn-ghost{border-color:rgba(255,255,255,.35);color:#fff}
+  .btn-ghost:hover{border-color:#fff}
+  .btn-outline-dark{border-color:#ccc;color:var(--dark)}
+  .btn-outline-dark:hover{border-color:var(--red);color:var(--red)}
+
+  section{padding:84px 0}
+  .sec-title{text-align:center;font-size:40px;color:var(--dark);margin-bottom:16px}
+  .sec-sub{text-align:center;color:var(--muted);font-size:17px;max-width:640px;margin:0 auto 52px}
+  .kw{color:var(--red)}
+
+  /* ── Problem cards ── */
+  .cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  .card{border:1px solid #eee;border-radius:12px;padding:30px;height:100%;transition:transform .25s,box-shadow .25s}
+  .card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(0,0,0,.07)}
+  .card .ic{width:46px;height:46px;color:var(--red);margin-bottom:16px}
+  .card h3{font-size:21px;color:var(--dark);margin-bottom:10px}
+  .card p{font-size:15px;color:var(--muted);line-height:1.6}
+
+  /* ── Dark reframe ── */
+  .dark-sec{background:var(--dark)}
+  .dark-sec .sec-title{color:#fff}
+  .reframe{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+  .reframe .item{text-align:center}
+  .reframe .big{font-family:var(--heading);font-size:54px;font-weight:700;color:var(--red);line-height:1}
+  .reframe .lbl{font-family:var(--heading);font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:#fff;margin:10px 0 6px}
+  .reframe .dsc{font-size:13px;color:rgba(255,255,255,.5);line-height:1.5}
+
+  /* ── Feature / keyword blocks ── */
+  .feat{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-bottom:70px}
+  .feat:last-child{margin-bottom:0}
+  .feat.rev .txt{order:2}
+  .feat img{border-radius:12px;box-shadow:0 18px 40px rgba(0,0,0,.10);aspect-ratio:4/3;object-fit:cover;width:100%}
+  .feat .tag{font-family:var(--heading);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:2px;color:var(--red);margin-bottom:10px}
+  .feat h3{font-size:32px;color:var(--dark);margin-bottom:14px}
+  .feat p{font-size:16px;color:#555;line-height:1.7}
+  .feat ul{margin-top:16px;list-style:none}
+  .feat li{display:flex;gap:10px;align-items:flex-start;margin-bottom:9px;font-size:15px;color:#555}
+  .feat li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--red);margin-top:9px;flex:none}
+
+  /* ── Photo break ── */
+  .photobreak{position:relative;min-height:380px;display:flex;align-items:center;justify-content:center;
+    background:url('/images/sliderack/photos/garaje-bmw.jpg') center/cover}
+  .photobreak::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.55)}
+  .photobreak h2{position:relative;z-index:2;color:#fff;font-size:42px;text-align:center;max-width:760px;padding:0 24px}
+
+  /* ── Sectores ── */
+  .sectors{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  .sector{background:#fff;border:1px solid #eee;border-radius:12px;padding:28px;height:100%}
+  .sector h3{font-size:20px;color:var(--red);margin-bottom:14px}
+  .sector ul{list-style:none}
+  .sector li{display:flex;gap:10px;align-items:flex-start;margin-bottom:9px;font-size:14px;color:#666}
+  .sector li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--red);margin-top:8px;flex:none}
+
+  /* ── Trust ── */
+  .trust{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center;margin-bottom:20px}
+  .trust .n{font-family:var(--heading);font-size:44px;font-weight:700;color:var(--red)}
+  .trust .l{font-size:13px;color:var(--muted2);margin-top:4px}
+
+  /* ── FAQ ── */
+  .faq{max-width:820px;margin:0 auto}
+  details{border-bottom:1px solid #eaeaea;padding:20px 0}
+  summary{font-family:var(--heading);font-size:20px;font-weight:600;text-transform:uppercase;color:var(--dark);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--red);font-size:26px;font-family:var(--heading);transition:transform .2s}
+  details[open] summary::after{content:"–"}
+  details p{margin-top:14px;font-size:16px;color:#555;line-height:1.7}
+
+  /* ── Lead form ── */
+  .lead{background:var(--dark)}
+  .lead .grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+  .lead h2{color:#fff;font-size:40px;margin-bottom:16px}
+  .lead p{color:rgba(255,255,255,.7);font-size:17px;line-height:1.7;margin-bottom:22px}
+  .lead .phone{font-family:var(--heading);font-size:30px;font-weight:700;color:var(--red)}
+  .form{background:#fff;border-radius:14px;padding:34px}
+  .form h3{font-size:22px;color:var(--dark);margin-bottom:20px}
+  .form .fld{margin-bottom:14px}
+  .form label{display:block;font-size:13px;font-weight:600;color:#444;margin-bottom:6px}
+  .form input,.form textarea{width:100%;border:1px solid #ddd;border-radius:8px;padding:12px 14px;font-family:var(--body);font-size:15px}
+  .form input:focus,.form textarea:focus{outline:none;border-color:var(--red)}
+  .form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .form button{width:100%;margin-top:8px}
+  .form .note{font-size:12px;color:#999;margin-top:12px;text-align:center}
+
+  /* ── Footer ── */
+  .foot-cta{background:var(--red);padding:22px 0}
+  .foot-cta .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .foot-cta p{font-family:var(--heading);font-size:20px;font-weight:700;text-transform:uppercase;color:#fff}
+  .foot-cta .btns{display:flex;gap:12px}
+  .foot-cta a{font-family:var(--heading);font-size:14px;font-weight:700;text-transform:uppercase;color:#fff;border:2px solid #fff;border-radius:8px;padding:10px 22px;transition:all .2s}
+  .foot-cta a:hover{background:#fff;color:var(--red)}
+  .foot-cta a.b{border-color:rgba(255,255,255,.35)}
+  .foot-main{background:var(--dark);padding:52px 0}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+  .foot-main img{width:180px;margin-bottom:16px}
+  .foot-main p,.foot-main a,.foot-main li{color:rgba(255,255,255,.6);font-size:14px;line-height:1.7}
+  .foot-main h4{font-family:var(--heading);font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#fff;margin-bottom:16px}
+  .foot-main ul{list-style:none}
+  .foot-main li{margin-bottom:8px}
+  .foot-main a:hover{color:#fff}
+  .foot-bottom{background:var(--dark);border-top:1px solid rgba(255,255,255,.1);padding:20px 0}
+  .foot-bottom .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .foot-bottom span,.foot-bottom a{color:rgba(255,255,255,.4);font-size:13px}
+
+  .preview-flag{position:fixed;bottom:14px;right:14px;z-index:99;background:#111;color:#fff;font-family:var(--body);font-size:12px;padding:8px 14px;border-radius:8px;opacity:.85;box-shadow:0 6px 20px rgba(0,0,0,.3)}
+
+  /* ── Responsive ── */
+  @media(max-width:960px){
+    .nav nav{display:none}.hamb{display:block}
+    .hero h1{font-size:40px}.hero p.lead{font-size:18px}
+    .cards3,.reframe,.sectors,.trust{grid-template-columns:1fr 1fr}
+    .feat,.lead .grid{grid-template-columns:1fr;gap:28px}
+    .feat.rev .txt{order:0}
+    .sec-title,.lead h2{font-size:32px}.photobreak h2{font-size:30px}
+    section{padding:60px 0}
+  }
+  @media(max-width:560px){
+    .cards3,.reframe,.sectors,.trust,.form .row{grid-template-columns:1fr}
+    .hero h1{font-size:33px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ── Header ── -->
+<header>
+  <div class="nav">
+    <a class="logo" href="#"><img src="/images/sliderack/logo.webp" alt="Sliderack" /></a>
+    <nav>
+      <a href="#sistema">Sistema</a>
+      <a href="#soluciones">Soluciones</a>
+      <a href="#sectores">Sectores</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn-nav" href="#contacto">Solicitar info</a>
+    </nav>
+    <button class="hamb" aria-label="Menú">☰</button>
+  </div>
+</header>
+
+<!-- ── Hero ── -->
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Equipamiento para taller de automoción e industria</span>
+    <h1>Tu <span class="accent">armario de taller</span> ya no se queda pequeño</h1>
+    <p class="lead">Armario, cajonera metálica, panel de herramientas y almacenaje de piezas en un
+      único sistema deslizante. Sliderack ordena todo el taller mecánico en el espacio de una pared,
+      con acceso a cada herramienta en segundos.</p>
+    <div class="cta-row">
+      <a class="btn btn-red" href="#contacto">Solicitar información</a>
+      <a class="btn btn-ghost" href="#sistema">Ver cómo funciona</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Problem ── -->
+<section>
+  <div class="wrap-narrow">
+    <h2 class="sec-title">El desorden del taller cuesta dinero</h2>
+    <p class="sec-sub">Armarios sueltos, cajoneras a rebosar y carros de herramientas por medio.
+      Cada minuto buscando una llave es un minuto que no se factura.</p>
+    <div class="cards3">
+      <div class="card">
+        <svg class="ic" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <h3>Se pierde tiempo buscando</h3>
+        <p>La herramienta repartida entre varios armarios y cajoneras de taller obliga a dar vueltas.
+          El técnico pierde minutos en cada intervención.</p>
+      </div>
+      <div class="card">
+        <svg class="ic" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"/></svg>
+        <h3>El espacio se desaprovecha</h3>
+        <p>Un armario metálico de taller ocupa pared y solo guarda una fila. La superficie útil
+          de almacenaje se queda muy por debajo de lo que el local permite.</p>
+      </div>
+      <div class="card">
+        <svg class="ic" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/></svg>
+        <h3>El material no se controla</h3>
+        <p>Sin un sitio fijo para cada cosa, aparecen faltas, duplicados y herramienta que no vuelve.
+          Ordenar el taller mecánico deja de ser opcional.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Reframe (dark) ── -->
+<section class="dark-sec" id="soluciones">
+  <div class="wrap-narrow">
+    <h2 class="sec-title">Un sistema, no un mueble más</h2>
+    <p class="sec-sub" style="color:rgba(255,255,255,.55)">Sliderack sustituye la suma de armarios, cajoneras y estanterías sueltas
+      por un único sistema de almacenaje deslizante fabricado en España.</p>
+    <div class="reframe">
+      <div class="item"><div class="big">1</div><div class="lbl">Sistema</div><div class="dsc">Reúne armario, cajonera, panel y balda en un mismo bloque compacto</div></div>
+      <div class="item"><div class="big">+</div><div class="lbl">Superficie</div><div class="dsc">Módulos deslizantes que multiplican el almacenaje en la misma pared</div></div>
+      <div class="item"><div class="big">🔑</div><div class="lbl">Bajo llave</div><div class="dsc">Cierre con cerradura: el material de valor, controlado</div></div>
+      <div class="item"><div class="big">ES</div><div class="lbl">Fabricado en España</div><div class="dsc">Diseño y fabricación propia de Esnova Racks</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Features / keyword blocks ── -->
+<section id="sistema">
+  <div class="wrap">
+    <div class="feat">
+      <div class="txt">
+        <div class="tag">Armario de herramientas de taller</div>
+        <h3>Cada herramienta, en su sitio y a la vista</h3>
+        <p>Paneles perforados, baldas y kits de cajones integrados en cada módulo deslizante.
+          El equivalente a varios armarios de herramientas de taller, pero accesibles de un tirón.</p>
+        <ul>
+          <li>Panel de herramientas configurable por puesto</li>
+          <li>Kit de 5 cajones para útiles y consumibles</li>
+          <li>Baldas regulables para cajas, piezas y equipos</li>
+        </ul>
+      </div>
+      <img src="/images/sliderack/photos/herramientas-panel.jpg" alt="Armario de herramientas de taller Sliderack" />
+    </div>
+
+    <div class="feat rev">
+      <div class="txt">
+        <div class="tag">Cajonera metálica de taller</div>
+        <h3>El orden de una cajonera, la capacidad de un sistema</h3>
+        <p>Frente a la cajonera metálica de taller tradicional, Sliderack integra los cajones dentro
+          de un módulo que se desliza, liberando el pasillo y dejando cada nivel a mano.</p>
+        <ul>
+          <li>Cajones metálicos de guía suave y alta carga</li>
+          <li>Estructura de acero para uso intensivo</li>
+          <li>Todo el bloque se mueve; el suelo queda despejado</li>
+        </ul>
+      </div>
+      <img src="/images/sliderack/photos/interior-modulo.jpg" alt="Cajonera metálica de taller Sliderack" />
+    </div>
+
+    <div class="feat">
+      <div class="txt">
+        <div class="tag">Almacenaje y equipamiento de taller mecánico</div>
+        <h3>De la herramienta al neumático, todo controlado</h3>
+        <p>Más que un armario de taller mecánico: un sistema de almacenaje que ordena piezas,
+          recambios, EPIs y neumáticos, y crece con el taller. Equipamiento pensado para automoción e industria.</p>
+        <ul>
+          <li>Puesto de trabajo integrable en el sistema</li>
+          <li>Módulos numerados para inventario visual</li>
+          <li>Configuración a medida del espacio disponible</li>
+        </ul>
+      </div>
+      <img src="/images/sliderack/photos/modulos-numerados.jpg" alt="Almacenaje y equipamiento de taller mecánico Sliderack" />
+    </div>
+  </div>
+</section>
+
+<!-- ── Photo break ── -->
+<section class="photobreak" style="padding:0">
+  <h2>Cada herramienta en su sitio. Cada minuto aprovechado.</h2>
+</section>
+
+<!-- ── Sectores ── -->
+<section id="sectores" style="background:var(--bg-soft)">
+  <div class="wrap-narrow">
+    <h2 class="sec-title">Pensado para la automoción y la industria</h2>
+    <p class="sec-sub">Donde el orden es productividad y el material tiene valor.</p>
+    <div class="sectors">
+      <div class="sector">
+        <h3>Taller mecánico y de automoción</h3>
+        <ul>
+          <li>Talleres de reparación multimarca</li>
+          <li>Talleres de chapa y pintura</li>
+          <li>Concesionarios y servicios oficiales</li>
+          <li>Talleres de neumáticos</li>
+        </ul>
+      </div>
+      <div class="sector">
+        <h3>Flotas y mantenimiento</h3>
+        <ul>
+          <li>Naves de flotas y transporte</li>
+          <li>Mantenimiento de maquinaria</li>
+          <li>Talleres de vehículo industrial</li>
+          <li>Servicios técnicos con guardia</li>
+        </ul>
+      </div>
+      <div class="sector">
+        <h3>Industria y producción</h3>
+        <ul>
+          <li>Almacenes de recambio y utillaje</li>
+          <li>Líneas de montaje y producción</li>
+          <li>Laboratorios y salas técnicas</li>
+          <li>Logística de piezas críticas</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Trust ── -->
+<section>
+  <div class="wrap-narrow" style="max-width:900px">
+    <div class="trust">
+      <div><div class="n">50+</div><div class="l">Años de experiencia</div></div>
+      <div><div class="n">+45</div><div class="l">Países</div></div>
+      <div><div class="n">46.600</div><div class="l">m² de planta</div></div>
+      <div><div class="n">4</div><div class="l">Certificaciones ISO</div></div>
+    </div>
+    <p class="sec-sub" style="margin-top:36px;margin-bottom:0">Sliderack es un producto de <strong>Esnova Racks</strong>,
+      fabricante español de sistemas de almacenaje con presencia en más de 45 países.</p>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section id="faq" style="background:var(--bg-soft)">
+  <div class="wrap-narrow">
+    <h2 class="sec-title">Preguntas frecuentes</h2>
+    <div class="faq" style="margin-top:20px">
+      <details open>
+        <summary>¿Sliderack es un armario o una estantería de taller?</summary>
+        <p>Es un sistema de almacenaje deslizante que hace las dos cosas y más: integra armario, cajonera
+          metálica, panel de herramientas y baldas en módulos que se deslizan, multiplicando la capacidad
+          de almacenaje en la misma superficie de pared.</p>
+      </details>
+      <details>
+        <summary>¿Se puede cerrar con llave?</summary>
+        <p>Sí. Los módulos admiten cierre con cerradura, de forma que la herramienta y el material de valor
+          quedan bajo control en el taller.</p>
+      </details>
+      <details>
+        <summary>¿Sustituye a los armarios y cajoneras de taller que ya tengo?</summary>
+        <p>En la mayoría de casos, sí. Un sistema Sliderack reúne en un solo bloque lo que hoy tienes repartido
+          en varios armarios de herramientas y cajoneras metálicas, y deja el suelo del taller despejado.</p>
+      </details>
+      <details>
+        <summary>¿Aguanta herramienta y piezas pesadas?</summary>
+        <p>Sí. La estructura es de acero, dimensionada para uso intensivo en taller mecánico e industria,
+          con cajones y baldas de alta carga.</p>
+      </details>
+      <details>
+        <summary>¿Sirve para taller de coches y también para industria?</summary>
+        <p>Está diseñado para ambos: talleres de automoción (mecánica, chapa, neumáticos, concesionarios) y
+          entornos industriales donde haga falta ordenar utillaje, recambio y piezas críticas.</p>
+      </details>
+      <details>
+        <summary>¿Está fabricado en España?</summary>
+        <p>Sí. Sliderack lo diseña y fabrica Esnova Racks en España, con más de 50 años de experiencia en
+          sistemas de almacenaje y presencia en más de 45 países.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ── Lead form ── -->
+<section class="lead" id="contacto">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <h2>Monta el almacenaje de tu taller</h2>
+        <p>Cuéntanos cómo es tu taller o nave y te preparamos una propuesta a medida de equipamiento
+          y almacenaje Sliderack. Sin compromiso.</p>
+        <p style="margin-bottom:6px;color:rgba(255,255,255,.55);font-size:14px">Llámanos directamente:</p>
+        <a href="tel:+34985308980" class="phone">985 30 89 80</a>
+      </div>
+      <div class="form">
+        <h3>Solicitar información</h3>
+        <form onsubmit="event.preventDefault();alert('Preview — el formulario real enviará a Esnova/Sliderack al publicar.');">
+          <div class="row">
+            <div class="fld"><label>Nombre</label><input type="text" placeholder="Tu nombre" required></div>
+            <div class="fld"><label>Empresa / taller</label><input type="text" placeholder="Nombre del taller"></div>
+          </div>
+          <div class="row">
+            <div class="fld"><label>Email</label><input type="email" placeholder="tu@email.com" required></div>
+            <div class="fld"><label>Teléfono</label><input type="tel" placeholder="600 000 000"></div>
+          </div>
+          <div class="fld"><label>¿Qué necesitas ordenar?</label><textarea rows="3" placeholder="Herramienta, recambio, neumáticos, m² del taller..."></textarea></div>
+          <button type="submit" class="btn btn-red">Enviar solicitud</button>
+          <p class="note">Al enviar aceptas la política de privacidad de Esnova Racks.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer>
+  <div class="foot-cta">
+    <div class="wrap">
+      <p>¿Listo para ordenar tu taller?</p>
+      <div class="btns">
+        <a href="#contacto">Solicitar información</a>
+        <a class="b" href="tel:+34985308980">985 30 89 80</a>
+      </div>
+    </div>
+  </div>
+  <div class="foot-main">
+    <div class="wrap foot-grid">
+      <div>
+        <img src="/images/sliderack/logo.webp" alt="Sliderack" />
+        <p>Sistema de almacenaje deslizante para taller de automoción e industria. Diseñado y fabricado
+          en España por Esnova Racks.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#sistema">El sistema</a></li>
+          <li><a href="#soluciones">Soluciones</a></li>
+          <li><a href="#sectores">Sectores</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:+34985308980" style="color:#fff;font-weight:600">985 30 89 80</a></li>
+          <li>Lunes a viernes</li>
+          <li>Fabricado en España · Esnova Racks</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div class="wrap">
+      <span>© 2026 Sliderack · Esnova Racks</span>
+      <div style="display:flex;gap:20px">
+        <a href="#">Aviso legal</a><a href="#">Privacidad</a><a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="preview-flag">PREVIEW · sin publicar · noindex</div>
+
+<!-- ── Schema FAQPage ── -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"¿Sliderack es un armario o una estantería de taller?","acceptedAnswer":{"@type":"Answer","text":"Es un sistema de almacenaje deslizante que integra armario, cajonera metálica, panel de herramientas y baldas en módulos deslizantes, multiplicando la capacidad en la misma superficie de pared."}},
+    {"@type":"Question","name":"¿Se puede cerrar con llave?","acceptedAnswer":{"@type":"Answer","text":"Sí, los módulos admiten cierre con cerradura para mantener la herramienta y el material de valor bajo control."}},
+    {"@type":"Question","name":"¿Sustituye a los armarios y cajoneras de taller que ya tengo?","acceptedAnswer":{"@type":"Answer","text":"En la mayoría de casos sí: un sistema Sliderack reúne en un solo bloque lo que suele estar repartido en varios armarios de herramientas y cajoneras metálicas."}},
+    {"@type":"Question","name":"¿Aguanta herramienta y piezas pesadas?","acceptedAnswer":{"@type":"Answer","text":"Sí, la estructura es de acero dimensionada para uso intensivo, con cajones y baldas de alta carga."}},
+    {"@type":"Question","name":"¿Sirve para taller de coches y también para industria?","acceptedAnswer":{"@type":"Answer","text":"Está diseñado para talleres de automoción e industria donde haga falta ordenar utillaje, recambio y piezas."}},
+    {"@type":"Question","name":"¿Está fabricado en España?","acceptedAnswer":{"@type":"Answer","text":"Sí, Sliderack lo diseña y fabrica Esnova Racks en España, con más de 50 años de experiencia y presencia en más de 45 países."}}
+  ]
+}
+</script>
+</body>
+</html>
