@@ -130,6 +130,15 @@
   .form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
   .form button{width:100%;margin-top:8px}
   .form .note{font-size:14px;color:#999;margin-top:12px;text-align:center}
+  .form .note a{color:var(--red);text-decoration:underline}
+  .form .consent{display:flex;gap:10px;align-items:flex-start;margin-bottom:6px;font-size:14px;color:#555;line-height:1.5}
+  .form .consent input{width:auto;margin-top:3px;flex:none;accent-color:var(--red)}
+  .form .consent a{color:var(--red);text-decoration:underline}
+  .form .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none}
+  .form .status{margin-top:14px;padding:14px 16px;border-radius:8px;font-size:15px;line-height:1.5;display:none}
+  .form .status.ok{display:block;background:#e9f6ec;color:#1c7a33;border:1px solid #b9e2c3}
+  .form .status.err{display:block;background:#fdecec;color:#b02a2a;border:1px solid #f4c2c2}
+  .form button[disabled]{opacity:.6;cursor:not-allowed}
 
   /* ── Footer ── */
   .foot-cta{background:var(--red);padding:22px 0}
@@ -414,18 +423,22 @@
       </div>
       <div class="form">
         <h3>Solicitar información</h3>
-        <form onsubmit="event.preventDefault();alert('Preview — el formulario real enviará a Esnova/Sliderack al publicar.');">
+        <form id="lead-form" novalidate>
           <div class="row">
-            <div class="fld"><label>Nombre</label><input type="text" placeholder="Tu nombre" required></div>
-            <div class="fld"><label>Empresa / taller</label><input type="text" placeholder="Nombre del taller"></div>
+            <div class="fld"><label for="lf-nombre">Nombre</label><input id="lf-nombre" name="nombre" type="text" placeholder="Tu nombre" autocomplete="name" maxlength="120" required></div>
+            <div class="fld"><label for="lf-empresa">Empresa / taller</label><input id="lf-empresa" name="empresa" type="text" placeholder="Nombre del taller" autocomplete="organization" maxlength="160"></div>
           </div>
           <div class="row">
-            <div class="fld"><label>Email</label><input type="email" placeholder="tu@email.com" required></div>
-            <div class="fld"><label>Teléfono</label><input type="tel" placeholder="600 000 000"></div>
+            <div class="fld"><label for="lf-email">Email</label><input id="lf-email" name="email" type="email" placeholder="tu@email.com" autocomplete="email" maxlength="200" required></div>
+            <div class="fld"><label for="lf-telefono">Teléfono</label><input id="lf-telefono" name="telefono" type="tel" placeholder="600 000 000" autocomplete="tel" maxlength="40"></div>
           </div>
-          <div class="fld"><label>¿Qué necesitas ordenar?</label><textarea rows="3" placeholder="Herramienta, recambio, neumáticos, m² del taller..."></textarea></div>
+          <div class="fld"><label for="lf-mensaje">¿Qué necesitas ordenar?</label><textarea id="lf-mensaje" name="mensaje" rows="3" placeholder="Herramienta, recambio, neumáticos, m² del taller..." maxlength="4000"></textarea></div>
+          <!-- Honeypot anti-spam: los humanos no lo ven, los bots lo rellenan -->
+          <div class="hp" aria-hidden="true"><label>No rellenar este campo<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+          <label class="consent"><input type="checkbox" id="lf-privacidad" name="privacidad" required> He leído y acepto la <a href="/politica-de-privacidad" target="_blank" rel="noopener">política de privacidad</a> y el tratamiento de mis datos para atender esta solicitud.</label>
           <button type="submit" class="btn btn-red">Enviar solicitud</button>
-          <p class="note">Al enviar aceptas la política de privacidad de Esnova Racks.</p>
+          <p class="note">Responsable: Esnova Racks · Finalidad: gestionar tu solicitud de información.</p>
+          <div class="status" id="lf-status" role="status" aria-live="polite"></div>
         </form>
       </div>
     </div>
@@ -474,13 +487,100 @@
     <div class="wrap">
       <span>© 2026 Sliderack · Esnova Racks</span>
       <div style="display:flex;gap:20px">
-        <a href="#">Aviso legal</a><a href="#">Privacidad</a><a href="#">Cookies</a>
+        <a href="/aviso-legal">Aviso legal</a><a href="/politica-de-privacidad">Privacidad</a><a href="/politica-de-cookies">Cookies</a>
       </div>
     </div>
   </div>
 </footer>
 
 <div class="preview-flag">PREVIEW · sin publicar · noindex</div>
+
+<!-- ── Envío del formulario al backend real (/api/contact) ── -->
+<script>
+(function(){
+  var form = document.getElementById('lead-form');
+  if(!form) return;
+  var statusEl = document.getElementById('lf-status');
+  var btn = form.querySelector('button[type="submit"]');
+
+  function show(kind, msg){
+    statusEl.className = 'status ' + kind;
+    statusEl.textContent = msg;
+  }
+
+  function getParam(name){
+    try { return new URLSearchParams(window.location.search).get(name) || ''; }
+    catch(e){ return ''; }
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    // Honeypot: si el campo oculto viene relleno, es un bot. Fingimos éxito y no enviamos.
+    if(form.website && form.website.value){
+      show('ok', 'Gracias, hemos recibido tu solicitud.');
+      form.reset();
+      return;
+    }
+
+    var nombre = form.nombre.value.trim();
+    var email = form.email.value.trim();
+    if(!nombre || !email){
+      show('err', 'Indica al menos tu nombre y un email de contacto.');
+      return;
+    }
+    if(!form.privacidad.checked){
+      show('err', 'Debes aceptar la política de privacidad para enviar la solicitud.');
+      return;
+    }
+
+    var payload = {
+      nombre: nombre,
+      email: email,
+      telefono: form.telefono.value.trim(),
+      empresa: form.empresa.value.trim(),
+      mensaje: form.mensaje.value.trim(),
+      modelo: 'Landing taller de automoción',
+      privacidadAceptada: true,
+      consentTimestamp: new Date().toISOString(),
+      gclid: getParam('gclid'),
+      source: document.referrer || 'directo',
+      page: window.location.pathname
+    };
+
+    btn.disabled = true;
+    var original = btn.textContent;
+    btn.textContent = 'Enviando…';
+    statusEl.className = 'status';
+
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+    .then(function(res){
+      return res.json().catch(function(){ return {}; }).then(function(data){
+        return { ok: res.ok, data: data };
+      });
+    })
+    .then(function(r){
+      if(r.ok && r.data.success){
+        show('ok', '¡Gracias! Hemos recibido tu solicitud. Te contactaremos lo antes posible.');
+        form.reset();
+      } else {
+        show('err', (r.data && r.data.error) ? r.data.error : 'No se pudo enviar. Inténtalo de nuevo o llámanos al 985 30 89 80.');
+      }
+    })
+    .catch(function(){
+      show('err', 'Error de conexión. Inténtalo de nuevo o llámanos al 985 30 89 80.');
+    })
+    .finally(function(){
+      btn.disabled = false;
+      btn.textContent = original;
+    });
+  });
+})();
+</script>
 
 <!-- ── Schema FAQPage ── -->
 <script type="application/ld+json">
