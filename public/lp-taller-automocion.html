@@ -502,6 +502,7 @@
   if(!form) return;
   var statusEl = document.getElementById('lf-status');
   var btn = form.querySelector('button[type="submit"]');
+  var THANKYOU = '/lp-taller-gracias.html';
 
   function show(kind, msg){
     statusEl.className = 'status ' + kind;
@@ -518,8 +519,7 @@
 
     // Honeypot: si el campo oculto viene relleno, es un bot. Fingimos éxito y no enviamos.
     if(form.website && form.website.value){
-      show('ok', 'Gracias, hemos recibido tu solicitud.');
-      form.reset();
+      window.location.assign(THANKYOU);
       return;
     }
 
@@ -565,8 +565,9 @@
     })
     .then(function(r){
       if(r.ok && r.data.success){
-        show('ok', '¡Gracias! Hemos recibido tu solicitud. Te contactaremos lo antes posible.');
-        form.reset();
+        // Redirige a la thank-you page (URL de conversión limpia para Ads/GA4)
+        window.location.assign(THANKYOU);
+        return;
       } else {
         show('err', (r.data && r.data.error) ? r.data.error : 'No se pudo enviar. Inténtalo de nuevo o llámanos al 985 30 89 80.');
       }
