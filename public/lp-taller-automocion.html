@@ -569,8 +569,10 @@
     })
     .then(function(r){
       if(r.ok && r.data.success){
-        // Redirige a la thank-you page (URL de conversión limpia para Ads/GA4)
-        window.location.assign(THANKYOU);
+        // Redirige a la thank-you page (dispara la conversión de Ads).
+        // Propaga el gclid para que Google atribuya la conversión a la campaña.
+        var gclid = getParam('gclid');
+        window.location.assign(THANKYOU + (gclid ? ('?gclid=' + encodeURIComponent(gclid)) : ''));
         return;
       } else {
         show('err', (r.data && r.data.error) ? r.data.error : 'No se pudo enviar. Inténtalo de nuevo o llámanos al 985 30 89 80.');
