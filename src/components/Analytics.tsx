@@ -4,7 +4,11 @@ import Script from "next/script";
 import { useEffect, useState } from "react";
 import { getCookiePreferences } from "@/components/CookieBanner";
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+// GA4 activo. Antes se leía de NEXT_PUBLIC_GA_ID, pero esa var apuntaba a
+// G-FG09L26VL7, un stream inexistente (gtag.js cargaba pero no enviaba ningún
+// hit /collect). El measurement ID real y activo es G-4HLFXX80SW. Se fija en
+// código (como ADS_ID/CLARITY_ID) para no depender del entorno de Vercel.
+const GA_ID = "G-4HLFXX80SW";
 const ADS_ID = "AW-18087793515"; // Google Ads (conversiones/remarketing)
 const CLARITY_ID = "wxuvstjke4";
 
