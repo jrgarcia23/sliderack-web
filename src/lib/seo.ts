@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getPathname } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 
-const BASE = "https://sliderack.es";
+const BASE = "https://www.sliderack.es";
 
 // Mirrors the `href` accepted by next-intl's getPathname: a known pathname key
 // (e.g. "/sistemas") or an object with pathname + params (e.g. "/sistemas/[slug]").

@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   description:
     "Sliderack es un sistema de almacenaje deslizante diseñado para entornos que exigen precisión, orden y fiabilidad. Fabricado por Esnova Racks.",
-  metadataBase: new URL("https://sliderack.es"),
+  metadataBase: new URL("https://www.sliderack.es"),
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "48x48" },

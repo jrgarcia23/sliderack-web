@@ -7,6 +7,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { useRouter, Link } from "@/i18n/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
 import { getProductsByCategory, getBadgeLabel } from "@/data/products";
+import { trackLead } from "@/lib/track";
 
 const sistemas = getProductsByCategory("sistemas");
 const accesorios = getProductsByCategory("accesorios");
@@ -80,6 +81,9 @@ export default function ContactPage() {
         }),
       });
       if (!res.ok) throw new Error("Error");
+      // Lead confirmado por la API: conversión en Ads + evento clave en GA4.
+      // Va aquí y no en /gracias para que una recarga no invente un lead.
+      trackLead("Formulario contacto (web)");
       router.push("/gracias");
     } catch {
       setError(t("error"));

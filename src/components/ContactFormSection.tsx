@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { useRouter, Link } from "@/i18n/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
+import { trackLead } from "@/lib/track";
 
 export default function ContactFormSection() {
   const t = useTranslations("contact");
@@ -52,6 +53,9 @@ export default function ContactFormSection() {
       });
 
       if (!res.ok) throw new Error("Error");
+      // Lead confirmado por la API: conversión en Ads + evento clave en GA4.
+      // Va aquí y no en /gracias para que una recarga no invente un lead.
+      trackLead("Formulario sección (web)");
       router.push("/gracias");
     } catch {
       setError(t("error"));

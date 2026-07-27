@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { products } from "@/data/products";
 
-const base = "https://sliderack.es";
+const base = "https://www.sliderack.es";
 
 type ChangeFreq = "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "never";
 
