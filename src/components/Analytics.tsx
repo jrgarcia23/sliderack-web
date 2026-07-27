@@ -4,18 +4,22 @@ import Script from "next/script";
 import { useEffect, useState } from "react";
 import { getCookiePreferences } from "@/components/CookieBanner";
 
-// GA4 activo: G-FG09L26VL7, único data stream de la propiedad 531623274
-// ("Sliderack", cuenta 390166986, uri https://www.sliderack.es). Verificado
-// contra la Admin API el 27-jul-2026.
+// Cómo está montada la medición de Sliderack (verificado contra la GA4 Admin API
+// y con Playwright sobre producción el 27-jul-2026):
 //
-// Histórico: aquí llegó a fijarse G-4HLFXX80SW, un ID que no existe en ninguna
-// propiedad de la cuenta. Con ese ID el config de GA4 no medía nada y los datos
-// que llegaban a GA4 lo hacían de rebote, porque el tag de Ads (ADS_ID) lleva
-// G-FG09L26VL7 como destino vinculado. No volver a tocarlo sin comprobar antes
-// el measurement ID real en Admin → Flujos de datos.
+//   · La propiedad GA4 es la 531623274 ("Sliderack", cuenta 390166986) y su único
+//     data stream es G-FG09L26VL7.
+//   · El ÚNICO Google tag servido de la cuenta es AW-18087793515. G-FG09L26VL7 va
+//     dentro de él como destino vinculado, no como tag propio: pedirlo al loader
+//     (gtag/js?id=G-FG09L26VL7) devuelve 404 y deja el sitio sin medir NADA.
+//     Por eso el <Script> de abajo carga siempre por ADS_ID.
+//   · Para mandar eventos a GA4 desde cualquier componente: send_to GA_ID.
+//     Ejemplo: gtag('event','generate_lead',{ send_to: GA_ID }).
 //
-// Se fija en código (como ADS_ID/CLARITY_ID) para no depender del entorno de Vercel.
-const GA_ID = "G-FG09L26VL7";
+// Histórico: aquí llegó a fijarse G-4HLFXX80SW, que no es stream de esta propiedad.
+// Antes de tocar estos IDs, comprobar el stream real en Admin → Flujos de datos Y
+// que el loader responda 200 (curl "…/gtag/js?id=<ID>").
+export const GA_ID = "G-FG09L26VL7";
 const ADS_ID = "AW-18087793515"; // Google Ads (conversiones/remarketing)
 const CLARITY_ID = "wxuvstjke4";
 
@@ -49,11 +53,13 @@ export default function Analytics() {
 
   return (
     <>
-      {/* gtag.js: se carga tras consentimiento y sirve tanto a GA4 (si hay ID)
-          como a Google Ads. El componente ya solo se renderiza con consent, por
-          lo que aquí ad_storage puede otorgarse. */}
+      {/* gtag.js: se carga tras consentimiento y alimenta GA4 y Google Ads.
+          El loader va SIEMPRE por ADS_ID: es el único Google tag servido de la
+          cuenta, y GA_ID viaja dentro como destino vinculado. Pedir el loader
+          con GA_ID devuelve 404 y deja el sitio entero sin medir. El componente
+          ya solo se renderiza con consent, por lo que ad_storage puede otorgarse. */}
       <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID || ADS_ID}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${ADS_ID}`}
         strategy="afterInteractive"
       />
       <Script id="gtag-init" strategy="afterInteractive">
@@ -67,7 +73,6 @@ export default function Analytics() {
             ad_user_data: 'granted',
             ad_personalization: 'granted',
           });
-          ${GA_ID ? `gtag('config', '${GA_ID}');` : ""}
           gtag('config', '${ADS_ID}');
         `}
       </Script>
