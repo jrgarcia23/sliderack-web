@@ -4,11 +4,18 @@ import Script from "next/script";
 import { useEffect, useState } from "react";
 import { getCookiePreferences } from "@/components/CookieBanner";
 
-// GA4 activo. Antes se leía de NEXT_PUBLIC_GA_ID, pero esa var apuntaba a
-// G-FG09L26VL7, un stream inexistente (gtag.js cargaba pero no enviaba ningún
-// hit /collect). El measurement ID real y activo es G-4HLFXX80SW. Se fija en
-// código (como ADS_ID/CLARITY_ID) para no depender del entorno de Vercel.
-const GA_ID = "G-4HLFXX80SW";
+// GA4 activo: G-FG09L26VL7, único data stream de la propiedad 531623274
+// ("Sliderack", cuenta 390166986, uri https://www.sliderack.es). Verificado
+// contra la Admin API el 27-jul-2026.
+//
+// Histórico: aquí llegó a fijarse G-4HLFXX80SW, un ID que no existe en ninguna
+// propiedad de la cuenta. Con ese ID el config de GA4 no medía nada y los datos
+// que llegaban a GA4 lo hacían de rebote, porque el tag de Ads (ADS_ID) lleva
+// G-FG09L26VL7 como destino vinculado. No volver a tocarlo sin comprobar antes
+// el measurement ID real en Admin → Flujos de datos.
+//
+// Se fija en código (como ADS_ID/CLARITY_ID) para no depender del entorno de Vercel.
+const GA_ID = "G-FG09L26VL7";
 const ADS_ID = "AW-18087793515"; // Google Ads (conversiones/remarketing)
 const CLARITY_ID = "wxuvstjke4";
 

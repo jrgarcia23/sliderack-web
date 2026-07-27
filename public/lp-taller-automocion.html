@@ -15,14 +15,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<!-- Google tag (gtag.js) — Google Ads AW-18087793515: etiqueta base para remarketing
-     y para capturar el gclid al aterrizar. La conversión se dispara en lp-taller-gracias.html. -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18087793515"></script>
+<!-- Google tag (gtag.js). Esta landing vive en /public, así que no pasa por el
+     layout de Next ni por <Analytics/>: lleva su propia etiqueta.
+     · G-FG09L26VL7  = GA4, propiedad 531623274 "Sliderack" (el único stream real).
+     · AW-18087793515 = Google Ads, etiqueta base para remarketing y para capturar
+       el gclid al aterrizar. La conversión se dispara en lp-taller-gracias.html. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG09L26VL7"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
+  gtag('config', 'G-FG09L26VL7');
   gtag('config', 'AW-18087793515');
 </script>
 <style>
