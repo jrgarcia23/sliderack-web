@@ -7,6 +7,7 @@ interface ContactBody {
   telefono?: string;
   empresa?: string;
   pais?: string;
+  provincia?: string;
   mensaje?: string;
   modelo?: string;
   accesorios?: string[];
@@ -24,6 +25,7 @@ const LIMITS: Record<string, number> = {
   telefono: 40,
   empresa: 160,
   pais: 80,
+  provincia: 80,
   mensaje: 4000,
   modelo: 120,
   consentTimestamp: 40,
@@ -192,6 +194,7 @@ function notificationHtml(
         ${p.telefono ? row("Teléfono", `<a href="tel:${escapeHtml(p.telefono)}" style="color:${BRAND.red};text-decoration:none">${escapeHtml(p.telefono)}</a>`) : ""}
         ${p.empresa ? row("Empresa", escapeHtml(p.empresa)) : ""}
         ${p.pais ? row("País", escapeHtml(p.pais)) : ""}
+        ${p.provincia ? row("Provincia", escapeHtml(p.provincia)) : ""}
         ${p.mensaje ? row("Mensaje", escapeHtml(p.mensaje).split("\n").join("<br/>")) : ""}
         ${p.accesorios?.filter(Boolean).length ? row("Accesorios", escapeHtml(p.accesorios.filter(Boolean).join(", "))) : ""}
 
@@ -321,6 +324,7 @@ export async function POST(request: Request) {
       ["telefono", body.telefono],
       ["empresa", body.empresa],
       ["pais", body.pais],
+      ["provincia", body.provincia],
       ["mensaje", body.mensaje],
       ["modelo", body.modelo],
       ["consentTimestamp", body.consentTimestamp],

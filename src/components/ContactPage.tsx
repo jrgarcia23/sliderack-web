@@ -7,6 +7,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { useRouter, Link } from "@/i18n/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
 import { getProductsByCategory, getBadgeLabel } from "@/data/products";
+import { ESPANA, PROVINCIAS_ESPANA, getCountryOptions } from "@/data/geo";
 import { trackLead } from "@/lib/track";
 
 const sistemas = getProductsByCategory("sistemas");
@@ -38,7 +39,8 @@ export default function ContactPage() {
   const [email, setEmail] = useState("");
   const [telefono, setTelefono] = useState("");
   const [empresa, setEmpresa] = useState("");
-  const [pais, setPais] = useState("");
+  const [pais, setPais] = useState(ESPANA);
+  const [provincia, setProvincia] = useState("");
   const [mensaje, setMensaje] = useState("");
   const [privacidad, setPrivacidad] = useState(false);
   const [sending, setSending] = useState(false);
@@ -70,6 +72,7 @@ export default function ContactPage() {
           telefono,
           empresa,
           pais,
+          provincia: pais === ESPANA && provincia ? provincia : undefined,
           mensaje,
           modelo: selectedModel,
           accesorios: selectedAccessories.filter(Boolean),
@@ -95,6 +98,7 @@ export default function ContactPage() {
   const inputClass = "w-full bg-[#f8f8f8] border border-gray-200 rounded-lg px-5 py-4 text-[15px] text-[#201F20] placeholder-[#aaa] focus:border-[#A52430] focus:ring-1 focus:ring-[#A52430]/20 outline-none transition-colors";
   const selectClass = "w-full bg-[#f8f8f8] border border-gray-200 rounded-lg px-5 py-4 text-[15px] text-[#201F20] focus:border-[#A52430] focus:ring-1 focus:ring-[#A52430]/20 outline-none transition-colors appearance-none cursor-pointer";
 
+  const countryOptions = getCountryOptions(locale);
   const group1 = getBadgeLabel("1 Nivel", locale);
   const group2 = getBadgeLabel("1 Nivel · Prof. 470", locale);
   const group3 = getBadgeLabel("2 Niveles", locale);
@@ -235,11 +239,51 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div>
-                  <label className="block mb-2 uppercase tracking-[1px]" style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 600, color: "#201F20" }}>
-                    {t("countryLabel")}
-                  </label>
-                  <input type="text" value={pais} onChange={(e) => setPais(e.target.value)} placeholder={t("countryPlaceholder")} className={inputClass} />
+                <div className={pais === ESPANA ? "grid grid-cols-1 md:grid-cols-2 gap-4" : ""}>
+                  <div>
+                    <label className="block mb-2 uppercase tracking-[1px]" style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 600, color: "#201F20" }}>
+                      {t("countryLabel")}
+                    </label>
+                    <div className="relative">
+                      <select
+                        value={pais}
+                        onChange={(e) => {
+                          setPais(e.target.value);
+                          if (e.target.value !== ESPANA) setProvincia("");
+                        }}
+                        className={selectClass}
+                      >
+                        {countryOptions.map((c) => (
+                          <option key={c.value} value={c.value}>{c.label}</option>
+                        ))}
+                      </select>
+                      <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                        <svg className="w-4 h-4 text-[#999]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  {pais === ESPANA && (
+                    <div>
+                      <label className="block mb-2 uppercase tracking-[1px]" style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 600, color: "#201F20" }}>
+                        {t("provinceLabel")} *
+                      </label>
+                      <div className="relative">
+                        <select required value={provincia} onChange={(e) => setProvincia(e.target.value)} className={selectClass}>
+                          <option value="">{t("provincePlaceholder")}</option>
+                          {PROVINCIAS_ESPANA.map((p) => (
+                            <option key={p} value={p}>{p}</option>
+                          ))}
+                        </select>
+                        <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                          <svg className="w-4 h-4 text-[#999]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
 
                 <div>

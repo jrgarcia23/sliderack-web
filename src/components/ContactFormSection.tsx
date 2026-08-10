@@ -1,19 +1,24 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { useRouter, Link } from "@/i18n/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
+import { ESPANA, PROVINCIAS_ESPANA, getCountryOptions } from "@/data/geo";
 import { trackLead } from "@/lib/track";
 
 export default function ContactFormSection() {
   const t = useTranslations("contact");
+  const locale = useLocale();
   const router = useRouter();
+  const countryOptions = getCountryOptions(locale);
   const [form, setForm] = useState({
     nombre: "",
     empresa: "",
     email: "",
     telefono: "",
+    pais: ESPANA,
+    provincia: "",
     mensaje: "",
     catalogo: false,
     privacidad: false,
@@ -21,9 +26,14 @@ export default function ContactFormSection() {
   const [sending, setSending] = useState(false);
   const [error, setError] = useState("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
+    setForm((prev) => ({
+      ...prev,
+      [name]: value,
+      // Al salir de España la provincia deja de aplicar.
+      ...(name === "pais" && value !== ESPANA ? { provincia: "" } : {}),
+    }));
   };
 
   const handleCheckbox = (name: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -44,6 +54,8 @@ export default function ContactFormSection() {
           email: form.email,
           telefono: form.telefono,
           empresa: form.empresa,
+          pais: form.pais,
+          provincia: form.pais === ESPANA && form.provincia ? form.provincia : undefined,
           mensaje: form.mensaje + (form.catalogo ? `\n\n${t("catalogue_append")}` : ""),
           privacidadAceptada: form.privacidad,
           consentTimestamp: new Date().toISOString(),
@@ -66,6 +78,15 @@ export default function ContactFormSection() {
 
   const inputClasses =
     "w-full rounded-lg border border-gray-200 bg-[#f8f8f8] px-5 py-4 font-[family-name:var(--font-body)] text-[15px] text-[#201F20] placeholder-[#aaa] outline-none ring-0 transition-[border-color] duration-200 focus:border-[#A52430] focus:ring-1 focus:ring-[#A52430]/20";
+  const selectClasses = inputClasses + " appearance-none cursor-pointer";
+
+  const chevron = (
+    <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2">
+      <svg className="h-4 w-4 text-[#999]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+      </svg>
+    </div>
+  );
 
   return (
     <section className="border-t border-gray-100 bg-white px-6 py-20">
@@ -116,6 +137,29 @@ export default function ContactFormSection() {
             <input type="text" name="empresa" placeholder={t("field_company")} value={form.empresa} onChange={handleChange} className={inputClasses} />
             <input type="email" name="email" placeholder={`${t("field_email")} *`} required value={form.email} onChange={handleChange} className={inputClasses} />
             <input type="tel" name="telefono" placeholder={t("field_phone")} value={form.telefono} onChange={handleChange} className={inputClasses} />
+
+            <div className={form.pais === ESPANA ? "grid grid-cols-1 gap-4 sm:grid-cols-2" : ""}>
+              <div className="relative">
+                <select name="pais" aria-label={t("countryLabel")} value={form.pais} onChange={handleChange} className={selectClasses}>
+                  {countryOptions.map((c) => (
+                    <option key={c.value} value={c.value}>{c.label}</option>
+                  ))}
+                </select>
+                {chevron}
+              </div>
+              {form.pais === ESPANA && (
+                <div className="relative">
+                  <select name="provincia" required aria-label={t("provinceLabel")} value={form.provincia} onChange={handleChange} className={selectClasses}>
+                    <option value="">{`${t("provincePlaceholder")} *`}</option>
+                    {PROVINCIAS_ESPANA.map((p) => (
+                      <option key={p} value={p}>{p}</option>
+                    ))}
+                  </select>
+                  {chevron}
+                </div>
+              )}
+            </div>
+
             <textarea name="mensaje" placeholder={t("field_message")} rows={4} value={form.mensaje} onChange={handleChange} className={inputClasses} />
 
             <label className="flex items-center gap-2 font-[family-name:var(--font-body)] text-[14px] text-[#666] cursor-pointer">
