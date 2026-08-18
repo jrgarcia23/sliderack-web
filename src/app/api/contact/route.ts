@@ -4,7 +4,7 @@ import { headers } from "next/headers";
 interface ContactBody {
   nombre: string;
   email: string;
-  telefono?: string;
+  telefono: string;
   empresa?: string;
   pais?: string;
   provincia?: string;
@@ -311,9 +311,9 @@ export async function POST(request: Request) {
     }
     const body = raw as ContactBody;
 
-    if (!body.nombre || !body.email) {
+    if (!body.nombre || !body.email || !body.telefono) {
       return NextResponse.json(
-        { error: "Nombre y email son obligatorios" },
+        { error: "Nombre, email y teléfono son obligatorios" },
         { status: 400 }
       );
     }

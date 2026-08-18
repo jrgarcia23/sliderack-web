@@ -229,7 +229,7 @@ export default function ContactPage() {
                     <label className="block mb-2 uppercase tracking-[1px]" style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 600, color: "#201F20" }}>
                       {t("field_phone")}
                     </label>
-                    <input type="tel" value={telefono} onChange={(e) => setTelefono(e.target.value)} placeholder={t("phonePlaceholder")} className={inputClass} />
+                    <input type="tel" required value={telefono} onChange={(e) => setTelefono(e.target.value)} placeholder={t("phonePlaceholder")} className={inputClass} />
                   </div>
                   <div>
                     <label className="block mb-2 uppercase tracking-[1px]" style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 600, color: "#201F20" }}>

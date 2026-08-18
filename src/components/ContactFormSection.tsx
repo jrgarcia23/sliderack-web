@@ -136,7 +136,7 @@ export default function ContactFormSection() {
             <input type="text" name="nombre" placeholder={`${t("field_name")} *`} required value={form.nombre} onChange={handleChange} className={inputClasses} />
             <input type="text" name="empresa" placeholder={t("field_company")} value={form.empresa} onChange={handleChange} className={inputClasses} />
             <input type="email" name="email" placeholder={`${t("field_email")} *`} required value={form.email} onChange={handleChange} className={inputClasses} />
-            <input type="tel" name="telefono" placeholder={t("field_phone")} value={form.telefono} onChange={handleChange} className={inputClasses} />
+            <input type="tel" name="telefono" placeholder={`${t("field_phone")} *`} required value={form.telefono} onChange={handleChange} className={inputClasses} />
 
             <div className={form.pais === ESPANA ? "grid grid-cols-1 gap-4 sm:grid-cols-2" : ""}>
               <div className="relative">

@@ -453,7 +453,7 @@
           </div>
           <div class="row">
             <div class="fld"><label for="lf-email">Email</label><input id="lf-email" name="email" type="email" placeholder="tu@email.com" autocomplete="email" maxlength="200" required></div>
-            <div class="fld"><label for="lf-telefono">Teléfono</label><input id="lf-telefono" name="telefono" type="tel" placeholder="600 000 000" autocomplete="tel" maxlength="40"></div>
+            <div class="fld"><label for="lf-telefono">Teléfono</label><input id="lf-telefono" name="telefono" type="tel" placeholder="600 000 000" autocomplete="tel" maxlength="40" required></div>
           </div>
           <div class="fld"><label for="lf-mensaje">¿Qué necesitas ordenar?</label><textarea id="lf-mensaje" name="mensaje" rows="3" placeholder="Herramienta, recambio, neumáticos, m² del taller..." maxlength="4000"></textarea></div>
           <!-- Honeypot anti-spam: los humanos no lo ven, los bots lo rellenan -->
@@ -546,8 +546,9 @@
 
     var nombre = form.nombre.value.trim();
     var email = form.email.value.trim();
-    if(!nombre || !email){
-      show('err', 'Indica al menos tu nombre y un email de contacto.');
+    var telefono = form.telefono.value.trim();
+    if(!nombre || !email || !telefono){
+      show('err', 'Indica tu nombre, un email y un teléfono de contacto.');
       return;
     }
     if(!form.privacidad.checked){
@@ -558,7 +559,7 @@
     var payload = {
       nombre: nombre,
       email: email,
-      telefono: form.telefono.value.trim(),
+      telefono: telefono,
       empresa: form.empresa.value.trim(),
       mensaje: form.mensaje.value.trim(),
       modelo: 'Landing taller de automoción',
