@@ -90,7 +90,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
         <div className="max-w-[1200px] mx-auto flex flex-wrap items-center justify-between gap-x-6 gap-y-3">
           <Link
             href={backPath as "/sistemas" | "/accesorios"}
-            className="group inline-flex items-center gap-2.5 rounded-lg border-2 border-[#A52430] bg-white px-5 py-2.5 text-[#A52430] uppercase tracking-[1px] shadow-sm transition-colors hover:bg-[#A52430] hover:text-white"
+            className="group inline-flex items-center gap-2.5 rounded-lg border-2 border-[#A52430] bg-[#A52430] px-5 py-2.5 text-white uppercase tracking-[1px] shadow-sm transition-colors hover:border-[#8a1e28] hover:bg-[#8a1e28]"
             style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 700 }}
           >
             <svg className="w-4 h-4 flex-shrink-0 transition-transform duration-300 group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
