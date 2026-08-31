@@ -9,6 +9,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { getProductsByCategory, getBadgeLabel } from "@/data/products";
 import { ESPANA, PROVINCIAS_ESPANA, getCountryOptions } from "@/data/geo";
 import { trackLead } from "@/lib/track";
+import { PHONE_TEL, phoneDisplay } from "@/lib/contact";
 
 const sistemas = getProductsByCategory("sistemas");
 const accesorios = getProductsByCategory("accesorios");
@@ -332,8 +333,8 @@ export default function ContactPage() {
                     <p className="uppercase tracking-[1px] mb-2" style={{ fontFamily: "var(--font-heading)", fontSize: 12, fontWeight: 600, color: "#201F20" }}>
                       {t("preferCall")}
                     </p>
-                    <a href="tel:+34985308980" className="text-[#A52430] hover:underline" style={{ fontFamily: "var(--font-heading)", fontSize: 24, fontWeight: 700 }}>
-                      985 30 89 80
+                    <a href={`tel:${PHONE_TEL}`} className="text-[#A52430] hover:underline" style={{ fontFamily: "var(--font-heading)", fontSize: 24, fontWeight: 700 }}>
+                      {phoneDisplay(locale)}
                     </a>
                     <p className="text-[#999] mt-1" style={{ fontFamily: "var(--font-body)", fontSize: 12 }}>
                       {t("schedule")}

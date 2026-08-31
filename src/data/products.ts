@@ -876,3 +876,34 @@ export function getProductsByCategory(category: "sistemas" | "accesorios"): Prod
 export function getRelatedProducts(slugs: string[]): Product[] {
   return slugs.map((s) => products.find((p) => p.slug === s)).filter(Boolean) as Product[];
 }
+
+/**
+ * Nivel (número de alturas) de un sistema a partir del slug
+ * `sliderack-<niveles>-<anchura><profundidad>`. null si no es un sistema.
+ */
+export function getSystemLevel(slug: string): number | null {
+  const m = /^sliderack-(\d)-\d{4}$/.exec(slug);
+  return m ? Number(m[1]) : null;
+}
+
+/**
+ * Profundidad del armario móvil en mm, leída del slug (…-<anchura><profundidad>):
+ * 1837 → 370, 1847 → 470. Es lo que distingue a dos sistemas de la misma anchura.
+ */
+export function getSystemDepth(slug: string): number | null {
+  const m = /^sliderack-\d-\d{2}(\d{2})$/.exec(slug);
+  return m ? Number(m[1]) * 10 : null;
+}
+
+/** Resto de sistemas del mismo nivel que el que se está viendo. */
+export function getSameLevelSystems(current: Product): Product[] {
+  const level = getSystemLevel(current.slug);
+  if (level === null) return [];
+  return products.filter(
+    (p) => p.category === "sistemas" && p.slug !== current.slug && getSystemLevel(p.slug) === level
+  );
+}
+
+export function countSystems(): number {
+  return products.filter((p) => p.category === "sistemas").length;
+}

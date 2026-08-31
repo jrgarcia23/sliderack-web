@@ -435,7 +435,12 @@
     "backLinkSystems": "Ver más Sistemas",
     "backLinkAccessories": "Ver más Accesorios",
     "installationIncluded": "Instalación en España incluida",
-    "priceFromLabel": "Precio desde"
+    "priceFromLabel": "Precio desde",
+    "breadcrumbHome": "Inicio",
+    "otherSystemsEyebrow": "La gama completa",
+    "otherSystemsTitle": "Otros sistemas de {level, plural, one {# nivel} other {# niveles}}",
+    "otherSystemsSubtitle": "Misma estructura, distintas anchuras y profundidades.",
+    "allSystemsCta": "Ver los {count} sistemas de todos los niveles"
   },
   "langSwitch": {
     "switchTo": "EN",

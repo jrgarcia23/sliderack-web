@@ -435,7 +435,12 @@
     "backLinkSystems": "View more Systems",
     "backLinkAccessories": "View more Accessories",
     "installationIncluded": "Installation in Spain included",
-    "priceFromLabel": "Price from"
+    "priceFromLabel": "Price from",
+    "breadcrumbHome": "Home",
+    "otherSystemsEyebrow": "The full range",
+    "otherSystemsTitle": "Other systems with {level, plural, one {# level} other {# levels}}",
+    "otherSystemsSubtitle": "Same structure, different widths and depths.",
+    "allSystemsCta": "View all {count} systems, every level"
   },
   "langSwitch": {
     "switchTo": "ES",

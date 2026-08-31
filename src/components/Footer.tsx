@@ -1,8 +1,10 @@
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { PHONE_TEL, phoneDisplay } from "@/lib/contact";
 
 export default function Footer({ hideCta = false }: { hideCta?: boolean }) {
+  const locale = useLocale();
   const t = useTranslations("footer");
   const tn = useTranslations("nav");
 
@@ -37,10 +39,10 @@ export default function Footer({ hideCta = false }: { hideCta?: boolean }) {
                 {t("ctaButton")}
               </Link>
               <a
-                href="tel:+34985308980"
+                href={`tel:${PHONE_TEL}`}
                 className="rounded-lg border-2 border-white/30 px-6 py-2.5 font-[family-name:var(--font-heading)] text-[14px] font-bold uppercase text-white hover:border-white transition-colors"
               >
-                985 30 89 80
+                {phoneDisplay(locale)}
               </a>
             </div>
           </div>
@@ -98,10 +100,10 @@ export default function Footer({ hideCta = false }: { hideCta?: boolean }) {
             >
               <p>
                 <a
-                  href="tel:+34985308980"
+                  href={`tel:${PHONE_TEL}`}
                   className="text-white font-semibold hover:opacity-80 transition-opacity"
                 >
-                  985 30 89 80
+                  {phoneDisplay(locale)}
                 </a>
               </p>
               <p>{t("schedule")}</p>

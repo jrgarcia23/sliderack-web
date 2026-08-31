@@ -7,6 +7,7 @@ import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { buildAlternates } from "@/lib/seo";
 import type { Metadata } from "next";
+import { PHONE_TEL, phoneDisplay } from "@/lib/contact";
 
 interface PageProps {
   params: Promise<{ locale: string }>;
@@ -153,8 +154,8 @@ export default async function AccesoriosPage({ params }: PageProps) {
               <Link href="/contacto" className="rounded-lg bg-[#A52430] px-10 py-4 text-center font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-white hover:bg-[#8a1e28] transition-colors">
                 {t("ctaContact")}
               </Link>
-              <a href="tel:+34985308980" className="rounded-lg border-2 border-gray-300 px-10 py-4 text-center font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-[#201F20] hover:border-[#A52430] hover:text-[#A52430] transition-colors">
-                985 30 89 80
+              <a href={`tel:${PHONE_TEL}`} className="rounded-lg border-2 border-gray-300 px-10 py-4 text-center font-[family-name:var(--font-heading)] text-[16px] font-bold uppercase text-[#201F20] hover:border-[#A52430] hover:text-[#A52430] transition-colors">
+                {phoneDisplay(locale)}
               </a>
             </div>
           </div>

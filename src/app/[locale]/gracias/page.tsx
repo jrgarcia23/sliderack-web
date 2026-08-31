@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import type { Metadata } from "next";
+import { PHONE_TEL, phoneDisplay } from "@/lib/contact";
 
 interface PageProps {
   params: Promise<{ locale: string }>;
@@ -72,7 +73,7 @@ export default async function GraciasPage({ params }: PageProps) {
               <div className="mt-10 pt-8 border-t border-gray-200">
                 <p className="font-[family-name:var(--font-body)] text-[14px] text-[#999]">
                   {tc("preferCall")}{" "}
-                  <a href="tel:+34985308980" className="text-[#A52430] font-semibold hover:underline">985 30 89 80</a>
+                  <a href={`tel:${PHONE_TEL}`} className="text-[#A52430] font-semibold hover:underline">{phoneDisplay(locale)}</a>
                   {" "}({tc("schedule")})
                 </p>
               </div>

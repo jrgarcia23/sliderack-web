@@ -5,7 +5,8 @@ import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
-import { Product, getProductsByCategory, l, getBadgeLabel } from "@/data/products";
+import { Product, getProductsByCategory, getSameLevelSystems, getSystemLevel, getSystemDepth, countSystems, l, getBadgeLabel } from "@/data/products";
+import { PHONE_TEL, phoneDisplay } from "@/lib/contact";
 
 function CheckIcon() {
   return (
@@ -30,11 +31,15 @@ interface ProductDetailProps {
 export default function ProductDetail({ product }: ProductDetailProps) {
   const locale = useLocale();
   const t = useTranslations("product");
+  const tn = useTranslations("nav");
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [activeImage, setActiveImage] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
   const accessories = getProductsByCategory("accesorios").slice(0, 4);
+  const sameLevelSystems = product.category === "sistemas" ? getSameLevelSystems(product) : [];
+  const systemLevel = getSystemLevel(product.slug);
+  const totalSystems = countSystems();
   const allImages = product.gallery.length > 0 ? product.gallery : [product.image];
   const backPath = product.category === "sistemas" ? "/sistemas" : "/accesorios";
   const backLabel = product.category === "sistemas" ? t("backLinkSystems") : t("backLinkAccessories");
@@ -80,12 +85,35 @@ export default function ProductDetail({ product }: ProductDetailProps) {
         </div>
       )}
 
-      {/* ── Back link ── */}
-      <div className="bg-white pt-6 px-6">
-        <div className="max-w-[1400px] mx-auto">
-          <Link href={backPath as "/sistemas" | "/accesorios"} className="inline-flex items-center gap-2 text-[#A52430] hover:underline transition" style={{ fontFamily: "var(--font-body)", fontSize: 14 }}>
-            ← {backLabel}
+      {/* ── Barra de navegación: volver al listado + migas ── */}
+      <div className="bg-[#f8f8f8] border-b border-gray-200 px-6 py-3.5">
+        <div className="max-w-[1200px] mx-auto flex flex-wrap items-center justify-between gap-x-6 gap-y-3">
+          <Link
+            href={backPath as "/sistemas" | "/accesorios"}
+            className="group inline-flex items-center gap-2.5 rounded-lg border-2 border-[#A52430] bg-white px-5 py-2.5 text-[#A52430] uppercase tracking-[1px] shadow-sm transition-colors hover:bg-[#A52430] hover:text-white"
+            style={{ fontFamily: "var(--font-heading)", fontSize: 13, fontWeight: 700 }}
+          >
+            <svg className="w-4 h-4 flex-shrink-0 transition-transform duration-300 group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+            {backLabel}
           </Link>
+
+          <nav aria-label="Breadcrumb" className="min-w-0">
+            <ol className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[#999]" style={{ fontFamily: "var(--font-body)", fontSize: 13 }}>
+              <li>
+                <Link href="/" className="hover:text-[#A52430] transition-colors">{t("breadcrumbHome")}</Link>
+              </li>
+              <li aria-hidden="true" className="text-[#ccc]">/</li>
+              <li>
+                <Link href={backPath as "/sistemas" | "/accesorios"} className="hover:text-[#A52430] transition-colors">
+                  {product.category === "sistemas" ? tn("models") : tn("accessories")}
+                </Link>
+              </li>
+              <li aria-hidden="true" className="text-[#ccc]">/</li>
+              <li aria-current="page" className="text-[#201F20]" style={{ fontWeight: 600 }}>{displayName}</li>
+            </ol>
+          </nav>
         </div>
       </div>
 
@@ -269,6 +297,65 @@ export default function ProductDetail({ product }: ProductDetailProps) {
         </div>
       </section>
 
+      {/* ── Otros sistemas del mismo nivel ── */}
+      {sameLevelSystems.length > 0 && systemLevel !== null && (
+        <section className="bg-[#201F20] py-12 px-6">
+          <div className="max-w-[1200px] mx-auto">
+            <ScrollReveal>
+              <p className="text-[#A52430] uppercase tracking-[2px] mb-2.5" style={{ fontFamily: "var(--font-heading)", fontSize: 12, fontWeight: 600 }}>
+                {t("otherSystemsEyebrow")}
+              </p>
+              <h2 className="text-white uppercase" style={{ fontFamily: "var(--font-heading)", fontSize: 26, fontWeight: 700, lineHeight: 1.15 }}>
+                {t("otherSystemsTitle", { level: systemLevel })}
+              </h2>
+              <p className="mt-2 text-white/50" style={{ fontFamily: "var(--font-body)", fontSize: 15 }}>
+                {t("otherSystemsSubtitle")}
+              </p>
+
+              {/* Una sola fila: rejilla en escritorio, scroll horizontal en móvil */}
+              <div className="mt-7 -mx-6 flex snap-x snap-mandatory scroll-pl-6 gap-4 overflow-x-auto px-6 pb-2 md:mx-0 md:grid md:grid-cols-5 md:scroll-pl-0 md:overflow-visible md:px-0 md:pb-0">
+                {sameLevelSystems.map((p) => (
+                  <Link
+                    key={p.slug}
+                    href={{ pathname: "/sistemas/[slug]", params: { slug: p.slug } }}
+                    className="group w-[45%] min-w-[150px] flex-shrink-0 snap-start md:w-auto md:min-w-0"
+                  >
+                    <div className="relative aspect-[4/3] overflow-hidden bg-[#f5f5f5] transition-transform duration-300 group-hover:-translate-y-1">
+                      <Image src={p.image} alt={`Sliderack ${p.name}`} fill className="object-contain p-3 transition-transform duration-300 group-hover:scale-105" sizes="(max-width: 768px) 45vw, 220px" />
+                    </div>
+                    <h3 className="mt-3 text-white uppercase transition-colors group-hover:text-[#A52430]" style={{ fontFamily: "var(--font-heading)", fontSize: 16, fontWeight: 700 }}>
+                      Sliderack {p.name}
+                    </h3>
+                    <p className="mt-0.5 text-white/45" style={{ fontFamily: "var(--font-body)", fontSize: 13, lineHeight: 1.5 }}>
+                      {l(p.shortDesc, locale).split("·")[0].trim()}
+                      {getSystemDepth(p.slug) !== null && (
+                        <span className="text-white/35">
+                          {" · "}
+                          {locale === "en" ? "D." : "Prof."} {getSystemDepth(p.slug)} mm
+                        </span>
+                      )}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+
+              <div className="mt-9 flex justify-center">
+                <Link
+                  href="/sistemas"
+                  className="group inline-flex items-center gap-2.5 rounded-lg border-2 border-white/30 px-6 py-3.5 text-center text-[13px] text-white uppercase tracking-[1px] transition-colors hover:border-white hover:bg-white hover:text-[#201F20] sm:px-8 sm:text-[14px]"
+                  style={{ fontFamily: "var(--font-heading)", fontWeight: 700 }}
+                >
+                  {t("allSystemsCta", { count: totalSystems })}
+                  <svg className="w-4 h-4 flex-shrink-0 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+      )}
+
       {/* ── Manufacturing + Sectors ── */}
       <section className="bg-white py-14 px-6">
         <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -408,8 +495,8 @@ export default function ProductDetail({ product }: ProductDetailProps) {
               <Link href="/contacto" className="border-2 border-white bg-white text-[#A52430] px-10 py-4 rounded-lg hover:bg-transparent hover:text-white transition uppercase tracking-[1px]" style={{ fontFamily: "var(--font-heading)", fontSize: 15, fontWeight: 700 }}>
                 {t("ctaContact")}
               </Link>
-              <a href="tel:+34985308980" className="border-2 border-white/40 text-white px-10 py-4 rounded-lg hover:border-white transition uppercase tracking-[1px]" style={{ fontFamily: "var(--font-heading)", fontSize: 15, fontWeight: 700 }}>
-                985 30 89 80
+              <a href={`tel:${PHONE_TEL}`} className="border-2 border-white/40 text-white px-10 py-4 rounded-lg hover:border-white transition uppercase tracking-[1px]" style={{ fontFamily: "var(--font-heading)", fontSize: 15, fontWeight: 700 }}>
+                {phoneDisplay(locale)}
               </a>
             </div>
           </ScrollReveal>

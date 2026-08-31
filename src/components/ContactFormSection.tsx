@@ -6,6 +6,7 @@ import { useRouter, Link } from "@/i18n/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
 import { ESPANA, PROVINCIAS_ESPANA, getCountryOptions } from "@/data/geo";
 import { trackLead } from "@/lib/track";
+import { PHONE_TEL, phoneDisplay } from "@/lib/contact";
 
 export default function ContactFormSection() {
   const t = useTranslations("contact");
@@ -109,10 +110,10 @@ export default function ContactFormSection() {
                 {t("preferCall")}
               </p>
               <a
-                href="tel:+34985308980"
+                href={`tel:${PHONE_TEL}`}
                 className="block font-[family-name:var(--font-heading)] text-[28px] font-bold text-[#A52430] hover:underline"
               >
-                985 30 89 80
+                {phoneDisplay(locale)}
               </a>
               <p className="mt-1 font-[family-name:var(--font-body)] text-[13px] text-[#999]">
                 {t("schedule")}
