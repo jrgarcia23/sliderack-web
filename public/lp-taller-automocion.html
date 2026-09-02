@@ -148,8 +148,9 @@
   .form h3{font-size:24px;color:var(--dark);margin-bottom:20px}
   .form .fld{margin-bottom:14px}
   .form label{display:block;font-size:15px;font-weight:600;color:#444;margin-bottom:6px}
-  .form input,.form textarea{width:100%;border:1px solid #ddd;border-radius:8px;padding:12px 14px;font-family:var(--body);font-size:17px}
-  .form input:focus,.form textarea:focus{outline:none;border-color:var(--red)}
+  .form input,.form textarea,.form select{width:100%;border:1px solid #ddd;border-radius:8px;padding:12px 14px;font-family:var(--body);font-size:17px;background:#fff;color:inherit}
+  .form select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;background-size:16px;padding-right:38px}
+  .form input:focus,.form textarea:focus,.form select:focus{outline:none;border-color:var(--red)}
   .form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
   .form button{width:100%;margin-top:8px}
   .form .note{font-size:14px;color:#999;margin-top:12px;text-align:center}
@@ -455,6 +456,7 @@
             <div class="fld"><label for="lf-email">Email</label><input id="lf-email" name="email" type="email" placeholder="tu@email.com" autocomplete="email" maxlength="200" required></div>
             <div class="fld"><label for="lf-telefono">Teléfono</label><input id="lf-telefono" name="telefono" type="tel" placeholder="600 000 000" autocomplete="tel" maxlength="40" required></div>
           </div>
+          <div class="fld"><label for="lf-provincia">Provincia</label><select id="lf-provincia" name="provincia" autocomplete="address-level1" required><option value="">Selecciona tu provincia</option><option value="A Coruña">A Coruña</option><option value="Álava">Álava</option><option value="Albacete">Albacete</option><option value="Alicante">Alicante</option><option value="Almería">Almería</option><option value="Asturias">Asturias</option><option value="Ávila">Ávila</option><option value="Badajoz">Badajoz</option><option value="Barcelona">Barcelona</option><option value="Bizkaia">Bizkaia</option><option value="Burgos">Burgos</option><option value="Cáceres">Cáceres</option><option value="Cádiz">Cádiz</option><option value="Cantabria">Cantabria</option><option value="Castellón">Castellón</option><option value="Ceuta">Ceuta</option><option value="Ciudad Real">Ciudad Real</option><option value="Córdoba">Córdoba</option><option value="Cuenca">Cuenca</option><option value="Gipuzkoa">Gipuzkoa</option><option value="Girona">Girona</option><option value="Granada">Granada</option><option value="Guadalajara">Guadalajara</option><option value="Huelva">Huelva</option><option value="Huesca">Huesca</option><option value="Illes Balears">Illes Balears</option><option value="Jaén">Jaén</option><option value="La Rioja">La Rioja</option><option value="Las Palmas">Las Palmas</option><option value="León">León</option><option value="Lleida">Lleida</option><option value="Lugo">Lugo</option><option value="Madrid">Madrid</option><option value="Málaga">Málaga</option><option value="Melilla">Melilla</option><option value="Murcia">Murcia</option><option value="Navarra">Navarra</option><option value="Ourense">Ourense</option><option value="Palencia">Palencia</option><option value="Pontevedra">Pontevedra</option><option value="Salamanca">Salamanca</option><option value="Santa Cruz de Tenerife">Santa Cruz de Tenerife</option><option value="Segovia">Segovia</option><option value="Sevilla">Sevilla</option><option value="Soria">Soria</option><option value="Tarragona">Tarragona</option><option value="Teruel">Teruel</option><option value="Toledo">Toledo</option><option value="Valencia">Valencia</option><option value="Valladolid">Valladolid</option><option value="Zamora">Zamora</option><option value="Zaragoza">Zaragoza</option></select></div>
           <div class="fld"><label for="lf-mensaje">¿Qué necesitas ordenar?</label><textarea id="lf-mensaje" name="mensaje" rows="3" placeholder="Herramienta, recambio, neumáticos, m² del taller..." maxlength="4000"></textarea></div>
           <!-- Honeypot anti-spam: los humanos no lo ven, los bots lo rellenan -->
           <div class="hp" aria-hidden="true"><label>No rellenar este campo<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
@@ -547,8 +549,14 @@
     var nombre = form.nombre.value.trim();
     var email = form.email.value.trim();
     var telefono = form.telefono.value.trim();
+    var provincia = form.provincia.value;
     if(!nombre || !email || !telefono){
       show('err', 'Indica tu nombre, un email y un teléfono de contacto.');
+      return;
+    }
+    if(!provincia){
+      show('err', 'Selecciona tu provincia para que te atienda el comercial de tu zona.');
+      form.provincia.focus();
       return;
     }
     if(!form.privacidad.checked){
@@ -561,6 +569,8 @@
       email: email,
       telefono: telefono,
       empresa: form.empresa.value.trim(),
+      pais: 'España',
+      provincia: provincia,
       mensaje: form.mensaje.value.trim(),
       modelo: 'Landing taller de automoción',
       privacidadAceptada: true,
