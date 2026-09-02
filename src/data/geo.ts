@@ -238,3 +238,13 @@ export function getCountryOptions(locale: string): { value: string; label: strin
   );
   return [spain, ...rest].map((c) => ({ value: c.es, label: label(c) }));
 }
+
+/** Valores admitidos para el campo país (el value del selector es siempre el nombre en español). */
+export function isPaisValido(pais: string): boolean {
+  return COUNTRIES.some((c) => c.es === pais);
+}
+
+/** Valores admitidos para el campo provincia. */
+export function isProvinciaValida(provincia: string): boolean {
+  return PROVINCIAS_ESPANA.includes(provincia);
+}

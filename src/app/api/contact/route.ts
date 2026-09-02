@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { headers } from "next/headers";
+import { ESPANA, isPaisValido, isProvinciaValida } from "@/data/geo";
 
 interface ContactBody {
   nombre: string;
@@ -311,13 +312,6 @@ export async function POST(request: Request) {
     }
     const body = raw as ContactBody;
 
-    if (!body.nombre || !body.email || !body.telefono) {
-      return NextResponse.json(
-        { error: "Nombre, email y teléfono son obligatorios" },
-        { status: 400 }
-      );
-    }
-
     const textFields: Array<[string, unknown]> = [
       ["nombre", body.nombre],
       ["email", body.email],
@@ -347,6 +341,41 @@ export async function POST(request: Request) {
         return NextResponse.json({ error: "Datos del formulario no válidos" }, { status: 400 });
       }
     }
+
+    // Un valor de solo espacios no es un valor: se recorta antes de exigirlo.
+    const fields = body as unknown as Record<string, unknown>;
+    for (const [key] of textFields) {
+      const value = fields[key];
+      if (typeof value === "string") fields[key] = value.trim();
+    }
+
+    if (!body.nombre || !body.email || !body.telefono) {
+      return NextResponse.json(
+        { error: "Nombre, email y teléfono son obligatorios" },
+        { status: 400 }
+      );
+    }
+
+    // País y provincia: las mismas reglas que aplica el formulario en el navegador,
+    // repetidas aquí porque el `required` del HTML no protege a la API.
+    // Sin país se asume España, que es lo que trae el selector por defecto.
+    const pais = body.pais || ESPANA;
+    if (!isPaisValido(pais)) {
+      return NextResponse.json({ error: "País no válido" }, { status: 400 });
+    }
+    if (pais === ESPANA) {
+      if (!body.provincia) {
+        return NextResponse.json({ error: "La provincia es obligatoria" }, { status: 400 });
+      }
+      if (!isProvinciaValida(body.provincia)) {
+        return NextResponse.json({ error: "Provincia no válida" }, { status: 400 });
+      }
+    } else if (body.provincia) {
+      // La provincia solo aplica a España; fuera de ella se descarta.
+      body.provincia = undefined;
+    }
+    body.pais = pais;
+
     if (!validEmail(body.email)) {
       return NextResponse.json({ error: "Email no válido" }, { status: 400 });
     }
