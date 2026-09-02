@@ -33,7 +33,7 @@ function ContentES() {
         <li><strong>Marca comercial:</strong> Sliderack</li>
         <li><strong>NIF:</strong> A33880931</li>
         <li><strong>Domicilio:</strong> C/ Ataulfo Friera Tarfe, 5, 33211 — Gijón (Asturias)</li>
-        <li><strong>Email de contacto:</strong> <a href="mailto:info@sliderack.com" className={linkClass}>info@sliderack.com</a></li>
+        <li><strong>Email de contacto:</strong> <a href="mailto:info@esnova.es" className={linkClass}>info@esnova.es</a></li>
         <li><strong>Teléfono:</strong> 985 30 89 80</li>
       </ul>
       <h2 className={h2Class}>Protección de datos según el RGPD</h2>
@@ -73,7 +73,7 @@ function ContentES() {
         <li>Derecho de <strong>oposición</strong> al tratamiento.</li>
       </ul>
       <p className="mb-6">
-        Para ejercer estos derechos, puede dirigirse a <a href="mailto:info@sliderack.com" className={linkClass}>info@sliderack.com</a> o por correo postal a: C/ Ataulfo Friera Tarfe, 5, 33211 — Gijón (Asturias). Se responderá en un plazo máximo de un mes.
+        Para ejercer estos derechos, puede dirigirse a <a href="mailto:info@esnova.es" className={linkClass}>info@esnova.es</a> o por correo postal a: C/ Ataulfo Friera Tarfe, 5, 33211 — Gijón (Asturias). Se responderá en un plazo máximo de un mes.
       </p>
       <h2 className={h2Class}>Derecho a reclamar ante la autoridad de control</h2>
       <p className="mb-6">
@@ -83,7 +83,7 @@ function ContentES() {
       <p className="mb-6">No se toman decisiones automatizadas ni se realizan perfiles basados en los datos personales proporcionados.</p>
       <h2 className={h2Class}>Comunicaciones comerciales</h2>
       <p className="mb-6">
-        De acuerdo con la LSSI, Esnova Racks no enviará publicidad sin haber recabado previamente la solicitud o autorización expresa. El usuario puede oponerse en cualquier momento escribiendo a <a href="mailto:info@sliderack.com" className={linkClass}>info@sliderack.com</a>.
+        De acuerdo con la LSSI, Esnova Racks no enviará publicidad sin haber recabado previamente la solicitud o autorización expresa. El usuario puede oponerse en cualquier momento escribiendo a <a href="mailto:info@esnova.es" className={linkClass}>info@esnova.es</a>.
       </p>
     </>
   );
@@ -99,7 +99,7 @@ function ContentEN() {
         <li><strong>Trade brand:</strong> Sliderack</li>
         <li><strong>Tax ID (NIF):</strong> A33880931</li>
         <li><strong>Registered address:</strong> C/ Ataulfo Friera Tarfe, 5, 33211 — Gijón (Asturias), Spain</li>
-        <li><strong>Contact email:</strong> <a href="mailto:info@sliderack.com" className={linkClass}>info@sliderack.com</a></li>
+        <li><strong>Contact email:</strong> <a href="mailto:info@esnova.es" className={linkClass}>info@esnova.es</a></li>
         <li><strong>Phone:</strong> +34 985 30 89 80</li>
       </ul>
       <h2 className={h2Class}>Data protection under the GDPR</h2>
@@ -139,7 +139,7 @@ function ContentEN() {
         <li>Right to <strong>object</strong> to processing.</li>
       </ul>
       <p className="mb-6">
-        To exercise these rights, contact us at <a href="mailto:info@sliderack.com" className={linkClass}>info@sliderack.com</a> or by post to: C/ Ataulfo Friera Tarfe, 5, 33211 — Gijón (Asturias), Spain. We will respond within one month.
+        To exercise these rights, contact us at <a href="mailto:info@esnova.es" className={linkClass}>info@esnova.es</a> or by post to: C/ Ataulfo Friera Tarfe, 5, 33211 — Gijón (Asturias), Spain. We will respond within one month.
       </p>
       <h2 className={h2Class}>Right to lodge a complaint</h2>
       <p className="mb-6">
@@ -149,7 +149,7 @@ function ContentEN() {
       <p className="mb-6">No automated decision-making or profiling is carried out based on the personal data provided.</p>
       <h2 className={h2Class}>Commercial communications</h2>
       <p className="mb-6">
-        In accordance with Spanish information society services law (LSSI), Esnova Racks will not send advertising without having previously obtained a request or express authorisation. You may opt out at any time by writing to <a href="mailto:info@sliderack.com" className={linkClass}>info@sliderack.com</a>.
+        In accordance with Spanish information society services law (LSSI), Esnova Racks will not send advertising without having previously obtained a request or express authorisation. You may opt out at any time by writing to <a href="mailto:info@esnova.es" className={linkClass}>info@esnova.es</a>.
       </p>
     </>
   );

@@ -35,7 +35,7 @@ function ContentES() {
         <li><strong>NIF:</strong> A33880931</li>
         <li><strong>Domicilio:</strong> C/ Ataulfo Friera Tarfe, 5, 33211 — Gijón (Asturias)</li>
         <li><strong>Teléfono:</strong> 985 30 89 80</li>
-        <li><strong>Email:</strong> <a href="mailto:info@sliderack.com" className="text-[#A52430] hover:underline">info@sliderack.com</a></li>
+        <li><strong>Email:</strong> <a href="mailto:info@esnova.es" className="text-[#A52430] hover:underline">info@esnova.es</a></li>
       </ul>
       <p className="mb-6">
         Inscrita en el Registro Mercantil de Asturias al Tomo 3416, folio 80, sección 8, hoja número A-25765, inscripción 53.
@@ -61,7 +61,7 @@ function ContentES() {
       </p>
       <p className="mb-6">
         Podrá ejercer en todo momento sus derechos de acceso, rectificación, cancelación, oposición, limitación y portabilidad de sus datos de carácter personal, de manera gratuita, mediante email a{" "}
-        <a href="mailto:info@sliderack.com" className="text-[#A52430] hover:underline">info@sliderack.com</a>{" "}
+        <a href="mailto:info@esnova.es" className="text-[#A52430] hover:underline">info@esnova.es</a>{" "}
         o en la dirección: C/ Ataulfo Friera Tarfe, 5, 33211 — Gijón (Asturias).
       </p>
     </>
@@ -81,7 +81,7 @@ function ContentEN() {
         <li><strong>Tax ID (NIF):</strong> A33880931</li>
         <li><strong>Registered address:</strong> C/ Ataulfo Friera Tarfe, 5, 33211 — Gijón (Asturias), Spain</li>
         <li><strong>Phone:</strong> +34 985 30 89 80</li>
-        <li><strong>Email:</strong> <a href="mailto:info@sliderack.com" className="text-[#A52430] hover:underline">info@sliderack.com</a></li>
+        <li><strong>Email:</strong> <a href="mailto:info@esnova.es" className="text-[#A52430] hover:underline">info@esnova.es</a></li>
       </ul>
       <p className="mb-6">
         Registered in the Mercantile Registry of Asturias, Volume 3416, folio 80, section 8, sheet A-25765, entry 53.
@@ -107,7 +107,7 @@ function ContentEN() {
       </p>
       <p className="mb-6">
         You may exercise your rights of access, rectification, erasure, objection, restriction, and portability of your personal data free of charge by emailing{" "}
-        <a href="mailto:info@sliderack.com" className="text-[#A52430] hover:underline">info@sliderack.com</a>{" "}
+        <a href="mailto:info@esnova.es" className="text-[#A52430] hover:underline">info@esnova.es</a>{" "}
         or by post to: C/ Ataulfo Friera Tarfe, 5, 33211 — Gijón (Asturias), Spain.
       </p>
     </>

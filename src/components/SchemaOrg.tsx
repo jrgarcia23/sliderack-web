@@ -21,7 +21,7 @@ export function OrganizationSchema() {
       addressCountry: "ES",
     },
     telephone: "+34985308980",
-    email: "info@sliderack.com",
+    email: "info@esnova.es",
     sameAs: [],
   };
 

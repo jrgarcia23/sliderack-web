@@ -81,7 +81,7 @@ function ContentES() {
       <h2 className={h2Class}>Contacto</h2>
       <p className="mb-6">
         Para cualquier consulta sobre esta política de cookies, puede contactarnos en{" "}
-        <a href="mailto:info@sliderack.com" className="text-[#A52430] hover:underline">info@sliderack.com</a>.
+        <a href="mailto:info@esnova.es" className="text-[#A52430] hover:underline">info@esnova.es</a>.
       </p>
     </>
   );
@@ -143,7 +143,7 @@ function ContentEN() {
       <h2 className={h2Class}>Contact</h2>
       <p className="mb-6">
         For any questions about this cookie policy, please contact us at{" "}
-        <a href="mailto:info@sliderack.com" className="text-[#A52430] hover:underline">info@sliderack.com</a>.
+        <a href="mailto:info@esnova.es" className="text-[#A52430] hover:underline">info@esnova.es</a>.
       </p>
     </>
   );
