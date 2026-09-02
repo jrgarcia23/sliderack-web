@@ -358,12 +358,12 @@ export async function POST(request: Request) {
 
     // País y provincia: las mismas reglas que aplica el formulario en el navegador,
     // repetidas aquí porque el `required` del HTML no protege a la API.
-    // Sin país se asume España, que es lo que trae el selector por defecto.
-    const pais = body.pais || ESPANA;
-    if (!isPaisValido(pais)) {
+    // Si la petición no trae país no se exige provincia: la landing estática
+    // /lp-taller-automocion.html todavía no recoge ninguno de los dos campos.
+    if (body.pais && !isPaisValido(body.pais)) {
       return NextResponse.json({ error: "País no válido" }, { status: 400 });
     }
-    if (pais === ESPANA) {
+    if (body.pais === ESPANA) {
       if (!body.provincia) {
         return NextResponse.json({ error: "La provincia es obligatoria" }, { status: 400 });
       }
@@ -374,7 +374,6 @@ export async function POST(request: Request) {
       // La provincia solo aplica a España; fuera de ella se descarta.
       body.provincia = undefined;
     }
-    body.pais = pais;
 
     if (!validEmail(body.email)) {
       return NextResponse.json({ error: "Email no válido" }, { status: 400 });
