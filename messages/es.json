@@ -308,10 +308,10 @@
       "mainPara1": "Sliderack forma parte de Esnova Racks, empresa española con más de 50 años de conocimiento en el diseño y fabricación de sistemas de almacenaje.",
       "mainPara2": "A lo largo de su trayectoria, Esnova ha desarrollado soluciones para múltiples sectores, consolidando un modelo de trabajo basado en la calidad, la innovación y la eficiencia operativa.",
       "timeline": [
-        { "year": "1969", "text": "Fundación de Esnova en Gijón, Asturias" },
-        { "year": "1980s", "text": "Expansión nacional en almacenaje industrial" },
-        { "year": "2000s", "text": "Certificaciones ISO 9001, 14001 y 45001" },
-        { "year": "2010s", "text": "Marcado CE (UNE EN 1090) y exportación europea" },
+        { "year": "1970", "text": "Fundación de Esnova en Gijón, Asturias" },
+        { "year": "2007", "text": "Expansión nacional en almacenaje industrial" },
+        { "year": "2008", "text": "Certificaciones ISO 9001 y 14001 y exportación internacional" },
+        { "year": "2013", "text": "Marcado CE (UNE EN 1090)" },
         { "year": "2024", "text": "Lanzamiento de Sliderack" }
       ],
       "mfgTitle": "Fabricación propia con enfoque industrial",

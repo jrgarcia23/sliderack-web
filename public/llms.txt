@@ -6,7 +6,7 @@
 
 Sliderack es un sistema de estanterías deslizantes que permite almacenar herramientas, piezas, EPIs y materiales en módulos que se deslizan lateralmente con un solo dedo, eliminando los pasillos fijos y aprovechando el 100% del espacio disponible.
 
-Fabricado por Esnova Racks, empresa española fundada en 1969 con sede en Gijón (Asturias), planta de producción de 46.600 m² y presencia en más de 45 países.
+Fabricado por Esnova Racks, empresa española fundada en 1970 con sede en Gijón (Asturias), planta de producción de 46.600 m² y presencia en más de 45 países.
 
 ## Producto
 
@@ -66,7 +66,7 @@ Fabricado por Esnova Racks, empresa española fundada en 1969 con sede en Gijón
 - Razón social: Esnova Racks, S.A.
 - NIF: A33880931
 - Marca comercial: Sliderack
-- Fundación: 1969
+- Fundación: 1970
 - Planta: 46.600 m²
 - Presencia: 45+ países
 
