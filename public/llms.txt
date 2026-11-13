@@ -1,80 +1,46 @@
 # Sliderack
 
-> Sistema de almacenaje deslizante de alta precisión, diseñado y fabricado en España por Esnova Racks.
+> Sistema de almacenaje deslizante de alta precisión para talleres e industria. Diseñado y fabricado por Esnova Racks.
 
-## Sobre Sliderack
+Actualizado: 2026-11-13. Resumen del contenido publicado en https://www.sliderack.es
 
-Sliderack es un sistema de estanterías deslizantes que permite almacenar herramientas, piezas, EPIs y materiales en módulos que se deslizan lateralmente con un solo dedo, eliminando los pasillos fijos y aprovechando el 100% del espacio disponible.
+## Sistemas
 
-Fabricado por Esnova Racks, empresa española fundada en 1970 con sede en Gijón (Asturias), planta de producción de 46.600 m² y presencia en más de 45 países.
+- [Sistemas de estanterías deslizantes](https://www.sliderack.es/sistemas): 12 configuraciones disponibles · 3 anchos · 2 profundidades · 2 niveles
+- [Sliderack 1-1837](https://www.sliderack.es/sistemas/sliderack-1-1837): 2090 × 1160 mm · 3 armarios móviles de 370 mm — Sistema deslizante compacto con 3 armarios móviles y 9 baldas. Ideal para talleres pequeños, zonas de traba...
+- [Sliderack 1-1847](https://www.sliderack.es/sistemas/sliderack-1-1847): 2090 × 1160 mm · 2 armarios móviles de 470 mm — Versión compacta con profundidad extendida de 470 mm. 2 armarios móviles con 6 baldas de mayor fondo, pensa...
+- [Sliderack 1-2737](https://www.sliderack.es/sistemas/sliderack-1-2737): 2965 × 1160 mm · 5 armarios móviles de 370 mm — El modelo más equilibrado de la gama. 5 armarios móviles deslizantes con 15 baldas ofrecen capacidad sufici...
+- [Sliderack 1-2747](https://www.sliderack.es/sistemas/sliderack-1-2747): 2965 × 1160 mm · 4 armarios móviles de 470 mm — 4 armarios móviles deslizantes con 12 baldas de profundidad extendida (470 mm). La opción preferida cuando...
+- [Sliderack 1-3637](https://www.sliderack.es/sistemas/sliderack-1-3637): 3865 × 1160 mm · 7 armarios móviles de 370 mm — El sistema de mayor capacidad en un nivel con 7 armarios móviles deslizantes y 21 baldas. Diseñado para tal...
+- [Sliderack 1-3647](https://www.sliderack.es/sistemas/sliderack-1-3647): 3865 × 1160 mm · 6 armarios móviles de 470 mm — Máxima capacidad en un nivel con armarios profundos: 6 armarios móviles deslizantes y 18 baldas de 470 mm....
+- [Sliderack 2-1837](https://www.sliderack.es/sistemas/sliderack-2-1837): 2090 × 1160 mm · 3 armarios móviles de 370 mm · 2 Niveles — Duplica la capacidad del modelo compacto con un segundo nivel de almacenaje fijo sobre los arma...
+- [Sliderack 2-1847](https://www.sliderack.es/sistemas/sliderack-2-1847): 2090 × 1160 mm · 2 armarios móviles de 470 mm · 2 Niveles — El modelo más compacto de dos niveles con profundidad extendida. 2 armarios móviles deslizantes...
+- [Sliderack 2-2737](https://www.sliderack.es/sistemas/sliderack-2-2737): 2965 × 1160 mm · 5 armarios móviles de 370 mm · 2 Niveles — El modelo de dos niveles más versátil de la gama. 5 armarios móviles deslizantes con 15 baldas...
+- [Sliderack 2-2747](https://www.sliderack.es/sistemas/sliderack-2-2747): 2965 × 1160 mm · 4 armarios móviles de 470 mm · 2 Niveles — 4 armarios móviles profundos deslizantes con 12 baldas de 470 mm en el nivel inferior, más capa...
+- [Sliderack 2-3637](https://www.sliderack.es/sistemas/sliderack-2-3637): 3865 × 1160 mm · 7 armarios móviles de 370 mm · 2 Niveles — El sistema de mayor capacidad total de la gama Sliderack. 7 armarios móviles deslizantes con 21...
+- [Sliderack 2-3647](https://www.sliderack.es/sistemas/sliderack-2-3647): 3865 × 1160 mm · 6 armarios móviles de 470 mm · 2 Niveles — La configuración de máxima capacidad absoluta de toda la gama. 6 armarios móviles profundos des...
 
-## Producto
+## Accesorios
 
-### Sistemas disponibles
-
-- **Sliderack 1825 × 370**: 3 módulos deslizantes, 9 baldas
-- **Sliderack 2700 × 370**: 5 módulos deslizantes, 15 baldas
-- **Sliderack 3600 × 370**: 7 módulos deslizantes, 21 baldas
-- **Sliderack 1825 × 470**: 2 módulos deslizantes, 6 baldas (mayor profundidad)
-- **Sliderack 2700 × 470**: 4 módulos deslizantes, 12 baldas
-- **Sliderack 3600 × 470**: 7 módulos deslizantes, 21 baldas
-- Todos disponibles en configuración de **2 niveles**
-
-### Especificaciones comunes
-
-- Altura estándar: 2255 mm
-- Profundidad: 1160 mm
-- Acabado: Negro Mate RAL-9005
-- Capacidad por módulo: hasta 150 kg
-- Estructura: acero laminado en frío con tratamiento anticorrosión
-
-### Accesorios
-
-- Puesto de trabajo (mesa integrada con panel perforado)
-- Panel perforado (organización vertical de herramientas)
-- Kit cajón (cajones divisorios para piezas pequeñas)
-- Cerradura (seguridad con llave para módulos)
-- Kit balda (baldas adicionales ajustables en altura)
-- Módulo adicional (amplía la capacidad del sistema)
-- Kit perchero (almacenaje de EPIs, uniformes y prendas)
-
-## Sectores de aplicación
-
-- Talleres mecánicos y de automoción
-- Garajes premium y viviendas de alto standing
-- Servicios de emergencia y organismos públicos
-- Industria y mantenimiento técnico
-- Centros logísticos
-- Laboratorios
-
-## Diferenciadores
-
-- Fabricación 100% española (Gijón, Asturias)
-- Mecanismo deslizante de precisión: módulos de 150 kg se mueven con un dedo
-- Modular y configurable: 3 anchos × 2 profundidades × 1 o 2 niveles
-- Certificaciones: ISO 9001, ISO 14001, ISO 45001, UNE EN 1090 (Marcado CE)
-- Más de 50 años de experiencia en almacenaje industrial
-
-## Contacto
-
-- Web: https://www.sliderack.es
-- Teléfono: 985 30 89 80
-- Dirección: C/ Ataulfo Friera Tarfe, 5, Pol. Ind. Los Campones, 33211 Gijón (Asturias)
+- [Accesorios Sliderack](https://www.sliderack.es/accesorios): Complementos compatibles con todos los modelos del sistema
+- [Cerradura | Accesorios](https://www.sliderack.es/accesorios/cerradura): Seguridad para armarios móviles — Sistema de cerradura para armarios móviles Sliderack. Seguridad adicional para materiales sensibles o de alto valor....
+- [Kit Balda | Accesorios](https://www.sliderack.es/accesorios/kit-balda): Baldas adicionales — Baldas adicionales para ampliar la capacidad de almacenaje dentro de cada armario móvil. Ajustables en altura....
+- [Kit Perchero | Accesorios](https://www.sliderack.es/accesorios/kit-perchero): Almacenaje de prendas — Sistema de perchero integrado en los armarios móviles Sliderack. Ideal para almacenar EPIs, uniformes y prendas de trabajo de forma...
+- [Kit 5 Cajones | Accesorios](https://www.sliderack.es/accesorios/kit-5-cajones): 5 cajones para armarios móviles — Kit compuesto por 5 cajones divisorios para instalación en armarios móviles Sliderack. Organización de piezas pequeñas y...
+- [Puesto de Trabajo | Accesorios](https://www.sliderack.es/accesorios/puesto-trabajo): Mesa de trabajo integrada — Superficie de trabajo integrable en el sistema Sliderack. Panel perforado posterior para organización de herramientas. Estructu...
+- [Panel Perforado | Accesorios](https://www.sliderack.es/accesorios/panel-perforado): Organización de herramientas — Panel perforado para organización vertical de herramientas. Instalación sencilla en cualquier armario móvil del sistema Slid...
+- [Armario Móvil Adicional | Accesorios](https://www.sliderack.es/accesorios/armario-movil-adicional): Amplía tu sistema — Armario móvil adicional para ampliar la capacidad del sistema Sliderack. Se integra directamente en la estructura existente sin modific...
 
 ## Empresa
 
-- Razón social: Esnova Racks, S.A.
-- NIF: A33880931
-- Marca comercial: Sliderack
-- Fundación: 1970
-- Planta: 46.600 m²
-- Presencia: 45+ países
+- [Blog](https://www.sliderack.es/blog): Artículos y guías sobre almacenaje, organización de espacios y novedades de Sliderack.
+- [Sobre nosotros](https://www.sliderack.es/compania): Más de 50 años de conocimiento en la fabricación de soluciones de almacenaje que funcionan.
+- [Contacto](https://www.sliderack.es/contacto): Solicita información sobre los sistemas de almacenaje Sliderack. Nuestro equipo técnico te asesorará sin compromiso.
+- [Por qué elegir Sliderack](https://www.sliderack.es/por-que-sliderack): La fortaleza de la sencillez. Un sistema que combina ingeniería de precisión con la robustez del acero.
 
-## Páginas del sitio
+## Optional
 
-- [Inicio](https://www.sliderack.es)
-- [Sistemas](https://www.sliderack.es/sistemas)
-- [Accesorios](https://www.sliderack.es/accesorios)
-- [Por qué Sliderack](https://www.sliderack.es/por-que-sliderack)
-- [Compañía](https://www.sliderack.es/compania)
-- [Contacto](https://www.sliderack.es/contacto)
+- [llms-full.txt](https://www.sliderack.es/llms-full.txt): Todo el contenido de la web en un solo archivo Markdown
+- [Aviso Legal](https://www.sliderack.es/aviso-legal): Aviso legal e información corporativa de Sliderack, marca de Esnova Racks.
+- [Política de Privacidad](https://www.sliderack.es/politica-de-privacidad): Política de privacidad y protección de datos personales de Sliderack, marca de Esnova Racks (NIF A33880931). RGPD.
+- [Política de Cookies](https://www.sliderack.es/politica-de-cookies): Política de cookies del sitio web Sliderack (Esnova Racks). Consulta qué cookies utilizamos y configura tus preferencias.

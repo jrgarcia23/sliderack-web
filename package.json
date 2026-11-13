@@ -5,11 +5,12 @@
   "description": "Sliderack - Sistema de almacenaje deslizante por Esnova Racks",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/llms/llms-gen.mjs --config scripts/llms/llms.config.json --soft && next build",
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
-    "check": "npm run lint && npm run typecheck && npm run build"
+    "check": "npm run lint && npm run typecheck && npm run build",
+    "llms": "node scripts/llms/llms-gen.mjs --config scripts/llms/llms.config.json"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",

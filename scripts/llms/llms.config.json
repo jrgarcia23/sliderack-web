@@ -1,0 +1,36 @@
+{
+ "_doc": "Genera public/llms.txt y public/llms-full.txt desde lo publicado (sitemap + HTML) antes de next build (--soft: si falla la red se conserva el archivo anterior). Motor: esconzeta-mc/_motor/scripts/llms/llms-gen.mjs.",
+ "site": "https://www.sliderack.es",
+ "name": "Sliderack",
+ "lang": "es",
+ "homePath": "",
+ "sitemap": "https://www.sliderack.es/sitemap.xml",
+ "sections": [
+  {
+   "title": "Sistemas",
+   "match": "^/sistemas"
+  },
+  {
+   "title": "Accesorios",
+   "match": "^/accesorios"
+  }
+ ],
+ "restTitle": "Empresa",
+ "posts": {
+  "match": "^/blog/.+",
+  "title": "Blog",
+  "maxIndex": 50
+ },
+ "trust": [
+  "^/(aviso-legal|politica-)"
+ ],
+ "titleFrom": "title",
+ "titleStrip": [
+  "\\s*\\|\\s*(Sistemas|Accesorios)\\s*$",
+  "\\s*[|·–-]\\s*Sliderack.*$"
+ ],
+ "allowLabels": [
+  "clics"
+ ],
+ "output": "../../public"
+}
