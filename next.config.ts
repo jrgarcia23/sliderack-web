@@ -6,6 +6,11 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 const nextConfig: NextConfig = {
   async redirects() {
     return [
+      // El español es el idioma por defecto y va sin prefijo (localePrefix "as-needed").
+      // /es y /es/* daban 307 (temporal) desde next-intl y Google llegó a indexar /es/contacto
+      // como canónica. 308 permanente a la URL sin prefijo (la query se conserva).
+      { source: "/es", destination: "/", permanent: true },
+      { source: "/es/:path*", destination: "/:path*", permanent: true },
       // Sistemas 1 Nivel · Prof. 370
       { source: "/sistemas/sliderack-1825-370", destination: "/sistemas/sliderack-1-1837", permanent: true },
       { source: "/sistemas/sliderack-2700-370", destination: "/sistemas/sliderack-1-2737", permanent: true },

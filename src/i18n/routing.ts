@@ -4,6 +4,10 @@ export const routing = defineRouting({
   locales: ["es", "en"],
   defaultLocale: "es",
   localePrefix: "as-needed",
+  // Sin detección por Accept-Language ni cookie: una URL sin prefijo es siempre ES.
+  // Con la detección activa, / y las URL ES redirigían (307) a /en para navegadores en inglés
+  // y para Googlebot si mandaba esa cabecera.
+  localeDetection: false,
   pathnames: {
     "/": "/",
     "/sistemas": { es: "/sistemas", en: "/systems" },

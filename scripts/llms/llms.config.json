@@ -5,6 +5,9 @@
  "lang": "es",
  "homePath": "",
  "sitemap": "https://www.sliderack.es/sitemap.xml",
+ "exclude": [
+  "^/en(/|$)"
+ ],
  "sections": [
   {
    "title": "Sistemas",

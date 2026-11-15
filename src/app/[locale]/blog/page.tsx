@@ -14,7 +14,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${t("title")}`,
     description: t("subtitle"),
-    robots: { index: true, follow: true },
+    // noindex mientras el blog no tenga posts (es una página vacía de "próximamente").
+    robots: { index: false, follow: true },
     alternates: buildAlternates(locale, "/blog"),
   };
 }

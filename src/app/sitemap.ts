@@ -7,75 +7,59 @@ type ChangeFreq = "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly
 
 type SitemapEntry = {
   url: string;
-  lastModified?: Date;
   changeFrequency?: ChangeFreq;
   priority?: number;
   alternates?: { languages: Record<string, string> };
 };
 
-const staticPathnames: Array<{
+type Page = {
   es: string;
   en: string;
   priority?: number;
   freq?: ChangeFreq;
-}> = [
+};
+
+// /blog y /en/blog quedan fuera mientras no tengan posts (llevan noindex).
+// Sin lastModified: no hay una fecha real de modificación por página y la hora del build
+// le diría a Google que todo cambia en cada despliegue.
+const staticPathnames: Page[] = [
   { es: "", en: "/en", priority: 1 },
   { es: "/sistemas", en: "/en/systems", priority: 0.9 },
   { es: "/accesorios", en: "/en/accessories", priority: 0.9 },
   { es: "/por-que-sliderack", en: "/en/why-sliderack", priority: 0.8 },
   { es: "/compania", en: "/en/company", priority: 0.7 },
   { es: "/contacto", en: "/en/contact", priority: 0.85 },
-  { es: "/blog", en: "/en/blog", priority: 0.6 },
   { es: "/aviso-legal", en: "/en/legal-notice", priority: 0.3, freq: "yearly" },
   { es: "/politica-de-privacidad", en: "/en/privacy-policy", priority: 0.3, freq: "yearly" },
   { es: "/politica-de-cookies", en: "/en/cookie-policy", priority: 0.3, freq: "yearly" },
 ];
 
+/**
+ * Una entrada <url> por idioma (ES y EN), las dos con el mismo bloque de hreflang,
+ * como pide Google para sitemaps con alternates.
+ */
+function bothLocales({ es, en, priority = 0.8, freq = "monthly" }: Page): SitemapEntry[] {
+  const alternates = {
+    languages: {
+      es: `${base}${es}`,
+      en: `${base}${en}`,
+      "x-default": `${base}${es}`,
+    },
+  };
+  return [
+    { url: `${base}${es}`, changeFrequency: freq, priority, alternates },
+    { url: `${base}${en}`, changeFrequency: freq, priority, alternates },
+  ];
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPages: SitemapEntry[] = staticPathnames.map(({ es, en, priority = 0.8, freq = "monthly" }) => ({
-    url: `${base}${es}`,
-    lastModified: new Date(),
-    changeFrequency: freq,
-    priority,
-    alternates: {
-      languages: {
-        es: `${base}${es}`,
-        en: `${base}${en}`,
-        "x-default": `${base}${es}`,
-      },
-    },
-  }));
+  const sistemas: Page[] = products
+    .filter((p) => p.category === "sistemas")
+    .map((p) => ({ es: `/sistemas/${p.slug}`, en: `/en/systems/${p.slug}`, priority: 0.8 }));
 
-  const sistemas = products.filter((p) => p.category === "sistemas");
-  const accesorios = products.filter((p) => p.category === "accesorios");
+  const accesorios: Page[] = products
+    .filter((p) => p.category === "accesorios")
+    .map((p) => ({ es: `/accesorios/${p.slug}`, en: `/en/accessories/${p.slug}`, priority: 0.7 }));
 
-  const sistemasPages: SitemapEntry[] = sistemas.map((p) => ({
-    url: `${base}/sistemas/${p.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.8,
-    alternates: {
-      languages: {
-        es: `${base}/sistemas/${p.slug}`,
-        en: `${base}/en/systems/${p.slug}`,
-        "x-default": `${base}/sistemas/${p.slug}`,
-      },
-    },
-  }));
-
-  const accesoriosPages: SitemapEntry[] = accesorios.map((p) => ({
-    url: `${base}/accesorios/${p.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.7,
-    alternates: {
-      languages: {
-        es: `${base}/accesorios/${p.slug}`,
-        en: `${base}/en/accessories/${p.slug}`,
-        "x-default": `${base}/accesorios/${p.slug}`,
-      },
-    },
-  }));
-
-  return [...staticPages, ...sistemasPages, ...accesoriosPages];
+  return [...staticPathnames, ...sistemas, ...accesorios].flatMap(bothLocales);
 }

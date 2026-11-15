@@ -203,7 +203,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
               {/* CTAs */}
               <div className="grid grid-cols-2 gap-3">
                 <Link
-                  href={`/contacto?modelo=${product.slug}` as "/"}
+                  href={{ pathname: "/contacto", query: { modelo: product.slug } }}
                   className="bg-[#A52430] text-white text-center px-4 py-3.5 rounded-lg hover:bg-[#8a1e28] transition-colors uppercase tracking-[1px]"
                   style={{ fontFamily: "var(--font-heading)", fontSize: 14, fontWeight: 700 }}
                 >
